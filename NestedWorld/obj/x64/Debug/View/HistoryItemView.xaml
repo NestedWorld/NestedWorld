@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.HistoryItemView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="100"
+    d:DesignWidth="400">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="test test test test test test test "   Style="{StaticResource TextBlockStyleOne}" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextTrimming="Clip" OpticalMarginAlignment="TrimSideBearings" />
+        <TextBlock Text="time" Grid.Column="1" TextWrapping="Wrap" Style="{StaticResource TextBlockStyleOne}"  HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{StaticResource BleuThree}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+    </Grid>
+</UserControl>
+

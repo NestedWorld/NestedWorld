@@ -1,0 +1,112 @@
+﻿<Page
+    x:Class="NestedWorld.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.Pages"
+    xmlns:Style="using:NestedWorld.Style"
+    xmlns:view="using:NestedWorld.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Foreground>
+        <SolidColorBrush Color="{StaticResource foreground}"/>
+    </Page.Foreground>
+    <Page.Background>
+        <SolidColorBrush Color="{StaticResource background}"/>
+    </Page.Background>
+
+    <RelativePanel >
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource background}"/>
+            </Grid.Background>
+
+            <Pivot>
+
+                <PivotItem Header="Home" Margin="0, 0">
+                    <RelativePanel>
+                        <view:HomeView x:ConnectionId='1' x:Name="homeView" Height="auto" Width="500" VerticalAlignment="Center" UserName="Thomas" UserLevel="10" UserImage="ms-appx:///Assets/iconTest.png"/>
+                        <view:HistoryView x:ConnectionId='2' x:Name="historyView" Width="500" VerticalAlignment="Center"></view:HistoryView>
+                        <view:HistoryView x:ConnectionId='3' x:Name="friendInfoView" Width="500" VerticalAlignment="Center">
+                            <view:HistoryView.Background>
+                                <SolidColorBrush Color="Brown"/>
+                            </view:HistoryView.Background>
+                        </view:HistoryView>
+                        <view:MonsterView x:ConnectionId='4' x:Name="monsterListView"  Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"></view:MonsterView>
+                    </RelativePanel>
+                </PivotItem>
+                <PivotItem Header="Tools">
+                    <Grid>
+                        <view:GardenView/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Map">
+                    <Grid>
+                        <view:MapView/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Monster">
+                    <Grid>
+                        <view:MonsterListView/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem  Header="Shop">
+                    <Grid>
+                        <TextBlock Text="Shop"/>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
+        </Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1080" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="historyView.(RelativePanel.RightOf)" Value="homeView"/>
+                        <Setter Target="historyView.Margin" Value="20, 0"/>
+                        <Setter Target="friendInfoView.(RelativePanel.RightOf)" Value="historyView"/>
+                        <Setter Target="friendInfoView.Margin" Value="20, 0"/>
+                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="homeView"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="historyView.(RelativePanel.RightOf)" Value="homeView"/>
+                        <Setter Target="historyView.Margin" Value="20, 0"/>
+                        <Setter Target="friendInfoView.(RelativePanel.AlignLeftWith)" Value="historyView"/>
+                        <Setter Target="friendInfoView.Margin" Value="20, 0"/>
+                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="homeView"/>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="548" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="historyView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="friendInfoView.(RelativePanel.Below)" Value="historyView"/>
+                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="friendInfoView"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="historyView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="friendInfoView.(RelativePanel.Below)" Value="historyView"/>
+                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="friendInfoView"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </RelativePanel>
+</Page>
+

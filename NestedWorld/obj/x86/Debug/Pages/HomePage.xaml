@@ -1,0 +1,194 @@
+﻿<Page
+    x:Class="NestedWorld.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.Pages"
+    xmlns:Style="using:NestedWorld.Style"
+    xmlns:view="using:NestedWorld.View"
+    xmlns:monsterViews="using:NestedWorld.View.MonsterViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Foreground>
+        <SolidColorBrush Color="{StaticResource foreground}"/>
+    </Page.Foreground>
+    <Page.Background>
+        <SolidColorBrush Color="{StaticResource BleuTwo}"/>
+    </Page.Background>
+
+    <RelativePanel>
+        <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource background}"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.Background>
+                    <SolidColorBrush Color="{StaticResource BleuTwo}"/>
+                </Grid.Background>
+                <TextBlock Text="Nested World" Style="{StaticResource TextBlockStyleOne}" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <AppBarButton x:ConnectionId='6'                            HorizontalAlignment="Right" Icon="Setting" Margin="0, 3, 0, 0">
+                    <AppBarButton.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </AppBarButton.Foreground>
+                </AppBarButton>
+            </Grid>
+            <Pivot Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
+
+                <PivotItem   Margin="0" >
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE80F;" Label="Home"/>
+                    </PivotItem.Header>
+                    <ScrollViewer>
+                        <RelativePanel>
+                            <view:HomeView x:ConnectionId='3' x:Name="homeView"/>
+                            <view:MonsterView x:ConnectionId='4' x:Name="monsterView" />
+                            <view:UserView x:ConnectionId='5' x:Name="userView" />
+                        </RelativePanel>
+                    </ScrollViewer>
+
+                </PivotItem>
+                <PivotItem Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE72D;" Label="Tools"/>
+                    </PivotItem.Header>
+                    <RelativePanel>
+                        <view:GardenView Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                    </RelativePanel>
+                </PivotItem>
+                <PivotItem Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE80F;" Label="Map"/>
+                    </PivotItem.Header>
+                    <Grid>
+                        <view:MapView />
+                    </Grid>
+                </PivotItem>
+                <PivotItem  Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE76E;" Label="Monster"/>
+                    </PivotItem.Header>
+                    <RelativePanel>
+                        <view:MonsterListView x:ConnectionId='1' x:Name="monsterListView" />
+                        <monsterViews:MonsterFullView x:ConnectionId='2' x:Name="monsterFullView" Margin="0, 0, 0, 0" />
+                    </RelativePanel>
+                </PivotItem>
+                <PivotItem  Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE719;" Label="Shop"/>
+                    </PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="Shop"/>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
+        </Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1080" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="250"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+                        <Setter Target="monsterView.Width" Value="720"/>
+                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
+
+                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+                        <Setter Target="monsterView.Width" Value="360"/>
+                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
+                      
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
+
+                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="548" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                   
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </RelativePanel>
+</Page>
+

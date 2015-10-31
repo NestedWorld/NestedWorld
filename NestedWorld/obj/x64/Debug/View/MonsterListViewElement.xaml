@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.MonsterListViewElement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="100"
+    d:DesignWidth="300">
+
+    <Grid Background="{Binding Have}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+
+        <Ellipse Height="75" Width="75" StrokeThickness="2">
+            <Ellipse.Stroke>
+                <SolidColorBrush Color="{StaticResource foreground}"/>
+            </Ellipse.Stroke>
+            <Ellipse.Fill>
+                <ImageBrush Stretch="Uniform" ImageSource="{Binding Image}"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center" Margin="10, 0">
+            <TextBlock Text="{Binding MonsterName}" Style="{StaticResource TextBlockStyleOne}"/>
+            <Rectangle Width="200" Height="1" Margin="10">
+                <Rectangle.Stroke>
+                    <SolidColorBrush Color="{StaticResource foreground}"/>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <TextBlock Text="{Binding Desc}" Style="{StaticResource TextBlockStyleOne}"/>
+
+        </StackPanel>
+    </Grid>
+</UserControl>
+

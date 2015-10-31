@@ -1,0 +1,15 @@
+App.xbf
+MainPage.xbf
+Pages\HomePage.xbf
+Style\TabHeader.xbf
+Style\TabHeaderMap.xbf
+View\GardenView.xbf
+View\HistoryItemView.xbf
+View\HistoryView.xbf
+View\HomeView.xbf
+View\MapView.xbf
+View\MonsterListView.xbf
+View\MonsterListViewElement.xbf
+View\MonsterSoloView.xbf
+View\MonsterView.xbf
+View\UserLittleView.xbf

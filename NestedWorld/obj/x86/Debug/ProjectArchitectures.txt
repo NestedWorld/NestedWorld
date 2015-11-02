@@ -1,1 +1,1 @@
-E:\c#\NestedWorld\NestedWorld\NestedWorld.csproj;x86
+E:\Git\nestedworld\NestedWorld\NestedWorld.csproj;x86

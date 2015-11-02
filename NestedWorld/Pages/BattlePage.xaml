@@ -11,10 +11,11 @@
         <SolidColorBrush Color="{StaticResource background}"/>
     </Page.Background>
 
-    <Grid>
+    <Grid Margin="0">
         <Grid.Background>
             <SolidColorBrush Color="{StaticResource background}"/>
         </Grid.Background>
-        <BattleView:StartBattleAnnimation></BattleView:StartBattleAnnimation>
+        <BattleView:EnemieBattleView VerticalAlignment="Top"/>
+        <BattleView:UserBattleView VerticalAlignment="Bottom"/>
     </Grid>
 </Page>

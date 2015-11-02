@@ -16,6 +16,14 @@
         <Color x:Key="BleuOne">#0D47A1</Color>
         <Color x:Key="foreground">#616668</Color>
         <Color x:Key="BleuThree">#E3F2FD</Color>
+        
+        <SolidColorBrush x:Key="BackrgoundBrush" Color="{StaticResource background}"/>
+        <SolidColorBrush x:Key="BleuTwoBrush" Color="{StaticResource BleuTwo}"/>
+        <SolidColorBrush x:Key="BleuOneBrush" Color="{StaticResource BleuOne}"/>
+        <SolidColorBrush x:Key="ForgroundBrush" Color="{StaticResource foreground}"/>
+        <SolidColorBrush x:Key="BleuThreeBrush" Color="{StaticResource BleuThree}"/>
+
+
         <x:Double x:Key="PoliceSize">20</x:Double>
         <x:Double x:Key="TitleSize">40</x:Double>
         <x:String x:Key="maptoken">koCu3E5EUCni7ncnfPMV~33z8zI7S7emKhB-OthEBHg~Anf9TkDkiGp6pvYnLf07MoIVdrd47eWKRSvXlsQaM48XE8SapOwEtwV_tTQqKEnZ</x:String>

@@ -32,6 +32,9 @@
       <RootProperty Name="TargetType" />
     </RootType>
     <RootType FullName="Windows.UI.Color" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
     <RootType FullName="System.Double" />
     <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Media.FontFamily" />
@@ -138,8 +141,8 @@
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="ChildrenTransitions" />
-      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootMethod Name="GetRow" />
@@ -209,11 +212,12 @@
       <RootProperty Name="Stroke" />
       <RootProperty Name="StrokeDashArray" />
       <RootProperty Name="Fill" />
+      <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="StrokeThickness" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension">
@@ -236,9 +240,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
       <RootProperty Name="ThemeDictionaries" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
-      <RootProperty Name="Color" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="Background" />
@@ -345,7 +346,12 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NestedWorld.MainPage" />
-    <RootType FullName="NestedWorld.View.BattleViews.StartBattleAnnimation" />
+    <RootType FullName="NestedWorld.View.BattleViews.EnemieBattleView">
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.BattleViews.UserBattleView">
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="NestedWorld.Pages.BattlePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
@@ -401,9 +407,17 @@
     </RootType>
     <RootType FullName="NestedWorld.Style.TabHeaderMap" />
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="ImageSource" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
     </RootType>
+    <RootType FullName="NestedWorld.View.MonsterViews.MonsterStatsView">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.BattleViews.StartBattleAnnimation" />
     <RootType FullName="NestedWorld.View.NotificationView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -448,9 +462,6 @@
     </RootType>
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterAttacksView" />
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterHeaderView" />
-    <RootType FullName="NestedWorld.View.MonsterViews.MonsterStatsView">
-      <RootProperty Name="Margin" />
-    </RootType>
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterLocationView">
       <RootProperty Name="Height" />
     </RootType>

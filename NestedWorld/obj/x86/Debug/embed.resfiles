@@ -6,7 +6,9 @@ Pages\MonsterPage.xbf
 Pages\PrepareBattlePage.xbf
 Style\TabHeader.xbf
 Style\TabHeaderMap.xbf
+View\BattleViews\EnemieBattleView.xbf
 View\BattleViews\StartBattleAnnimation.xbf
+View\BattleViews\UserBattleView.xbf
 View\GardenView.xbf
 View\HomeView.xbf
 View\MapView.xbf

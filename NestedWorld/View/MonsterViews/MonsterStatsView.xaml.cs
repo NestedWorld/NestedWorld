@@ -20,14 +20,23 @@ namespace NestedWorld.View.MonsterViews
 {
     public sealed partial class MonsterStatsView : UserControl
     {
-      
-        public int Life { get { return 0; } set { LifeBar.Width = value; } }
+
+        public int Life
+        {
+            get { return 0; }
+            set
+            {
+                LifeBar.Width = value;
+                if (value < 25)
+                    LifeBar.Fill = new SolidColorBrush(Utils.ColorUtils.GetColorFromHex("#FFFF0000"));
+            }
+        }
 
         public int Exp { get { return 0; } set { ExpBar.Width = value; } }
 
         public MonsterStatsView()
         {
             this.InitializeComponent();
-         }
+        }
     }
 }

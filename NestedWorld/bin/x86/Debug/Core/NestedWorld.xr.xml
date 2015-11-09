@@ -117,6 +117,7 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Margin" />
@@ -212,11 +213,11 @@
       <RootProperty Name="Stroke" />
       <RootProperty Name="StrokeDashArray" />
       <RootProperty Name="Fill" />
-      <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
@@ -416,6 +417,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Life" />
     </RootType>
     <RootType FullName="NestedWorld.View.BattleViews.StartBattleAnnimation" />
     <RootType FullName="NestedWorld.View.NotificationView">

@@ -15,6 +15,10 @@
         <Grid.Background>
             <SolidColorBrush Color="{StaticResource background}"/>
         </Grid.Background>
+        <Image Source="ms-appx:///Assets/NestedWorldLogo.png" Height="200" Width="200"></Image>
+        <Rectangle Height="auto" Width="auto" Fill="#7FFFFFFF"/>
+        <Rectangle Height="100" Fill="{StaticResource BleuThreeBrush}" VerticalAlignment="Top"/>
+        <Rectangle Height="100" Fill="{StaticResource BleuThreeBrush}" VerticalAlignment="Bottom"/>
         <BattleView:EnemieBattleView VerticalAlignment="Top"/>
         <BattleView:UserBattleView VerticalAlignment="Bottom"/>
     </Grid>

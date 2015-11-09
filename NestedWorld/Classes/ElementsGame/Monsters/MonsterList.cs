@@ -14,6 +14,15 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
         public MonsterList()
         {
             monsterList = new List<UserMonster>();
+        }
+
+        public MonsterList(JObject obj)
+        {
+
+        }
+
+        public void init()
+        {
             Add(new UserMonster(new Monster("monsterOne", TypeEnum.DIRT, "ms-appx:///Assets/iconTest.png", 1), 5));
             Add(new UserMonster(new Monster("monsterOne", TypeEnum.WATHER, "ms-appx:///Assets/iconTest.png", 2), 5));
             Add(new UserMonster(new Monster("monsterOne", TypeEnum.FIRE, "ms-appx:///Assets/iconTest.png", 3), 10));
@@ -27,12 +36,6 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
             Add(new UserMonster(new Monster("monsterOne", TypeEnum.ELEC, "ms-appx:///Assets/iconTest.png", 5), 4));
             Add(new UserMonster(new Monster("monsterOne", TypeEnum.GRASS, "ms-appx:///Assets/iconTest.png", 6), 9));
         }
-
-        public MonsterList(JObject obj)
-        {
-
-        }
-
         public void Add(UserMonster newMonster)
         {
             monsterList?.Add(newMonster);

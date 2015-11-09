@@ -30,6 +30,25 @@ namespace NestedWorld.Utils
             return "#FFFFFFFF";
         }
 
+        internal static string GetTypeColor(TypeEnum type, bool trasp)
+        {
+            switch (type)
+            {
+                case (TypeEnum.FIRE):
+                    return "#99F44336";
+                case (TypeEnum.WATHER):
+                    return "#992196F3";
+                case (TypeEnum.GRASS):
+                    return "#994CAF50";
+                case (TypeEnum.DIRT):
+                    return "#99795548";
+                case (TypeEnum.ELEC):
+                    return "#99FFEB3B";
+
+            }
+            return "#FFFFFFFF";
+        }
+
         internal static string GetTypeColor(AttackTypeEnum attackType)
         {
             switch (attackType)

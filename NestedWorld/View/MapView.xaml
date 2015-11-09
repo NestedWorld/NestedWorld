@@ -21,7 +21,7 @@
             <RowDefinition Height="100*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <maps:MapControl MapServiceToken="{StaticResource maptoken}" Grid.RowSpan="2" />
+        <maps:MapControl x:Name="map" MapServiceToken="{StaticResource maptoken}" Grid.RowSpan="2" />
 
         <Grid Grid.Row="1">
             <Grid.Background>
@@ -54,7 +54,7 @@
                     <SolidColorBrush Color="{StaticResource foreground}"/>
                 </AppBarToggleButton.Foreground>
             </AppBarToggleButton>
-            <AppBarToggleButton Grid.Column="4" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Label="Show Area" Icon="Target" Width="100" Style="{StaticResource AppBarToggleButtonStyle1}" Padding="20" Background="{x:Null}">
+            <AppBarToggleButton Grid.Column="4" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Label="Show Area" Click="AppBarToggleButton_Click" Icon="Target" Width="100" Style="{StaticResource AppBarToggleButtonStyle1}" Padding="20" Background="{x:Null}">
                 <AppBarToggleButton.Foreground>
                     <SolidColorBrush Color="{StaticResource foreground}"/>
                 </AppBarToggleButton.Foreground>

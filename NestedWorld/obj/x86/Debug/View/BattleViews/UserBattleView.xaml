@@ -23,7 +23,7 @@
             
         </Grid>
         <Grid Grid.Row="0" Grid.RowSpan="2">
-            <monsterViews:MonsterStatsView Width="250" Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,10,40,0"/>
+            <monsterViews:MonsterStatsView Width="300" Life="2"  Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0"/>
         </Grid>
         <Rectangle x:ConnectionId='1' Stroke="{StaticResource BleuOneBrush}" x:Name="rectangleMain" StrokeThickness="2" Height="100" Width="100" Grid.RowSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
             <Rectangle.Fill>

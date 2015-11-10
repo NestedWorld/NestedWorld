@@ -10,6 +10,7 @@ View\BattleViews\EnemieBattleView.xbf
 View\BattleViews\StartBattleAnnimation.xbf
 View\BattleViews\UserBattleView.xbf
 View\GardenView.xbf
+View\GardenViews\GardenItem.xbf
 View\HomeView.xbf
 View\MapView.xbf
 View\MapViews\MapPoint.xbf

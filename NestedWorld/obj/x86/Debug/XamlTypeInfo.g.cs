@@ -132,7 +132,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[47];
+            _typeNameTable = new string[49];
             _typeNameTable[0] = "Windows.UI.Color";
             _typeNameTable[1] = "System.ValueType";
             _typeNameTable[2] = "Object";
@@ -153,8 +153,8 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeNameTable[17] = "NestedWorld.Classes.ElementsGame.Monsters.Monster";
             _typeNameTable[18] = "NestedWorld.View.MapView";
             _typeNameTable[19] = "NestedWorld.View.GardenView";
-            _typeNameTable[20] = "Int32";
-            _typeNameTable[21] = "NestedWorld.View.HomeView";
+            _typeNameTable[20] = "NestedWorld.View.HomeView";
+            _typeNameTable[21] = "Int32";
             _typeNameTable[22] = "NestedWorld.View.MonsterView";
             _typeNameTable[23] = "NestedWorld.View.UserView";
             _typeNameTable[24] = "NestedWorld.Classes.ElementsGame.Users.UserList";
@@ -166,22 +166,24 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeNameTable[30] = "NestedWorld.Style.TabHeaderMap";
             _typeNameTable[31] = "NestedWorld.View.MonsterViews.MonsterStatsView";
             _typeNameTable[32] = "NestedWorld.View.BattleViews.StartBattleAnnimation";
-            _typeNameTable[33] = "NestedWorld.View.NotificationView";
-            _typeNameTable[34] = "Windows.UI.Xaml.Input.TappedEventHandler";
-            _typeNameTable[35] = "NestedWorld.View.MapViews.MapPoint";
-            _typeNameTable[36] = "NestedWorld.View.MonsterViews.MonsterView";
-            _typeNameTable[37] = "NestedWorld.View.MonsterSoloView";
-            _typeNameTable[38] = "NestedWorld.Classes.ElementsGame.TypeEnum";
-            _typeNameTable[39] = "System.Enum";
-            _typeNameTable[40] = "NestedWorld.View.MonsterViews.MonsterAttackView";
-            _typeNameTable[41] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
-            _typeNameTable[42] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
-            _typeNameTable[43] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
-            _typeNameTable[44] = "NestedWorld.View.MonsterViews.MonsterLocationView";
-            _typeNameTable[45] = "NestedWorld.View.StatsView";
-            _typeNameTable[46] = "NestedWorld.View.UserViews.AllyView";
+            _typeNameTable[33] = "NestedWorld.View.GardenViews.GardenItem";
+            _typeNameTable[34] = "Double";
+            _typeNameTable[35] = "NestedWorld.View.NotificationView";
+            _typeNameTable[36] = "Windows.UI.Xaml.Input.TappedEventHandler";
+            _typeNameTable[37] = "NestedWorld.View.MapViews.MapPoint";
+            _typeNameTable[38] = "NestedWorld.View.MonsterViews.MonsterView";
+            _typeNameTable[39] = "NestedWorld.View.MonsterSoloView";
+            _typeNameTable[40] = "NestedWorld.Classes.ElementsGame.TypeEnum";
+            _typeNameTable[41] = "System.Enum";
+            _typeNameTable[42] = "NestedWorld.View.MonsterViews.MonsterAttackView";
+            _typeNameTable[43] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
+            _typeNameTable[44] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
+            _typeNameTable[45] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
+            _typeNameTable[46] = "NestedWorld.View.MonsterViews.MonsterLocationView";
+            _typeNameTable[47] = "NestedWorld.View.StatsView";
+            _typeNameTable[48] = "NestedWorld.View.UserViews.AllyView";
 
-            _typeTable = new global::System.Type[47];
+            _typeTable = new global::System.Type[49];
             _typeTable[0] = typeof(global::Windows.UI.Color);
             _typeTable[1] = typeof(global::System.ValueType);
             _typeTable[2] = typeof(global::System.Object);
@@ -202,8 +204,8 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeTable[17] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.Monster);
             _typeTable[18] = typeof(global::NestedWorld.View.MapView);
             _typeTable[19] = typeof(global::NestedWorld.View.GardenView);
-            _typeTable[20] = typeof(global::System.Int32);
-            _typeTable[21] = typeof(global::NestedWorld.View.HomeView);
+            _typeTable[20] = typeof(global::NestedWorld.View.HomeView);
+            _typeTable[21] = typeof(global::System.Int32);
             _typeTable[22] = typeof(global::NestedWorld.View.MonsterView);
             _typeTable[23] = typeof(global::NestedWorld.View.UserView);
             _typeTable[24] = typeof(global::NestedWorld.Classes.ElementsGame.Users.UserList);
@@ -215,20 +217,22 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeTable[30] = typeof(global::NestedWorld.Style.TabHeaderMap);
             _typeTable[31] = typeof(global::NestedWorld.View.MonsterViews.MonsterStatsView);
             _typeTable[32] = typeof(global::NestedWorld.View.BattleViews.StartBattleAnnimation);
-            _typeTable[33] = typeof(global::NestedWorld.View.NotificationView);
-            _typeTable[34] = typeof(global::Windows.UI.Xaml.Input.TappedEventHandler);
-            _typeTable[35] = typeof(global::NestedWorld.View.MapViews.MapPoint);
-            _typeTable[36] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
-            _typeTable[37] = typeof(global::NestedWorld.View.MonsterSoloView);
-            _typeTable[38] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
-            _typeTable[39] = typeof(global::System.Enum);
-            _typeTable[40] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
-            _typeTable[41] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
-            _typeTable[42] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
-            _typeTable[43] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
-            _typeTable[44] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
-            _typeTable[45] = typeof(global::NestedWorld.View.StatsView);
-            _typeTable[46] = typeof(global::NestedWorld.View.UserViews.AllyView);
+            _typeTable[33] = typeof(global::NestedWorld.View.GardenViews.GardenItem);
+            _typeTable[34] = typeof(global::System.Double);
+            _typeTable[35] = typeof(global::NestedWorld.View.NotificationView);
+            _typeTable[36] = typeof(global::Windows.UI.Xaml.Input.TappedEventHandler);
+            _typeTable[37] = typeof(global::NestedWorld.View.MapViews.MapPoint);
+            _typeTable[38] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
+            _typeTable[39] = typeof(global::NestedWorld.View.MonsterSoloView);
+            _typeTable[40] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
+            _typeTable[41] = typeof(global::System.Enum);
+            _typeTable[42] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
+            _typeTable[43] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
+            _typeTable[44] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
+            _typeTable[45] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
+            _typeTable[46] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
+            _typeTable[47] = typeof(global::NestedWorld.View.StatsView);
+            _typeTable[48] = typeof(global::NestedWorld.View.UserViews.AllyView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -274,7 +278,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
         private object Activate_15_MonsterFullView() { return new global::NestedWorld.View.MonsterViews.MonsterFullView(); }
         private object Activate_18_MapView() { return new global::NestedWorld.View.MapView(); }
         private object Activate_19_GardenView() { return new global::NestedWorld.View.GardenView(); }
-        private object Activate_21_HomeView() { return new global::NestedWorld.View.HomeView(); }
+        private object Activate_20_HomeView() { return new global::NestedWorld.View.HomeView(); }
         private object Activate_22_MonsterView() { return new global::NestedWorld.View.MonsterView(); }
         private object Activate_23_UserView() { return new global::NestedWorld.View.UserView(); }
         private object Activate_24_UserList() { return new global::NestedWorld.Classes.ElementsGame.Users.UserList(); }
@@ -286,17 +290,18 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
         private object Activate_30_TabHeaderMap() { return new global::NestedWorld.Style.TabHeaderMap(); }
         private object Activate_31_MonsterStatsView() { return new global::NestedWorld.View.MonsterViews.MonsterStatsView(); }
         private object Activate_32_StartBattleAnnimation() { return new global::NestedWorld.View.BattleViews.StartBattleAnnimation(); }
-        private object Activate_33_NotificationView() { return new global::NestedWorld.View.NotificationView(); }
-        private object Activate_35_MapPoint() { return new global::NestedWorld.View.MapViews.MapPoint(); }
-        private object Activate_36_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
-        private object Activate_37_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
-        private object Activate_40_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
-        private object Activate_41_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
-        private object Activate_42_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
-        private object Activate_43_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
-        private object Activate_44_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
-        private object Activate_45_StatsView() { return new global::NestedWorld.View.StatsView(); }
-        private object Activate_46_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
+        private object Activate_33_GardenItem() { return new global::NestedWorld.View.GardenViews.GardenItem(); }
+        private object Activate_35_NotificationView() { return new global::NestedWorld.View.NotificationView(); }
+        private object Activate_37_MapPoint() { return new global::NestedWorld.View.MapViews.MapPoint(); }
+        private object Activate_38_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
+        private object Activate_39_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
+        private object Activate_42_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
+        private object Activate_43_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
+        private object Activate_44_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
+        private object Activate_45_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
+        private object Activate_46_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
+        private object Activate_47_StatsView() { return new global::NestedWorld.View.StatsView(); }
+        private object Activate_48_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -434,18 +439,13 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             case 19:   //  NestedWorld.View.GardenView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_19_GardenView;
-                userType.AddMemberName("elipseNumber");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Int32
-                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  NestedWorld.View.HomeView
+            case 20:   //  NestedWorld.View.HomeView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_21_HomeView;
+                userType.Activator = Activate_20_HomeView;
                 userType.AddMemberName("UserImage");
                 userType.AddMemberName("BackgroundImage");
                 userType.AddMemberName("UserName");
@@ -457,6 +457,10 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 userType.AddMemberName("UserLevel");
                 userType.SetIsLocalType();
                 xamlType = userType;
+                break;
+
+            case 21:   //  Int32
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 22:   //  NestedWorld.View.MonsterView
@@ -543,36 +547,50 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 33:   //  NestedWorld.View.NotificationView
+            case 33:   //  NestedWorld.View.GardenViews.GardenItem
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_33_NotificationView;
+                userType.Activator = Activate_33_GardenItem;
+                userType.AddMemberName("ImageItem");
+                userType.AddMemberName("left");
+                userType.AddMemberName("top");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Double
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 35:   //  NestedWorld.View.NotificationView
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_35_NotificationView;
                 userType.AddMemberName("NotificationNumber");
                 userType.AddMemberName("Tap");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Windows.UI.Xaml.Input.TappedEventHandler
+            case 36:   //  Windows.UI.Xaml.Input.TappedEventHandler
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  NestedWorld.View.MapViews.MapPoint
+            case 37:   //  NestedWorld.View.MapViews.MapPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_35_MapPoint;
+                userType.Activator = Activate_37_MapPoint;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  NestedWorld.View.MonsterViews.MonsterView
+            case 38:   //  NestedWorld.View.MonsterViews.MonsterView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_36_MonsterView;
+                userType.Activator = Activate_38_MonsterView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  NestedWorld.View.MonsterSoloView
+            case 39:   //  NestedWorld.View.MonsterSoloView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_37_MonsterSoloView;
+                userType.Activator = Activate_39_MonsterSoloView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("Level");
                 userType.AddMemberName("MonsterImage");
@@ -583,7 +601,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 38:   //  NestedWorld.Classes.ElementsGame.TypeEnum
+            case 40:   //  NestedWorld.Classes.ElementsGame.TypeEnum
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("FIRE", global::NestedWorld.Classes.ElementsGame.TypeEnum.FIRE);
                 userType.AddEnumValue("WATHER", global::NestedWorld.Classes.ElementsGame.TypeEnum.WATHER);
@@ -594,36 +612,36 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 39:   //  System.Enum
+            case 41:   //  System.Enum
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 40:   //  NestedWorld.View.MonsterViews.MonsterAttackView
+            case 42:   //  NestedWorld.View.MonsterViews.MonsterAttackView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_40_MonsterAttackView;
+                userType.Activator = Activate_42_MonsterAttackView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 41:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
+            case 43:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_41_MonsterAttacksView;
+                userType.Activator = Activate_43_MonsterAttacksView;
                 userType.AddMemberName("monsterAttackList");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 42:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
+            case 44:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
+            case 45:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_43_MonsterHeaderView;
+                userType.Activator = Activate_45_MonsterHeaderView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("MonsterImage");
                 userType.AddMemberName("MonsterType");
@@ -634,23 +652,23 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 44:   //  NestedWorld.View.MonsterViews.MonsterLocationView
+            case 46:   //  NestedWorld.View.MonsterViews.MonsterLocationView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_44_MonsterLocationView;
+                userType.Activator = Activate_46_MonsterLocationView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 45:   //  NestedWorld.View.StatsView
+            case 47:   //  NestedWorld.View.StatsView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_45_StatsView;
+                userType.Activator = Activate_47_StatsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  NestedWorld.View.UserViews.AllyView
+            case 48:   //  NestedWorld.View.UserViews.AllyView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_46_AllyView;
+                userType.Activator = Activate_48_AllyView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -739,317 +757,337 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             var that = (global::NestedWorld.View.MonsterViews.MonsterFullView)instance;
             that.monsterToDisplay = (global::NestedWorld.Classes.ElementsGame.Monsters.UserMonster)Value;
         }
-        private object get_8_GardenView_elipseNumber(object instance)
-        {
-            var that = (global::NestedWorld.View.GardenView)instance;
-            return that.elipseNumber;
-        }
-        private void set_8_GardenView_elipseNumber(object instance, object Value)
-        {
-            var that = (global::NestedWorld.View.GardenView)instance;
-            that.elipseNumber = (global::System.Int32)Value;
-        }
-        private object get_9_HomeView_UserImage(object instance)
+        private object get_8_HomeView_UserImage(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.UserImage;
         }
-        private void set_9_HomeView_UserImage(object instance, object Value)
+        private void set_8_HomeView_UserImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.UserImage = (global::System.String)Value;
         }
-        private object get_10_HomeView_BackgroundImage(object instance)
+        private object get_9_HomeView_BackgroundImage(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.BackgroundImage;
         }
-        private void set_10_HomeView_BackgroundImage(object instance, object Value)
+        private void set_9_HomeView_BackgroundImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.BackgroundImage = (global::System.String)Value;
         }
-        private object get_11_HomeView_UserName(object instance)
+        private object get_10_HomeView_UserName(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.UserName;
         }
-        private void set_11_HomeView_UserName(object instance, object Value)
+        private void set_10_HomeView_UserName(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.UserName = (global::System.String)Value;
         }
-        private object get_12_HomeView_userLevel(object instance)
+        private object get_11_HomeView_userLevel(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.userLevel;
         }
-        private void set_12_HomeView_userLevel(object instance, object Value)
+        private void set_11_HomeView_userLevel(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.userLevel = (global::System.String)Value;
         }
-        private object get_13_HomeView_MonsterCaptured(object instance)
+        private object get_12_HomeView_MonsterCaptured(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.MonsterCaptured;
         }
-        private void set_13_HomeView_MonsterCaptured(object instance, object Value)
+        private void set_12_HomeView_MonsterCaptured(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.MonsterCaptured = (global::System.Int32)Value;
         }
-        private object get_14_HomeView_AreaCaptured(object instance)
+        private object get_13_HomeView_AreaCaptured(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.AreaCaptured;
         }
-        private void set_14_HomeView_AreaCaptured(object instance, object Value)
+        private void set_13_HomeView_AreaCaptured(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.AreaCaptured = (global::System.Int32)Value;
         }
-        private object get_15_HomeView_AllyOnline(object instance)
+        private object get_14_HomeView_AllyOnline(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.AllyOnline;
         }
-        private void set_15_HomeView_AllyOnline(object instance, object Value)
+        private void set_14_HomeView_AllyOnline(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.AllyOnline = (global::System.Int32)Value;
         }
-        private object get_16_HomeView_MonsterSee(object instance)
+        private object get_15_HomeView_MonsterSee(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.MonsterSee;
         }
-        private void set_16_HomeView_MonsterSee(object instance, object Value)
+        private void set_15_HomeView_MonsterSee(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.MonsterSee = (global::System.Int32)Value;
         }
-        private object get_17_HomeView_UserLevel(object instance)
+        private object get_16_HomeView_UserLevel(object instance)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             return that.UserLevel;
         }
-        private void set_17_HomeView_UserLevel(object instance, object Value)
+        private void set_16_HomeView_UserLevel(object instance, object Value)
         {
             var that = (global::NestedWorld.View.HomeView)instance;
             that.UserLevel = (global::System.Int32)Value;
         }
-        private object get_18_MonsterView_monsterList(object instance)
+        private object get_17_MonsterView_monsterList(object instance)
         {
             var that = (global::NestedWorld.View.MonsterView)instance;
             return that.monsterList;
         }
-        private void set_18_MonsterView_monsterList(object instance, object Value)
+        private void set_17_MonsterView_monsterList(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterView)instance;
             that.monsterList = (global::NestedWorld.Classes.ElementsGame.Monsters.MonsterList)Value;
         }
-        private object get_19_UserView_userList(object instance)
+        private object get_18_UserView_userList(object instance)
         {
             var that = (global::NestedWorld.View.UserView)instance;
             return that.userList;
         }
-        private void set_19_UserView_userList(object instance, object Value)
+        private void set_18_UserView_userList(object instance, object Value)
         {
             var that = (global::NestedWorld.View.UserView)instance;
             that.userList = (global::NestedWorld.Classes.ElementsGame.Users.UserList)Value;
         }
-        private object get_20_MonsterView_monsterList(object instance)
+        private object get_19_MonsterView_monsterList(object instance)
         {
             var that = (global::NestedWorld.View.PrepareBattleViews.MonsterView)instance;
             return that.monsterList;
         }
-        private void set_20_MonsterView_monsterList(object instance, object Value)
+        private void set_19_MonsterView_monsterList(object instance, object Value)
         {
             var that = (global::NestedWorld.View.PrepareBattleViews.MonsterView)instance;
             that.monsterList = (global::NestedWorld.Classes.ElementsGame.Monsters.MonsterList)Value;
         }
-        private object get_21_TabHeaderMap_Glyph(object instance)
+        private object get_20_TabHeaderMap_Glyph(object instance)
         {
             var that = (global::NestedWorld.Style.TabHeaderMap)instance;
             return that.Glyph;
         }
-        private void set_21_TabHeaderMap_Glyph(object instance, object Value)
+        private void set_20_TabHeaderMap_Glyph(object instance, object Value)
         {
             var that = (global::NestedWorld.Style.TabHeaderMap)instance;
             that.Glyph = (global::System.String)Value;
         }
-        private object get_22_TabHeaderMap_Label(object instance)
+        private object get_21_TabHeaderMap_Label(object instance)
         {
             var that = (global::NestedWorld.Style.TabHeaderMap)instance;
             return that.Label;
         }
-        private void set_22_TabHeaderMap_Label(object instance, object Value)
+        private void set_21_TabHeaderMap_Label(object instance, object Value)
         {
             var that = (global::NestedWorld.Style.TabHeaderMap)instance;
             that.Label = (global::System.String)Value;
         }
-        private object get_23_MonsterStatsView_Life(object instance)
+        private object get_22_MonsterStatsView_Life(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             return that.Life;
         }
-        private void set_23_MonsterStatsView_Life(object instance, object Value)
+        private void set_22_MonsterStatsView_Life(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             that.Life = (global::System.Int32)Value;
         }
-        private object get_24_MonsterStatsView_Exp(object instance)
+        private object get_23_MonsterStatsView_Exp(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             return that.Exp;
         }
-        private void set_24_MonsterStatsView_Exp(object instance, object Value)
+        private void set_23_MonsterStatsView_Exp(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             that.Exp = (global::System.Int32)Value;
         }
-        private object get_25_NotificationView_NotificationNumber(object instance)
+        private object get_24_GardenItem_ImageItem(object instance)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            return that.ImageItem;
+        }
+        private void set_24_GardenItem_ImageItem(object instance, object Value)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            that.ImageItem = (global::System.String)Value;
+        }
+        private object get_25_GardenItem_left(object instance)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            return that.left;
+        }
+        private void set_25_GardenItem_left(object instance, object Value)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            that.left = (global::System.Double)Value;
+        }
+        private object get_26_GardenItem_top(object instance)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            return that.top;
+        }
+        private void set_26_GardenItem_top(object instance, object Value)
+        {
+            var that = (global::NestedWorld.View.GardenViews.GardenItem)instance;
+            that.top = (global::System.Double)Value;
+        }
+        private object get_27_NotificationView_NotificationNumber(object instance)
         {
             var that = (global::NestedWorld.View.NotificationView)instance;
             return that.NotificationNumber;
         }
-        private void set_25_NotificationView_NotificationNumber(object instance, object Value)
+        private void set_27_NotificationView_NotificationNumber(object instance, object Value)
         {
             var that = (global::NestedWorld.View.NotificationView)instance;
             that.NotificationNumber = (global::System.Int32)Value;
         }
-        private object get_26_NotificationView_Tap(object instance)
+        private object get_28_NotificationView_Tap(object instance)
         {
             var that = (global::NestedWorld.View.NotificationView)instance;
             return that.Tap;
         }
-        private object get_27_MonsterSoloView_MonsterName(object instance)
+        private object get_29_MonsterSoloView_MonsterName(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.MonsterName;
         }
-        private void set_27_MonsterSoloView_MonsterName(object instance, object Value)
+        private void set_29_MonsterSoloView_MonsterName(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.MonsterName = (global::System.String)Value;
         }
-        private object get_28_MonsterSoloView_Level(object instance)
+        private object get_30_MonsterSoloView_Level(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.Level;
         }
-        private void set_28_MonsterSoloView_Level(object instance, object Value)
+        private void set_30_MonsterSoloView_Level(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.Level = (global::System.String)Value;
         }
-        private object get_29_MonsterSoloView_MonsterImage(object instance)
+        private object get_31_MonsterSoloView_MonsterImage(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.MonsterImage;
         }
-        private void set_29_MonsterSoloView_MonsterImage(object instance, object Value)
+        private void set_31_MonsterSoloView_MonsterImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.MonsterImage = (global::System.String)Value;
         }
-        private object get_30_MonsterSoloView_Type(object instance)
+        private object get_32_MonsterSoloView_Type(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.Type;
         }
-        private void set_30_MonsterSoloView_Type(object instance, object Value)
+        private void set_32_MonsterSoloView_Type(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.Type = (global::NestedWorld.Classes.ElementsGame.TypeEnum)Value;
         }
-        private object get_31_MonsterSoloView_BackgroundColor(object instance)
+        private object get_33_MonsterSoloView_BackgroundColor(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.BackgroundColor;
         }
-        private void set_31_MonsterSoloView_BackgroundColor(object instance, object Value)
+        private void set_33_MonsterSoloView_BackgroundColor(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.BackgroundColor = (global::System.String)Value;
         }
-        private object get_32_MonsterSoloView_userMonster(object instance)
+        private object get_34_MonsterSoloView_userMonster(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.userMonster;
         }
-        private void set_32_MonsterSoloView_userMonster(object instance, object Value)
+        private void set_34_MonsterSoloView_userMonster(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.userMonster = (global::NestedWorld.Classes.ElementsGame.Monsters.UserMonster)Value;
         }
-        private object get_33_MonsterAttacksView_monsterAttackList(object instance)
+        private object get_35_MonsterAttacksView_monsterAttackList(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterAttacksView)instance;
             return that.monsterAttackList;
         }
-        private void set_33_MonsterAttacksView_monsterAttackList(object instance, object Value)
+        private void set_35_MonsterAttacksView_monsterAttackList(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterAttacksView)instance;
             that.monsterAttackList = (global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList)Value;
         }
-        private object get_34_MonsterHeaderView_MonsterName(object instance)
+        private object get_36_MonsterHeaderView_MonsterName(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterName;
         }
-        private void set_34_MonsterHeaderView_MonsterName(object instance, object Value)
+        private void set_36_MonsterHeaderView_MonsterName(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterName = (global::System.String)Value;
         }
-        private object get_35_MonsterHeaderView_MonsterImage(object instance)
+        private object get_37_MonsterHeaderView_MonsterImage(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterImage;
         }
-        private void set_35_MonsterHeaderView_MonsterImage(object instance, object Value)
+        private void set_37_MonsterHeaderView_MonsterImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterImage = (global::System.String)Value;
         }
-        private object get_36_MonsterHeaderView_MonsterType(object instance)
+        private object get_38_MonsterHeaderView_MonsterType(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterType;
         }
-        private void set_36_MonsterHeaderView_MonsterType(object instance, object Value)
+        private void set_38_MonsterHeaderView_MonsterType(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterType = (global::NestedWorld.Classes.ElementsGame.TypeEnum)Value;
         }
-        private object get_37_MonsterHeaderView_MonsterCombat(object instance)
+        private object get_39_MonsterHeaderView_MonsterCombat(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterCombat;
         }
-        private void set_37_MonsterHeaderView_MonsterCombat(object instance, object Value)
+        private void set_39_MonsterHeaderView_MonsterCombat(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterCombat = (global::System.Int32)Value;
         }
-        private object get_38_MonsterHeaderView_MonsterLevel(object instance)
+        private object get_40_MonsterHeaderView_MonsterLevel(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterLevel;
         }
-        private void set_38_MonsterHeaderView_MonsterLevel(object instance, object Value)
+        private void set_40_MonsterHeaderView_MonsterLevel(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterLevel = (global::System.Int32)Value;
         }
-        private object get_39_MonsterHeaderView_MonsterVictory(object instance)
+        private object get_41_MonsterHeaderView_MonsterVictory(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterVictory;
         }
-        private void set_39_MonsterHeaderView_MonsterVictory(object instance, object Value)
+        private void set_41_MonsterHeaderView_MonsterVictory(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterVictory = (global::System.Int32)Value;
@@ -1112,217 +1150,229 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlMember.Getter = get_7_MonsterFullView_monsterToDisplay;
                 xamlMember.Setter = set_7_MonsterFullView_monsterToDisplay;
                 break;
-            case "NestedWorld.View.GardenView.elipseNumber":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.GardenView");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "elipseNumber", "Int32");
-                xamlMember.Getter = get_8_GardenView_elipseNumber;
-                xamlMember.Setter = set_8_GardenView_elipseNumber;
-                break;
             case "NestedWorld.View.HomeView.UserImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "UserImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_HomeView_UserImage;
-                xamlMember.Setter = set_9_HomeView_UserImage;
+                xamlMember.Getter = get_8_HomeView_UserImage;
+                xamlMember.Setter = set_8_HomeView_UserImage;
                 break;
             case "NestedWorld.View.HomeView.BackgroundImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "BackgroundImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_HomeView_BackgroundImage;
-                xamlMember.Setter = set_10_HomeView_BackgroundImage;
+                xamlMember.Getter = get_9_HomeView_BackgroundImage;
+                xamlMember.Setter = set_9_HomeView_BackgroundImage;
                 break;
             case "NestedWorld.View.HomeView.UserName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "UserName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_HomeView_UserName;
-                xamlMember.Setter = set_11_HomeView_UserName;
+                xamlMember.Getter = get_10_HomeView_UserName;
+                xamlMember.Setter = set_10_HomeView_UserName;
                 break;
             case "NestedWorld.View.HomeView.userLevel":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "userLevel", "String");
-                xamlMember.Getter = get_12_HomeView_userLevel;
-                xamlMember.Setter = set_12_HomeView_userLevel;
+                xamlMember.Getter = get_11_HomeView_userLevel;
+                xamlMember.Setter = set_11_HomeView_userLevel;
                 break;
             case "NestedWorld.View.HomeView.MonsterCaptured":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterCaptured", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_HomeView_MonsterCaptured;
-                xamlMember.Setter = set_13_HomeView_MonsterCaptured;
+                xamlMember.Getter = get_12_HomeView_MonsterCaptured;
+                xamlMember.Setter = set_12_HomeView_MonsterCaptured;
                 break;
             case "NestedWorld.View.HomeView.AreaCaptured":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AreaCaptured", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_HomeView_AreaCaptured;
-                xamlMember.Setter = set_14_HomeView_AreaCaptured;
+                xamlMember.Getter = get_13_HomeView_AreaCaptured;
+                xamlMember.Setter = set_13_HomeView_AreaCaptured;
                 break;
             case "NestedWorld.View.HomeView.AllyOnline":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AllyOnline", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_HomeView_AllyOnline;
-                xamlMember.Setter = set_15_HomeView_AllyOnline;
+                xamlMember.Getter = get_14_HomeView_AllyOnline;
+                xamlMember.Setter = set_14_HomeView_AllyOnline;
                 break;
             case "NestedWorld.View.HomeView.MonsterSee":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterSee", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_HomeView_MonsterSee;
-                xamlMember.Setter = set_16_HomeView_MonsterSee;
+                xamlMember.Getter = get_15_HomeView_MonsterSee;
+                xamlMember.Setter = set_15_HomeView_MonsterSee;
                 break;
             case "NestedWorld.View.HomeView.UserLevel":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.HomeView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "UserLevel", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_HomeView_UserLevel;
-                xamlMember.Setter = set_17_HomeView_UserLevel;
+                xamlMember.Getter = get_16_HomeView_UserLevel;
+                xamlMember.Setter = set_16_HomeView_UserLevel;
                 break;
             case "NestedWorld.View.MonsterView.monsterList":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "monsterList", "NestedWorld.Classes.ElementsGame.Monsters.MonsterList");
-                xamlMember.Getter = get_18_MonsterView_monsterList;
-                xamlMember.Setter = set_18_MonsterView_monsterList;
+                xamlMember.Getter = get_17_MonsterView_monsterList;
+                xamlMember.Setter = set_17_MonsterView_monsterList;
                 break;
             case "NestedWorld.View.UserView.userList":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.UserView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "userList", "NestedWorld.Classes.ElementsGame.Users.UserList");
-                xamlMember.Getter = get_19_UserView_userList;
-                xamlMember.Setter = set_19_UserView_userList;
+                xamlMember.Getter = get_18_UserView_userList;
+                xamlMember.Setter = set_18_UserView_userList;
                 break;
             case "NestedWorld.View.PrepareBattleViews.MonsterView.monsterList":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.PrepareBattleViews.MonsterView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "monsterList", "NestedWorld.Classes.ElementsGame.Monsters.MonsterList");
-                xamlMember.Getter = get_20_MonsterView_monsterList;
-                xamlMember.Setter = set_20_MonsterView_monsterList;
+                xamlMember.Getter = get_19_MonsterView_monsterList;
+                xamlMember.Setter = set_19_MonsterView_monsterList;
                 break;
             case "NestedWorld.Style.TabHeaderMap.Glyph":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Style.TabHeaderMap");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Glyph", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_TabHeaderMap_Glyph;
-                xamlMember.Setter = set_21_TabHeaderMap_Glyph;
+                xamlMember.Getter = get_20_TabHeaderMap_Glyph;
+                xamlMember.Setter = set_20_TabHeaderMap_Glyph;
                 break;
             case "NestedWorld.Style.TabHeaderMap.Label":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Style.TabHeaderMap");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Label", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_TabHeaderMap_Label;
-                xamlMember.Setter = set_22_TabHeaderMap_Label;
+                xamlMember.Getter = get_21_TabHeaderMap_Label;
+                xamlMember.Setter = set_21_TabHeaderMap_Label;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterStatsView.Life":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterStatsView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Life", "Int32");
-                xamlMember.Getter = get_23_MonsterStatsView_Life;
-                xamlMember.Setter = set_23_MonsterStatsView_Life;
+                xamlMember.Getter = get_22_MonsterStatsView_Life;
+                xamlMember.Setter = set_22_MonsterStatsView_Life;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterStatsView.Exp":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterStatsView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Exp", "Int32");
-                xamlMember.Getter = get_24_MonsterStatsView_Exp;
-                xamlMember.Setter = set_24_MonsterStatsView_Exp;
+                xamlMember.Getter = get_23_MonsterStatsView_Exp;
+                xamlMember.Setter = set_23_MonsterStatsView_Exp;
+                break;
+            case "NestedWorld.View.GardenViews.GardenItem.ImageItem":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.GardenViews.GardenItem");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ImageItem", "String");
+                xamlMember.Getter = get_24_GardenItem_ImageItem;
+                xamlMember.Setter = set_24_GardenItem_ImageItem;
+                break;
+            case "NestedWorld.View.GardenViews.GardenItem.left":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.GardenViews.GardenItem");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "left", "Double");
+                xamlMember.Getter = get_25_GardenItem_left;
+                xamlMember.Setter = set_25_GardenItem_left;
+                break;
+            case "NestedWorld.View.GardenViews.GardenItem.top":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.GardenViews.GardenItem");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "top", "Double");
+                xamlMember.Getter = get_26_GardenItem_top;
+                xamlMember.Setter = set_26_GardenItem_top;
                 break;
             case "NestedWorld.View.NotificationView.NotificationNumber":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.NotificationView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "NotificationNumber", "Int32");
-                xamlMember.Getter = get_25_NotificationView_NotificationNumber;
-                xamlMember.Setter = set_25_NotificationView_NotificationNumber;
+                xamlMember.Getter = get_27_NotificationView_NotificationNumber;
+                xamlMember.Setter = set_27_NotificationView_NotificationNumber;
                 break;
             case "NestedWorld.View.NotificationView.Tap":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.NotificationView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Tap", "Windows.UI.Xaml.Input.TappedEventHandler");
-                xamlMember.Getter = get_26_NotificationView_Tap;
+                xamlMember.Getter = get_28_NotificationView_Tap;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NestedWorld.View.MonsterSoloView.MonsterName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_MonsterSoloView_MonsterName;
-                xamlMember.Setter = set_27_MonsterSoloView_MonsterName;
+                xamlMember.Getter = get_29_MonsterSoloView_MonsterName;
+                xamlMember.Setter = set_29_MonsterSoloView_MonsterName;
                 break;
             case "NestedWorld.View.MonsterSoloView.Level":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Level", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_MonsterSoloView_Level;
-                xamlMember.Setter = set_28_MonsterSoloView_Level;
+                xamlMember.Getter = get_30_MonsterSoloView_Level;
+                xamlMember.Setter = set_30_MonsterSoloView_Level;
                 break;
             case "NestedWorld.View.MonsterSoloView.MonsterImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_MonsterSoloView_MonsterImage;
-                xamlMember.Setter = set_29_MonsterSoloView_MonsterImage;
+                xamlMember.Getter = get_31_MonsterSoloView_MonsterImage;
+                xamlMember.Setter = set_31_MonsterSoloView_MonsterImage;
                 break;
             case "NestedWorld.View.MonsterSoloView.Type":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Type", "NestedWorld.Classes.ElementsGame.TypeEnum");
-                xamlMember.Getter = get_30_MonsterSoloView_Type;
-                xamlMember.Setter = set_30_MonsterSoloView_Type;
+                xamlMember.Getter = get_32_MonsterSoloView_Type;
+                xamlMember.Setter = set_32_MonsterSoloView_Type;
                 break;
             case "NestedWorld.View.MonsterSoloView.BackgroundColor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "BackgroundColor", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_MonsterSoloView_BackgroundColor;
-                xamlMember.Setter = set_31_MonsterSoloView_BackgroundColor;
+                xamlMember.Getter = get_33_MonsterSoloView_BackgroundColor;
+                xamlMember.Setter = set_33_MonsterSoloView_BackgroundColor;
                 break;
             case "NestedWorld.View.MonsterSoloView.userMonster":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "userMonster", "NestedWorld.Classes.ElementsGame.Monsters.UserMonster");
-                xamlMember.Getter = get_32_MonsterSoloView_userMonster;
-                xamlMember.Setter = set_32_MonsterSoloView_userMonster;
+                xamlMember.Getter = get_34_MonsterSoloView_userMonster;
+                xamlMember.Setter = set_34_MonsterSoloView_userMonster;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterAttacksView.monsterAttackList":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterAttacksView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "monsterAttackList", "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList");
-                xamlMember.Getter = get_33_MonsterAttacksView_monsterAttackList;
-                xamlMember.Setter = set_33_MonsterAttacksView_monsterAttackList;
+                xamlMember.Getter = get_35_MonsterAttacksView_monsterAttackList;
+                xamlMember.Setter = set_35_MonsterAttacksView_monsterAttackList;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_MonsterHeaderView_MonsterName;
-                xamlMember.Setter = set_34_MonsterHeaderView_MonsterName;
+                xamlMember.Getter = get_36_MonsterHeaderView_MonsterName;
+                xamlMember.Setter = set_36_MonsterHeaderView_MonsterName;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_MonsterHeaderView_MonsterImage;
-                xamlMember.Setter = set_35_MonsterHeaderView_MonsterImage;
+                xamlMember.Getter = get_37_MonsterHeaderView_MonsterImage;
+                xamlMember.Setter = set_37_MonsterHeaderView_MonsterImage;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterType":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterType", "NestedWorld.Classes.ElementsGame.TypeEnum");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_MonsterHeaderView_MonsterType;
-                xamlMember.Setter = set_36_MonsterHeaderView_MonsterType;
+                xamlMember.Getter = get_38_MonsterHeaderView_MonsterType;
+                xamlMember.Setter = set_38_MonsterHeaderView_MonsterType;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterCombat":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterCombat", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_MonsterHeaderView_MonsterCombat;
-                xamlMember.Setter = set_37_MonsterHeaderView_MonsterCombat;
+                xamlMember.Getter = get_39_MonsterHeaderView_MonsterCombat;
+                xamlMember.Setter = set_39_MonsterHeaderView_MonsterCombat;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterLevel":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterLevel", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_MonsterHeaderView_MonsterLevel;
-                xamlMember.Setter = set_38_MonsterHeaderView_MonsterLevel;
+                xamlMember.Getter = get_40_MonsterHeaderView_MonsterLevel;
+                xamlMember.Setter = set_40_MonsterHeaderView_MonsterLevel;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterVictory":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterVictory", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_MonsterHeaderView_MonsterVictory;
-                xamlMember.Setter = set_39_MonsterHeaderView_MonsterVictory;
+                xamlMember.Getter = get_41_MonsterHeaderView_MonsterVictory;
+                xamlMember.Setter = set_41_MonsterHeaderView_MonsterVictory;
                 break;
             }
             return xamlMember;

@@ -112,7 +112,6 @@
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
     <Compile Include="Classes\ElementsGame\Users\UserList.cs" />
     <Compile Include="Classes\Garden\Garden.cs" />
-    <Compile Include="Classes\Garden\GardenLine.cs" />
     <Compile Include="Classes\Garden\GardenPoint.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -151,6 +150,9 @@
     </Compile>
     <Compile Include="View\GardenView.xaml.cs">
       <DependentUpon>GardenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GardenViews\GardenItem.xaml.cs">
+      <DependentUpon>GardenItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
@@ -278,6 +280,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\GardenView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GardenViews\GardenItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -3,6 +3,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Label" />
     <RootPropertyPathName Name="Glyph" />
+    <RootPropertyPathName Name="ImageItem" />
     <RootPropertyPathName Name="UserLevel" />
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="UserImage" />
@@ -420,6 +421,8 @@
       <RootProperty Name="Life" />
     </RootType>
     <RootType FullName="NestedWorld.View.BattleViews.StartBattleAnnimation" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
+    <RootType FullName="NestedWorld.View.GardenViews.GardenItem" />
     <RootType FullName="NestedWorld.View.NotificationView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />

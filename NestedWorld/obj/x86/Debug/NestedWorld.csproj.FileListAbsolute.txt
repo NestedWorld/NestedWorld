@@ -1184,3 +1184,8 @@ E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\BattleViews\EnemieBattleView.g
 E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\BattleViews\EnemieBattleView.g.cs
 E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\BattleViews\EnemieBattleView.xaml
 E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\BattleViews\EnemieBattleView.xbf
+E:\Git\nestedworld\NestedWorld\bin\x86\Debug\View\GardenViews\GardenItem.xbf
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\GardenViews\GardenItem.g.i.cs
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\GardenViews\GardenItem.g.cs
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\GardenViews\GardenItem.xaml
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\GardenViews\GardenItem.xbf

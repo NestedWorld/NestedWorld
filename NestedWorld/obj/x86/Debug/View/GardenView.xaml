@@ -23,7 +23,8 @@
                 <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/NestedWorldLogo.png"/>
             </Ellipse.Fill>
         </Ellipse>
-      
+        <Canvas x:ConnectionId='1' x:Name="mainCanvas"/>
+        <Button x:ConnectionId='2' HorizontalAlignment="Right" VerticalAlignment="Bottom"                     />
     </Grid>
 </UserControl>
 

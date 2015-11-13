@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:NestedWorld.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gardenViews="using:NestedWorld.View.GardenViews"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -11,19 +12,23 @@
         <Grid.Background>
             <SolidColorBrush Color="{StaticResource background}"/>
         </Grid.Background>
-        
-        <Ellipse Grid.Row="1" Grid.Column="1" Height="400" Width="400" StrokeThickness="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Ellipse.Stroke>
-                <SolidColorBrush Color="{StaticResource foreground}"/>
-            </Ellipse.Stroke>
-        </Ellipse>
+        <Grid Grid.Row="1">
+            <Ellipse Grid.Row="1" Grid.Column="1" Height="350" Width="350" StrokeThickness="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Ellipse.Stroke>
+                    <SolidColorBrush Color="{StaticResource foreground}"/>
+                </Ellipse.Stroke>
+            </Ellipse>
+            <Ellipse Height="200" Width="200">
+                <Ellipse.Fill>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/NestedWorldLogo.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Canvas x:Name="mainCanvas"/>
 
-        <Ellipse Height="200" Width="200">
-            <Ellipse.Fill>
-                <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/NestedWorldLogo.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Canvas x:Name="mainCanvas"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Button_Click"/>
+            <Ellipse Height="340" Width="340" StrokeThickness="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+            </Ellipse>
+
+        </Grid>
+        <!--gardenViews:GardenElementList /-->
     </Grid>
 </UserControl>

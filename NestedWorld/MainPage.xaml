@@ -39,7 +39,7 @@
         </Grid>
         <Grid x:Name="grid1" Grid.Row="2">
             <Button Click="Button_Click" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150">
-                <TextBlock Style="{StaticResource TextBlockUnderButton}" Text="Login"/>
+                <TextBlock Text="Login"/>
             </Button>
         </Grid>
         <Grid x:Name="grid2" Grid.Row="3">

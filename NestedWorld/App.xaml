@@ -5,13 +5,7 @@
     xmlns:local="using:NestedWorld"
     RequestedTheme="Light">
     <Application.Resources>
-        <ControlTemplate x:Key="GardenPoint">
-            <StackPanel>
-                <Ellipse Name="tplImage" Fill="Blue" Stretch="Uniform" Width="50" Height="50" HorizontalAlignment="Center"/>
-                <TextBlock Name="tplTextBlock" Text="User stage" HorizontalAlignment="Center"/>
-            </StackPanel>
-        </ControlTemplate>
-        <Color x:Key="background">#FFFFFF</Color>
+       <Color x:Key="background">#FFFFFF</Color>
         <Color x:Key="BleuTwo">#2196F3</Color>
         <Color x:Key="BleuOne">#0D47A1</Color>
         <Color x:Key="foreground">#616668</Color>

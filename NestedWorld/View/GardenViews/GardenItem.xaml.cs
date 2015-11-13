@@ -1,5 +1,7 @@
-﻿using System;
+﻿using NestedWorld.Classes.Garden;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -27,6 +29,19 @@ namespace NestedWorld.View.GardenViews
             set { SetValue(UserImageProperty, value); }
         }
 
+        public static readonly DependencyProperty sizeProperty = DependencyProperty.Register("size", typeof(double), typeof(GardenItem), null);
+        private Classes.Garden.GardenElement _element;
+
+        public double time
+        {
+            get { return Convert.ToDouble(GetValue(sizeProperty)); }
+            set
+            {
+                if (value <= 100 && value >= 0)
+                    SetValue(sizeProperty, value);
+            }
+        }
+
         public double left { get { return 0; } set { Canvas.SetLeft(this, value); } }
         public double top { get { return 0; } set { Canvas.SetTop(this, value); } }
 
@@ -35,6 +50,32 @@ namespace NestedWorld.View.GardenViews
             this.InitializeComponent();
             this.DataContext = this;
             this.CanDrag = true;
+            time = 0;
+        }
+
+        public Classes.Garden.GardenElement element
+        {
+            get { return _element; }
+            set
+            {
+                _element = value;
+                ImageItem = element.imageSource;
+            }
+        }
+
+        private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Debug.WriteLine("Tapped");
+        }
+
+        private void Grid_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            Debug.WriteLine("Holding");
+        }
+
+        private void Grid_RightTapped(object sender, RightTappedRoutedEventArgs e)
+        {
+            Debug.WriteLine("RightTapped");
         }
     }
 }

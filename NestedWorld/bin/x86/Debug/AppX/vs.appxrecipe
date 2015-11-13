@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</PackageIdentityName>
     <IntermediateOutputPath>E:\Git\nestedworld\NestedWorld\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>D71EABA59A43C6AED5C97B5728154592BEFA0AFBAD135890753DC36216E4F983</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A32AF20AA8FAD03125BC04D4AF689744137994F88642C5AF3321C8B4126AD4A1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_1.0.0.0_x86__vjvds0menc1ng</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_vjvds0menc1ng!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</RegisteredPackageID>
@@ -22,13 +22,37 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-10T19:25:31.683</Modified>
+      <Modified>2015-11-13T17:46:43.582</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-08-18T15:45:30.952</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\Flower.png">
+      <PackagePath>Assets\Flower\Flower.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.227</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerDirt.png">
+      <PackagePath>Assets\Flower\flowerDirt.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.231</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerElec.png">
+      <PackagePath>Assets\Flower\flowerElec.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.233</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerFire.png">
+      <PackagePath>Assets\Flower\flowerFire.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerGrass.png">
+      <PackagePath>Assets\Flower\flowerGrass.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerWater.png">
+      <PackagePath>Assets\Flower\flowerWater.png</PackagePath>
+      <Modified>2015-11-12T22:56:36.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\iconTest.png">
       <PackagePath>Assets\iconTest.png</PackagePath>
@@ -41,6 +65,10 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-06-05T03:32:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\monsterTest\test.png">
+      <PackagePath>Assets\monsterTest\test.png</PackagePath>
+      <Modified>2015-11-12T18:27:20.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\NestedWorldLogo.png">
       <PackagePath>Assets\NestedWorldLogo.png</PackagePath>
@@ -71,6 +99,26 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-06-05T03:32:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\dirt.png">
+      <PackagePath>Assets\Type\dirt.png</PackagePath>
+      <Modified>2015-11-12T22:56:03.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\elec.png">
+      <PackagePath>Assets\Type\elec.png</PackagePath>
+      <Modified>2015-11-12T22:56:03.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\fire.png">
+      <PackagePath>Assets\Type\fire.png</PackagePath>
+      <Modified>2015-11-12T22:56:03.565</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\grass.png">
+      <PackagePath>Assets\Type\grass.png</PackagePath>
+      <Modified>2015-11-12T22:56:03.569</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\water.png">
+      <PackagePath>Assets\Type\water.png</PackagePath>
+      <Modified>2015-11-12T22:56:03.572</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -82,7 +130,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2015-11-10T19:25:31.198</Modified>
+      <Modified>2015-11-12T23:13:48.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
@@ -114,11 +162,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2015-11-10T19:25:31.681</Modified>
+      <Modified>2015-11-13T17:46:43.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2015-11-09T21:25:02.332</Modified>
+      <Modified>2015-11-12T22:10:56.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -130,7 +178,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-10T18:39:14.878</Modified>
+      <Modified>2015-11-13T17:46:37.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

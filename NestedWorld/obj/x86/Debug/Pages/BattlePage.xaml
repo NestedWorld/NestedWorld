@@ -21,6 +21,7 @@
         <Rectangle Height="100" Fill="{StaticResource BleuThreeBrush}" VerticalAlignment="Bottom"/>
         <BattleView:EnemieBattleView VerticalAlignment="Top"/>
         <BattleView:UserBattleView VerticalAlignment="Bottom"/>
+        <Canvas x:ConnectionId='1' x:Name="mainCanvas"></Canvas>
     </Grid>
 </Page>
 

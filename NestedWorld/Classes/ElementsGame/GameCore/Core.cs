@@ -12,11 +12,14 @@ namespace NestedWorld.Classes.ElementsGame.GameCore
 {
     public class Core
     {
+        public Garden.Garden garden { get; set; }
         public MonsterFullView mfv { get; set; }
         private UserMonster _monsterSelected;
-        public UserMonster monsterSelected {
+        public UserMonster monsterSelected
+        {
             get { return _monsterSelected; }
-            set {
+            set
+            {
                 _monsterSelected = value;
                 mfv.monsterToDisplay = value;
             }
@@ -30,9 +33,11 @@ namespace NestedWorld.Classes.ElementsGame.GameCore
             monsterList = new MonsterList();
             monsterList.init();
             monsterUserList = new MonsterList();
+            monsterUserList.init();
             userList = new UserList();
             areaList = new AreaList();
-        } 
+            garden = new Garden.Garden();
+        }
 
     }
 }

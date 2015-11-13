@@ -21,6 +21,24 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\Flower.png">
+      <PackagePath>Assets\Flower\Flower.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerDirt.png">
+      <PackagePath>Assets\Flower\flowerDirt.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerElec.png">
+      <PackagePath>Assets\Flower\flowerElec.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerFire.png">
+      <PackagePath>Assets\Flower\flowerFire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerGrass.png">
+      <PackagePath>Assets\Flower\flowerGrass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Flower\flowerWater.png">
+      <PackagePath>Assets\Flower\flowerWater.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\iconTest.png">
       <PackagePath>Assets\iconTest.png</PackagePath>
     </AppxPackagedFile>
@@ -29,6 +47,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\monsterTest\test.png">
+      <PackagePath>Assets\monsterTest\test.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\NestedWorldLogo.png">
       <PackagePath>Assets\NestedWorldLogo.png</PackagePath>
@@ -52,6 +73,21 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\dirt.png">
+      <PackagePath>Assets\Type\dirt.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\elec.png">
+      <PackagePath>Assets\Type\elec.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\fire.png">
+      <PackagePath>Assets\Type\fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\grass.png">
+      <PackagePath>Assets\Type\grass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Type\water.png">
+      <PackagePath>Assets\Type\water.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>

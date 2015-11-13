@@ -10,7 +10,6 @@
     <ScrollViewer>
         <StackPanel x:Name="mainStackPanel" Orientation="Vertical">
             <local:MonsterHeaderView x:Name="monsterHeaderView"/>
-            <local:MonsterAttacksView x:Name="monsterAttackView"/>
             <local:MonsterStatsView x:Name="monsterStatsView" Margin="10, 0, 0, 0"/>
             <local:MonsterLocationView x:Name="monsterLocationView" Height="300"/>
         </StackPanel>

@@ -6,10 +6,13 @@ Pages\MonsterPage.xbf
 Pages\PrepareBattlePage.xbf
 Style\TabHeader.xbf
 Style\TabHeaderMap.xbf
+View\BattleViews\BattleCanvas.xbf
 View\BattleViews\EnemieBattleView.xbf
 View\BattleViews\StartBattleAnnimation.xbf
 View\BattleViews\UserBattleView.xbf
 View\GardenView.xbf
+View\GardenViews\GardenElement.xbf
+View\GardenViews\GardenElementList.xbf
 View\GardenViews\GardenItem.xbf
 View\HomeView.xbf
 View\MapView.xbf
@@ -28,6 +31,7 @@ View\NotificationView.xbf
 View\PopUpView\RegisterView.xbf
 View\PrepareBattleViews\MonsterForBattleView.xbf
 View\PrepareBattleViews\MonsterView.xbf
+View\ShopView.xbf
 View\StatsView.xbf
 View\UserView.xbf
 View\UserViews\AllyView.xbf

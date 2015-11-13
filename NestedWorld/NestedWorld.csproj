@@ -112,7 +112,8 @@
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
     <Compile Include="Classes\ElementsGame\Users\UserList.cs" />
     <Compile Include="Classes\Garden\Garden.cs" />
-    <Compile Include="Classes\Garden\GardenPoint.cs" />
+    <Compile Include="Classes\Garden\GardenElement.cs" />
+    <Compile Include="Classes\Garden\GardenElementList.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -139,6 +140,9 @@
     <Compile Include="Utils\ColorUtils.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
+    <Compile Include="View\BattleViews\BattleCanvas.xaml.cs">
+      <DependentUpon>BattleCanvas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\BattleViews\EnemieBattleView.xaml.cs">
       <DependentUpon>EnemieBattleView.xaml</DependentUpon>
     </Compile>
@@ -150,6 +154,12 @@
     </Compile>
     <Compile Include="View\GardenView.xaml.cs">
       <DependentUpon>GardenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GardenViews\GardenElement.xaml.cs">
+      <DependentUpon>GardenElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GardenViews\GardenElementList.xaml.cs">
+      <DependentUpon>GardenElementList.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GardenViews\GardenItem.xaml.cs">
       <DependentUpon>GardenItem.xaml</DependentUpon>
@@ -205,6 +215,9 @@
     <Compile Include="View\PrepareBattleViews\MonsterView.xaml.cs">
       <DependentUpon>MonsterView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ShopView.xaml.cs">
+      <DependentUpon>ShopView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\StatsView.xaml.cs">
       <DependentUpon>StatsView.xaml</DependentUpon>
     </Compile>
@@ -222,9 +235,21 @@
     <None Include="NestedWorld_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Flower\Flower.png" />
+    <Content Include="Assets\Flower\flowerDirt.png" />
+    <Content Include="Assets\Flower\flowerElec.png" />
+    <Content Include="Assets\Flower\flowerFire.png" />
+    <Content Include="Assets\Flower\flowerGrass.png" />
+    <Content Include="Assets\Flower\flowerWater.png" />
     <Content Include="Assets\iconTest2.jpg" />
     <Content Include="Assets\iconTest.png" />
+    <Content Include="Assets\monsterTest\test.png" />
     <Content Include="Assets\NestedWorldLogo.png" />
+    <Content Include="Assets\Type\dirt.png" />
+    <Content Include="Assets\Type\elec.png" />
+    <Content Include="Assets\Type\fire.png" />
+    <Content Include="Assets\Type\grass.png" />
+    <Content Include="Assets\Type\water.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -267,6 +292,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\BattleViews\BattleCanvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\BattleViews\EnemieBattleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -280,6 +309,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\GardenView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GardenViews\GardenElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GardenViews\GardenElementList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -352,6 +389,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\PrepareBattleViews\MonsterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

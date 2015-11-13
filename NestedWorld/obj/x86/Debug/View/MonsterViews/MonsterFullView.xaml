@@ -10,9 +10,8 @@
     <ScrollViewer>
         <StackPanel x:ConnectionId='1' x:Name="mainStackPanel" Orientation="Vertical">
             <local:MonsterHeaderView x:ConnectionId='2' x:Name="monsterHeaderView"/>
-            <local:MonsterAttacksView x:ConnectionId='3' x:Name="monsterAttackView"/>
-            <local:MonsterStatsView x:ConnectionId='4' x:Name="monsterStatsView" Margin="10, 0, 0, 0"/>
-            <local:MonsterLocationView x:ConnectionId='5' x:Name="monsterLocationView" Height="300"/>
+            <local:MonsterStatsView x:ConnectionId='3' x:Name="monsterStatsView" Margin="10, 0, 0, 0"/>
+            <local:MonsterLocationView x:ConnectionId='4' x:Name="monsterLocationView" Height="300"/>
         </StackPanel>
     </ScrollViewer>
 </UserControl>

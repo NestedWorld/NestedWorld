@@ -32,7 +32,7 @@ namespace NestedWorld.View.MonsterViews
                 monsterHeaderView.MonsterImage = value.Image;
                 monsterHeaderView.MonsterCombat = 0;
                 monsterHeaderView.MonsterVictory = 0;
-                monsterAttackView.monsterAttackList = value.monsterAttackList;
+                //monsterAttackView.monsterAttackList = value.monsterAttackList;
                 monsterStatsView.Exp = value.Exp;
                 monsterStatsView.Life = value.Life;
             }

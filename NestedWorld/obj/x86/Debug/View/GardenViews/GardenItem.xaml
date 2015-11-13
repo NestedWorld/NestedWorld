@@ -9,12 +9,18 @@
     Height="100"
     Width="100">
 
-    <Grid>
+    <Grid x:ConnectionId='1'                                                                           >
+        <Ellipse>
+            <Ellipse.Fill>
+                <SolidColorBrush Color="{StaticResource background}"/>
+            </Ellipse.Fill>
+        </Ellipse>
         <Ellipse StrokeThickness="2" Stroke="{StaticResource ForgroundBrush}">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="{Binding ImageItem}"/>
             </Ellipse.Fill>
         </Ellipse>
+        <Ellipse Height="{Binding size}" Width="{Binding size}" Fill="#7F9DF6FF"/>
     </Grid>
 </UserControl>
 

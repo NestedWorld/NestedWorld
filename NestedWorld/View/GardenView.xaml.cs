@@ -21,21 +21,11 @@ namespace NestedWorld.View
 {
     public sealed partial class GardenView : UserControl
     {
-       public Garden garden;
         public GardenView()
         {
             this.InitializeComponent();
-            garden = new Garden(mainCanvas, 4);
-            
-        }
-
-       
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            GardenViews.GardenItem item = new GardenViews.GardenItem();
-            item.ImageItem = "ms-appx:///Assets/NestedWorldLogo.png";
-            garden.Add(item);
+            App.core.garden.canvas = mainCanvas;
+            App.core.garden.init();
         }
     }
 }

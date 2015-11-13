@@ -30,7 +30,7 @@
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource BleuTwo}"/>
                 </Grid.Background>
-                <TextBlock Text="Nested World" Style="{StaticResource TextBlockStyleOne}" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
                     <TextBlock.Foreground>
                         <SolidColorBrush Color="{StaticResource background}"/>
                     </TextBlock.Foreground>
@@ -86,7 +86,7 @@
                         <Style:TabHeader Glyph="&#xE719;" Label="Shop"/>
                     </PivotItem.Header>
                     <Grid>
-                        <TextBlock Text="Shop"/>
+                        <view:ShopView/>
                     </Grid>
                 </PivotItem>
             </Pivot>

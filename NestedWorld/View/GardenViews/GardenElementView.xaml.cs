@@ -17,9 +17,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace NestedWorld.View.GardenViews
 {
-    public sealed partial class GardenElementList : UserControl
+    public sealed partial class GardenElementView : UserControl
     {
-        public GardenElementList()
+        public GardenElementView()
         {
             this.InitializeComponent();
         }

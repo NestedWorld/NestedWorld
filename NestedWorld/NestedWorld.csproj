@@ -140,6 +140,7 @@
     <Compile Include="Utils\ColorUtils.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
+    <Compile Include="ViewModel\GardenElementListViewModel.cs" />
     <Compile Include="View\BattleViews\BattleCanvas.xaml.cs">
       <DependentUpon>BattleCanvas.xaml</DependentUpon>
     </Compile>
@@ -155,11 +156,11 @@
     <Compile Include="View\GardenView.xaml.cs">
       <DependentUpon>GardenView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\GardenViews\GardenElement.xaml.cs">
-      <DependentUpon>GardenElement.xaml</DependentUpon>
+    <Compile Include="View\GardenViews\GardenElementListView.xaml.cs">
+      <DependentUpon>GardenElementListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\GardenViews\GardenElementList.xaml.cs">
-      <DependentUpon>GardenElementList.xaml</DependentUpon>
+    <Compile Include="View\GardenViews\GardenElementView.xaml.cs">
+      <DependentUpon>GardenElementView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GardenViews\GardenItem.xaml.cs">
       <DependentUpon>GardenItem.xaml</DependentUpon>
@@ -312,11 +313,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\GardenViews\GardenElement.xaml">
+    <Page Include="View\GardenViews\GardenElementListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\GardenViews\GardenElementList.xaml">
+    <Page Include="View\GardenViews\GardenElementView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -413,7 +414,6 @@
     <Folder Include="Classes\DesignUtilities\" />
     <Folder Include="Classes\Network\" />
     <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -18,6 +18,7 @@
                         <monsterViews:MonsterView Margin="20"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+               
             </ListView>
         </ScrollViewer>
     </Grid>

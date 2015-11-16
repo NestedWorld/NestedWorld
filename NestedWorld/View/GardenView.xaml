@@ -23,12 +23,9 @@
                     <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/NestedWorldLogo.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <Canvas x:Name="mainCanvas"/>
-
-            <Ellipse Height="340" Width="340" StrokeThickness="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-            </Ellipse>
+            <Canvas x:Name="mainCanvas" Background="Transparent"/>
 
         </Grid>
-        <!--gardenViews:GardenElementList /-->
+        <gardenViews:GardenElementListView x:Name="gardenElementListView" VerticalAlignment="Bottom" Height="150"/>
     </Grid>
 </UserControl>

@@ -11,8 +11,8 @@ View\BattleViews\EnemieBattleView.xbf
 View\BattleViews\StartBattleAnnimation.xbf
 View\BattleViews\UserBattleView.xbf
 View\GardenView.xbf
-View\GardenViews\GardenElement.xbf
-View\GardenViews\GardenElementList.xbf
+View\GardenViews\GardenElementListView.xbf
+View\GardenViews\GardenElementView.xbf
 View\GardenViews\GardenItem.xbf
 View\HomeView.xbf
 View\MapView.xbf

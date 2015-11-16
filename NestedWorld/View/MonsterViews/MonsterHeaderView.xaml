@@ -21,12 +21,7 @@
             <ColumnDefinition Width="45*"/>
             <ColumnDefinition Width="80*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Rectangle.Fill>
-                <ImageBrush Stretch="UniformToFill"  ImageSource="{Binding BackgroundImage}"/>
-            </Rectangle.Fill>
-
-        </Rectangle>
+    
         <Rectangle Grid.ColumnSpan="2" Grid.RowSpan="2" >
             <Rectangle.Fill>
                 <SolidColorBrush Color="{Binding MonsterType}"/>

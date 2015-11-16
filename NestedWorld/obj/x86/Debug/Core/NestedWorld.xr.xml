@@ -278,6 +278,7 @@
       <RootProperty Name="VerticalSnapPointsType" />
       <RootProperty Name="ZoomMode" />
       <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotPanel">
       <RootProperty Name="VerticalAlignment" />
@@ -346,7 +347,9 @@
     <RootType FullName="NestedWorld.View.BattleViews.UserBattleView">
       <RootProperty Name="VerticalAlignment" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Background" />
+    </RootType>
     <RootType FullName="NestedWorld.Pages.BattlePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
@@ -427,19 +430,30 @@
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="NestedWorld.View.BattleViews.StartBattleAnnimation" />
-    <RootType FullName="NestedWorld.View.GardenViews.GardenElement">
-      <RootProperty Name="Margin" />
+    <RootType FullName="NestedWorld.View.GardenViews.GardenElementListView">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="CanDragItems" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="SelectionChanged" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="CanDrag" />
+      <RootEvent Name="DropCompleted" />
+      <RootEvent Name="DragItemsStarting" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="NestedWorld.View.GardenViews.GardenElementList" />
+    <RootType FullName="NestedWorld.View.GardenViews.GardenElementView">
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="NestedWorld.View.GardenViews.GardenItem" />
     <RootType FullName="NestedWorld.View.NotificationView">
       <RootProperty Name="HorizontalAlignment" />
@@ -453,23 +467,17 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="NestedWorld.View.MapViews.MapPoint" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterView">
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NestedWorld.View.MonsterSoloView">
       <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="AllowDrop" />
-      <RootProperty Name="CanDrag" />
-      <RootEvent Name="DropCompleted" />
-      <RootEvent Name="DragItemsStarting" />
     </RootType>
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterAttackView">
       <RootProperty Name="Margin" />

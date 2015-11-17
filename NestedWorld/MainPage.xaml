@@ -55,13 +55,8 @@
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Settings"/>
             </Button>
         </Grid>
-        <Grid Grid.RowSpan="4">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100*"/>
-                <ColumnDefinition Width="100*"/>
-                <ColumnDefinition Width="100*"/>
-            </Grid.ColumnDefinitions>
-            <popup:RegisterView Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Grid.RowSpan="5" x:Name="registerView"/>
-        </Grid>
+        <Popup IsOpen="True"   x:Name="popupView" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <popup:RegisterView Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.RowSpan="5" x:Name="registerView"/>
+        </Popup>
     </Grid>
 </Page>

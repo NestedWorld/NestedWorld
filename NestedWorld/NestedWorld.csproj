@@ -99,6 +99,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Chat\Channel.cs" />
+    <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
     <Compile Include="Classes\ElementsGame\Areas\Area.cs" />
     <Compile Include="Classes\ElementsGame\Areas\AreaList.cs" />
     <Compile Include="Classes\ElementsGame\GameCore\Core.cs" />
@@ -117,8 +119,12 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Message.cs" />
     <Compile Include="Pages\BattlePage.xaml.cs">
       <DependentUpon>BattlePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChatPage.xaml.cs">
+      <DependentUpon>ChatPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
@@ -140,6 +146,7 @@
     <Compile Include="Utils\ColorUtils.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
+    <Compile Include="ViewModel\ChanelListViewModel.cs" />
     <Compile Include="ViewModel\GardenElementListViewModel.cs" />
     <Compile Include="View\BattleViews\BattleCanvas.xaml.cs">
       <DependentUpon>BattleCanvas.xaml</DependentUpon>
@@ -152,6 +159,24 @@
     </Compile>
     <Compile Include="View\BattleViews\UserBattleView.xaml.cs">
       <DependentUpon>UserBattleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\ChanelListView.xaml.cs">
+      <DependentUpon>ChanelListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\ChanelView.xaml.cs">
+      <DependentUpon>ChanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\ChatView.xaml.cs">
+      <DependentUpon>ChatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\MeMessageTemplate.xaml.cs">
+      <DependentUpon>MeMessageTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\StartNewChatView.xaml.cs">
+      <DependentUpon>StartNewChatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChatViews\YouMessageTemplate.xaml.cs">
+      <DependentUpon>YouMessageTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GardenView.xaml.cs">
       <DependentUpon>GardenView.xaml</DependentUpon>
@@ -171,8 +196,17 @@
     <Compile Include="View\MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MapViews\AreaListView.xaml.cs">
+      <DependentUpon>AreaListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapViews\AreaMeView.xaml.cs">
+      <DependentUpon>AreaMeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MapViews\MapPoint.xaml.cs">
       <DependentUpon>MapPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapViews\MapView.xaml.cs">
+      <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MonsterListView.xaml.cs">
       <DependentUpon>MonsterListView.xaml</DependentUpon>
@@ -273,6 +307,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ChatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -309,6 +347,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\ChatViews\ChanelListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChatViews\ChanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChatViews\ChatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChatViews\MeMessageTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChatViews\StartNewChatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChatViews\YouMessageTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\GardenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -333,7 +395,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\MapViews\AreaListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapViews\AreaMeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MapViews\MapPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapViews\MapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -413,7 +487,6 @@
   <ItemGroup>
     <Folder Include="Classes\DesignUtilities\" />
     <Folder Include="Classes\Network\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

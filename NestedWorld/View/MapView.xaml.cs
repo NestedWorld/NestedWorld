@@ -22,14 +22,8 @@ namespace NestedWorld.View
         public MapView()
         {
             this.InitializeComponent();
-            App.core.areaList.map = map;
-           
         }
 
-        private void AppBarToggleButton_Click(object sender, RoutedEventArgs e)
-        {
-            App.core.areaList.Genearate();
-            App.core.areaList.Show();
-        }
+
     }
 }

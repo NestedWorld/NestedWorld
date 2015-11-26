@@ -30,16 +30,24 @@
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource BleuTwo}"/>
                 </Grid.Background>
+                 <CommandBar Background="{StaticResource BleuTwoBrush}">
+                    <AppBarButton x:ConnectionId='6'                            Icon="LeaveChat" Label="Chat" >
+                        <AppBarButton.Foreground>
+                            <SolidColorBrush Color="{StaticResource background}"/>
+                        </AppBarButton.Foreground>
+                    </AppBarButton>
+                    <AppBarButton x:ConnectionId='7'                              Icon="Setting" Label="Settings">
+                        <AppBarButton.Foreground>
+                            <SolidColorBrush Color="{StaticResource background}"/>
+                        </AppBarButton.Foreground>
+                    </AppBarButton>
+                </CommandBar>
                 <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
                     <TextBlock.Foreground>
                         <SolidColorBrush Color="{StaticResource background}"/>
                     </TextBlock.Foreground>
                 </TextBlock>
-                <AppBarButton x:ConnectionId='6'                            HorizontalAlignment="Right" Icon="Setting" Margin="0, 3, 0, 0">
-                    <AppBarButton.Foreground>
-                        <SolidColorBrush Color="{StaticResource background}"/>
-                    </AppBarButton.Foreground>
-                </AppBarButton>
+
             </Grid>
             <Pivot Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
 
@@ -134,7 +142,7 @@
                         <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
                         <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
                         <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
-                      
+
                         <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
                         <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
 
@@ -158,7 +166,7 @@
                         <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
                         <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
                         <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                   
+
                         <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
                         <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
 

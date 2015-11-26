@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NestedWorld.Classes.Chat;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace NestedWorld.Classes.ElementsGame.Users
         public string Image { get; private set; }
         public int Level { get; private set; }
         public bool IsOnline { get; private set; }
+
+        public Channel discution { get; set; }
         public Color color
         {
             get
@@ -30,6 +33,7 @@ namespace NestedWorld.Classes.ElementsGame.Users
             this.Image = user.Image;
             this.IsOnline = user.IsOnline;
             this.Level = user.Level;
+            discution = new Channel(user.Name, false);
         }
 
         public User(string name, string image, bool isOnline, int level)
@@ -38,6 +42,7 @@ namespace NestedWorld.Classes.ElementsGame.Users
             this.Image = image;
             this.IsOnline = isOnline;
             this.Level = level;
+            discution = new Channel(name, false);
         }
     }
 }

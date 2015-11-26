@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-17T19:36:42.671</Modified>
+      <Modified>2015-11-25T23:58:29.596</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -130,7 +130,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2015-11-17T19:36:36.029</Modified>
+      <Modified>2015-11-25T23:58:28.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
@@ -162,11 +162,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2015-11-17T19:36:42.663</Modified>
+      <Modified>2015-11-25T23:58:29.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2015-11-16T00:55:47.156</Modified>
+      <Modified>2015-11-25T23:58:27.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -178,7 +178,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-17T19:36:38.399</Modified>
+      <Modified>2015-11-25T23:58:28.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

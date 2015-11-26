@@ -55,7 +55,7 @@
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Settings"/>
             </Button>
         </Grid>
-        <Popup x:ConnectionId='4' IsOpen="True"   x:Name="popupView" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Popup x:ConnectionId='4' IsOpen="False"   x:Name="popupView" HorizontalAlignment="Center" VerticalAlignment="Center">
             <popup:RegisterView x:ConnectionId='5' Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.RowSpan="5" x:Name="registerView"/>
         </Popup>
     </Grid>

@@ -7,6 +7,7 @@
     xmlns:view="using:NestedWorld.View"
     xmlns:monsterViews="using:NestedWorld.View.MonsterViews"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:data="using:NestedWorld.Model"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -16,7 +17,8 @@
     <Page.Background>
         <SolidColorBrush Color="{StaticResource BleuTwo}"/>
     </Page.Background>
-
+    <Page.Resources>
+    </Page.Resources>
     <RelativePanel>
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
             <Grid.Background>
@@ -30,16 +32,12 @@
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource BleuTwo}"/>
                 </Grid.Background>
-                 <CommandBar Background="{StaticResource BleuTwoBrush}">
-                    <AppBarButton Click="AppBarButton_Click" Icon="LeaveChat" Label="Chat" >
-                        <AppBarButton.Foreground>
-                            <SolidColorBrush Color="{StaticResource background}"/>
-                        </AppBarButton.Foreground>
+                <CommandBar Background="{StaticResource BleuTwoBrush}" Foreground="{StaticResource BleuThreeBrush}">
+                    <AppBarButton Click="AppBarButton_Click" Icon="LeaveChat" Label="Chat" Foreground="{StaticResource BleuThreeBrush}" >
+
                     </AppBarButton>
-                    <AppBarButton Click="AppBarButton_Click_1" Icon="Setting" Label="Settings">
-                        <AppBarButton.Foreground>
-                            <SolidColorBrush Color="{StaticResource background}"/>
-                        </AppBarButton.Foreground>
+                    <AppBarButton Click="AppBarButton_Click_1" Icon="Setting" Label="Settings" Foreground="{StaticResource BleuThreeBrush}">
+
                     </AppBarButton>
                 </CommandBar>
                 <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
@@ -93,9 +91,7 @@
                     <PivotItem.Header>
                         <Style:TabHeader Glyph="&#xE719;" Label="Shop"/>
                     </PivotItem.Header>
-                    <Grid>
-                        <view:ShopView/>
-                    </Grid>
+                    <view:ShopView></view:ShopView>
                 </PivotItem>
             </Pivot>
         </Grid>

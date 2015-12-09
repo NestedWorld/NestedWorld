@@ -15,14 +15,24 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
         public int Life { get; private set; }
         public int Exp { get; private set; }
 
+        public void Attack(UserMonster selectedMonster)
+        {
+            selectedMonster.reciveAttack(-10);
+        }
+
+        private void reciveAttack(int v)
+        {
+            Life += v;
+        }
+
         public UserMonster(Monster monsterBase, int level)
             : base(monsterBase)
         {
             this.Level = level;
             IsOnList = false;
             This = this;
-            Life = 84;
-            Exp = 42;
+            Life = 100;
+            Exp = 10;
         }
     }
 }

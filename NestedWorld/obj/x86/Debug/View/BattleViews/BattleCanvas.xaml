@@ -8,8 +8,12 @@
     mc:Ignorable="d"
    >
 
-    <Grid>
-        <Canvas x:ConnectionId='1' x:Name="mainCanvas" ></Canvas>
+    <Grid Background="{StaticResource BackrgoundBrush}">
+        <Image Source="ms-appx:///Assets/NestedWorldLogo.png" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Height="150" Width="150" Fill="#7FFFFFFF" ></Rectangle>
+        <Canvas x:ConnectionId='1' Visibility="Visible" x:Name="mainCanvas"/>
+        <InkCanvas x:ConnectionId='2' x:Name="inkCanvas"/>
+        
     </Grid>
 </UserControl>
 

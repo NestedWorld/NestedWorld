@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 ApplicationInsights.config
+Assets\Effect\fire_effect.png
 Assets\Flower\Flower.png
 Assets\Flower\flowerDirt.png
 Assets\Flower\flowerElec.png
@@ -23,4 +24,5 @@ Assets\Type\grass.png
 Assets\Type\water.png
 Assets\Wide310x150Logo.scale-200.png
 NestedWorld.xr.xml
+DataModel\ShopData.json
 Properties\Default.rd.xml

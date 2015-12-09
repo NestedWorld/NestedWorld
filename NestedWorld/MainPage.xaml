@@ -48,15 +48,19 @@
                 <ColumnDefinition Width="100*"/>
                 <ColumnDefinition Width="100*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="registerButton" Click="Button_Click_1" Grid.Column="0" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="registerButton" Click="Regiter_Click"  Grid.Column="0" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Register"/>
             </Button>
-            <Button Grid.Column="2" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Grid.Column="1" Click="Forgot_Click"  Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Forgot your password"/>
+            </Button>
+            <Button Grid.Column="2" Click="Setting_Click" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Settings"/>
             </Button>
         </Grid>
-        <Popup IsOpen="False"   x:Name="popupView" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <popup:RegisterView Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.RowSpan="5" x:Name="registerView"/>
+        <Popup Grid.Row="0" Grid.RowSpan="4" IsOpen="True" x:Name="popupView" IsLightDismissEnabled="True">
+           
         </Popup>
     </Grid>
+
 </Page>

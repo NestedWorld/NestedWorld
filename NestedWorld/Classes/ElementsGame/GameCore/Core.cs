@@ -28,8 +28,11 @@ namespace NestedWorld.Classes.ElementsGame.GameCore
         public MonsterList monsterUserList { get; set; }
         public UserList userList { get; set; }
         public AreaList areaList { get; set; }
+
+        public UserInfo user { get; set; }
         public Core()
         {
+            user = UserInfo.GetYou();
             monsterList = new MonsterList();
             monsterList.init();
             monsterUserList = new MonsterList();

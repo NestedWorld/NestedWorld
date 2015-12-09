@@ -25,7 +25,7 @@ namespace NestedWorld.View.MapViews
             App.core.areaList.map = map;
 
         }
-
+        public double reduce { get { return gridButton.Height; } set { double i = value; } }
         private void AppBarToggleButton_Click(object sender, RoutedEventArgs e)
         {
             App.core.areaList.Genearate();

@@ -1,6 +1,9 @@
-﻿using NestedWorld.Utils;
+﻿using NestedWorld.Classes.ElementsGame.Users;
+using NestedWorld.Utils;
+using NestedWorld.View.MapViews;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -13,6 +16,17 @@ namespace NestedWorld.Classes.ElementsGame.Areas
     public class AreaList
     {
         public List<Area> areaList { get; set; }
+
+        private AreaListView _areaListView;
+        public AreaListView areaListView
+        {
+            get { return _areaListView; }
+            set
+            {
+                _areaListView = value;
+                _areaListView.List.DataContext = new ObservableCollection<Area>(areaList);
+            }
+        }
         public MapControl map { get; set; }
 
         Random r = new Random(DateTime.Now.Millisecond);
@@ -27,12 +41,12 @@ namespace NestedWorld.Classes.ElementsGame.Areas
             {
                 foreach (Area a in areaList)
                 {
-                    var shape = a.getPolygon(); 
+                    var shape = a.getPolygon();
                     shape.AddData(a);
                     map.MapElements.Add(shape);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex);
             }
@@ -44,11 +58,20 @@ namespace NestedWorld.Classes.ElementsGame.Areas
 
             for (int i = 0; i < 10; i++)
             {
-                Area newArea = new Area(getRandAreaType(), getRandType());
+                Area newArea = new Area(getRandAreaType(), getRandType(), getRandomUser());
                 newArea.geopointList = Area.GetRandomPoints(new Geopoint(area.NorthwestCorner), new Geopoint(area.SoutheastCorner), 3);
                 Add(newArea);
             }
+            areaList = areaList.OrderBy(x => x.areaType).ToList();
+            _areaListView.List.DataContext = new ObservableCollection<Area>(areaList);
             Debug.WriteLine("Generate");
+        }
+
+        private User getRandomUser()
+        {
+            int randNum = r.Next(0, App.core.userList.userList.Count);
+
+            return App.core.userList.userList[randNum];
         }
 
         private TypeEnum getRandType()
@@ -77,7 +100,7 @@ namespace NestedWorld.Classes.ElementsGame.Areas
         {
             int num = r.Next(0, 4);
 
-            switch(num)
+            switch (num)
             {
                 case (0):
                     return AreaType.YOU;

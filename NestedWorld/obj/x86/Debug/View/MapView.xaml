@@ -12,12 +12,12 @@
     <RelativePanel>
 
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
-            <ScrollViewer>
-                <RelativePanel>
-                    <mapViews:MapView/>
-                    <mapViews:AreaListView/>
-                </RelativePanel>
-            </ScrollViewer>
+            <RelativePanel>
+
+                <mapViews:MapView x:ConnectionId='1' x:Name="mapView"/>
+                <mapViews:AreaListView x:ConnectionId='2' x:Name="AreaListView"/>
+            </RelativePanel>
+
         </Grid>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
@@ -26,7 +26,15 @@
                         <AdaptiveTrigger MinWindowWidth="1080" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        
+                        <Setter Target="mapView.(RelativePanel.AlignTopWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignBottomWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+
+                        <Setter Target="AreaListView.(RelativePanel.RightOf)" Value="mapView"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignTopWith)" Value="mapView"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -34,7 +42,15 @@
                         <AdaptiveTrigger MinWindowWidth="720" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                       
+                        <Setter Target="mapView.(RelativePanel.AlignTopWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignBottomWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+
+                        <Setter Target="AreaListView.(RelativePanel.RightOf)" Value="mapView"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignTopWith)" Value="mapView"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -42,7 +58,15 @@
                         <AdaptiveTrigger MinWindowWidth="548" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                      
+                        <Setter Target="mapView.(RelativePanel.AlignTopWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignBottomWithPanel)" Value="False"/>
+
+                        <Setter Target="mapView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.Below)" Value="mapView"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -50,7 +74,15 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        
+                        <Setter Target="mapView.(RelativePanel.AlignTopWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignBottomWithPanel)" Value="False"/>
+
+                        <Setter Target="mapView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="mapView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.Below)" Value="mapView"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="AreaListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>

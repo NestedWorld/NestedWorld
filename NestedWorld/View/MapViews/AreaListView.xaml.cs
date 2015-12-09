@@ -19,9 +19,30 @@ namespace NestedWorld.View.MapViews
 {
     public sealed partial class AreaListView : UserControl
     {
+        public GridView List { get { return glist; } set { glist = value; } }
         public AreaListView()
         {
             this.InitializeComponent();
+        //    List.Loaded += List_Loaded;
+            App.core.areaList.areaListView = this;
+
+        }
+
+        private void List_Loaded(object sender, RoutedEventArgs arg)
+        {
+            if (sender == null)
+                return;
+            VariableSizedWrapGrid g = (VariableSizedWrapGrid)sender;
+
+            SizeChangedEventHandler handler = (s, e) =>
+            {
+                g.ItemHeight = (g.ActualHeight) / 2.0;
+                g.ItemWidth = g.ItemHeight;
+            };
+
+            handler(null, null);
+
+            g.SizeChanged += handler;
         }
     }
 }

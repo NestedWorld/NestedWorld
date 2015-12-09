@@ -22,8 +22,26 @@ namespace NestedWorld.View
         public MapView()
         {
             this.InitializeComponent();
+            Window.Current.SizeChanged += Current_SizeChanged;
+            SetElementSize(Window.Current.Bounds.Width, Window.Current.Bounds.Height);
         }
 
+        private void SetElementSize(double width, double height)
+        {
+            mapView.Width = width;
+            mapView.Height = (height * 1) / 3;
+            AreaListView.Width = width;
+            if (width >= 750)
+            {
+                mapView.Width = width - 450;
+                AreaListView.Width = 400;
+                mapView.Height = height - mapView.reduce;
+            }
+        }
 
+        private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            SetElementSize(e.Size.Width, e.Size.Height);
+        }
     }
 }

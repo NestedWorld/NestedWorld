@@ -9,31 +9,32 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <StackPanel Orientation="Horizontal">
-     
-        <Rectangle x:ConnectionId='1' x:Name="rectangleMain" StrokeThickness="2" Height="100" Width="100">
-            <Rectangle.Fill>
-                <ImageBrush Stretch="Fill" ImageSource="{Binding Path=Image}"/>
-            </Rectangle.Fill>
-            <Rectangle.Stroke>
-                <SolidColorBrush Color="{Binding Path=color}"/>
-            </Rectangle.Stroke>
-        </Rectangle>
+    <StackPanel >
+         <StackPanel x:ConnectionId='1' Height="100" Orientation="Horizontal"                           >
 
-        <StackPanel Grid.Row="1" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Margin="3" Text="{Binding Path=Name}" Style="{StaticResource TextBlockStyleOne}" FontSize="15" >
-                <TextBlock.Foreground>
-                    <SolidColorBrush Color="{StaticResource foreground}"/>
-                </TextBlock.Foreground>
-            </TextBlock>
-            <TextBlock x:ConnectionId='2' x:Name="LevelTextBlock" Text="info"  Style="{StaticResource TextBlockStyleOne}" Margin="0, 5" FontSize="10">
-                <TextBlock.Foreground>
-                    <SolidColorBrush Color="{StaticResource foreground}"/>
-                </TextBlock.Foreground>
-            </TextBlock>
+            <Rectangle x:ConnectionId='2' x:Name="rectangleMain" StrokeThickness="2" Height="100" Width="100">
+                <Rectangle.Fill>
+                    <ImageBrush Stretch="Fill" ImageSource="{Binding Path=Image}"/>
+                </Rectangle.Fill>
+                <Rectangle.Stroke>
+                    <SolidColorBrush Color="{Binding Path=color}"/>
+                </Rectangle.Stroke>
+            </Rectangle>
 
+            <StackPanel Grid.Row="1" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Margin="3" Text="{Binding Path=Name}" Style="{StaticResource TextBlockStyleOne}" FontSize="15" >
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource foreground}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBlock x:ConnectionId='3' x:Name="LevelTextBlock" Text="info"  Style="{StaticResource TextBlockStyleOne}" Margin="0, 5" FontSize="10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource foreground}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </StackPanel>
         </StackPanel>
-
+       
     </StackPanel>
 </UserControl>
 

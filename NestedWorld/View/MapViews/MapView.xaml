@@ -6,11 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
-    
-    >
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="125"/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <SolidColorBrush Color="{StaticResource background}"/>
         </Grid.Background>
@@ -19,15 +21,8 @@
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="10*"/>
-        </Grid.RowDefinitions>
-        <maps:MapControl x:Name="map" MapServiceToken="{StaticResource maptoken}" Grid.RowSpan="2" />
-        <Grid Grid.Row="1">
-            <Grid.Background>
-                <SolidColorBrush Color="{StaticResource BleuThree}"/>
-            </Grid.Background>
+        <maps:MapControl x:Name="map"  MapServiceToken="{StaticResource maptoken}" Grid.Row="0" />
+        <Grid Grid.Row="1" x:Name="gridButton">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
                 <ColumnDefinition Width="100*"/>
@@ -35,6 +30,7 @@
                 <ColumnDefinition Width="100*"/>
                 <ColumnDefinition Width="100*"/>
             </Grid.ColumnDefinitions>
+
             <AppBarButton Grid.Column="0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Label="Target" Icon="Target" Width="100" Padding="20" Background="{x:Null}">
                 <AppBarButton.Foreground>
                     <SolidColorBrush Color="{StaticResource foreground}"/>
@@ -55,11 +51,12 @@
                     <SolidColorBrush Color="{StaticResource foreground}"/>
                 </AppBarToggleButton.Foreground>
             </AppBarToggleButton>
-            <AppBarToggleButton Grid.Column="4" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Label="Show Area" Icon="Target" Width="100" Style="{StaticResource AppBarToggleButtonStyle1}" Padding="20" Background="{x:Null}">
+            <AppBarToggleButton Grid.Column="4" Click="AppBarToggleButton_Click" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Label="Show Area" Icon="Target" Width="100" Style="{StaticResource AppBarToggleButtonStyle1}" Padding="20" Background="{x:Null}">
                 <AppBarToggleButton.Foreground>
                     <SolidColorBrush Color="{StaticResource foreground}"/>
                 </AppBarToggleButton.Foreground>
             </AppBarToggleButton>
         </Grid>
+
     </Grid>
 </UserControl>

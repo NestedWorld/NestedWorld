@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NestedWorld.Classes.ElementsGame.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,16 +19,31 @@ namespace NestedWorld.Classes.ElementsGame.Areas
     }
     public class Area
     {
+       
         public List<BasicGeoposition> geopointList { get; set; }
         public AreaType areaType { get; set; }
 
         public TypeEnum type { get; set; }
+
+        public User user { get; set; }
+
+        public string UserImage
+        {
+            get { return user.Image; }
+            set { int i = 0; i++; }
+        }
 
         public Area(AreaType atype, TypeEnum type)
         {
             geopointList = new List<BasicGeoposition>();
             this.areaType = atype;
             this.type = type;
+
+        }
+
+        public Area(AreaType atype, TypeEnum type, User user) : this(atype, type)
+        {
+            this.user = user;
         }
 
         public MapPolygon getPolygon()
@@ -63,14 +79,14 @@ namespace NestedWorld.Classes.ElementsGame.Areas
             var r = new Random(DateTime.Now.Millisecond);
             for (var i = 0; i < nrOfPoints; i++)
             {
-              
-                result.Add(   new BasicGeoposition
-                  {
-                      Latitude = p1.Latitude + (r.NextDouble() * dLat),
-                      Longitude = p1.Longitude + (r.NextDouble() * dLon),
-                      Altitude = 1000 * r.NextDouble()
-                  });
-                
+
+                result.Add(new BasicGeoposition
+                {
+                    Latitude = p1.Latitude + (r.NextDouble() * dLat),
+                    Longitude = p1.Longitude + (r.NextDouble() * dLon),
+                    Altitude = 1000 * r.NextDouble()
+                });
+
             }
             return result;
         }

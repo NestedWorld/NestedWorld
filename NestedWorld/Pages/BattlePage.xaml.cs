@@ -1,5 +1,9 @@
-﻿using System;
+﻿using NestedWorld.Classes.ElementsGame.Battle;
+using NestedWorld.Classes.ElementsGame.Monsters;
+using NestedWorld.View.BattleViews;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,21 +26,39 @@ namespace NestedWorld.Pages
     /// </summary>
     public sealed partial class BattlePage : Page
     {
+        public BattleCore Core { get; set; }
+
+        public AnnimationCanvas Annimation { get { return annimationCanvas; } set { annimationCanvas = value; } }
         public BattlePage()
         {
             this.InitializeComponent();
+            Core = new BattleCore();
+            Core.Page = this;
+            battleCanvas.core = Core;
+        }
+
+        public void ShowAttack()
+        {
+            annimationCanvas.Damages();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            MonsterList monsterList = e.Parameter as MonsterList;
 
-           
+            try
+            {
+                Core.EnemieMonster = monsterList;
+                Core.UserMonster = monsterList;
+                userMonster.monster = monsterList.monsterList[0];
+                enemieMonster.monster = monsterList.monsterList[1];
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
 
-        private void ToggleButton_Click(object sender, RoutedEventArgs e)
-        {
-            //Splitter.IsPaneOpen = (Splitter.IsPaneOpen == true) ? false : true;
-            //StatusBorder.Visibility = Visibility.Collapsed;
-        }
+       
     }
 }

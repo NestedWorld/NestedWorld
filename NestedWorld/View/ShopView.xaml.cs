@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NestedWorld.Common;
+using NestedWorld.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +21,23 @@ namespace NestedWorld.View
 {
     public sealed partial class ShopView : UserControl
     {
+
         public ShopView()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+         
+        }
+
+      
+
+        private void itemGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

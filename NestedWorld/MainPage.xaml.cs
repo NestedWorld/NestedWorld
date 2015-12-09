@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -27,8 +28,10 @@ namespace NestedWorld
         {
             this.InitializeComponent();
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-
+           // Init();
         }
+
+       
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,7 +40,25 @@ namespace NestedWorld
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            registerView.Visibility = Visibility.Visible;
+            
+        }
+
+        private void Regiter_Click(object sender, RoutedEventArgs e)
+        {
+            popupView.Child = new PopUp.RegisterPopUp();
+            popupView.IsOpen = true;
+        }
+
+        private void Forgot_Click(object sender, RoutedEventArgs e)
+        {
+            popupView.Child = new PopUp.ForgotPassPopUp();
+            popupView.IsOpen = true;
+        }
+
+        private void Setting_Click(object sender, RoutedEventArgs e)
+        {
+            popupView.Child = new PopUp.SettingsPopUp();
+            popupView.IsOpen = true;
         }
     }
 }

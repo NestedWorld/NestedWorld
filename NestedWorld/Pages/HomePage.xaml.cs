@@ -49,7 +49,17 @@ namespace NestedWorld.Pages
 
         private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.BattlePage));
+            Frame.Navigate(typeof(Pages.PrepareBattlePage));
+        }
+
+        private void itemGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

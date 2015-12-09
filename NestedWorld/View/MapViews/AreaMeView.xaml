@@ -12,15 +12,24 @@
     Width="400">
 
     <StackPanel Tapped="StackPanel_Tapped" Holding="StackPanel_Holding">
-        <maps:MapControl x:Name="mapControl" MapServiceToken="{StaticResource maptoken}" Height="200"/>
-        <Grid Background="{StaticResource BleuTwoBrush}" Height="100">
+        <FlyoutBase.AttachedFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Get Direction" Click="MenuFlyoutItem_Click"/>
+                <MenuFlyoutItem Text="Send to an Ally" Click="MenuFlyoutItem_Click"/>
+                <MenuFlyoutItem Text="Remove this area" Click="MenuFlyoutItem_Click"/>
+            </MenuFlyout>
+        </FlyoutBase.AttachedFlyout>
+        <maps:MapControl x:Name="mapControl" MapServiceToken="{StaticResource maptoken}" Height="250"/>
+        <Grid Background="{StaticResource BleuTwoBrush}" Height="50">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
                 <ColumnDefinition Width="100*"/>
             </Grid.ColumnDefinitions>
+            <TextBlock Text="Your Area" Foreground="{StaticResource BackrgoundBrush}" Margin="10" FontSize="{StaticResource PoliceSize}"/>
+            <TextBlock Grid.Column="1" x:Name="DistanceTextBlock" Foreground="{StaticResource BackrgoundBrush}" Margin="10" FontSize="{StaticResource PoliceSize}"/>
         </Grid>
-        <Grid Visibility="Collapsed" x:Name="InfoGrid" Background="{StaticResource BleuThreeBrush}" Height="200">
-            
+        <Grid Visibility="Collapsed" x:Name="InfoGrid" Background="{StaticResource BleuThreeBrush}" Height="250">
+               
         </Grid>
     </StackPanel>
 </UserControl>

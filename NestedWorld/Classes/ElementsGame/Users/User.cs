@@ -12,9 +12,9 @@ namespace NestedWorld.Classes.ElementsGame.Users
     {
         public string Name { get; private set; }
         public string Image { get; private set; }
+        public string Background { get; private set; }
         public int Level { get; private set; }
         public bool IsOnline { get; private set; }
-
         public Channel discution { get; set; }
         public Color color
         {
@@ -43,6 +43,11 @@ namespace NestedWorld.Classes.ElementsGame.Users
             this.IsOnline = isOnline;
             this.Level = level;
             discution = new Channel(name, false);
+        }
+
+        public User(string name, string image, string background, bool isOnline, int level) : this(name, image, isOnline, level)
+        {
+            Background = background;
         }
     }
 }

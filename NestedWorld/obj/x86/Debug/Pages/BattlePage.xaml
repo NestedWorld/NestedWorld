@@ -7,21 +7,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Background>
-        <SolidColorBrush Color="{StaticResource background}"/>
-    </Page.Background>
 
-    <Grid Margin="0">
-        <Grid.Background>
-            <SolidColorBrush Color="{StaticResource background}"/>
-        </Grid.Background>
-        <Image Source="ms-appx:///Assets/NestedWorldLogo.png" Height="200" Width="200"></Image>
-        <Rectangle Height="auto" Width="auto" Fill="#7FFFFFFF"/>
-        <Rectangle Height="100" Fill="{StaticResource BleuThreeBrush}" VerticalAlignment="Top"/>
-        <Rectangle Height="100" Fill="{StaticResource BleuThreeBrush}" VerticalAlignment="Bottom"/>
-        <BattleView:EnemieBattleView VerticalAlignment="Top"/>
-        <BattleView:UserBattleView VerticalAlignment="Bottom"/>
-        <Canvas x:ConnectionId='1' x:Name="mainCanvas"></Canvas>
+
+    <Grid Margin="0" Background="{StaticResource BackrgoundBrush}">
+        <BattleView:BattleCanvas x:ConnectionId='1' x:Name="battleCanvas"/>
+
+        <Rectangle VerticalAlignment="top" Height="135" Width="auto" Fill="{StaticResource BleuThreeBrush}"/>
+        <BattleView:EnemieMonster x:ConnectionId='2' x:Name="enemieMonster" VerticalAlignment="Top"></BattleView:EnemieMonster>
+        <Rectangle VerticalAlignment="Bottom" Height="180" Width="auto" Fill="{StaticResource BleuThreeBrush}"/>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <BattleView:UserMonster x:ConnectionId='4' x:Name="userMonster"/>
+            <BattleView:UserMonsterList x:ConnectionId='5' x:Name="userMonsterList"/>
+        </StackPanel>
+        <BattleView:AnnimationCanvas x:ConnectionId='3' Visibility="Collapsed" x:Name="annimationCanvas"/>
     </Grid>
 </Page>
 

@@ -93,6 +93,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="DataModel\ShopData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -102,13 +105,22 @@
     <Compile Include="Classes\Chat\Channel.cs" />
     <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
     <Compile Include="Classes\ElementsGame\Areas\Area.cs" />
+    <Compile Include="Classes\ElementsGame\Areas\AreaContentPresenter.cs" />
     <Compile Include="Classes\ElementsGame\Areas\AreaList.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\BattleCore.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Patern.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Paterns\AttackPatern.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Paterns\AttackSpePatern.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Paterns\DefenceSpePatern.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Paterns\DefencePatern.cs" />
+    <Compile Include="Classes\ElementsGame\Battle\Paterns\UseToolsPatern.cs" />
     <Compile Include="Classes\ElementsGame\GameCore\Core.cs" />
     <Compile Include="Classes\ElementsGame\GameCore\UserInfo.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\Monster.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttack.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttckList.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterList.cs" />
+    <Compile Include="Classes\ElementsGame\Monsters\MonsterListPerType.cs" />
     <Compile Include="Classes\ElementsGame\TypeEnum.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\UserMonster.cs" />
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
@@ -116,10 +128,17 @@
     <Compile Include="Classes\Garden\Garden.cs" />
     <Compile Include="Classes\Garden\GardenElement.cs" />
     <Compile Include="Classes\Garden\GardenElementList.cs" />
+    <Compile Include="Classes\Request\Auth\Login.cs" />
+    <Compile Include="Classes\Request\Auth\Logout.cs" />
+    <Compile Include="Classes\Request\Auth\Register.cs" />
+    <Compile Include="Classes\Request\Auth\ResetPassword.cs" />
+    <Compile Include="Classes\Request\HttpRequest.cs" />
+    <Compile Include="Common\ObservableDicionary.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\ShopElement.cs" />
     <Compile Include="Pages\BattlePage.xaml.cs">
       <DependentUpon>BattlePage.xaml</DependentUpon>
     </Compile>
@@ -135,6 +154,18 @@
     <Compile Include="Pages\PrepareBattlePage.xaml.cs">
       <DependentUpon>PrepareBattlePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PopUp\ForgotPassPopUp.xaml.cs">
+      <DependentUpon>ForgotPassPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\NewBattlePopUp.xaml.cs">
+      <DependentUpon>NewBattlePopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\RegisterPopUp.xaml.cs">
+      <DependentUpon>RegisterPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\SettingsPopUp.xaml.cs">
+      <DependentUpon>SettingsPopUp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource\TypeResource.cs" />
     <Compile Include="Style\TabHeader.xaml.cs">
@@ -144,21 +175,28 @@
       <DependentUpon>TabHeaderMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\ColorUtils.cs" />
+    <Compile Include="Utils\InkAnnalyse.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
     <Compile Include="ViewModel\ChanelListViewModel.cs" />
     <Compile Include="ViewModel\GardenElementListViewModel.cs" />
+    <Compile Include="View\BattleViews\AnnimationCanvas.xaml.cs">
+      <DependentUpon>AnnimationCanvas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\BattleViews\BattleCanvas.xaml.cs">
       <DependentUpon>BattleCanvas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\BattleViews\EnemieBattleView.xaml.cs">
-      <DependentUpon>EnemieBattleView.xaml</DependentUpon>
+    <Compile Include="View\BattleViews\BattleIcon.xaml.cs">
+      <DependentUpon>BattleIcon.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\BattleViews\StartBattleAnnimation.xaml.cs">
-      <DependentUpon>StartBattleAnnimation.xaml</DependentUpon>
+    <Compile Include="View\BattleViews\EnemieMonster.xaml.cs">
+      <DependentUpon>EnemieMonster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\BattleViews\UserBattleView.xaml.cs">
-      <DependentUpon>UserBattleView.xaml</DependentUpon>
+    <Compile Include="View\BattleViews\UserMonster.xaml.cs">
+      <DependentUpon>UserMonster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BattleViews\UserMonsterList.xaml.cs">
+      <DependentUpon>UserMonsterList.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ChatViews\ChanelListView.xaml.cs">
       <DependentUpon>ChanelListView.xaml</DependentUpon>
@@ -196,11 +234,20 @@
     <Compile Include="View\MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MapViews\AreaAllyView.xaml.cs">
+      <DependentUpon>AreaAllyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapViews\AreaFreeView.xaml.cs">
+      <DependentUpon>AreaFreeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MapViews\AreaListView.xaml.cs">
       <DependentUpon>AreaListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MapViews\AreaMeView.xaml.cs">
       <DependentUpon>AreaMeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapViews\AreaOtherView.xaml.cs">
+      <DependentUpon>AreaOtherView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MapViews\MapPoint.xaml.cs">
       <DependentUpon>MapPoint.xaml</DependentUpon>
@@ -241,20 +288,17 @@
     <Compile Include="View\NotificationView.xaml.cs">
       <DependentUpon>NotificationView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\PopUpView\RegisterView.xaml.cs">
-      <DependentUpon>RegisterView.xaml</DependentUpon>
+    <Compile Include="View\PrepareBattleView\UserMonsterListView.xaml.cs">
+      <DependentUpon>UserMonsterListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\PrepareBattleViews\MonsterForBattleView.xaml.cs">
-      <DependentUpon>MonsterForBattleView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\PrepareBattleViews\MonsterView.xaml.cs">
-      <DependentUpon>MonsterView.xaml</DependentUpon>
+    <Compile Include="View\PrepareBattleView\UsersProfileEntrance.xaml.cs">
+      <DependentUpon>UsersProfileEntrance.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\StatsView.xaml.cs">
-      <DependentUpon>StatsView.xaml</DependentUpon>
+    <Compile Include="View\ShopViews\ShopElementView.xaml.cs">
+      <DependentUpon>ShopElementView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
@@ -270,6 +314,7 @@
     <None Include="NestedWorld_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Effect\fire_effect.png" />
     <Content Include="Assets\Flower\Flower.png" />
     <Content Include="Assets\Flower\flowerDirt.png" />
     <Content Include="Assets\Flower\flowerElec.png" />
@@ -323,6 +368,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PopUp\ForgotPassPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUp\NewBattlePopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUp\RegisterPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUp\SettingsPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style\TabHeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -331,19 +392,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\BattleViews\AnnimationCanvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\BattleViews\BattleCanvas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\BattleViews\EnemieBattleView.xaml">
+    <Page Include="View\BattleViews\BattleIcon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\BattleViews\StartBattleAnnimation.xaml">
+    <Page Include="View\BattleViews\EnemieMonster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\BattleViews\UserBattleView.xaml">
+    <Page Include="View\BattleViews\UserMonster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BattleViews\UserMonsterList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -395,11 +464,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\MapViews\AreaAllyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapViews\AreaFreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MapViews\AreaListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MapViews\AreaMeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapViews\AreaOtherView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -455,15 +536,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\PopUpView\RegisterView.xaml">
+    <Page Include="View\PrepareBattleView\UserMonsterListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\PrepareBattleViews\MonsterForBattleView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\PrepareBattleViews\MonsterView.xaml">
+    <Page Include="View\PrepareBattleView\UsersProfileEntrance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -471,7 +548,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\StatsView.xaml">
+    <Page Include="View\ShopViews\ShopElementView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -487,6 +564,14 @@
   <ItemGroup>
     <Folder Include="Classes\DesignUtilities\" />
     <Folder Include="Classes\Network\" />
+    <Folder Include="Classes\Request\Monster\" />
+    <Folder Include="Classes\Request\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\thomas\Desktop\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj">
+      <Project>{973a943b-ff77-4267-8f30-f5fe2b7f5583}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

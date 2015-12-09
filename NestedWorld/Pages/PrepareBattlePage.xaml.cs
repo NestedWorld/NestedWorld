@@ -25,6 +25,27 @@ namespace NestedWorld.Pages
         public PrepareBattlePage()
         {
             this.InitializeComponent();
+            userMonsterListView.monsterList = App.core.monsterUserList;
+            profileEntrance.User = App.core.user;
+            profileEntrance.Enemie = App.core.userList.userList[1];
+            profileEntrance.Begin();
+            Show.Begin();
         }
+
+        private void OK_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pages.BattlePage), userMonsterListView.SelectedMonsterList);
+        }
+
+        private void Cancel_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reset_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+      
     }
 }

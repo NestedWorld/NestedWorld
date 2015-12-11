@@ -49,7 +49,11 @@ namespace NestedWorld.Pages
 
         private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.PrepareBattlePage));
+
+            popupView.Child = new PopUp.NewBattlePopUp(App.core.userList.userList[0]);
+            popupView.IsOpen = true;
+
+            //Frame.Navigate(typeof(Pages.PrepareBattlePage));
         }
 
         private void itemGridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -58,6 +62,11 @@ namespace NestedWorld.Pages
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AppBarButton_Click_2(object sender, RoutedEventArgs e)
         {
 
         }

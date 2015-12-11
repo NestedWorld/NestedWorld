@@ -388,7 +388,6 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
         private object Activate_40_UserMonsterListView() { return new global::NestedWorld.View.PrepareBattleView.UserMonsterListView(); }
         private object Activate_41_PrepareBattlePage() { return new global::NestedWorld.Pages.PrepareBattlePage(); }
         private object Activate_42_ForgotPassPopUp() { return new global::NestedWorld.PopUp.ForgotPassPopUp(); }
-        private object Activate_43_NewBattlePopUp() { return new global::NestedWorld.PopUp.NewBattlePopUp(); }
         private object Activate_44_RegisterPopUp() { return new global::NestedWorld.PopUp.RegisterPopUp(); }
         private object Activate_45_SettingsPopUp() { return new global::NestedWorld.PopUp.SettingsPopUp(); }
         private object Activate_46_TabHeaderMap() { return new global::NestedWorld.Style.TabHeaderMap(); }
@@ -754,7 +753,6 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
 
             case 43:   //  NestedWorld.PopUp.NewBattlePopUp
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_43_NewBattlePopUp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

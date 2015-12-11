@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NestedWorld.Classes.ElementsGame.Users;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +20,34 @@ namespace NestedWorld.PopUp
 {
     public sealed partial class NewBattlePopUp : UserControl
     {
-        public NewBattlePopUp()
+
+
+        public NewBattlePopUp(User user)
         {
             this.InitializeComponent();
+            this.DataContext = user;
+
+            ShowAnnimation.Begin();
+            RemoveAnnimation.Completed += RemoveAnnimation_Completed;
+        }
+
+        private void RemoveAnnimation_Completed(object sender, object e)
+        {
+            Popup p = this.Parent as Popup;
+
+            p.IsOpen = false;
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame root = Window.Current.Content as Frame;
+
+            root.Navigate(typeof(Pages.PrepareBattlePage));
+        }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            RemoveAnnimation.Begin();
         }
     }
 }

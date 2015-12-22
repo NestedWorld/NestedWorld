@@ -3,42 +3,41 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:NestedWorld.View"
+    xmlns:classMonster="using:NestedWorld.Classes.ElementsGame.Monsters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="200"
     d:DesignWidth="200">
+   
+    <StackPanel Orientation="Vertical">
+        <!--Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="25*"/>
+        </-->
+        <Rectangle x:ConnectionId='1' x:Name="rectangleMain" StrokeThickness="2" Height="100" Width="100">
+            <Rectangle.Fill>
+                <ImageBrush Stretch="Fill" ImageSource="{Binding Path=Image}"/>
+            </Rectangle.Fill>
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="{Binding Path=color}"/>
+            </Rectangle.Stroke>
+        </Rectangle>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="40*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="40*"/>
-        </Grid.ColumnDefinitions>
-        <Ellipse StrokeThickness="2">
-            <Ellipse.Fill>
-                <ImageBrush Stretch="Uniform" ImageSource="{Binding MonsterImage}"/>
-            </Ellipse.Fill>
-            <Ellipse.Stroke>
-                <SolidColorBrush Color="{StaticResource foreground}"/>
-            </Ellipse.Stroke>
-            
-        </Ellipse>
-        <Ellipse Height="25" Width="25" StrokeThickness="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5">
-            <Ellipse.Stroke>
-                <SolidColorBrush Color="{StaticResource foreground}"/>
-            </Ellipse.Stroke>
-            <Ellipse.Fill>
-                <SolidColorBrush Color="{StaticResource background}"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        
-        <TextBlock Text="{Binding MonsterName}" Grid.Row="1" Style="{StaticResource TextBlockStyleOne}" Margin="10"></TextBlock>
-        <TextBlock Text="{Binding Level}" Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBlockStyleOne}" Margin="10"></TextBlock>
+        <StackPanel Grid.Row="1" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Margin="3" Text="{Binding Path=Name}" Style="{StaticResource TextBlockStyleOne}" FontSize="15" >
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource foreground}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:ConnectionId='2' x:Name="LevelTextBlock" Text="{Binding Path=Level}"  Style="{StaticResource TextBlockStyleOne}" Margin="0, 5" FontSize="10">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource foreground}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
 
-    </Grid>
+        </StackPanel>
+
+    </StackPanel>
 </UserControl>
 

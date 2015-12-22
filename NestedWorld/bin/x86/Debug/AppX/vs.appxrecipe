@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</PackageIdentityName>
     <IntermediateOutputPath>E:\Git\nestedworld\NestedWorld\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E25EDEE518ECEFCE3FD074CAB79646A4BC25283A41983FB0FBC96FEF241820A2</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>58957AEC7B27567E08BBB1E87DD7F89E8C4676FDA6C94B2DD86EC6ADA8F3ED6F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_1.0.0.0_x86__vjvds0menc1ng</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_vjvds0menc1ng!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T18:33:09.499</Modified>
+      <Modified>2015-12-22T21:58:25.853</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -138,11 +138,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2015-12-10T04:46:57.870</Modified>
+      <Modified>2015-12-22T21:57:41.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
-      <Modified>2015-12-09T23:51:42.129</Modified>
+      <Modified>2015-12-14T22:07:51.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.winmd">
       <PackagePath>Facebook.winmd</PackagePath>
@@ -190,11 +190,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2015-12-10T18:33:09.489</Modified>
+      <Modified>2015-12-22T21:58:25.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2015-12-10T04:46:56.959</Modified>
+      <Modified>2015-12-22T21:50:42.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -206,7 +206,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-10T18:33:04.226</Modified>
+      <Modified>2015-12-22T21:58:25.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -603,6 +603,162 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-08-16T02:25:13.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.Core.dll">
+      <PackagePath>Telerik.Core.dll</PackagePath>
+      <Modified>2015-11-17T16:48:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.Data.dll">
+      <PackagePath>Telerik.Data.dll</PackagePath>
+      <Modified>2015-11-17T16:48:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.Geospatial.UWP.dll">
+      <PackagePath>Telerik.Geospatial.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:49:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Drawing.dll">
+      <PackagePath>Telerik.UI.Drawing.dll</PackagePath>
+      <Modified>2015-11-17T16:48:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Drawing.winmd">
+      <PackagePath>Telerik.UI.Drawing.winmd</PackagePath>
+      <Modified>2015-11-17T16:48:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Chart.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.Chart.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Chart.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Chart.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Chart.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP\Themes\DataForm.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP\Themes\DataForm.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP\Themes\Listbox.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP\Themes\Listbox.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Controls.Data.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.DataVisualization.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.DataVisualization.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.DataVisualization.UWP\Themes\Resources.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.UWP\Themes\Resources.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.DataVisualization.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.DataVisualization.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\Calendar.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\Calendar.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\CommonResources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\CommonResources.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\Resources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\Resources.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Input.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Map.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.Map.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Map.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Map.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Map.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Map.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Map.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Map.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP.dll">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP.dll</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\HubTilePalette.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\HubTilePalette.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\Resources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\Resources.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeColorsDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeColorsDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeColorsLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeColorsLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeResourcesDark.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives.UWP\Themes\ThemeResourcesLight.xbf</PackagePath>
+      <Modified>2015-11-17T16:48:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

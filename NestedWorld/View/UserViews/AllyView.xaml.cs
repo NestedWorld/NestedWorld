@@ -29,5 +29,12 @@ namespace NestedWorld.View.UserViews
         {
             this.LevelTextBlock.Text += " lvl";
         }
+
+        private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame root = Window.Current.Content as Frame;
+
+            root.Navigate(typeof(Pages.ProfilePage), DataContext);
+        }
     }
 }

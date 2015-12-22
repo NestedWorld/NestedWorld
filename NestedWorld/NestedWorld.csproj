@@ -104,6 +104,7 @@
     </Compile>
     <Compile Include="Classes\Chat\Channel.cs" />
     <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
+    <Compile Include="Classes\DesignUtilities\ThemeSelector.cs" />
     <Compile Include="Classes\ElementsGame\Areas\Area.cs" />
     <Compile Include="Classes\ElementsGame\Areas\AreaContentPresenter.cs" />
     <Compile Include="Classes\ElementsGame\Areas\AreaList.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Classes\Request\Auth\Register.cs" />
     <Compile Include="Classes\Request\Auth\ResetPassword.cs" />
     <Compile Include="Classes\Request\HttpRequest.cs" />
+    <Compile Include="Classes\Stats\Stats.cs" />
     <Compile Include="Common\ObservableDicionary.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -154,8 +156,20 @@
     <Compile Include="Pages\PrepareBattlePage.xaml.cs">
       <DependentUpon>PrepareBattlePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\CatchAreaProposition.xaml.cs">
+      <DependentUpon>CatchAreaProposition.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PopUp\ForgotPassPopUp.xaml.cs">
       <DependentUpon>ForgotPassPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\MonsterNearPopUp.xaml.cs">
+      <DependentUpon>MonsterNearPopUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="PopUp\NewBattlePopUp.xaml.cs">
       <DependentUpon>NewBattlePopUp.xaml</DependentUpon>
@@ -252,6 +266,9 @@
     <Compile Include="View\MapViews\MapPoint.xaml.cs">
       <DependentUpon>MapPoint.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MapViews\MapTelerikTest.xaml.cs">
+      <DependentUpon>MapTelerikTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MapViews\MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
@@ -293,6 +310,18 @@
     </Compile>
     <Compile Include="View\PrepareBattleView\UsersProfileEntrance.xaml.cs">
       <DependentUpon>UsersProfileEntrance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProfileViews\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProfileViews\MonsterStat.xaml.cs">
+      <DependentUpon>MonsterStat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProfileViews\StatiUserView.xaml.cs">
+      <DependentUpon>StatiUserView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsViews\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
@@ -368,7 +397,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUp\CatchAreaProposition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PopUp\ForgotPassPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUp\MonsterNearPopUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -391,6 +436,16 @@
     <Page Include="Style\TabHeaderMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\FireTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Theme\WaterTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
     <Page Include="View\BattleViews\AnnimationCanvas.xaml">
       <SubType>Designer</SubType>
@@ -488,6 +543,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\MapViews\MapTelerikTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MapViews\MapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -544,6 +603,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\ProfileViews\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProfileViews\MonsterStat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProfileViews\StatiUserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingsViews\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -562,7 +637,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\DesignUtilities\" />
     <Folder Include="Classes\Network\" />
     <Folder Include="Classes\Request\Monster\" />
     <Folder Include="Classes\Request\Users\" />
@@ -572,6 +646,17 @@
       <Project>{973a943b-ff77-4267-8f30-f5fe2b7f5583}</Project>
       <Name>Facebook</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.VCLibs, version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
+    <SDKReference Include="Telerik Map for Universal Windows Platform, Version=2015.3.1117.45">
+      <Name>Telerik RadMap For Universal Windows Platform</Name>
+    </SDKReference>
+    <SDKReference Include="Telerik UI For Universal Windows Platform, Version=2015.3.1117.45">
+      <Name>Telerik UI For Universal Windows Platform</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

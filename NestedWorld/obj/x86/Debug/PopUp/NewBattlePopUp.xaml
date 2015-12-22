@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="100"
-    Width="400" RenderTransformOrigin="0.5,0.5">
+    Width="350" RenderTransformOrigin="0.5,0.5">
     <UserControl.Resources>
         <Storyboard x:ConnectionId='2' x:Name="ShowAnnimation">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="userControl">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-400">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-350">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <ExponentialEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -24,7 +24,7 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:ConnectionId='3' x:Name="RemoveAnnimation">
-            <DoubleAnimation Duration="0:0:0.3" To="-400" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="userControl" d:IsOptimized="True">
+            <DoubleAnimation Duration="0:0:0.3" To="-350" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="userControl" d:IsOptimized="True">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
@@ -41,8 +41,8 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="40*"/>
                 <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
 
             </Grid.ColumnDefinitions>
             <Ellipse Height="75" Width="75" Stroke="{StaticResource BackrgoundBrush}" StrokeThickness="2">
@@ -58,6 +58,7 @@
                     <TextBlock Text="{Binding Path=Level}" FontSize="10" Grid.Column="1" VerticalAlignment="Bottom" Foreground="{StaticResource BackrgoundBrush}"/>
                     <TextBlock Text="lvl" FontSize="10" Grid.Column="1" VerticalAlignment="Bottom" Foreground="{StaticResource BackrgoundBrush}" Margin="3,0,0,0"/>
                 </StackPanel>
+                <TextBlock FontSize="12" Text="Want fight with you" Foreground="{StaticResource BackrgoundBrush}"/>
             </StackPanel>
             <AppBarButton x:ConnectionId='4' Grid.Column="2"  HorizontalAlignment="Right"                             Background="{x:Null}" Width="50" Height="51">
                 <AppBarButton.Foreground>

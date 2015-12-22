@@ -1,0 +1,19 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.BattleViews.BattleCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View.BattleViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   >
+
+    <Grid Background="{StaticResource BackrgoundBrush}">
+        <Image Source="ms-appx:///Assets/NestedWorldLogo.png" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Height="150" Width="150" Fill="#7FFFFFFF" ></Rectangle>
+        <Canvas x:ConnectionId='1' Visibility="Visible" x:Name="mainCanvas"/>
+        <InkCanvas x:ConnectionId='2' x:Name="inkCanvas"/>
+        
+    </Grid>
+</UserControl>
+

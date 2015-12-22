@@ -5,7 +5,10 @@ Pages\ChatPage.xbf
 Pages\HomePage.xbf
 Pages\MonsterPage.xbf
 Pages\PrepareBattlePage.xbf
+Pages\SettingsPage.xbf
+PopUp\CatchAreaProposition.xbf
 PopUp\ForgotPassPopUp.xbf
+PopUp\MonsterNearPopUp.xbf
 PopUp\NewBattlePopUp.xbf
 PopUp\RegisterPopUp.xbf
 PopUp\SettingsPopUp.xbf

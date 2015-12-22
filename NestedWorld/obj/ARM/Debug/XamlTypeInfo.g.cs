@@ -156,7 +156,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[83];
+            _typeNameTable = new string[86];
             _typeNameTable[0] = "Windows.UI.Color";
             _typeNameTable[1] = "System.ValueType";
             _typeNameTable[2] = "Object";
@@ -199,49 +199,52 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeNameTable[39] = "NestedWorld.Classes.ElementsGame.Users.User";
             _typeNameTable[40] = "NestedWorld.View.PrepareBattleView.UserMonsterListView";
             _typeNameTable[41] = "NestedWorld.Pages.PrepareBattlePage";
-            _typeNameTable[42] = "NestedWorld.PopUp.ForgotPassPopUp";
-            _typeNameTable[43] = "NestedWorld.PopUp.NewBattlePopUp";
-            _typeNameTable[44] = "NestedWorld.PopUp.RegisterPopUp";
-            _typeNameTable[45] = "NestedWorld.PopUp.SettingsPopUp";
-            _typeNameTable[46] = "NestedWorld.Style.TabHeaderMap";
-            _typeNameTable[47] = "NestedWorld.View.BattleViews.BattleIcon";
-            _typeNameTable[48] = "Double";
-            _typeNameTable[49] = "Boolean";
-            _typeNameTable[50] = "NestedWorld.View.ChatViews.ChanelView";
-            _typeNameTable[51] = "NestedWorld.Classes.Chat.MessageContentPresenter";
-            _typeNameTable[52] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[53] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[54] = "NestedWorld.View.ChatViews.MeMessageTemplate";
-            _typeNameTable[55] = "NestedWorld.View.ChatViews.YouMessageTemplate";
-            _typeNameTable[56] = "NestedWorld.View.GardenViews.GardenElementListView";
-            _typeNameTable[57] = "Windows.UI.Xaml.Controls.GridView";
-            _typeNameTable[58] = "NestedWorld.View.GardenViews.GardenElementView";
-            _typeNameTable[59] = "NestedWorld.View.GardenViews.GardenItem";
-            _typeNameTable[60] = "NestedWorld.Classes.Garden.GardenElement";
-            _typeNameTable[61] = "NestedWorld.View.NotificationView";
-            _typeNameTable[62] = "Windows.UI.Xaml.Input.TappedEventHandler";
-            _typeNameTable[63] = "NestedWorld.View.MapViews.MapView";
-            _typeNameTable[64] = "NestedWorld.View.MapViews.AreaListView";
-            _typeNameTable[65] = "NestedWorld.View.MapViews.AreaAllyView";
-            _typeNameTable[66] = "NestedWorld.View.MapViews.AreaFreeView";
-            _typeNameTable[67] = "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter";
-            _typeNameTable[68] = "NestedWorld.View.MapViews.AreaMeView";
-            _typeNameTable[69] = "NestedWorld.View.MapViews.AreaOtherView";
-            _typeNameTable[70] = "NestedWorld.View.MapViews.MapPoint";
-            _typeNameTable[71] = "NestedWorld.View.MonsterViews.MonsterView";
-            _typeNameTable[72] = "NestedWorld.View.MonsterSoloView";
-            _typeNameTable[73] = "NestedWorld.Classes.ElementsGame.TypeEnum";
-            _typeNameTable[74] = "System.Enum";
-            _typeNameTable[75] = "NestedWorld.View.MonsterViews.MonsterAttackView";
-            _typeNameTable[76] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
-            _typeNameTable[77] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
-            _typeNameTable[78] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
-            _typeNameTable[79] = "NestedWorld.View.MonsterViews.MonsterStatsView";
-            _typeNameTable[80] = "NestedWorld.View.MonsterViews.MonsterLocationView";
-            _typeNameTable[81] = "NestedWorld.View.ShopViews.ShopElementView";
-            _typeNameTable[82] = "NestedWorld.View.UserViews.AllyView";
+            _typeNameTable[42] = "NestedWorld.Pages.SettingsPage";
+            _typeNameTable[43] = "NestedWorld.PopUp.CatchAreaProposition";
+            _typeNameTable[44] = "NestedWorld.PopUp.ForgotPassPopUp";
+            _typeNameTable[45] = "NestedWorld.PopUp.MonsterNearPopUp";
+            _typeNameTable[46] = "NestedWorld.PopUp.NewBattlePopUp";
+            _typeNameTable[47] = "NestedWorld.PopUp.RegisterPopUp";
+            _typeNameTable[48] = "NestedWorld.PopUp.SettingsPopUp";
+            _typeNameTable[49] = "NestedWorld.Style.TabHeaderMap";
+            _typeNameTable[50] = "NestedWorld.View.BattleViews.BattleIcon";
+            _typeNameTable[51] = "Double";
+            _typeNameTable[52] = "Boolean";
+            _typeNameTable[53] = "NestedWorld.View.ChatViews.ChanelView";
+            _typeNameTable[54] = "NestedWorld.Classes.Chat.MessageContentPresenter";
+            _typeNameTable[55] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[56] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[57] = "NestedWorld.View.ChatViews.MeMessageTemplate";
+            _typeNameTable[58] = "NestedWorld.View.ChatViews.YouMessageTemplate";
+            _typeNameTable[59] = "NestedWorld.View.GardenViews.GardenElementListView";
+            _typeNameTable[60] = "Windows.UI.Xaml.Controls.GridView";
+            _typeNameTable[61] = "NestedWorld.View.GardenViews.GardenElementView";
+            _typeNameTable[62] = "NestedWorld.View.GardenViews.GardenItem";
+            _typeNameTable[63] = "NestedWorld.Classes.Garden.GardenElement";
+            _typeNameTable[64] = "NestedWorld.View.NotificationView";
+            _typeNameTable[65] = "Windows.UI.Xaml.Input.TappedEventHandler";
+            _typeNameTable[66] = "NestedWorld.View.MapViews.MapView";
+            _typeNameTable[67] = "NestedWorld.View.MapViews.AreaListView";
+            _typeNameTable[68] = "NestedWorld.View.MapViews.AreaAllyView";
+            _typeNameTable[69] = "NestedWorld.View.MapViews.AreaFreeView";
+            _typeNameTable[70] = "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter";
+            _typeNameTable[71] = "NestedWorld.View.MapViews.AreaMeView";
+            _typeNameTable[72] = "NestedWorld.View.MapViews.AreaOtherView";
+            _typeNameTable[73] = "NestedWorld.View.MapViews.MapPoint";
+            _typeNameTable[74] = "NestedWorld.View.MonsterViews.MonsterView";
+            _typeNameTable[75] = "NestedWorld.View.MonsterSoloView";
+            _typeNameTable[76] = "NestedWorld.Classes.ElementsGame.TypeEnum";
+            _typeNameTable[77] = "System.Enum";
+            _typeNameTable[78] = "NestedWorld.View.MonsterViews.MonsterAttackView";
+            _typeNameTable[79] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
+            _typeNameTable[80] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
+            _typeNameTable[81] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
+            _typeNameTable[82] = "NestedWorld.View.MonsterViews.MonsterStatsView";
+            _typeNameTable[83] = "NestedWorld.View.MonsterViews.MonsterLocationView";
+            _typeNameTable[84] = "NestedWorld.View.ShopViews.ShopElementView";
+            _typeNameTable[85] = "NestedWorld.View.UserViews.AllyView";
 
-            _typeTable = new global::System.Type[83];
+            _typeTable = new global::System.Type[86];
             _typeTable[0] = typeof(global::Windows.UI.Color);
             _typeTable[1] = typeof(global::System.ValueType);
             _typeTable[2] = typeof(global::System.Object);
@@ -284,47 +287,50 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeTable[39] = typeof(global::NestedWorld.Classes.ElementsGame.Users.User);
             _typeTable[40] = typeof(global::NestedWorld.View.PrepareBattleView.UserMonsterListView);
             _typeTable[41] = typeof(global::NestedWorld.Pages.PrepareBattlePage);
-            _typeTable[42] = typeof(global::NestedWorld.PopUp.ForgotPassPopUp);
-            _typeTable[43] = typeof(global::NestedWorld.PopUp.NewBattlePopUp);
-            _typeTable[44] = typeof(global::NestedWorld.PopUp.RegisterPopUp);
-            _typeTable[45] = typeof(global::NestedWorld.PopUp.SettingsPopUp);
-            _typeTable[46] = typeof(global::NestedWorld.Style.TabHeaderMap);
-            _typeTable[47] = typeof(global::NestedWorld.View.BattleViews.BattleIcon);
-            _typeTable[48] = typeof(global::System.Double);
-            _typeTable[49] = typeof(global::System.Boolean);
-            _typeTable[50] = typeof(global::NestedWorld.View.ChatViews.ChanelView);
-            _typeTable[51] = typeof(global::NestedWorld.Classes.Chat.MessageContentPresenter);
-            _typeTable[52] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[54] = typeof(global::NestedWorld.View.ChatViews.MeMessageTemplate);
-            _typeTable[55] = typeof(global::NestedWorld.View.ChatViews.YouMessageTemplate);
-            _typeTable[56] = typeof(global::NestedWorld.View.GardenViews.GardenElementListView);
-            _typeTable[57] = typeof(global::Windows.UI.Xaml.Controls.GridView);
-            _typeTable[58] = typeof(global::NestedWorld.View.GardenViews.GardenElementView);
-            _typeTable[59] = typeof(global::NestedWorld.View.GardenViews.GardenItem);
-            _typeTable[60] = typeof(global::NestedWorld.Classes.Garden.GardenElement);
-            _typeTable[61] = typeof(global::NestedWorld.View.NotificationView);
-            _typeTable[62] = typeof(global::Windows.UI.Xaml.Input.TappedEventHandler);
-            _typeTable[63] = typeof(global::NestedWorld.View.MapViews.MapView);
-            _typeTable[64] = typeof(global::NestedWorld.View.MapViews.AreaListView);
-            _typeTable[65] = typeof(global::NestedWorld.View.MapViews.AreaAllyView);
-            _typeTable[66] = typeof(global::NestedWorld.View.MapViews.AreaFreeView);
-            _typeTable[67] = typeof(global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter);
-            _typeTable[68] = typeof(global::NestedWorld.View.MapViews.AreaMeView);
-            _typeTable[69] = typeof(global::NestedWorld.View.MapViews.AreaOtherView);
-            _typeTable[70] = typeof(global::NestedWorld.View.MapViews.MapPoint);
-            _typeTable[71] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
-            _typeTable[72] = typeof(global::NestedWorld.View.MonsterSoloView);
-            _typeTable[73] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
-            _typeTable[74] = typeof(global::System.Enum);
-            _typeTable[75] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
-            _typeTable[76] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
-            _typeTable[77] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
-            _typeTable[78] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
-            _typeTable[79] = typeof(global::NestedWorld.View.MonsterViews.MonsterStatsView);
-            _typeTable[80] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
-            _typeTable[81] = typeof(global::NestedWorld.View.ShopViews.ShopElementView);
-            _typeTable[82] = typeof(global::NestedWorld.View.UserViews.AllyView);
+            _typeTable[42] = typeof(global::NestedWorld.Pages.SettingsPage);
+            _typeTable[43] = typeof(global::NestedWorld.PopUp.CatchAreaProposition);
+            _typeTable[44] = typeof(global::NestedWorld.PopUp.ForgotPassPopUp);
+            _typeTable[45] = typeof(global::NestedWorld.PopUp.MonsterNearPopUp);
+            _typeTable[46] = typeof(global::NestedWorld.PopUp.NewBattlePopUp);
+            _typeTable[47] = typeof(global::NestedWorld.PopUp.RegisterPopUp);
+            _typeTable[48] = typeof(global::NestedWorld.PopUp.SettingsPopUp);
+            _typeTable[49] = typeof(global::NestedWorld.Style.TabHeaderMap);
+            _typeTable[50] = typeof(global::NestedWorld.View.BattleViews.BattleIcon);
+            _typeTable[51] = typeof(global::System.Double);
+            _typeTable[52] = typeof(global::System.Boolean);
+            _typeTable[53] = typeof(global::NestedWorld.View.ChatViews.ChanelView);
+            _typeTable[54] = typeof(global::NestedWorld.Classes.Chat.MessageContentPresenter);
+            _typeTable[55] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[56] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[57] = typeof(global::NestedWorld.View.ChatViews.MeMessageTemplate);
+            _typeTable[58] = typeof(global::NestedWorld.View.ChatViews.YouMessageTemplate);
+            _typeTable[59] = typeof(global::NestedWorld.View.GardenViews.GardenElementListView);
+            _typeTable[60] = typeof(global::Windows.UI.Xaml.Controls.GridView);
+            _typeTable[61] = typeof(global::NestedWorld.View.GardenViews.GardenElementView);
+            _typeTable[62] = typeof(global::NestedWorld.View.GardenViews.GardenItem);
+            _typeTable[63] = typeof(global::NestedWorld.Classes.Garden.GardenElement);
+            _typeTable[64] = typeof(global::NestedWorld.View.NotificationView);
+            _typeTable[65] = typeof(global::Windows.UI.Xaml.Input.TappedEventHandler);
+            _typeTable[66] = typeof(global::NestedWorld.View.MapViews.MapView);
+            _typeTable[67] = typeof(global::NestedWorld.View.MapViews.AreaListView);
+            _typeTable[68] = typeof(global::NestedWorld.View.MapViews.AreaAllyView);
+            _typeTable[69] = typeof(global::NestedWorld.View.MapViews.AreaFreeView);
+            _typeTable[70] = typeof(global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter);
+            _typeTable[71] = typeof(global::NestedWorld.View.MapViews.AreaMeView);
+            _typeTable[72] = typeof(global::NestedWorld.View.MapViews.AreaOtherView);
+            _typeTable[73] = typeof(global::NestedWorld.View.MapViews.MapPoint);
+            _typeTable[74] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
+            _typeTable[75] = typeof(global::NestedWorld.View.MonsterSoloView);
+            _typeTable[76] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
+            _typeTable[77] = typeof(global::System.Enum);
+            _typeTable[78] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
+            _typeTable[79] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
+            _typeTable[80] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
+            _typeTable[81] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
+            _typeTable[82] = typeof(global::NestedWorld.View.MonsterViews.MonsterStatsView);
+            _typeTable[83] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
+            _typeTable[84] = typeof(global::NestedWorld.View.ShopViews.ShopElementView);
+            _typeTable[85] = typeof(global::NestedWorld.View.UserViews.AllyView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -387,36 +393,39 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
         private object Activate_37_UsersProfileEntrance() { return new global::NestedWorld.View.PrepareBattleView.UsersProfileEntrance(); }
         private object Activate_40_UserMonsterListView() { return new global::NestedWorld.View.PrepareBattleView.UserMonsterListView(); }
         private object Activate_41_PrepareBattlePage() { return new global::NestedWorld.Pages.PrepareBattlePage(); }
-        private object Activate_42_ForgotPassPopUp() { return new global::NestedWorld.PopUp.ForgotPassPopUp(); }
-        private object Activate_44_RegisterPopUp() { return new global::NestedWorld.PopUp.RegisterPopUp(); }
-        private object Activate_45_SettingsPopUp() { return new global::NestedWorld.PopUp.SettingsPopUp(); }
-        private object Activate_46_TabHeaderMap() { return new global::NestedWorld.Style.TabHeaderMap(); }
-        private object Activate_50_ChanelView() { return new global::NestedWorld.View.ChatViews.ChanelView(); }
-        private object Activate_51_MessageContentPresenter() { return new global::NestedWorld.Classes.Chat.MessageContentPresenter(); }
-        private object Activate_54_MeMessageTemplate() { return new global::NestedWorld.View.ChatViews.MeMessageTemplate(); }
-        private object Activate_55_YouMessageTemplate() { return new global::NestedWorld.View.ChatViews.YouMessageTemplate(); }
-        private object Activate_56_GardenElementListView() { return new global::NestedWorld.View.GardenViews.GardenElementListView(); }
-        private object Activate_58_GardenElementView() { return new global::NestedWorld.View.GardenViews.GardenElementView(); }
-        private object Activate_59_GardenItem() { return new global::NestedWorld.View.GardenViews.GardenItem(); }
-        private object Activate_61_NotificationView() { return new global::NestedWorld.View.NotificationView(); }
-        private object Activate_63_MapView() { return new global::NestedWorld.View.MapViews.MapView(); }
-        private object Activate_64_AreaListView() { return new global::NestedWorld.View.MapViews.AreaListView(); }
-        private object Activate_65_AreaAllyView() { return new global::NestedWorld.View.MapViews.AreaAllyView(); }
-        private object Activate_66_AreaFreeView() { return new global::NestedWorld.View.MapViews.AreaFreeView(); }
-        private object Activate_67_AreaContentPresenter() { return new global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter(); }
-        private object Activate_68_AreaMeView() { return new global::NestedWorld.View.MapViews.AreaMeView(); }
-        private object Activate_69_AreaOtherView() { return new global::NestedWorld.View.MapViews.AreaOtherView(); }
-        private object Activate_70_MapPoint() { return new global::NestedWorld.View.MapViews.MapPoint(); }
-        private object Activate_71_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
-        private object Activate_72_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
-        private object Activate_75_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
-        private object Activate_76_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
-        private object Activate_77_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
-        private object Activate_78_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
-        private object Activate_79_MonsterStatsView() { return new global::NestedWorld.View.MonsterViews.MonsterStatsView(); }
-        private object Activate_80_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
-        private object Activate_81_ShopElementView() { return new global::NestedWorld.View.ShopViews.ShopElementView(); }
-        private object Activate_82_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
+        private object Activate_42_SettingsPage() { return new global::NestedWorld.Pages.SettingsPage(); }
+        private object Activate_43_CatchAreaProposition() { return new global::NestedWorld.PopUp.CatchAreaProposition(); }
+        private object Activate_44_ForgotPassPopUp() { return new global::NestedWorld.PopUp.ForgotPassPopUp(); }
+        private object Activate_45_MonsterNearPopUp() { return new global::NestedWorld.PopUp.MonsterNearPopUp(); }
+        private object Activate_47_RegisterPopUp() { return new global::NestedWorld.PopUp.RegisterPopUp(); }
+        private object Activate_48_SettingsPopUp() { return new global::NestedWorld.PopUp.SettingsPopUp(); }
+        private object Activate_49_TabHeaderMap() { return new global::NestedWorld.Style.TabHeaderMap(); }
+        private object Activate_53_ChanelView() { return new global::NestedWorld.View.ChatViews.ChanelView(); }
+        private object Activate_54_MessageContentPresenter() { return new global::NestedWorld.Classes.Chat.MessageContentPresenter(); }
+        private object Activate_57_MeMessageTemplate() { return new global::NestedWorld.View.ChatViews.MeMessageTemplate(); }
+        private object Activate_58_YouMessageTemplate() { return new global::NestedWorld.View.ChatViews.YouMessageTemplate(); }
+        private object Activate_59_GardenElementListView() { return new global::NestedWorld.View.GardenViews.GardenElementListView(); }
+        private object Activate_61_GardenElementView() { return new global::NestedWorld.View.GardenViews.GardenElementView(); }
+        private object Activate_62_GardenItem() { return new global::NestedWorld.View.GardenViews.GardenItem(); }
+        private object Activate_64_NotificationView() { return new global::NestedWorld.View.NotificationView(); }
+        private object Activate_66_MapView() { return new global::NestedWorld.View.MapViews.MapView(); }
+        private object Activate_67_AreaListView() { return new global::NestedWorld.View.MapViews.AreaListView(); }
+        private object Activate_68_AreaAllyView() { return new global::NestedWorld.View.MapViews.AreaAllyView(); }
+        private object Activate_69_AreaFreeView() { return new global::NestedWorld.View.MapViews.AreaFreeView(); }
+        private object Activate_70_AreaContentPresenter() { return new global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter(); }
+        private object Activate_71_AreaMeView() { return new global::NestedWorld.View.MapViews.AreaMeView(); }
+        private object Activate_72_AreaOtherView() { return new global::NestedWorld.View.MapViews.AreaOtherView(); }
+        private object Activate_73_MapPoint() { return new global::NestedWorld.View.MapViews.MapPoint(); }
+        private object Activate_74_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
+        private object Activate_75_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
+        private object Activate_78_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
+        private object Activate_79_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
+        private object Activate_80_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
+        private object Activate_81_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
+        private object Activate_82_MonsterStatsView() { return new global::NestedWorld.View.MonsterViews.MonsterStatsView(); }
+        private object Activate_83_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
+        private object Activate_84_ShopElementView() { return new global::NestedWorld.View.ShopViews.ShopElementView(); }
+        private object Activate_85_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -744,43 +753,64 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 42:   //  NestedWorld.PopUp.ForgotPassPopUp
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_42_ForgotPassPopUp;
+            case 42:   //  NestedWorld.Pages.SettingsPage
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_42_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  NestedWorld.PopUp.NewBattlePopUp
+            case 43:   //  NestedWorld.PopUp.CatchAreaProposition
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_43_CatchAreaProposition;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 44:   //  NestedWorld.PopUp.ForgotPassPopUp
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_44_ForgotPassPopUp;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 45:   //  NestedWorld.PopUp.MonsterNearPopUp
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_45_MonsterNearPopUp;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 46:   //  NestedWorld.PopUp.NewBattlePopUp
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 44:   //  NestedWorld.PopUp.RegisterPopUp
+            case 47:   //  NestedWorld.PopUp.RegisterPopUp
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_44_RegisterPopUp;
+                userType.Activator = Activate_47_RegisterPopUp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 45:   //  NestedWorld.PopUp.SettingsPopUp
+            case 48:   //  NestedWorld.PopUp.SettingsPopUp
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_45_SettingsPopUp;
+                userType.Activator = Activate_48_SettingsPopUp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  NestedWorld.Style.TabHeaderMap
+            case 49:   //  NestedWorld.Style.TabHeaderMap
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_46_TabHeaderMap;
+                userType.Activator = Activate_49_TabHeaderMap;
                 userType.AddMemberName("Glyph");
                 userType.AddMemberName("Label");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 47:   //  NestedWorld.View.BattleViews.BattleIcon
+            case 50:   //  NestedWorld.View.BattleViews.BattleIcon
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.AddMemberName("ImageItem");
                 userType.AddMemberName("left");
@@ -790,74 +820,74 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 48:   //  Double
+            case 51:   //  Double
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  Boolean
+            case 52:   //  Boolean
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 50:   //  NestedWorld.View.ChatViews.ChanelView
+            case 53:   //  NestedWorld.View.ChatViews.ChanelView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_50_ChanelView;
+                userType.Activator = Activate_53_ChanelView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 51:   //  NestedWorld.Classes.Chat.MessageContentPresenter
+            case 54:   //  NestedWorld.Classes.Chat.MessageContentPresenter
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_51_MessageContentPresenter;
+                userType.Activator = Activate_54_MessageContentPresenter;
                 userType.AddMemberName("RightTemplate");
                 userType.AddMemberName("LeftTemplate");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 52:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 55:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 53:   //  Windows.UI.Xaml.DataTemplate
+            case 56:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  NestedWorld.View.ChatViews.MeMessageTemplate
+            case 57:   //  NestedWorld.View.ChatViews.MeMessageTemplate
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_54_MeMessageTemplate;
+                userType.Activator = Activate_57_MeMessageTemplate;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 55:   //  NestedWorld.View.ChatViews.YouMessageTemplate
+            case 58:   //  NestedWorld.View.ChatViews.YouMessageTemplate
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_55_YouMessageTemplate;
+                userType.Activator = Activate_58_YouMessageTemplate;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 56:   //  NestedWorld.View.GardenViews.GardenElementListView
+            case 59:   //  NestedWorld.View.GardenViews.GardenElementListView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_56_GardenElementListView;
+                userType.Activator = Activate_59_GardenElementListView;
                 userType.AddMemberName("listView");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Windows.UI.Xaml.Controls.GridView
+            case 60:   //  Windows.UI.Xaml.Controls.GridView
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 58:   //  NestedWorld.View.GardenViews.GardenElementView
+            case 61:   //  NestedWorld.View.GardenViews.GardenElementView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_58_GardenElementView;
+                userType.Activator = Activate_61_GardenElementView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 59:   //  NestedWorld.View.GardenViews.GardenItem
+            case 62:   //  NestedWorld.View.GardenViews.GardenItem
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_59_GardenItem;
+                userType.Activator = Activate_62_GardenItem;
                 userType.AddMemberName("ImageItem");
                 userType.AddMemberName("time");
                 userType.AddMemberName("left");
@@ -867,59 +897,59 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 60:   //  NestedWorld.Classes.Garden.GardenElement
+            case 63:   //  NestedWorld.Classes.Garden.GardenElement
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 61:   //  NestedWorld.View.NotificationView
+            case 64:   //  NestedWorld.View.NotificationView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_61_NotificationView;
+                userType.Activator = Activate_64_NotificationView;
                 userType.AddMemberName("NotificationNumber");
                 userType.AddMemberName("Tap");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 62:   //  Windows.UI.Xaml.Input.TappedEventHandler
+            case 65:   //  Windows.UI.Xaml.Input.TappedEventHandler
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 63:   //  NestedWorld.View.MapViews.MapView
+            case 66:   //  NestedWorld.View.MapViews.MapView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_63_MapView;
+                userType.Activator = Activate_66_MapView;
                 userType.AddMemberName("reduce");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 64:   //  NestedWorld.View.MapViews.AreaListView
+            case 67:   //  NestedWorld.View.MapViews.AreaListView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_64_AreaListView;
+                userType.Activator = Activate_67_AreaListView;
                 userType.AddMemberName("List");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 65:   //  NestedWorld.View.MapViews.AreaAllyView
+            case 68:   //  NestedWorld.View.MapViews.AreaAllyView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_65_AreaAllyView;
+                userType.Activator = Activate_68_AreaAllyView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 66:   //  NestedWorld.View.MapViews.AreaFreeView
+            case 69:   //  NestedWorld.View.MapViews.AreaFreeView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_66_AreaFreeView;
+                userType.Activator = Activate_69_AreaFreeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 67:   //  NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter
+            case 70:   //  NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_67_AreaContentPresenter;
+                userType.Activator = Activate_70_AreaContentPresenter;
                 userType.AddMemberName("MeTemplate");
                 userType.AddMemberName("AllyTemplate");
                 userType.AddMemberName("FreeTemplate");
@@ -928,37 +958,37 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 68:   //  NestedWorld.View.MapViews.AreaMeView
+            case 71:   //  NestedWorld.View.MapViews.AreaMeView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_68_AreaMeView;
+                userType.Activator = Activate_71_AreaMeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  NestedWorld.View.MapViews.AreaOtherView
+            case 72:   //  NestedWorld.View.MapViews.AreaOtherView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_69_AreaOtherView;
+                userType.Activator = Activate_72_AreaOtherView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 70:   //  NestedWorld.View.MapViews.MapPoint
+            case 73:   //  NestedWorld.View.MapViews.MapPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_70_MapPoint;
+                userType.Activator = Activate_73_MapPoint;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  NestedWorld.View.MonsterViews.MonsterView
+            case 74:   //  NestedWorld.View.MonsterViews.MonsterView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_71_MonsterView;
+                userType.Activator = Activate_74_MonsterView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  NestedWorld.View.MonsterSoloView
+            case 75:   //  NestedWorld.View.MonsterSoloView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_72_MonsterSoloView;
+                userType.Activator = Activate_75_MonsterSoloView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("Level");
                 userType.AddMemberName("MonsterImage");
@@ -969,7 +999,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 73:   //  NestedWorld.Classes.ElementsGame.TypeEnum
+            case 76:   //  NestedWorld.Classes.ElementsGame.TypeEnum
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("FIRE", global::NestedWorld.Classes.ElementsGame.TypeEnum.FIRE);
                 userType.AddEnumValue("WATHER", global::NestedWorld.Classes.ElementsGame.TypeEnum.WATHER);
@@ -980,36 +1010,36 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 74:   //  System.Enum
+            case 77:   //  System.Enum
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 75:   //  NestedWorld.View.MonsterViews.MonsterAttackView
+            case 78:   //  NestedWorld.View.MonsterViews.MonsterAttackView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_75_MonsterAttackView;
+                userType.Activator = Activate_78_MonsterAttackView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 76:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
+            case 79:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_76_MonsterAttacksView;
+                userType.Activator = Activate_79_MonsterAttacksView;
                 userType.AddMemberName("monsterAttackList");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
+            case 80:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
+            case 81:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_78_MonsterHeaderView;
+                userType.Activator = Activate_81_MonsterHeaderView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("MonsterImage");
                 userType.AddMemberName("MonsterType");
@@ -1020,32 +1050,32 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  NestedWorld.View.MonsterViews.MonsterStatsView
+            case 82:   //  NestedWorld.View.MonsterViews.MonsterStatsView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_79_MonsterStatsView;
+                userType.Activator = Activate_82_MonsterStatsView;
                 userType.AddMemberName("Life");
                 userType.AddMemberName("Exp");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  NestedWorld.View.MonsterViews.MonsterLocationView
+            case 83:   //  NestedWorld.View.MonsterViews.MonsterLocationView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_80_MonsterLocationView;
+                userType.Activator = Activate_83_MonsterLocationView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 81:   //  NestedWorld.View.ShopViews.ShopElementView
+            case 84:   //  NestedWorld.View.ShopViews.ShopElementView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_81_ShopElementView;
+                userType.Activator = Activate_84_ShopElementView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  NestedWorld.View.UserViews.AllyView
+            case 85:   //  NestedWorld.View.UserViews.AllyView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_82_AllyView;
+                userType.Activator = Activate_85_AllyView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

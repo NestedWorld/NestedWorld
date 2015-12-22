@@ -1,0 +1,90 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.MonsterViews.MonsterHeaderView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View.MonsterViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{StaticResource background}"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+    
+        <Rectangle Grid.ColumnSpan="2" Grid.RowSpan="2" >
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{Binding MonsterType}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Ellipse Height="70" Width="70" StrokeThickness="2" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse.Stroke>
+                <SolidColorBrush Color="{StaticResource background}"/>
+            </Ellipse.Stroke>
+            <Ellipse.Fill>
+                <ImageBrush Stretch="Uniform" ImageSource="{Binding MonsterImage}"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="{Binding MonsterName}" Style="{StaticResource TextBlockStyleOne}" >
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource background}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Text="{Binding MonsterLevel}" FontSize="15" Margin="0, 5" Style="{StaticResource TextBlockStyleOne}" >
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource background}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Combats" Style="{StaticResource TextBlockStyleOne}" FontSize="10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBlock Text="{Binding MonsterCombat}" HorizontalAlignment="Center" Style="{StaticResource TextBlockStyleOne}" FontSize="40">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </StackPanel>
+            <Rectangle Grid.Column="0" Grid.ColumnSpan="2" Height="75" Width="2" >
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="{StaticResource background}"/>
+                </Rectangle.Fill>
+
+            </Rectangle>
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="Victory" Style="{StaticResource TextBlockStyleOne}" FontSize="10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBlock Text="{Binding MonsterVictory}" HorizontalAlignment="Center" Style="{StaticResource TextBlockStyleOne}" FontSize="40">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </StackPanel>
+        
+       
+        </Grid>
+    </Grid>
+</UserControl>
+

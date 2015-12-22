@@ -9,7 +9,7 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" Tapped="StackPanel_Tapped">
         <Rectangle x:Name="rectangleMain" StrokeThickness="2" Height="100" Width="100">
             <Rectangle.Fill>
                 <ImageBrush Stretch="Fill" ImageSource="{Binding Path=Image}"/>

@@ -9,18 +9,20 @@
     mc:Ignorable="d">
 
     <Grid>
-        <GridView SelectionMode="None">
-            <view:MonsterSoloView Height="200" Width="200" MonsterImage="ms-appx:///Assets/iconTest.png" MonsterName="Monster1" Level="1"/>
-            <view:MonsterSoloView Height="200" Width="200" MonsterImage="ms-appx:///Assets/iconTest.png" MonsterName="Monster2" Level="1"/>
-            <view:MonsterSoloView Height="200" Width="200" MonsterImage="ms-appx:///Assets/iconTest.png" MonsterName="Monster3" Level="1"/>
-            <view:MonsterSoloView Height="200" Width="200" MonsterImage="ms-appx:///Assets/iconTest.png" MonsterName="Monster4" Level="1"/>
-            <GridView.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <ItemsWrapGrid MaximumRowsOrColumns="{Binding MonsterPerLine}"/>
-                </ItemsPanelTemplate>
-            </GridView.ItemsPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Your Monster" Style="{StaticResource TextBlockStyleOne}" FontSize="20" Margin="10"></TextBlock>
+        <GridView x:ConnectionId='1' x:Name="MonsertGridView" HorizontalAlignment="Center" Grid.Row="1" ItemsSource="{Binding}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                        <view:MonsterSoloView Margin="20"/>
+                </DataTemplate>
+            </GridView.ItemTemplate>
         </GridView>
-        
+
     </Grid>
 </UserControl>
+
 

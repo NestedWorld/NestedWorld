@@ -13,7 +13,6 @@
 
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
             <RelativePanel>
-
                 <mapViews:MapView x:ConnectionId='1' x:Name="mapView"/>
                 <mapViews:AreaListView x:ConnectionId='2' x:Name="AreaListView"/>
             </RelativePanel>

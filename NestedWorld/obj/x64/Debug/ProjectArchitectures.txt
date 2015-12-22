@@ -1,1 +1,2 @@
-E:\c#\NestedWorld\NestedWorld\NestedWorld.csproj;x64
+C:\Users\thomas\Desktop\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj;x64
+E:\Git\nestedworld\NestedWorld\NestedWorld.csproj;x64

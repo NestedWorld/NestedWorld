@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:telerik="using:Telerik.UI.Xaml.Controls.Map"
     xmlns:maps="using:Windows.UI.Xaml.Controls.Maps">
 
     <Grid>
@@ -21,7 +22,7 @@
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <maps:MapControl x:Name="map"  MapServiceToken="{StaticResource maptoken}" Grid.Row="0" />
+        <maps:MapControl x:Name="map" MapServiceToken="{StaticResource maptoken}" Grid.Row="0" />
         <Grid Grid.Row="1" x:Name="gridButton">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>

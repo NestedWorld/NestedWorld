@@ -6,18 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Width="100" Height="50" IsTabStop="False">
+    Width="75" Height="50" IsTabStop="False">
 
     <StackPanel>
+
         <FontIcon
                             HorizontalAlignment="Center"
                             Margin="0,12,0,0"
                             Glyph="{Binding Glyph}"
-                            FontSize="16" >
-            <FontIcon.Foreground>
-                <SolidColorBrush Color="{StaticResource BleuTwo}"/>
-            </FontIcon.Foreground>
-        </FontIcon>
+                            FontSize="17" />
         <TextBlock
                             FontFamily="Segoe UI"
                             Text="{Binding Label}"

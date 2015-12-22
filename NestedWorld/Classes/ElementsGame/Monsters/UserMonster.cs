@@ -34,5 +34,6 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
             Life = 100;
             Exp = 10;
         }
-    }
+
+      }
 }

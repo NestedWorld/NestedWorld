@@ -5,12 +5,18 @@ Pages\ChatPage.xbf
 Pages\HomePage.xbf
 Pages\MonsterPage.xbf
 Pages\PrepareBattlePage.xbf
+Pages\ProfilePage.xbf
+Pages\SettingsPage.xbf
+PopUp\CatchAreaProposition.xbf
 PopUp\ForgotPassPopUp.xbf
+PopUp\MonsterNearPopUp.xbf
 PopUp\NewBattlePopUp.xbf
 PopUp\RegisterPopUp.xbf
 PopUp\SettingsPopUp.xbf
 Style\TabHeader.xbf
 Style\TabHeaderMap.xbf
+Theme\FireTheme.xbf
+Theme\WaterTheme.xbf
 View\BattleViews\AnnimationCanvas.xbf
 View\BattleViews\BattleCanvas.xbf
 View\BattleViews\BattleIcon.xbf
@@ -35,6 +41,7 @@ View\MapViews\AreaListView.xbf
 View\MapViews\AreaMeView.xbf
 View\MapViews\AreaOtherView.xbf
 View\MapViews\MapPoint.xbf
+View\MapViews\MapTelerikTest.xbf
 View\MapViews\MapView.xbf
 View\MonsterListView.xbf
 View\MonsterSoloView.xbf
@@ -49,6 +56,10 @@ View\MonsterViews\MonsterView.xbf
 View\NotificationView.xbf
 View\PrepareBattleView\UserMonsterListView.xbf
 View\PrepareBattleView\UsersProfileEntrance.xbf
+View\ProfileViews\MainView.xbf
+View\ProfileViews\MonsterStat.xbf
+View\ProfileViews\StatiUserView.xbf
+View\SettingsViews\SettingsView.xbf
 View\ShopView.xbf
 View\ShopViews\ShopElementView.xbf
 View\UserView.xbf

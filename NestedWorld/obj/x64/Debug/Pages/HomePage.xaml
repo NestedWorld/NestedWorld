@@ -5,57 +5,107 @@
     xmlns:local="using:NestedWorld.Pages"
     xmlns:Style="using:NestedWorld.Style"
     xmlns:view="using:NestedWorld.View"
+    xmlns:monsterViews="using:NestedWorld.View.MonsterViews"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:data="using:NestedWorld.Model"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+
     <Page.Foreground>
         <SolidColorBrush Color="{StaticResource foreground}"/>
     </Page.Foreground>
     <Page.Background>
-        <SolidColorBrush Color="{StaticResource background}"/>
+        <SolidColorBrush Color="{StaticResource BleuTwo}"/>
     </Page.Background>
-
-    <RelativePanel >
-        <Grid>
+    <Page.Resources>
+    </Page.Resources>
+    <RelativePanel>
+        <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
             <Grid.Background>
                 <SolidColorBrush Color="{StaticResource background}"/>
             </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.Background>
+                    <SolidColorBrush Color="{StaticResource BleuTwo}"/>
+                </Grid.Background>
+                <CommandBar Background="{StaticResource BleuTwoBrush}" Foreground="{StaticResource BleuThreeBrush}">
+                    <AppBarButton x:ConnectionId='7' Foreground="{StaticResource BackrgoundBrush}" Label="Battle"                             >
+                        <AppBarButton.Icon>
+                            <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M2.50000262260437,10.3125L9.6249885559082,17.5 8.00000190734863,19.1249942779541 5.12501335144043,16.25 3.12500357627869,18.125 3.12500357627869,18.4375 2.67186951637268,19.5468730926514 1.56250178813934,20 0.453119695186615,19.5468730926514 0,18.4375 0.453119695186615,17.3281230926514 1.56250178813934,16.875 1.74999451637268,16.875 1.81247925758362,16.875 3.87501215934753,15 0.874978065490723,11.9374942779541 2.50000262260437,10.3125z M19.9375,0L19.8750152587891,3.56249809265137 8.00000190734863,13.8749980926514 6.25000762939453,11.9374942779541 16.4999980926514,0.0624942779541016 19.9375,0z" />
+                        </AppBarButton.Icon>
+                    </AppBarButton>
 
-            <Pivot>
 
-                <PivotItem Header="Home" Margin="0, 0">
+                    <AppBarButton x:ConnectionId='8'                            Label="Chat" Foreground="{StaticResource BleuThreeBrush}" >
+                        <AppBarButton.Icon>
+                            <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M14.3125152587891,7.12500047683716L13.2890844345093,7.53906297683716 12.8750228881836,8.56250190734863 13.2890844345093,9.5859317779541 14.3125152587891,9.99999237060547 15.3359460830688,9.5859317779541 15.7500076293945,8.56250190734863 15.2890825271606,7.56249856948853 14.3125152587891,7.12500047683716z M10,7.12500047683716L8.97656917572021,7.53906297683716 8.56250762939453,8.56250190734863 8.97656917572021,9.5859317779541 10,9.99999237060547 11.0234308242798,9.5859317779541 11.4374923706055,8.56250190734863 11.0234308242798,7.56249856948853 10,7.12500047683716z M5.68752288818359,7.12500047683716L4.66405868530273,7.53906297683716 4.24999237060547,8.56250190734863 4.66405868530273,9.5859317779541 5.68752288818359,9.99999237060547 6.71095371246338,9.5859317779541 7.12501525878906,8.56250190734863 6.71095371246338,7.56249856948853 5.68752288818359,7.12500047683716z M10,0L13.8828096389771,0.615234613418579 17.0624961853027,2.29687547683716 19.2109355926514,4.798828125 19.7958984375,6.28051662445068 20,7.87499809265137 19.7958984375,9.45153427124023 19.2109355926514,10.9247999191284 17.0624961853027,13.4296836853027 13.8828096389771,15.1259737014771 10,15.7499980926514 6.31252288818359,15.1875009536743 4.0703296661377,16.609375 2.71779417991638,17.15625 1.31252288818359,17.375 2.35157012939453,15.4765577316284 2.68749237060547,13.2499990463257 0.710945129394531,10.7968692779541 0.182620286941528,9.38280963897705 0,7.87499809265137 0.204101875424385,6.28051662445068 0.789063572883606,4.798828125 2.93750286102295,2.29687547683716 6.11719083786011,0.615234613418579 10,0z" />
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <AppBarButton x:ConnectionId='9'                              Label="Settings" Foreground="{StaticResource BleuThreeBrush}">
+                        <AppBarButton.Icon>
+                            <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M10,5.3125L8.18652153015137,5.68456983566284 6.69531106948853,6.69531106948853 5.68456983566284,8.18652153015137 5.3125,10 5.68456983566284,11.8134784698486 6.69531106948853,13.3046894073486 8.18652153015137,14.3154306411743 10,14.6875 11.8134698867798,14.3154306411743 13.3046817779541,13.3046894073486 14.3154277801514,11.8134784698486 14.6875,10 14.3154277801514,8.18652153015137 13.3046817779541,6.69531106948853 11.8134698867798,5.68456983566284 10,5.3125z M8.81248474121094,0L11.1874961853027,0 11.1874961853027,3.06249618530273 12.7187395095825,3.51561784744263 14.0625,4.24999237060547 16.25,2.06249237060547 17.9374885559082,3.75 15.7499885559082,5.9375 16.9374847412109,8.81250381469727 20,8.81250381469727 20,11.1874961853027 16.9374847412109,11.1874961853027 16.4843635559082,12.7187461853027 15.7499885559082,14.0625 17.9374885559082,16.25 16.25,17.9374885559082 14.0625,15.7499885559082 11.1874961853027,16.9375038146973 11.1874961853027,20 8.81248474121094,20 8.81248474121094,16.9375038146973 5.9375,15.7499885559082 3.75,17.9374885559082 2.06249237060547,16.25 4.24999237060547,14.0625 3.06249618530273,11.1874961853027 0,11.1874961853027 0,8.81250381469727 3.06249618530273,8.81250381469727 3.51561784744263,7.28124618530273 4.24999237060547,5.9375 2.06249237060547,3.75 3.75,2.06249237060547 5.9375,4.24999237060547 8.81248474121094,3.06249618530273 8.81248474121094,0z" />
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                </CommandBar>
+                <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource background}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+
+            </Grid>
+            <Pivot Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
+
+                <PivotItem   Margin="0" >
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE80F;" Label="Home"/>
+                    </PivotItem.Header>
+                    <ScrollViewer>
+                        <RelativePanel>
+                            <view:HomeView x:ConnectionId='4' x:Name="homeView"/>
+                            <view:MonsterView x:ConnectionId='5' x:Name="monsterView" />
+                            <view:UserView x:ConnectionId='6' x:Name="userView" />
+                        </RelativePanel>
+                    </ScrollViewer>
+
+                </PivotItem>
+                <PivotItem Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE72D;" Label="Tools"/>
+                    </PivotItem.Header>
                     <RelativePanel>
-                        <view:HomeView x:ConnectionId='1' x:Name="homeView" Height="auto" Width="500" VerticalAlignment="Center" UserName="Thomas" UserLevel="10" UserImage="ms-appx:///Assets/iconTest.png"/>
-                        <view:HistoryView x:ConnectionId='2' x:Name="historyView" Width="500" VerticalAlignment="Center"></view:HistoryView>
-                        <view:HistoryView x:ConnectionId='3' x:Name="friendInfoView" Width="500" VerticalAlignment="Center">
-                            <view:HistoryView.Background>
-                                <SolidColorBrush Color="Brown"/>
-                            </view:HistoryView.Background>
-                        </view:HistoryView>
-                        <view:MonsterView x:ConnectionId='4' x:Name="monsterListView"  Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"></view:MonsterView>
+                        <view:GardenView Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
                     </RelativePanel>
                 </PivotItem>
-                <PivotItem Header="Tools">
+                <PivotItem Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Label="Map"/>
+                    </PivotItem.Header>
                     <Grid>
-                        <view:GardenView/>
+                        <view:MapView />
                     </Grid>
                 </PivotItem>
-                <PivotItem Header="Map">
-                    <Grid>
-                        <view:MapView/>
-                    </Grid>
+                <PivotItem  Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE76E;" Label="Monster"/>
+                    </PivotItem.Header>
+                    <RelativePanel>
+                        <view:MonsterListView x:ConnectionId='2' x:Name="monsterListView" />
+                        <monsterViews:MonsterFullView x:ConnectionId='3' x:Name="monsterFullView" Margin="0, 0, 0, 0" />
+                    </RelativePanel>
                 </PivotItem>
-                <PivotItem Header="Monster">
-                    <Grid>
-                        <view:MonsterListView/>
-                    </Grid>
-                </PivotItem>
-                <PivotItem  Header="Shop">
-                    <Grid>
-                        <TextBlock Text="Shop"/>
-                    </Grid>
+                <PivotItem  Margin="0">
+                    <PivotItem.Header>
+                        <Style:TabHeader Glyph="&#xE719;" Label="Shop"/>
+                    </PivotItem.Header>
+                    <view:ShopView></view:ShopView>
                 </PivotItem>
             </Pivot>
+            <Popup x:ConnectionId='1' x:Name="popupView"></Popup>
         </Grid>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
@@ -64,12 +114,24 @@
                         <AdaptiveTrigger MinWindowWidth="1080" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="250"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+                        <Setter Target="monsterView.Width" Value="720"/>
+                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
 
-                        <Setter Target="historyView.(RelativePanel.RightOf)" Value="homeView"/>
-                        <Setter Target="historyView.Margin" Value="20, 0"/>
-                        <Setter Target="friendInfoView.(RelativePanel.RightOf)" Value="historyView"/>
-                        <Setter Target="friendInfoView.Margin" Value="20, 0"/>
-                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
+
+                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -77,12 +139,25 @@
                         <AdaptiveTrigger MinWindowWidth="720" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="historyView.(RelativePanel.RightOf)" Value="homeView"/>
-                        <Setter Target="historyView.Margin" Value="20, 0"/>
-                        <Setter Target="friendInfoView.(RelativePanel.AlignLeftWith)" Value="historyView"/>
-                        <Setter Target="friendInfoView.Margin" Value="20, 0"/>
-                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+                        <Setter Target="monsterView.Width" Value="360"/>
+                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
 
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
+
+                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -90,9 +165,21 @@
                         <AdaptiveTrigger MinWindowWidth="548" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="historyView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="friendInfoView.(RelativePanel.Below)" Value="historyView"/>
-                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="friendInfoView"/>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
+
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -100,9 +187,20 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="historyView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="friendInfoView.(RelativePanel.Below)" Value="historyView"/>
-                        <Setter Target="monsterListView.(RelativePanel.Below)" Value="friendInfoView"/>
+                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="homeView.Height" Value="200"/>
+                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
+                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
+                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+
+                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>

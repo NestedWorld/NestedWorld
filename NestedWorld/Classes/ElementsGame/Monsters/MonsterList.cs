@@ -8,6 +8,15 @@ using System.Threading.Tasks;
 
 namespace NestedWorld.Classes.ElementsGame.Monsters
 {
+    public class Data
+    {
+        public string Category { get; set; }
+
+        public double Value { get; set; }
+
+        public string LabelProperty { get; set; }
+    }
+
     public class MonsterList
     {
         private UserMonster _selectedMonster;
@@ -73,6 +82,26 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
             if (querry.Count() != 0)
                 return querry.ElementAt(0);
             return null;
+        }
+
+        private int GetStat(TypeEnum type)
+        {
+            var q = from item in monsterList where item.Type == type select item;
+            return q.Count();
+        }
+
+        public List<Data> GetStats()
+        {
+            List<Data> data = new List<Data>();
+
+            data.Add(new Data { Category = "Fire", Value = GetStat(TypeEnum.FIRE), LabelProperty = "Fire" });
+            data.Add(new Data { Category = "Water", Value = GetStat(TypeEnum.WATHER), LabelProperty = "Water" });
+            data.Add(new Data { Category = "Grass", Value = GetStat(TypeEnum.GRASS), LabelProperty = "Grass" });
+            data.Add(new Data { Category = "Dirt", Value = GetStat(TypeEnum.DIRT), LabelProperty = "Dirt" });
+            data.Add(new Data { Category = "Elec", Value = GetStat(TypeEnum.ELEC), LabelProperty = "Elec" });
+
+
+            return data;
         }
     }
 }

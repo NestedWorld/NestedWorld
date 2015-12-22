@@ -211,8 +211,8 @@
                      Grid.RowSpan="2"
                      Grid.Column="1"
                      VerticalAlignment="Center"
-                     Width="150"
-                     Height="150"    
+                     Width="130"
+                     Height="130"    
                      Stroke="{StaticResource BackrgoundBrush}"
                      StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.RenderTransform>
@@ -222,7 +222,7 @@
                     <ImageBrush ImageSource="{Binding EnemieImageSource}"/>
                 </Ellipse.Fill>
                 <Ellipse.Clip>
-                    <RectangleGeometry Rect="0,75,150,150"/>
+                    <RectangleGeometry Rect="0,65,130,130"/>
                 </Ellipse.Clip>
             </Ellipse>
 
@@ -230,8 +230,8 @@
                      Grid.RowSpan="2"
                      Grid.Column="1"
                      VerticalAlignment="Center"
-                     Width="150"
-                     Height="150"
+                     Width="130"
+                     Height="130"
                     Stroke="{StaticResource BackrgoundBrush}"
                      StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.RenderTransform>
@@ -241,7 +241,7 @@
                     <ImageBrush ImageSource="{Binding UserImageSource}"/>
                 </Ellipse.Fill>
                 <Ellipse.Clip>
-                    <RectangleGeometry Rect="0,0,150,75"/>
+                    <RectangleGeometry Rect="0,0,130,65"/>
                 </Ellipse.Clip>
             </Ellipse>
 

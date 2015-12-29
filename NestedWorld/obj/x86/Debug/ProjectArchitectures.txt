@@ -1,2 +1,2 @@
-C:\Users\thomas\Desktop\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj;x86
 E:\Git\nestedworld\NestedWorld\NestedWorld.csproj;x86
+E:\Git\nestedworld\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj;x86

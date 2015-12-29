@@ -21,6 +21,9 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\default_monster.png">
+      <PackagePath>Assets\default_monster.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Effect\fire_effect.png">
       <PackagePath>Assets\Effect\fire_effect.png</PackagePath>
     </AppxPackagedFile>
@@ -98,6 +101,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ErrorNetworkSourceFile.xml">
+      <PackagePath>DataModel\ErrorNetworkSourceFile.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ShopData.json">
       <PackagePath>DataModel\ShopData.json</PackagePath>

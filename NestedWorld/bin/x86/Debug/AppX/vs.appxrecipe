@@ -22,13 +22,17 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-22T21:58:25.853</Modified>
+      <Modified>2015-12-29T20:35:33.336</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-08-18T15:45:30.952</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\default_monster.png">
+      <PackagePath>Assets\default_monster.png</PackagePath>
+      <Modified>2015-12-29T15:11:39.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Effect\fire_effect.png">
       <PackagePath>Assets\Effect\fire_effect.png</PackagePath>
@@ -132,17 +136,21 @@
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-08-16T02:25:23.921</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ErrorNetworkSourceFile.xml">
+      <PackagePath>DataModel\ErrorNetworkSourceFile.xml</PackagePath>
+      <Modified>2015-12-29T13:09:46.373</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ShopData.json">
       <PackagePath>DataModel\ShopData.json</PackagePath>
       <Modified>2015-12-09T23:51:42.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2015-12-22T21:57:41.063</Modified>
+      <Modified>2015-12-29T20:35:24.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
-      <Modified>2015-12-14T22:07:51.090</Modified>
+      <Modified>2015-12-27T08:42:45.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.winmd">
       <PackagePath>Facebook.winmd</PackagePath>
@@ -190,11 +198,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2015-12-22T21:58:25.851</Modified>
+      <Modified>2015-12-29T20:35:33.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2015-12-22T21:50:42.613</Modified>
+      <Modified>2015-12-29T20:21:03.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -206,7 +214,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-22T21:58:25.342</Modified>
+      <Modified>2015-12-29T20:35:25.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

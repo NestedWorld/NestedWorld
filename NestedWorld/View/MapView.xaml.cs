@@ -1,5 +1,7 @@
-﻿using System;
+﻿using NestedWorld.View.MapViews;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -19,29 +21,66 @@ namespace NestedWorld.View
 {
     public sealed partial class MapView : UserControl
     {
+        private UserMapList userMapList;
+        private MonsterMapList monsterMapList;
+
+        public MapControlView mapControlView;
         public MapView()
         {
             this.InitializeComponent();
-            Window.Current.SizeChanged += Current_SizeChanged;
-            SetElementSize(Window.Current.Bounds.Width, Window.Current.Bounds.Height);
-        }
+            userMapList = new UserMapList();
+            monsterMapList = new MonsterMapList();
+            monsterMapList.root = stackPanelRoot;
 
-        private void SetElementSize(double width, double height)
-        {
-            mapView.Width = width;
-            mapView.Height = (height * 1) / 3;
-            AreaListView.Width = width;
-            if (width >= 750)
-            {
-                mapView.Width = width - 450;
-                AreaListView.Width = 400;
-                mapView.Height = height - mapView.reduce;
-            }
+            mapControlView = new MapControlView();
+            stackPanelRoot.Children.Add(mapControlView);
+            userMapList.root = stackPanelRoot;
+            userMapList.DataContext = App.core.userList.userList;
+            setSize(Window.Current.Bounds.Width);
+            Window.Current.SizeChanged += Current_SizeChanged;
         }
 
         private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
-            SetElementSize(e.Size.Width, e.Size.Height);
+            setSize(e.Size.Width);
+        }
+
+        private void setSize(double Width)
+        {
+            mapControlView.Width = Width - ((stackPanelRoot.Children.Count - 1) * 300);
+        }
+
+        private void ShowAlly(object sender, RoutedEventArgs e)
+        {
+            AppBarToggleButton button = sender as AppBarToggleButton;
+            if (button.IsChecked == true)
+            {
+                userMapList.Show();
+                mapControlView.ShowUser();
+            }
+            else
+                userMapList.Remove();
+            setSize(Window.Current.Bounds.Width);
+
+        }
+
+        private void ShowMonster(object sender, RoutedEventArgs e)
+        {
+            AppBarToggleButton button = sender as AppBarToggleButton;
+            if (button.IsChecked == true)
+                monsterMapList.Show();
+            else
+                monsterMapList.Remove();
+            setSize(Window.Current.Bounds.Width);
+        }
+        private void ShowAreas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowUsers(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

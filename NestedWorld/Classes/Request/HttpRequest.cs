@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Web.Http;
@@ -41,6 +42,7 @@ namespace NestedWorld.Classes.Request
             using (var client = new System.Net.Http.HttpClient())
             {
                 string jsonString = "";
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 if (type == RequestType.GET)
                 {
                     jsonString = await client.GetStringAsync(uri);
@@ -68,17 +70,12 @@ namespace NestedWorld.Classes.Request
         internal static string GetURLParam(Dictionary<string, string> Params)
         {
             string ret = "?";
-
             foreach (KeyValuePair<string, string> param in Params)
             {
                 ret += param.Key + "=" + param.Value + "&";
             }
-
             ret.Remove(ret.Length - 1);
-
             return ret;
-        }
-
-       
+        }     
     }
 }

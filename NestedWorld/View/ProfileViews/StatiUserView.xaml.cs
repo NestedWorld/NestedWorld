@@ -22,6 +22,32 @@ namespace NestedWorld.View.ProfileViews
         public StatiUserView()
         {
             this.InitializeComponent();
+            this.DataContextChanged += StatiUserView_DataContextChanged;
+        }
+
+        private void StatiUserView_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
+        {
+            ShowAnnim.Begin();
+        }
+
+        private void border_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            WinEnter.Begin();
+        }
+
+        private void border_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            WinExit.Begin();
+        }
+
+        private void Border_PointerEntered_1(object sender, PointerRoutedEventArgs e)
+        {
+            looseEnter.Begin();
+        }
+
+        private void Border_PointerCanceled(object sender, PointerRoutedEventArgs e)
+        {
+            looseExit.Begin();
         }
     }
 }

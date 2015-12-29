@@ -1,6 +1,8 @@
-﻿using NestedWorld.Classes.ElementsGame.GameCore;
+﻿using NestedWorld.Classes;
+using NestedWorld.Classes.Network;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -28,8 +30,9 @@ namespace NestedWorld
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         /// 
-
+       
         public static Core core;
+        public static Network network;
         public App()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
@@ -38,8 +41,9 @@ namespace NestedWorld
             this.InitializeComponent();
             this.Suspending += OnSuspending;
             core = new Core();
+            network = new Network();
         }
-
+        
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.

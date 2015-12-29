@@ -8,6 +8,73 @@
     mc:Ignorable="d"
     Height="100"
     Width="400">
+    <UserControl.Resources>
+        <Storyboard x:Name="ShowAnnim">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="stackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut" Exponent="2"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut" Exponent="2"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="stackPanel">
+                <EasingPointKeyFrame KeyTime="0" Value="0,0.5"/>
+                <EasingPointKeyFrame KeyTime="0:0:1" Value="0,0.5"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="WinEnter">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="border">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="40">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="WinExit">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="border">
+                <EasingDoubleKeyFrame KeyTime="0" Value="40">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="20">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="looseEnter">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="border1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="40">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="looseExit">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="border1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="40">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="20">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </UserControl.Resources>
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -15,19 +82,21 @@
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Path=Name}" Margin="10" FontSize="20"/>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="1">
-            <Border Height="20" Width="{Binding Path=WinSize}" Background="#FF8CFF7B" Margin="2">
-                <TextBlock Text="Wins" Margin="2"/>
+        <StackPanel x:Name="stackPanel" HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <CompositeTransform/>
+            </StackPanel.RenderTransform>
+            <Border x:Name="border" PointerEntered="border_PointerEntered" PointerExited="border_PointerExited" PointerCanceled="border_PointerExited" Height="20" Width="{Binding Path=WinSize}" Background="#FF8CFF7B" Margin="2">
+                <StackPanel>
+                    <TextBlock Text="Wins" Margin="2"/>
+                    <TextBlock Text="{Binding Path=Win}" Margin="2"/>
+                </StackPanel>
             </Border>
-            <Border Height="20" Width="{Binding Path=NetralSize}" Background="#FFFFCF76" Margin="2">
-                <TextBlock Text="Win"  Margin="2"/>
-            </Border>
-            <Border Height="20" Width="{Binding Path=LooseSize}" Background="#FFFF7676" Margin="2">
-                <TextBlock Text="Looses"  Margin="2">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{StaticResource background}"/>
-                    </TextBlock.Foreground>
-                </TextBlock>
+            <Border x:Name="border1" Height="20" PointerEntered="Border_PointerEntered_1" PointerCanceled="Border_PointerCanceled" PointerExited="Border_PointerCanceled" Width="{Binding Path=LooseSize}" Background="#FFFF7676" Margin="2">
+                <StackPanel>
+                    <TextBlock Text="Looses" Margin="2" Foreground="{StaticResource BackrgoundBrush}"/>
+                    <TextBlock Text="{Binding Path=Loose}" Margin="2" Foreground="{StaticResource BackrgoundBrush}"/>
+                </StackPanel>
             </Border>
         </StackPanel>
     </Grid>

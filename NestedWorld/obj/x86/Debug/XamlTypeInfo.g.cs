@@ -156,7 +156,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[216];
+            _typeNameTable = new string[182];
             _typeNameTable[0] = "Windows.UI.Color";
             _typeNameTable[1] = "System.ValueType";
             _typeNameTable[2] = "Object";
@@ -227,154 +227,120 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeNameTable[67] = "NestedWorld.Classes.Garden.GardenElement";
             _typeNameTable[68] = "NestedWorld.View.NotificationView";
             _typeNameTable[69] = "Windows.UI.Xaml.Input.TappedEventHandler";
-            _typeNameTable[70] = "NestedWorld.View.MapViews.MapView";
-            _typeNameTable[71] = "NestedWorld.View.MapViews.AreaListView";
-            _typeNameTable[72] = "NestedWorld.View.MapViews.AreaAllyView";
-            _typeNameTable[73] = "NestedWorld.View.MapViews.AreaFreeView";
-            _typeNameTable[74] = "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter";
-            _typeNameTable[75] = "NestedWorld.View.MapViews.AreaMeView";
-            _typeNameTable[76] = "NestedWorld.View.MapViews.AreaOtherView";
-            _typeNameTable[77] = "NestedWorld.View.MapViews.MapPoint";
-            _typeNameTable[78] = "Telerik.UI.Xaml.Controls.Map.RadMap";
-            _typeNameTable[79] = "Telerik.UI.Xaml.Controls.RadControl";
-            _typeNameTable[80] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[81] = "Telerik.UI.Xaml.Controls.Map.MapLayerCollection";
-            _typeNameTable[82] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapLayer>";
-            _typeNameTable[83] = "Telerik.UI.Xaml.Controls.Map.MapLayer";
-            _typeNameTable[84] = "Telerik.Geospatial.LocationRect";
-            _typeNameTable[85] = "Telerik.UI.Xaml.Controls.Map.MapBehaviorCollection";
-            _typeNameTable[86] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapBehavior>";
-            _typeNameTable[87] = "Telerik.UI.Xaml.Controls.Map.MapBehavior";
-            _typeNameTable[88] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[89] = "Telerik.Geospatial.Location";
-            _typeNameTable[90] = "Telerik.UI.Xaml.Controls.Map.ISpatialReference";
-            _typeNameTable[91] = "Telerik.UI.Xaml.Controls.Map.MapCommandService";
-            _typeNameTable[92] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>";
-            _typeNameTable[93] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>";
-            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>";
-            _typeNameTable[95] = "Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject";
-            _typeNameTable[96] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[97] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Map.RadMap>";
-            _typeNameTable[98] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Map.RadMap, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>";
-            _typeNameTable[99] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>";
-            _typeNameTable[100] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>";
-            _typeNameTable[101] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>";
-            _typeNameTable[102] = "Telerik.UI.Xaml.Controls.Map.MapShapeLayer";
-            _typeNameTable[103] = "Telerik.UI.Xaml.Controls.Map.MapShapeColorizer";
-            _typeNameTable[104] = "Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector";
-            _typeNameTable[105] = "Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy";
-            _typeNameTable[106] = "Telerik.UI.Drawing.D2DShapeStyle";
-            _typeNameTable[107] = "Telerik.UI.Drawing.D2DTextStyle";
-            _typeNameTable[108] = "Telerik.UI.Xaml.Controls.Map.IShapeDataSource";
-            _typeNameTable[109] = "Telerik.UI.Xaml.Controls.Map.DesaturationColorizer";
-            _typeNameTable[110] = "Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer";
-            _typeNameTable[111] = "Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution";
-            _typeNameTable[112] = "Telerik.Core.ValueRange`1<Double>";
-            _typeNameTable[113] = "System.Collections.Generic.IEnumerable`1<Telerik.UI.Xaml.Controls.Map.ColorRange>";
-            _typeNameTable[114] = "Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution";
-            _typeNameTable[115] = "Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior";
-            _typeNameTable[116] = "Telerik.UI.Xaml.Controls.Map.MapZoomMode";
-            _typeNameTable[117] = "System.Enum";
-            _typeNameTable[118] = "Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction";
-            _typeNameTable[119] = "NestedWorld.View.MapViews.MapTelerikTest";
-            _typeNameTable[120] = "NestedWorld.View.MonsterViews.MonsterView";
-            _typeNameTable[121] = "NestedWorld.View.MonsterSoloView";
-            _typeNameTable[122] = "NestedWorld.Classes.ElementsGame.TypeEnum";
-            _typeNameTable[123] = "NestedWorld.View.MonsterViews.MonsterAttackView";
-            _typeNameTable[124] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
-            _typeNameTable[125] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
-            _typeNameTable[126] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
-            _typeNameTable[127] = "NestedWorld.View.MonsterViews.MonsterStatsView";
-            _typeNameTable[128] = "NestedWorld.View.MonsterViews.MonsterLocationView";
-            _typeNameTable[129] = "Telerik.UI.Xaml.Controls.Chart.ChartPalette";
-            _typeNameTable[130] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
-            _typeNameTable[131] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
-            _typeNameTable[132] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[133] = "Telerik.UI.Xaml.Controls.Chart.RadPieChart";
-            _typeNameTable[134] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
-            _typeNameTable[135] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
-            _typeNameTable[136] = "Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection";
-            _typeNameTable[137] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
-            _typeNameTable[138] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
-            _typeNameTable[139] = "Telerik.UI.Xaml.Controls.Chart.PieSeries";
-            _typeNameTable[140] = "Telerik.UI.Xaml.Controls.Chart.ChartSeries";
-            _typeNameTable[141] = "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter";
-            _typeNameTable[142] = "Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>";
-            _typeNameTable[143] = "System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>";
-            _typeNameTable[144] = "Telerik.Charting.PieDataPoint";
-            _typeNameTable[145] = "Telerik.Charting.SingleValueDataPoint";
-            _typeNameTable[146] = "Telerik.Charting.DataPoint";
-            _typeNameTable[147] = "Telerik.Core.Node";
-            _typeNameTable[148] = "Telerik.Core.PropertyBagObject";
-            _typeNameTable[149] = "Telerik.Core.IElementPresenter";
-            _typeNameTable[150] = "Telerik.Core.NodeState";
-            _typeNameTable[151] = "Telerik.Core.RadRect";
-            _typeNameTable[152] = "Telerik.Core.Element";
-            _typeNameTable[153] = "Windows.UI.Xaml.Style";
-            _typeNameTable[154] = "Telerik.UI.Xaml.Controls.Chart.DataPointBinding";
-            _typeNameTable[155] = "Windows.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[156] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[157] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[158] = "Telerik.Charting.AngleRange";
-            _typeNameTable[159] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
-            _typeNameTable[160] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
-            _typeNameTable[161] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition";
-            _typeNameTable[162] = "Windows.UI.Xaml.HorizontalAlignment";
-            _typeNameTable[163] = "Windows.UI.Xaml.VerticalAlignment";
-            _typeNameTable[164] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[165] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[166] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy";
-            _typeNameTable[167] = "System.Collections.IEnumerable";
-            _typeNameTable[168] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider";
-            _typeNameTable[169] = "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName";
-            _typeNameTable[170] = "Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection";
-            _typeNameTable[171] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>";
-            _typeNameTable[172] = "Telerik.UI.Xaml.Controls.Chart.ChartBehavior";
-            _typeNameTable[173] = "Windows.Foundation.Size";
-            _typeNameTable[174] = "Windows.Foundation.Point";
-            _typeNameTable[175] = "Telerik.UI.Xaml.Controls.Chart.DoughnutSeries";
-            _typeNameTable[176] = "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding";
-            _typeNameTable[177] = "NestedWorld.View.SettingsViews.SettingsView";
-            _typeNameTable[178] = "NestedWorld.View.ShopViews.ShopElementView";
-            _typeNameTable[179] = "NestedWorld.View.UserViews.AllyView";
-            _typeNameTable[180] = "Telerik.UI.Drawing.D2DResource";
-            _typeNameTable[181] = "Telerik.UI.Drawing.D2DBrush";
-            _typeNameTable[182] = "Telerik.UI.Drawing.FontWeightName";
-            _typeNameTable[183] = "Windows.UI.Xaml.TextAlignment";
-            _typeNameTable[184] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[185] = "Telerik.UI.Drawing.D2DSolidColorBrush";
-            _typeNameTable[186] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
-            _typeNameTable[187] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
-            _typeNameTable[188] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
-            _typeNameTable[189] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
-            _typeNameTable[190] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[191] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
-            _typeNameTable[192] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
-            _typeNameTable[193] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
-            _typeNameTable[194] = "Windows.UI.Xaml.Media.FontFamily";
-            _typeNameTable[195] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
-            _typeNameTable[196] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
-            _typeNameTable[197] = "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu";
-            _typeNameTable[198] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
-            _typeNameTable[199] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
-            _typeNameTable[200] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem";
-            _typeNameTable[201] = "System.Windows.Input.ICommand";
-            _typeNameTable[202] = "Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService";
-            _typeNameTable[203] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[204] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[205] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[206] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[207] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[208] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[209] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[210] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[211] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior";
-            _typeNameTable[212] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>";
-            _typeNameTable[213] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers";
-            _typeNameTable[214] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
-            _typeNameTable[215] = "Windows.UI.Xaml.Media.Animation.Storyboard";
+            _typeNameTable[70] = "NestedWorld.View.MapPoint.MonsterMapPoint";
+            _typeNameTable[71] = "NestedWorld.View.MapPoint.UserMapPoint";
+            _typeNameTable[72] = "NestedWorld.View.MapViews.MapControlView";
+            _typeNameTable[73] = "Windows.UI.Xaml.Controls.Maps.MapControl";
+            _typeNameTable[74] = "NestedWorld.View.MapViews.MapListElement";
+            _typeNameTable[75] = "NestedWorld.View.MapViews.MonsterMapList";
+            _typeNameTable[76] = "Windows.UI.Xaml.Controls.StackPanel";
+            _typeNameTable[77] = "NestedWorld.View.MapViews.UserMapList";
+            _typeNameTable[78] = "NestedWorld.View.MonsterViews.MonsterView";
+            _typeNameTable[79] = "NestedWorld.View.MonsterSoloView";
+            _typeNameTable[80] = "NestedWorld.Classes.ElementsGame.TypeEnum";
+            _typeNameTable[81] = "System.Enum";
+            _typeNameTable[82] = "NestedWorld.View.MonsterViews.MonsterAttackView";
+            _typeNameTable[83] = "NestedWorld.View.MonsterViews.MonsterAttacksView";
+            _typeNameTable[84] = "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList";
+            _typeNameTable[85] = "NestedWorld.View.MonsterViews.MonsterHeaderView";
+            _typeNameTable[86] = "NestedWorld.View.MonsterViews.MonsterStatsView";
+            _typeNameTable[87] = "NestedWorld.View.MonsterViews.MonsterLocationView";
+            _typeNameTable[88] = "Telerik.UI.Xaml.Controls.Chart.ChartPalette";
+            _typeNameTable[89] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[90] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
+            _typeNameTable[91] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
+            _typeNameTable[92] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[93] = "Telerik.UI.Xaml.Controls.Chart.RadPieChart";
+            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
+            _typeNameTable[95] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
+            _typeNameTable[96] = "Telerik.UI.Xaml.Controls.RadControl";
+            _typeNameTable[97] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[98] = "Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection";
+            _typeNameTable[99] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
+            _typeNameTable[100] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
+            _typeNameTable[101] = "Telerik.UI.Xaml.Controls.Chart.PieSeries";
+            _typeNameTable[102] = "Telerik.UI.Xaml.Controls.Chart.ChartSeries";
+            _typeNameTable[103] = "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter";
+            _typeNameTable[104] = "Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>";
+            _typeNameTable[105] = "System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>";
+            _typeNameTable[106] = "Telerik.Charting.PieDataPoint";
+            _typeNameTable[107] = "Telerik.Charting.SingleValueDataPoint";
+            _typeNameTable[108] = "Telerik.Charting.DataPoint";
+            _typeNameTable[109] = "Telerik.Core.Node";
+            _typeNameTable[110] = "Telerik.Core.PropertyBagObject";
+            _typeNameTable[111] = "Telerik.Core.IElementPresenter";
+            _typeNameTable[112] = "Telerik.Core.NodeState";
+            _typeNameTable[113] = "Telerik.Core.RadRect";
+            _typeNameTable[114] = "Telerik.Core.Element";
+            _typeNameTable[115] = "Windows.UI.Xaml.Style";
+            _typeNameTable[116] = "Telerik.UI.Xaml.Controls.Chart.DataPointBinding";
+            _typeNameTable[117] = "Windows.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[118] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>";
+            _typeNameTable[119] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>";
+            _typeNameTable[120] = "Telerik.Charting.AngleRange";
+            _typeNameTable[121] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
+            _typeNameTable[122] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
+            _typeNameTable[123] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition";
+            _typeNameTable[124] = "Windows.UI.Xaml.HorizontalAlignment";
+            _typeNameTable[125] = "Windows.UI.Xaml.VerticalAlignment";
+            _typeNameTable[126] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[127] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[128] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy";
+            _typeNameTable[129] = "System.Collections.IEnumerable";
+            _typeNameTable[130] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider";
+            _typeNameTable[131] = "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName";
+            _typeNameTable[132] = "Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection";
+            _typeNameTable[133] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>";
+            _typeNameTable[134] = "Telerik.UI.Xaml.Controls.Chart.ChartBehavior";
+            _typeNameTable[135] = "Windows.Foundation.Size";
+            _typeNameTable[136] = "Windows.Foundation.Point";
+            _typeNameTable[137] = "Telerik.UI.Xaml.Controls.Chart.DoughnutSeries";
+            _typeNameTable[138] = "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding";
+            _typeNameTable[139] = "NestedWorld.View.SettingsViews.SettingsView";
+            _typeNameTable[140] = "NestedWorld.View.ShopViews.ShopElementView";
+            _typeNameTable[141] = "NestedWorld.View.UserViews.AllyView";
+            _typeNameTable[142] = "Telerik.UI.Drawing.D2DResource";
+            _typeNameTable[143] = "Telerik.UI.Drawing.D2DBrush";
+            _typeNameTable[144] = "Telerik.UI.Drawing.D2DTextStyle";
+            _typeNameTable[145] = "Telerik.UI.Drawing.FontWeightName";
+            _typeNameTable[146] = "Windows.UI.Xaml.TextAlignment";
+            _typeNameTable[147] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[148] = "Telerik.UI.Drawing.D2DShapeStyle";
+            _typeNameTable[149] = "Telerik.UI.Drawing.D2DSolidColorBrush";
+            _typeNameTable[150] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
+            _typeNameTable[151] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
+            _typeNameTable[152] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
+            _typeNameTable[153] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
+            _typeNameTable[154] = "Windows.UI.Xaml.Controls.Orientation";
+            _typeNameTable[155] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
+            _typeNameTable[156] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
+            _typeNameTable[157] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
+            _typeNameTable[158] = "Windows.UI.Xaml.Media.FontFamily";
+            _typeNameTable[159] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
+            _typeNameTable[160] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
+            _typeNameTable[161] = "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu";
+            _typeNameTable[162] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
+            _typeNameTable[163] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
+            _typeNameTable[164] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem";
+            _typeNameTable[165] = "Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject";
+            _typeNameTable[166] = "System.Windows.Input.ICommand";
+            _typeNameTable[167] = "Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService";
+            _typeNameTable[168] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[169] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[170] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[171] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[172] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[173] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[174] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[175] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[176] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[177] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior";
+            _typeNameTable[178] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>";
+            _typeNameTable[179] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers";
+            _typeNameTable[180] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
+            _typeNameTable[181] = "Windows.UI.Xaml.Media.Animation.Storyboard";
 
-            _typeTable = new global::System.Type[216];
+            _typeTable = new global::System.Type[182];
             _typeTable[0] = typeof(global::Windows.UI.Color);
             _typeTable[1] = typeof(global::System.ValueType);
             _typeTable[2] = typeof(global::System.Object);
@@ -445,152 +411,118 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             _typeTable[67] = typeof(global::NestedWorld.Classes.Garden.GardenElement);
             _typeTable[68] = typeof(global::NestedWorld.View.NotificationView);
             _typeTable[69] = typeof(global::Windows.UI.Xaml.Input.TappedEventHandler);
-            _typeTable[70] = typeof(global::NestedWorld.View.MapViews.MapView);
-            _typeTable[71] = typeof(global::NestedWorld.View.MapViews.AreaListView);
-            _typeTable[72] = typeof(global::NestedWorld.View.MapViews.AreaAllyView);
-            _typeTable[73] = typeof(global::NestedWorld.View.MapViews.AreaFreeView);
-            _typeTable[74] = typeof(global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter);
-            _typeTable[75] = typeof(global::NestedWorld.View.MapViews.AreaMeView);
-            _typeTable[76] = typeof(global::NestedWorld.View.MapViews.AreaOtherView);
-            _typeTable[77] = typeof(global::NestedWorld.View.MapViews.MapPoint);
-            _typeTable[78] = typeof(global::Telerik.UI.Xaml.Controls.Map.RadMap);
-            _typeTable[79] = typeof(global::Telerik.UI.Xaml.Controls.RadControl);
-            _typeTable[80] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[81] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapLayerCollection);
-            _typeTable[82] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Map.MapLayer>);
-            _typeTable[83] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapLayer);
-            _typeTable[84] = typeof(global::Telerik.Geospatial.LocationRect);
-            _typeTable[85] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapBehaviorCollection);
-            _typeTable[86] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Map.MapBehavior>);
-            _typeTable[87] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapBehavior);
-            _typeTable[88] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[89] = typeof(global::Telerik.Geospatial.Location);
-            _typeTable[90] = typeof(global::Telerik.UI.Xaml.Controls.Map.ISpatialReference);
-            _typeTable[91] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapCommandService);
-            _typeTable[92] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>);
-            _typeTable[93] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>);
-            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Map.RadMap>);
-            _typeTable[95] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject);
-            _typeTable[96] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[97] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Map.RadMap>);
-            _typeTable[98] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Map.RadMap, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>);
-            _typeTable[99] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>);
-            _typeTable[100] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>);
-            _typeTable[101] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>);
-            _typeTable[102] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer);
-            _typeTable[103] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapShapeColorizer);
-            _typeTable[104] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector);
-            _typeTable[105] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy);
-            _typeTable[106] = typeof(global::Telerik.UI.Drawing.D2DShapeStyle);
-            _typeTable[107] = typeof(global::Telerik.UI.Drawing.D2DTextStyle);
-            _typeTable[108] = typeof(global::Telerik.UI.Xaml.Controls.Map.IShapeDataSource);
-            _typeTable[109] = typeof(global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer);
-            _typeTable[110] = typeof(global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer);
-            _typeTable[111] = typeof(global::Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution);
-            _typeTable[112] = typeof(global::Telerik.Core.ValueRange<global::System.Double>);
-            _typeTable[113] = typeof(global::System.Collections.Generic.IEnumerable<global::Telerik.UI.Xaml.Controls.Map.ColorRange>);
-            _typeTable[114] = typeof(global::Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution);
-            _typeTable[115] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior);
-            _typeTable[116] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapZoomMode);
-            _typeTable[117] = typeof(global::System.Enum);
-            _typeTable[118] = typeof(global::Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction);
-            _typeTable[119] = typeof(global::NestedWorld.View.MapViews.MapTelerikTest);
-            _typeTable[120] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
-            _typeTable[121] = typeof(global::NestedWorld.View.MonsterSoloView);
-            _typeTable[122] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
-            _typeTable[123] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
-            _typeTable[124] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
-            _typeTable[125] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
-            _typeTable[126] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
-            _typeTable[127] = typeof(global::NestedWorld.View.MonsterViews.MonsterStatsView);
-            _typeTable[128] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
-            _typeTable[129] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartPalette);
-            _typeTable[130] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
-            _typeTable[131] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
-            _typeTable[132] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[133] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadPieChart);
-            _typeTable[134] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
-            _typeTable[135] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
-            _typeTable[136] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection);
-            _typeTable[137] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
-            _typeTable[138] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
-            _typeTable[139] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeries);
-            _typeTable[140] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeries);
-            _typeTable[141] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter);
-            _typeTable[142] = typeof(global::Telerik.Core.ElementCollection<global::Telerik.Charting.PieDataPoint>);
-            _typeTable[143] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>);
-            _typeTable[144] = typeof(global::Telerik.Charting.PieDataPoint);
-            _typeTable[145] = typeof(global::Telerik.Charting.SingleValueDataPoint);
-            _typeTable[146] = typeof(global::Telerik.Charting.DataPoint);
-            _typeTable[147] = typeof(global::Telerik.Core.Node);
-            _typeTable[148] = typeof(global::Telerik.Core.PropertyBagObject);
-            _typeTable[149] = typeof(global::Telerik.Core.IElementPresenter);
-            _typeTable[150] = typeof(global::Telerik.Core.NodeState);
-            _typeTable[151] = typeof(global::Telerik.Core.RadRect);
-            _typeTable[152] = typeof(global::Telerik.Core.Element);
-            _typeTable[153] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[154] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding);
-            _typeTable[155] = typeof(global::Windows.UI.Xaml.Controls.StyleSelector);
-            _typeTable[156] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>);
-            _typeTable[157] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>);
-            _typeTable[158] = typeof(global::Telerik.Charting.AngleRange);
-            _typeTable[159] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
-            _typeTable[160] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
-            _typeTable[161] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition);
-            _typeTable[162] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
-            _typeTable[163] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
-            _typeTable[164] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[165] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[166] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy);
-            _typeTable[167] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[168] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider);
-            _typeTable[169] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName);
-            _typeTable[170] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection);
-            _typeTable[171] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>);
-            _typeTable[172] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior);
-            _typeTable[173] = typeof(global::Windows.Foundation.Size);
-            _typeTable[174] = typeof(global::Windows.Foundation.Point);
-            _typeTable[175] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries);
-            _typeTable[176] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding);
-            _typeTable[177] = typeof(global::NestedWorld.View.SettingsViews.SettingsView);
-            _typeTable[178] = typeof(global::NestedWorld.View.ShopViews.ShopElementView);
-            _typeTable[179] = typeof(global::NestedWorld.View.UserViews.AllyView);
-            _typeTable[180] = typeof(global::Telerik.UI.Drawing.D2DResource);
-            _typeTable[181] = typeof(global::Telerik.UI.Drawing.D2DBrush);
-            _typeTable[182] = typeof(global::Telerik.UI.Drawing.FontWeightName);
-            _typeTable[183] = typeof(global::Windows.UI.Xaml.TextAlignment);
-            _typeTable[184] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[185] = typeof(global::Telerik.UI.Drawing.D2DSolidColorBrush);
-            _typeTable[186] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
-            _typeTable[187] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
-            _typeTable[188] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
-            _typeTable[189] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
-            _typeTable[190] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[191] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
-            _typeTable[192] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
-            _typeTable[193] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
-            _typeTable[194] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
-            _typeTable[195] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
-            _typeTable[196] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
-            _typeTable[197] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu);
-            _typeTable[198] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
-            _typeTable[199] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
-            _typeTable[200] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem);
-            _typeTable[201] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[202] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService);
-            _typeTable[203] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[204] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[205] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[206] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[207] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[208] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[209] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[210] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[211] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior);
-            _typeTable[212] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Windows.UI.Xaml.FrameworkElement>);
-            _typeTable[213] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers);
-            _typeTable[214] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
-            _typeTable[215] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
+            _typeTable[70] = typeof(global::NestedWorld.View.MapPoint.MonsterMapPoint);
+            _typeTable[71] = typeof(global::NestedWorld.View.MapPoint.UserMapPoint);
+            _typeTable[72] = typeof(global::NestedWorld.View.MapViews.MapControlView);
+            _typeTable[73] = typeof(global::Windows.UI.Xaml.Controls.Maps.MapControl);
+            _typeTable[74] = typeof(global::NestedWorld.View.MapViews.MapListElement);
+            _typeTable[75] = typeof(global::NestedWorld.View.MapViews.MonsterMapList);
+            _typeTable[76] = typeof(global::Windows.UI.Xaml.Controls.StackPanel);
+            _typeTable[77] = typeof(global::NestedWorld.View.MapViews.UserMapList);
+            _typeTable[78] = typeof(global::NestedWorld.View.MonsterViews.MonsterView);
+            _typeTable[79] = typeof(global::NestedWorld.View.MonsterSoloView);
+            _typeTable[80] = typeof(global::NestedWorld.Classes.ElementsGame.TypeEnum);
+            _typeTable[81] = typeof(global::System.Enum);
+            _typeTable[82] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttackView);
+            _typeTable[83] = typeof(global::NestedWorld.View.MonsterViews.MonsterAttacksView);
+            _typeTable[84] = typeof(global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList);
+            _typeTable[85] = typeof(global::NestedWorld.View.MonsterViews.MonsterHeaderView);
+            _typeTable[86] = typeof(global::NestedWorld.View.MonsterViews.MonsterStatsView);
+            _typeTable[87] = typeof(global::NestedWorld.View.MonsterViews.MonsterLocationView);
+            _typeTable[88] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartPalette);
+            _typeTable[89] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[90] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
+            _typeTable[91] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
+            _typeTable[92] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[93] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadPieChart);
+            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
+            _typeTable[95] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
+            _typeTable[96] = typeof(global::Telerik.UI.Xaml.Controls.RadControl);
+            _typeTable[97] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[98] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection);
+            _typeTable[99] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
+            _typeTable[100] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
+            _typeTable[101] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeries);
+            _typeTable[102] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeries);
+            _typeTable[103] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter);
+            _typeTable[104] = typeof(global::Telerik.Core.ElementCollection<global::Telerik.Charting.PieDataPoint>);
+            _typeTable[105] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>);
+            _typeTable[106] = typeof(global::Telerik.Charting.PieDataPoint);
+            _typeTable[107] = typeof(global::Telerik.Charting.SingleValueDataPoint);
+            _typeTable[108] = typeof(global::Telerik.Charting.DataPoint);
+            _typeTable[109] = typeof(global::Telerik.Core.Node);
+            _typeTable[110] = typeof(global::Telerik.Core.PropertyBagObject);
+            _typeTable[111] = typeof(global::Telerik.Core.IElementPresenter);
+            _typeTable[112] = typeof(global::Telerik.Core.NodeState);
+            _typeTable[113] = typeof(global::Telerik.Core.RadRect);
+            _typeTable[114] = typeof(global::Telerik.Core.Element);
+            _typeTable[115] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[116] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding);
+            _typeTable[117] = typeof(global::Windows.UI.Xaml.Controls.StyleSelector);
+            _typeTable[118] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>);
+            _typeTable[119] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>);
+            _typeTable[120] = typeof(global::Telerik.Charting.AngleRange);
+            _typeTable[121] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
+            _typeTable[122] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
+            _typeTable[123] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition);
+            _typeTable[124] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
+            _typeTable[125] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
+            _typeTable[126] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[127] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[128] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy);
+            _typeTable[129] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[130] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider);
+            _typeTable[131] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName);
+            _typeTable[132] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection);
+            _typeTable[133] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>);
+            _typeTable[134] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior);
+            _typeTable[135] = typeof(global::Windows.Foundation.Size);
+            _typeTable[136] = typeof(global::Windows.Foundation.Point);
+            _typeTable[137] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries);
+            _typeTable[138] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding);
+            _typeTable[139] = typeof(global::NestedWorld.View.SettingsViews.SettingsView);
+            _typeTable[140] = typeof(global::NestedWorld.View.ShopViews.ShopElementView);
+            _typeTable[141] = typeof(global::NestedWorld.View.UserViews.AllyView);
+            _typeTable[142] = typeof(global::Telerik.UI.Drawing.D2DResource);
+            _typeTable[143] = typeof(global::Telerik.UI.Drawing.D2DBrush);
+            _typeTable[144] = typeof(global::Telerik.UI.Drawing.D2DTextStyle);
+            _typeTable[145] = typeof(global::Telerik.UI.Drawing.FontWeightName);
+            _typeTable[146] = typeof(global::Windows.UI.Xaml.TextAlignment);
+            _typeTable[147] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[148] = typeof(global::Telerik.UI.Drawing.D2DShapeStyle);
+            _typeTable[149] = typeof(global::Telerik.UI.Drawing.D2DSolidColorBrush);
+            _typeTable[150] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
+            _typeTable[151] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
+            _typeTable[152] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
+            _typeTable[153] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
+            _typeTable[154] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
+            _typeTable[155] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
+            _typeTable[156] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
+            _typeTable[157] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
+            _typeTable[158] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
+            _typeTable[159] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
+            _typeTable[160] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
+            _typeTable[161] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu);
+            _typeTable[162] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
+            _typeTable[163] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
+            _typeTable[164] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem);
+            _typeTable[165] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject);
+            _typeTable[166] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[167] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService);
+            _typeTable[168] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[169] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[170] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[171] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[172] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[173] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[174] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[175] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[176] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[177] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior);
+            _typeTable[178] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Windows.UI.Xaml.FrameworkElement>);
+            _typeTable[179] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers);
+            _typeTable[180] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
+            _typeTable[181] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -672,222 +604,160 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
         private object Activate_65_GardenElementView() { return new global::NestedWorld.View.GardenViews.GardenElementView(); }
         private object Activate_66_GardenItem() { return new global::NestedWorld.View.GardenViews.GardenItem(); }
         private object Activate_68_NotificationView() { return new global::NestedWorld.View.NotificationView(); }
-        private object Activate_70_MapView() { return new global::NestedWorld.View.MapViews.MapView(); }
-        private object Activate_71_AreaListView() { return new global::NestedWorld.View.MapViews.AreaListView(); }
-        private object Activate_72_AreaAllyView() { return new global::NestedWorld.View.MapViews.AreaAllyView(); }
-        private object Activate_73_AreaFreeView() { return new global::NestedWorld.View.MapViews.AreaFreeView(); }
-        private object Activate_74_AreaContentPresenter() { return new global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter(); }
-        private object Activate_75_AreaMeView() { return new global::NestedWorld.View.MapViews.AreaMeView(); }
-        private object Activate_76_AreaOtherView() { return new global::NestedWorld.View.MapViews.AreaOtherView(); }
-        private object Activate_77_MapPoint() { return new global::NestedWorld.View.MapViews.MapPoint(); }
-        private object Activate_78_RadMap() { return new global::Telerik.UI.Xaml.Controls.Map.RadMap(); }
-        private object Activate_82_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Map.MapLayer>(); }
-        private object Activate_86_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Map.MapBehavior>(); }
-        private object Activate_99_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>(); }
-        private object Activate_100_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>(); }
-        private object Activate_102_MapShapeLayer() { return new global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer(); }
-        private object Activate_104_MapShapeStyleSelector() { return new global::Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector(); }
-        private object Activate_105_MapShapeLabelLayoutStrategy() { return new global::Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy(); }
-        private object Activate_106_D2DShapeStyle() { return new global::Telerik.UI.Drawing.D2DShapeStyle(); }
-        private object Activate_107_D2DTextStyle() { return new global::Telerik.UI.Drawing.D2DTextStyle(); }
-        private object Activate_109_DesaturationColorizer() { return new global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer(); }
-        private object Activate_114_LogarithmicRangeDistribution() { return new global::Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution(); }
-        private object Activate_115_MapPanAndZoomBehavior() { return new global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior(); }
-        private object Activate_119_MapTelerikTest() { return new global::NestedWorld.View.MapViews.MapTelerikTest(); }
-        private object Activate_120_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
-        private object Activate_121_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
-        private object Activate_123_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
-        private object Activate_124_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
-        private object Activate_125_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
-        private object Activate_126_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
-        private object Activate_127_MonsterStatsView() { return new global::NestedWorld.View.MonsterViews.MonsterStatsView(); }
-        private object Activate_128_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
-        private object Activate_129_ChartPalette() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartPalette(); }
-        private object Activate_130_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
-        private object Activate_131_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
-        private object Activate_133_RadPieChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadPieChart(); }
-        private object Activate_138_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>(); }
-        private object Activate_139_PieSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.PieSeries(); }
-        private object Activate_143_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>(); }
-        private object Activate_144_PieDataPoint() { return new global::Telerik.Charting.PieDataPoint(); }
-        private object Activate_156_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_157_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_159_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
-        private object Activate_160_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
-        private object Activate_161_ChartSeriesLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition(); }
-        private object Activate_168_ChartSeriesProvider() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider(); }
-        private object Activate_171_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>(); }
-        private object Activate_175_DoughnutSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries(); }
-        private object Activate_176_PropertyNameDataPointBinding() { return new global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding(); }
-        private object Activate_177_SettingsView() { return new global::NestedWorld.View.SettingsViews.SettingsView(); }
-        private object Activate_178_ShopElementView() { return new global::NestedWorld.View.ShopViews.ShopElementView(); }
-        private object Activate_179_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
-        private object Activate_185_D2DSolidColorBrush() { return new global::Telerik.UI.Drawing.D2DSolidColorBrush(); }
-        private object Activate_186_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
-        private object Activate_188_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
-        private object Activate_191_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
-        private object Activate_192_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
-        private object Activate_193_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
-        private object Activate_196_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
-        private object Activate_197_RadRadialMenu() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu(); }
-        private object Activate_198_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
-        private object Activate_199_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
-        private object Activate_200_RadialMenuItem() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem(); }
-        private object Activate_208_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
-        private object Activate_209_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
-        private object Activate_211_RadialMenuTriggerBehavior() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior(); }
-        private object Activate_214_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
-        private void VectorAdd_81_MapLayerCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Map.MapLayer>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Map.MapLayer)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_82_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Map.MapLayer>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Map.MapLayer)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_85_MapBehaviorCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Map.MapBehavior>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Map.MapBehavior)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_86_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Map.MapBehavior>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Map.MapBehavior)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_97_CommandCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_98_AttachableObjectCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_99_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_100_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Map.RadMap>)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_131_List(object instance, object item)
+        private object Activate_70_MonsterMapPoint() { return new global::NestedWorld.View.MapPoint.MonsterMapPoint(); }
+        private object Activate_71_UserMapPoint() { return new global::NestedWorld.View.MapPoint.UserMapPoint(); }
+        private object Activate_72_MapControlView() { return new global::NestedWorld.View.MapViews.MapControlView(); }
+        private object Activate_74_MapListElement() { return new global::NestedWorld.View.MapViews.MapListElement(); }
+        private object Activate_75_MonsterMapList() { return new global::NestedWorld.View.MapViews.MonsterMapList(); }
+        private object Activate_77_UserMapList() { return new global::NestedWorld.View.MapViews.UserMapList(); }
+        private object Activate_78_MonsterView() { return new global::NestedWorld.View.MonsterViews.MonsterView(); }
+        private object Activate_79_MonsterSoloView() { return new global::NestedWorld.View.MonsterSoloView(); }
+        private object Activate_82_MonsterAttackView() { return new global::NestedWorld.View.MonsterViews.MonsterAttackView(); }
+        private object Activate_83_MonsterAttacksView() { return new global::NestedWorld.View.MonsterViews.MonsterAttacksView(); }
+        private object Activate_84_MonsterAttckList() { return new global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList(); }
+        private object Activate_85_MonsterHeaderView() { return new global::NestedWorld.View.MonsterViews.MonsterHeaderView(); }
+        private object Activate_86_MonsterStatsView() { return new global::NestedWorld.View.MonsterViews.MonsterStatsView(); }
+        private object Activate_87_MonsterLocationView() { return new global::NestedWorld.View.MonsterViews.MonsterLocationView(); }
+        private object Activate_88_ChartPalette() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartPalette(); }
+        private object Activate_90_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
+        private object Activate_91_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
+        private object Activate_93_RadPieChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadPieChart(); }
+        private object Activate_100_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>(); }
+        private object Activate_101_PieSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.PieSeries(); }
+        private object Activate_105_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>(); }
+        private object Activate_106_PieDataPoint() { return new global::Telerik.Charting.PieDataPoint(); }
+        private object Activate_118_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
+        private object Activate_119_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
+        private object Activate_121_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
+        private object Activate_122_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
+        private object Activate_123_ChartSeriesLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition(); }
+        private object Activate_130_ChartSeriesProvider() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider(); }
+        private object Activate_133_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>(); }
+        private object Activate_137_DoughnutSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries(); }
+        private object Activate_138_PropertyNameDataPointBinding() { return new global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding(); }
+        private object Activate_139_SettingsView() { return new global::NestedWorld.View.SettingsViews.SettingsView(); }
+        private object Activate_140_ShopElementView() { return new global::NestedWorld.View.ShopViews.ShopElementView(); }
+        private object Activate_141_AllyView() { return new global::NestedWorld.View.UserViews.AllyView(); }
+        private object Activate_144_D2DTextStyle() { return new global::Telerik.UI.Drawing.D2DTextStyle(); }
+        private object Activate_148_D2DShapeStyle() { return new global::Telerik.UI.Drawing.D2DShapeStyle(); }
+        private object Activate_149_D2DSolidColorBrush() { return new global::Telerik.UI.Drawing.D2DSolidColorBrush(); }
+        private object Activate_150_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
+        private object Activate_152_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
+        private object Activate_155_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
+        private object Activate_156_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
+        private object Activate_157_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
+        private object Activate_160_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
+        private object Activate_161_RadRadialMenu() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu(); }
+        private object Activate_162_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
+        private object Activate_163_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
+        private object Activate_164_RadialMenuItem() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem(); }
+        private object Activate_173_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
+        private object Activate_174_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
+        private object Activate_177_RadialMenuTriggerBehavior() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior(); }
+        private object Activate_180_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
+        private void VectorAdd_91_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Brush>)instance;
             var newItem = (global::Windows.UI.Xaml.Media.Brush)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_136_PieSeriesCollection(object instance, object item)
+        private void VectorAdd_98_PieSeriesCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_137_PresenterCollection(object instance, object item)
+        private void VectorAdd_99_PresenterCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_138_Collection(object instance, object item)
+        private void VectorAdd_100_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_142_ElementCollection(object instance, object item)
+        private void VectorAdd_104_ElementCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.PieDataPoint>)instance;
             var newItem = (global::Telerik.Charting.PieDataPoint)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_143_Collection(object instance, object item)
+        private void VectorAdd_105_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.PieDataPoint>)instance;
             var newItem = (global::Telerik.Charting.PieDataPoint)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_156_ObservableCollection(object instance, object item)
+        private void VectorAdd_118_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
             var newItem = (global::Windows.UI.Xaml.Style)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_157_Collection(object instance, object item)
+        private void VectorAdd_119_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
             var newItem = (global::Windows.UI.Xaml.Style)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_159_ObservableCollection(object instance, object item)
+        private void VectorAdd_121_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_160_Collection(object instance, object item)
+        private void VectorAdd_122_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_170_ChartBehaviorCollection(object instance, object item)
+        private void VectorAdd_132_ChartBehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_171_Collection(object instance, object item)
+        private void VectorAdd_133_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_198_ObservableCollection(object instance, object item)
+        private void VectorAdd_162_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_199_Collection(object instance, object item)
+        private void VectorAdd_163_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_206_CommandCollection(object instance, object item)
+        private void VectorAdd_171_CommandCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_207_AttachableObjectCollection(object instance, object item)
+        private void VectorAdd_172_AttachableObjectCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_208_ObservableCollection(object instance, object item)
+        private void VectorAdd_173_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_209_Collection(object instance, object item)
+        private void VectorAdd_174_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
@@ -1403,378 +1273,69 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 70:   //  NestedWorld.View.MapViews.MapView
+            case 70:   //  NestedWorld.View.MapPoint.MonsterMapPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_70_MapView;
-                userType.AddMemberName("reduce");
+                userType.Activator = Activate_70_MonsterMapPoint;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  NestedWorld.View.MapViews.AreaListView
+            case 71:   //  NestedWorld.View.MapPoint.UserMapPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_71_AreaListView;
-                userType.AddMemberName("List");
+                userType.Activator = Activate_71_UserMapPoint;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  NestedWorld.View.MapViews.AreaAllyView
+            case 72:   //  NestedWorld.View.MapViews.MapControlView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_72_AreaAllyView;
+                userType.Activator = Activate_72_MapControlView;
+                userType.AddMemberName("mapControl");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 73:   //  NestedWorld.View.MapViews.AreaFreeView
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_73_AreaFreeView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 74:   //  NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_74_AreaContentPresenter;
-                userType.AddMemberName("MeTemplate");
-                userType.AddMemberName("AllyTemplate");
-                userType.AddMemberName("FreeTemplate");
-                userType.AddMemberName("OtherTemplate");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 75:   //  NestedWorld.View.MapViews.AreaMeView
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_75_AreaMeView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 76:   //  NestedWorld.View.MapViews.AreaOtherView
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_76_AreaOtherView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 77:   //  NestedWorld.View.MapViews.MapPoint
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_77_MapPoint;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 78:   //  Telerik.UI.Xaml.Controls.Map.RadMap
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
-                userType.Activator = Activate_78_RadMap;
-                userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Map.RadMap.Layers");
-                userType.AddMemberName("Layers");
-                userType.AddMemberName("Behaviors");
-                userType.AddMemberName("Center");
-                userType.AddMemberName("ZoomLevel");
-                userType.AddMemberName("MaxZoomLevel");
-                userType.AddMemberName("MinZoomLevel");
-                userType.AddMemberName("SpatialReference");
-                userType.AddMemberName("Bounds");
-                userType.AddMemberName("CommandService");
-                userType.AddMemberName("Commands");
-                xamlType = userType;
-                break;
-
-            case 79:   //  Telerik.UI.Xaml.Controls.RadControl
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.AddMemberName("CurrentVisualState");
-                xamlType = userType;
-                break;
-
-            case 80:   //  Windows.UI.Xaml.Controls.Control
+            case 73:   //  Windows.UI.Xaml.Controls.Maps.MapControl
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 81:   //  Telerik.UI.Xaml.Controls.Map.MapLayerCollection
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapLayer>"));
-                userType.CollectionAdd = VectorAdd_81_MapLayerCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 82:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapLayer>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_82_Collection;
-                userType.CollectionAdd = VectorAdd_82_Collection;
-                xamlType = userType;
-                break;
-
-            case 83:   //  Telerik.UI.Xaml.Controls.Map.MapLayer
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
-                userType.AddMemberName("Bounds");
-                xamlType = userType;
-                break;
-
-            case 84:   //  Telerik.Geospatial.LocationRect
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 85:   //  Telerik.UI.Xaml.Controls.Map.MapBehaviorCollection
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapBehavior>"));
-                userType.CollectionAdd = VectorAdd_85_MapBehaviorCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 86:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Map.MapBehavior>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_86_Collection;
-                userType.CollectionAdd = VectorAdd_86_Collection;
-                xamlType = userType;
-                break;
-
-            case 87:   //  Telerik.UI.Xaml.Controls.Map.MapBehavior
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.AddMemberName("Map");
-                xamlType = userType;
-                break;
-
-            case 88:   //  Windows.UI.Xaml.FrameworkElement
-                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 89:   //  Telerik.Geospatial.Location
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 90:   //  Telerik.UI.Xaml.Controls.Map.ISpatialReference
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 91:   //  Telerik.UI.Xaml.Controls.Map.MapCommandService
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 92:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>"));
-                xamlType = userType;
-                break;
-
-            case 93:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>"));
-                xamlType = userType;
-                break;
-
-            case 94:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
-                userType.AddMemberName("Owner");
-                xamlType = userType;
-                break;
-
-            case 95:   //  Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                xamlType = userType;
-                break;
-
-            case 96:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 97:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Map.RadMap>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Map.RadMap, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>"));
-                userType.CollectionAdd = VectorAdd_97_CommandCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 98:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Map.RadMap, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>"));
-                userType.CollectionAdd = VectorAdd_98_AttachableObjectCollection;
-                xamlType = userType;
-                break;
-
-            case 99:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>"));
-                userType.Activator = Activate_99_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_99_ObservableCollection;
-                xamlType = userType;
-                break;
-
-            case 100:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_100_Collection;
-                userType.CollectionAdd = VectorAdd_100_Collection;
-                xamlType = userType;
-                break;
-
-            case 101:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Map.RadMap>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>"));
-                xamlType = userType;
-                break;
-
-            case 102:   //  Telerik.UI.Xaml.Controls.Map.MapShapeLayer
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapLayer"));
-                userType.Activator = Activate_102_MapShapeLayer;
-                userType.AddMemberName("ShapeLabelAttributeName");
-                userType.AddMemberName("ShapeColorizer");
-                userType.AddMemberName("IsSelectionEnabled");
-                userType.AddMemberName("IsPointerOverEnabled");
-                userType.AddMemberName("IsToolTipEnabled");
-                userType.AddMemberName("ShapeToolTipAttributeName");
-                userType.AddMemberName("ShapeStyleSelector");
-                userType.AddMemberName("ShapeLabelLayoutStrategy");
-                userType.AddMemberName("ShapeStyle");
-                userType.AddMemberName("ShapePointerOverStyle");
-                userType.AddMemberName("ShapeSelectedStyle");
-                userType.AddMemberName("ShapeLabelStyle");
-                userType.AddMemberName("Source");
-                xamlType = userType;
-                break;
-
-            case 103:   //  Telerik.UI.Xaml.Controls.Map.MapShapeColorizer
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
-                userType.AddMemberName("IsProperlyInitialized");
-                xamlType = userType;
-                break;
-
-            case 104:   //  Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 105:   //  Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 106:   //  Telerik.UI.Drawing.D2DShapeStyle
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_106_D2DShapeStyle;
-                userType.AddMemberName("StrokeThickness");
-                userType.AddMemberName("Stroke");
-                userType.AddMemberName("Foreground");
-                userType.AddMemberName("Fill");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 107:   //  Telerik.UI.Drawing.D2DTextStyle
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_107_D2DTextStyle;
-                userType.AddMemberName("Foreground");
-                userType.AddMemberName("FontWeight");
-                userType.AddMemberName("FontSize");
-                userType.AddMemberName("FontLocale");
-                userType.AddMemberName("FontName");
-                userType.AddMemberName("TextAlignment");
-                userType.AddMemberName("FontStyle");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 108:   //  Telerik.UI.Xaml.Controls.Map.IShapeDataSource
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 109:   //  Telerik.UI.Xaml.Controls.Map.DesaturationColorizer
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer"));
-                userType.Activator = Activate_109_DesaturationColorizer;
-                userType.AddMemberName("BaseColor");
-                userType.AddMemberName("From");
-                userType.AddMemberName("To");
-                userType.AddMemberName("RangeCount");
-                xamlType = userType;
-                break;
-
-            case 110:   //  Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeColorizer"));
-                userType.AddMemberName("AttributeName");
-                userType.AddMemberName("RangeDistribution");
-                userType.AddMemberName("ActualRange");
-                userType.AddMemberName("Ranges");
-                xamlType = userType;
-                break;
-
-            case 111:   //  Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
-                xamlType = userType;
-                break;
-
-            case 112:   //  Telerik.Core.ValueRange`1<Double>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 113:   //  System.Collections.Generic.IEnumerable`1<Telerik.UI.Xaml.Controls.Map.ColorRange>
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 114:   //  Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution"));
-                userType.Activator = Activate_114_LogarithmicRangeDistribution;
-                userType.AddMemberName("LogarithmBase");
-                xamlType = userType;
-                break;
-
-            case 115:   //  Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapBehavior"));
-                userType.Activator = Activate_115_MapPanAndZoomBehavior;
-                userType.AddMemberName("IsPanEnabled");
-                userType.AddMemberName("ZoomMode");
-                userType.AddMemberName("DoubleTapAction");
-                xamlType = userType;
-                break;
-
-            case 116:   //  Telerik.UI.Xaml.Controls.Map.MapZoomMode
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("ZoomToPoint", global::Telerik.UI.Xaml.Controls.Map.MapZoomMode.ZoomToPoint);
-                userType.AddEnumValue("ZoomToCenter", global::Telerik.UI.Xaml.Controls.Map.MapZoomMode.ZoomToCenter);
-                userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Map.MapZoomMode.None);
-                xamlType = userType;
-                break;
-
-            case 117:   //  System.Enum
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                xamlType = userType;
-                break;
-
-            case 118:   //  Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction
-                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("Reset", global::Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction.Reset);
-                userType.AddEnumValue("ZoomToPoint", global::Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction.ZoomToPoint);
-                userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction.None);
-                xamlType = userType;
-                break;
-
-            case 119:   //  NestedWorld.View.MapViews.MapTelerikTest
+            case 74:   //  NestedWorld.View.MapViews.MapListElement
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_119_MapTelerikTest;
+                userType.Activator = Activate_74_MapListElement;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 120:   //  NestedWorld.View.MonsterViews.MonsterView
+            case 75:   //  NestedWorld.View.MapViews.MonsterMapList
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_120_MonsterView;
+                userType.Activator = Activate_75_MonsterMapList;
+                userType.AddMemberName("root");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 121:   //  NestedWorld.View.MonsterSoloView
+            case 76:   //  Windows.UI.Xaml.Controls.StackPanel
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 77:   //  NestedWorld.View.MapViews.UserMapList
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_121_MonsterSoloView;
+                userType.Activator = Activate_77_UserMapList;
+                userType.AddMemberName("root");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 78:   //  NestedWorld.View.MonsterViews.MonsterView
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_78_MonsterView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 79:   //  NestedWorld.View.MonsterSoloView
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_79_MonsterSoloView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("Level");
                 userType.AddMemberName("MonsterImage");
@@ -1785,7 +1346,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 122:   //  NestedWorld.Classes.ElementsGame.TypeEnum
+            case 80:   //  NestedWorld.Classes.ElementsGame.TypeEnum
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("FIRE", global::NestedWorld.Classes.ElementsGame.TypeEnum.FIRE);
                 userType.AddEnumValue("WATHER", global::NestedWorld.Classes.ElementsGame.TypeEnum.WATHER);
@@ -1796,31 +1357,36 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 123:   //  NestedWorld.View.MonsterViews.MonsterAttackView
+            case 81:   //  System.Enum
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 82:   //  NestedWorld.View.MonsterViews.MonsterAttackView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_123_MonsterAttackView;
+                userType.Activator = Activate_82_MonsterAttackView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 124:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
+            case 83:   //  NestedWorld.View.MonsterViews.MonsterAttacksView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_124_MonsterAttacksView;
+                userType.Activator = Activate_83_MonsterAttacksView;
                 userType.AddMemberName("monsterAttackList");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 125:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
+            case 84:   //  NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 126:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
+            case 85:   //  NestedWorld.View.MonsterViews.MonsterHeaderView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_126_MonsterHeaderView;
+                userType.Activator = Activate_85_MonsterHeaderView;
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("MonsterImage");
                 userType.AddMemberName("MonsterType");
@@ -1831,25 +1397,25 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 127:   //  NestedWorld.View.MonsterViews.MonsterStatsView
+            case 86:   //  NestedWorld.View.MonsterViews.MonsterStatsView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_127_MonsterStatsView;
+                userType.Activator = Activate_86_MonsterStatsView;
                 userType.AddMemberName("Life");
                 userType.AddMemberName("Exp");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 128:   //  NestedWorld.View.MonsterViews.MonsterLocationView
+            case 87:   //  NestedWorld.View.MonsterViews.MonsterLocationView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_128_MonsterLocationView;
+                userType.Activator = Activate_87_MonsterLocationView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 129:   //  Telerik.UI.Xaml.Controls.Chart.ChartPalette
+            case 88:   //  Telerik.UI.Xaml.Controls.Chart.ChartPalette
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_129_ChartPalette;
+                userType.Activator = Activate_88_ChartPalette;
                 userType.AddMemberName("FillEntries");
                 userType.AddMemberName("StrokeEntries");
                 userType.AddMemberName("Name");
@@ -1859,35 +1425,39 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 130:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
+            case 89:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 90:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_130_PaletteEntryCollection;
+                userType.Activator = Activate_90_PaletteEntryCollection;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.Brushes");
                 userType.AddMemberName("Brushes");
                 userType.AddMemberName("SeriesFamily");
                 xamlType = userType;
                 break;
 
-            case 131:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
+            case 91:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_131_List;
+                userType.CollectionAdd = VectorAdd_91_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 132:   //  Windows.UI.Xaml.Media.Brush
+            case 92:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 133:   //  Telerik.UI.Xaml.Controls.Chart.RadPieChart
+            case 93:   //  Telerik.UI.Xaml.Controls.Chart.RadPieChart
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase"));
-                userType.Activator = Activate_133_RadPieChart;
+                userType.Activator = Activate_93_RadPieChart;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.RadPieChart.Series");
                 userType.AddMemberName("Series");
                 xamlType = userType;
                 break;
 
-            case 134:   //  Telerik.UI.Xaml.Controls.Chart.RadChartBase
+            case 94:   //  Telerik.UI.Xaml.Controls.Chart.RadChartBase
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterBase"));
                 userType.AddMemberName("ClipToBounds");
                 userType.AddMemberName("Palette");
@@ -1908,34 +1478,44 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 135:   //  Telerik.UI.Xaml.Controls.Chart.PresenterBase
+            case 95:   //  Telerik.UI.Xaml.Controls.Chart.PresenterBase
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
                 xamlType = userType;
                 break;
 
-            case 136:   //  Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection
+            case 96:   //  Telerik.UI.Xaml.Controls.RadControl
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.AddMemberName("CurrentVisualState");
+                xamlType = userType;
+                break;
+
+            case 97:   //  Windows.UI.Xaml.Controls.Control
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 98:   //  Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>"));
-                userType.CollectionAdd = VectorAdd_136_PieSeriesCollection;
+                userType.CollectionAdd = VectorAdd_98_PieSeriesCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 137:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
+            case 99:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>"));
-                userType.CollectionAdd = VectorAdd_137_PresenterCollection;
+                userType.CollectionAdd = VectorAdd_99_PresenterCollection;
                 xamlType = userType;
                 break;
 
-            case 138:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
+            case 100:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_138_Collection;
-                userType.CollectionAdd = VectorAdd_138_Collection;
+                userType.Activator = Activate_100_Collection;
+                userType.CollectionAdd = VectorAdd_100_Collection;
                 xamlType = userType;
                 break;
 
-            case 139:   //  Telerik.UI.Xaml.Controls.Chart.PieSeries
+            case 101:   //  Telerik.UI.Xaml.Controls.Chart.PieSeries
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries"));
-                userType.Activator = Activate_139_PieSeries;
+                userType.Activator = Activate_101_PieSeries;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PieSeries.DataPoints");
                 userType.AddMemberName("DataPoints");
                 userType.AddMemberName("HighlightInnerRadiusFactor");
@@ -1952,7 +1532,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 140:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeries
+            case 102:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeries
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter"));
                 userType.AddMemberName("IsSelected");
                 userType.AddMemberName("AllowSelect");
@@ -1967,30 +1547,30 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 141:   //  Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter
+            case 103:   //  Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterBase"));
                 userType.AddMemberName("ZIndex");
                 userType.AddMemberName("Chart");
                 xamlType = userType;
                 break;
 
-            case 142:   //  Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>
+            case 104:   //  Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>"));
-                userType.CollectionAdd = VectorAdd_142_ElementCollection;
+                userType.CollectionAdd = VectorAdd_104_ElementCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 143:   //  System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>
+            case 105:   //  System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_143_Collection;
-                userType.CollectionAdd = VectorAdd_143_Collection;
+                userType.Activator = Activate_105_Collection;
+                userType.CollectionAdd = VectorAdd_105_Collection;
                 xamlType = userType;
                 break;
 
-            case 144:   //  Telerik.Charting.PieDataPoint
+            case 106:   //  Telerik.Charting.PieDataPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.SingleValueDataPoint"));
-                userType.Activator = Activate_144_PieDataPoint;
+                userType.Activator = Activate_106_PieDataPoint;
                 userType.AddMemberName("Percent");
                 userType.AddMemberName("OffsetFromCenter");
                 userType.AddMemberName("StartAngle");
@@ -1998,13 +1578,13 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 145:   //  Telerik.Charting.SingleValueDataPoint
+            case 107:   //  Telerik.Charting.SingleValueDataPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.DataPoint"));
                 userType.AddMemberName("Value");
                 xamlType = userType;
                 break;
 
-            case 146:   //  Telerik.Charting.DataPoint
+            case 108:   //  Telerik.Charting.DataPoint
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.Node"));
                 userType.AddMemberName("Label");
                 userType.AddMemberName("DataItem");
@@ -2012,7 +1592,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 147:   //  Telerik.Core.Node
+            case 109:   //  Telerik.Core.Node
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.PropertyBagObject"));
                 userType.AddMemberName("Presenter");
                 userType.AddMemberName("IsArrangeValid");
@@ -2025,18 +1605,18 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 148:   //  Telerik.Core.PropertyBagObject
+            case 110:   //  Telerik.Core.PropertyBagObject
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 149:   //  Telerik.Core.IElementPresenter
+            case 111:   //  Telerik.Core.IElementPresenter
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 150:   //  Telerik.Core.NodeState
+            case 112:   //  Telerik.Core.NodeState
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Initial", global::Telerik.Core.NodeState.Initial);
                 userType.AddEnumValue("Loading", global::Telerik.Core.NodeState.Loading);
@@ -2046,68 +1626,68 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 151:   //  Telerik.Core.RadRect
+            case 113:   //  Telerik.Core.RadRect
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 152:   //  Telerik.Core.Element
+            case 114:   //  Telerik.Core.Element
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.Node"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 153:   //  Windows.UI.Xaml.Style
+            case 115:   //  Windows.UI.Xaml.Style
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 154:   //  Telerik.UI.Xaml.Controls.Chart.DataPointBinding
+            case 116:   //  Telerik.UI.Xaml.Controls.Chart.DataPointBinding
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 155:   //  Windows.UI.Xaml.Controls.StyleSelector
+            case 117:   //  Windows.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 156:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>
+            case 118:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>"));
-                userType.CollectionAdd = VectorAdd_156_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_118_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 157:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>
+            case 119:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_157_Collection;
-                userType.CollectionAdd = VectorAdd_157_Collection;
+                userType.Activator = Activate_119_Collection;
+                userType.CollectionAdd = VectorAdd_119_Collection;
                 xamlType = userType;
                 break;
 
-            case 158:   //  Telerik.Charting.AngleRange
+            case 120:   //  Telerik.Charting.AngleRange
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 159:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
+            case 121:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>"));
-                userType.CollectionAdd = VectorAdd_159_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_121_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 160:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
+            case 122:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_160_Collection;
-                userType.CollectionAdd = VectorAdd_160_Collection;
+                userType.Activator = Activate_122_Collection;
+                userType.CollectionAdd = VectorAdd_122_Collection;
                 xamlType = userType;
                 break;
 
-            case 161:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition
+            case 123:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_161_ChartSeriesLabelDefinition;
+                userType.Activator = Activate_123_ChartSeriesLabelDefinition;
                 userType.AddMemberName("HorizontalAlignment");
                 userType.AddMemberName("VerticalAlignment");
                 userType.AddMemberName("Template");
@@ -2120,41 +1700,41 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 162:   //  Windows.UI.Xaml.HorizontalAlignment
+            case 124:   //  Windows.UI.Xaml.HorizontalAlignment
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 163:   //  Windows.UI.Xaml.VerticalAlignment
+            case 125:   //  Windows.UI.Xaml.VerticalAlignment
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 164:   //  Windows.UI.Xaml.Thickness
+            case 126:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 165:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 127:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 166:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy
+            case 128:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 167:   //  System.Collections.IEnumerable
+            case 129:   //  System.Collections.IEnumerable
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 168:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider
+            case 130:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 169:   //  Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName
+            case 131:   //  Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName.None);
                 userType.AddEnumValue("DefaultDark", global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName.DefaultDark);
@@ -2164,83 +1744,97 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 170:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection
+            case 132:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>"));
-                userType.CollectionAdd = VectorAdd_170_ChartBehaviorCollection;
+                userType.CollectionAdd = VectorAdd_132_ChartBehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 171:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>
+            case 133:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_171_Collection;
-                userType.CollectionAdd = VectorAdd_171_Collection;
+                userType.Activator = Activate_133_Collection;
+                userType.CollectionAdd = VectorAdd_133_Collection;
                 xamlType = userType;
                 break;
 
-            case 172:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehavior
+            case 134:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehavior
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("Chart");
                 xamlType = userType;
                 break;
 
-            case 173:   //  Windows.Foundation.Size
+            case 135:   //  Windows.Foundation.Size
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 174:   //  Windows.Foundation.Point
+            case 136:   //  Windows.Foundation.Point
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 175:   //  Telerik.UI.Xaml.Controls.Chart.DoughnutSeries
+            case 137:   //  Telerik.UI.Xaml.Controls.Chart.DoughnutSeries
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries"));
-                userType.Activator = Activate_175_DoughnutSeries;
+                userType.Activator = Activate_137_DoughnutSeries;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PieSeries.DataPoints");
                 userType.AddMemberName("InnerRadiusFactor");
                 xamlType = userType;
                 break;
 
-            case 176:   //  Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding
+            case 138:   //  Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.DataPointBinding"));
-                userType.Activator = Activate_176_PropertyNameDataPointBinding;
+                userType.Activator = Activate_138_PropertyNameDataPointBinding;
                 userType.AddMemberName("PropertyName");
                 xamlType = userType;
                 break;
 
-            case 177:   //  NestedWorld.View.SettingsViews.SettingsView
+            case 139:   //  NestedWorld.View.SettingsViews.SettingsView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_177_SettingsView;
+                userType.Activator = Activate_139_SettingsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 178:   //  NestedWorld.View.ShopViews.ShopElementView
+            case 140:   //  NestedWorld.View.ShopViews.ShopElementView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_178_ShopElementView;
+                userType.Activator = Activate_140_ShopElementView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 179:   //  NestedWorld.View.UserViews.AllyView
+            case 141:   //  NestedWorld.View.UserViews.AllyView
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_179_AllyView;
+                userType.Activator = Activate_141_AllyView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 180:   //  Telerik.UI.Drawing.D2DResource
+            case 142:   //  Telerik.UI.Drawing.D2DResource
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 181:   //  Telerik.UI.Drawing.D2DBrush
+            case 143:   //  Telerik.UI.Drawing.D2DBrush
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Drawing.D2DResource"));
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 182:   //  Telerik.UI.Drawing.FontWeightName
+            case 144:   //  Telerik.UI.Drawing.D2DTextStyle
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_144_D2DTextStyle;
+                userType.AddMemberName("Foreground");
+                userType.AddMemberName("FontWeight");
+                userType.AddMemberName("FontSize");
+                userType.AddMemberName("FontLocale");
+                userType.AddMemberName("FontName");
+                userType.AddMemberName("TextAlignment");
+                userType.AddMemberName("FontStyle");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 145:   //  Telerik.UI.Drawing.FontWeightName
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Black", global::Telerik.UI.Drawing.FontWeightName.Black);
                 userType.AddEnumValue("Bold", global::Telerik.UI.Drawing.FontWeightName.Bold);
@@ -2256,11 +1850,11 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 183:   //  Windows.UI.Xaml.TextAlignment
+            case 146:   //  Windows.UI.Xaml.TextAlignment
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 184:   //  Windows.UI.Text.FontStyle
+            case 147:   //  Windows.UI.Text.FontStyle
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -2268,17 +1862,28 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 185:   //  Telerik.UI.Drawing.D2DSolidColorBrush
+            case 148:   //  Telerik.UI.Drawing.D2DShapeStyle
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_148_D2DShapeStyle;
+                userType.AddMemberName("StrokeThickness");
+                userType.AddMemberName("Stroke");
+                userType.AddMemberName("Foreground");
+                userType.AddMemberName("Fill");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 149:   //  Telerik.UI.Drawing.D2DSolidColorBrush
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Drawing.D2DBrush"));
-                userType.Activator = Activate_185_D2DSolidColorBrush;
+                userType.Activator = Activate_149_D2DSolidColorBrush;
                 userType.AddMemberName("Color");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 186:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
+            case 150:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_186_ChartAnnotationLabelDefinition;
+                userType.Activator = Activate_150_ChartAnnotationLabelDefinition;
                 userType.AddMemberName("Format");
                 userType.AddMemberName("Template");
                 userType.AddMemberName("DefaultVisualStyle");
@@ -2291,7 +1896,7 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 187:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
+            case 151:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Left);
                 userType.AddEnumValue("Top", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Top);
@@ -2301,14 +1906,14 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 188:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
+            case 152:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_188_AngledHexLayoutDefinition;
+                userType.Activator = Activate_152_AngledHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 189:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
+            case 153:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("ItemLength");
@@ -2317,27 +1922,27 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 190:   //  Windows.UI.Xaml.Controls.Orientation
+            case 154:   //  Windows.UI.Xaml.Controls.Orientation
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 191:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
+            case 155:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_191_FlatLooseHexLayoutDefinition;
+                userType.Activator = Activate_155_FlatLooseHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 192:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
+            case 156:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_192_FlatTightHexLayoutDefinition;
+                userType.Activator = Activate_156_FlatTightHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 193:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
+            case 157:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_193_HighlightStyle;
+                userType.Activator = Activate_157_HighlightStyle;
                 userType.AddMemberName("FontFamily");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontStyle");
@@ -2347,11 +1952,11 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 194:   //  Windows.UI.Xaml.Media.FontFamily
+            case 158:   //  Windows.UI.Xaml.Media.FontFamily
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 195:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
+            case 159:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Black", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Black);
                 userType.AddEnumValue("Bold", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Bold);
@@ -2367,18 +1972,18 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 196:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
+            case 160:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_196_CalendarCellStyle;
+                userType.Activator = Activate_160_CalendarCellStyle;
                 userType.AddMemberName("ContentStyle");
                 userType.AddMemberName("DecorationStyle");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 197:   //  Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu
+            case 161:   //  Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
-                userType.Activator = Activate_197_RadRadialMenu;
+                userType.Activator = Activate_161_RadRadialMenu;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.Items");
                 userType.AddMemberName("Items");
                 userType.AddMemberName("ShowToolTip");
@@ -2396,23 +2001,23 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 198:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
+            case 162:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>"));
-                userType.CollectionAdd = VectorAdd_198_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_162_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 199:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
+            case 163:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_199_Collection;
-                userType.CollectionAdd = VectorAdd_199_Collection;
+                userType.Activator = Activate_163_Collection;
+                userType.CollectionAdd = VectorAdd_163_Collection;
                 xamlType = userType;
                 break;
 
-            case 200:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem
+            case 164:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
-                userType.Activator = Activate_200_RadialMenuItem;
+                userType.Activator = Activate_164_RadialMenuItem;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ChildItems");
                 userType.AddMemberName("ChildItems");
                 userType.AddMemberName("ToolTipContent");
@@ -2430,81 +2035,90 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 201:   //  System.Windows.Input.ICommand
+            case 165:   //  Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject
+                userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                xamlType = userType;
+                break;
+
+            case 166:   //  System.Windows.Input.ICommand
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 202:   //  Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService
+            case 167:   //  Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 203:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 168:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 204:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 169:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 205:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 170:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("Owner");
                 xamlType = userType;
                 break;
 
-            case 206:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 171:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.CollectionAdd = VectorAdd_206_CommandCollection;
+                userType.CollectionAdd = VectorAdd_171_CommandCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 207:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 172:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.CollectionAdd = VectorAdd_207_AttachableObjectCollection;
+                userType.CollectionAdd = VectorAdd_172_AttachableObjectCollection;
                 xamlType = userType;
                 break;
 
-            case 208:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 173:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.Activator = Activate_208_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_208_ObservableCollection;
+                userType.Activator = Activate_173_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_173_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 209:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 174:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_209_Collection;
-                userType.CollectionAdd = VectorAdd_209_Collection;
+                userType.Activator = Activate_174_Collection;
+                userType.CollectionAdd = VectorAdd_174_Collection;
                 xamlType = userType;
                 break;
 
-            case 210:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 175:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 211:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior
+            case 176:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 177:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>"));
-                userType.Activator = Activate_211_RadialMenuTriggerBehavior;
+                userType.Activator = Activate_177_RadialMenuTriggerBehavior;
                 userType.AddMemberName("AttachTriggers");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 212:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>
+            case 178:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("Owner");
                 xamlType = userType;
                 break;
 
-            case 213:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers
+            case 179:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers.None);
                 userType.AddEnumValue("PointerPressed", global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers.PointerPressed);
@@ -2514,15 +2128,15 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 214:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
+            case 180:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
                 userType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_214_BusyIndicatorAnimationAdapter;
+                userType.Activator = Activate_180_BusyIndicatorAnimationAdapter;
                 userType.AddMemberName("Animation");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 215:   //  Windows.UI.Xaml.Media.Animation.Storyboard
+            case 181:   //  Windows.UI.Xaml.Media.Animation.Storyboard
                 xamlType = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -3116,1752 +2730,1382 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
             var that = (global::NestedWorld.View.NotificationView)instance;
             return that.Tap;
         }
-        private object get_53_MapView_reduce(object instance)
+        private object get_53_MapControlView_mapControl(object instance)
         {
-            var that = (global::NestedWorld.View.MapViews.MapView)instance;
-            return that.reduce;
+            var that = (global::NestedWorld.View.MapViews.MapControlView)instance;
+            return that.mapControl;
         }
-        private void set_53_MapView_reduce(object instance, object Value)
+        private void set_53_MapControlView_mapControl(object instance, object Value)
         {
-            var that = (global::NestedWorld.View.MapViews.MapView)instance;
-            that.reduce = (global::System.Double)Value;
+            var that = (global::NestedWorld.View.MapViews.MapControlView)instance;
+            that.mapControl = (global::Windows.UI.Xaml.Controls.Maps.MapControl)Value;
         }
-        private object get_54_AreaListView_List(object instance)
+        private object get_54_MonsterMapList_root(object instance)
         {
-            var that = (global::NestedWorld.View.MapViews.AreaListView)instance;
-            return that.List;
+            var that = (global::NestedWorld.View.MapViews.MonsterMapList)instance;
+            return that.root;
         }
-        private void set_54_AreaListView_List(object instance, object Value)
+        private object get_55_UserMapList_root(object instance)
         {
-            var that = (global::NestedWorld.View.MapViews.AreaListView)instance;
-            that.List = (global::Windows.UI.Xaml.Controls.GridView)Value;
+            var that = (global::NestedWorld.View.MapViews.UserMapList)instance;
+            return that.root;
         }
-        private object get_55_AreaContentPresenter_MeTemplate(object instance)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            return that.MeTemplate;
-        }
-        private void set_55_AreaContentPresenter_MeTemplate(object instance, object Value)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            that.MeTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_56_AreaContentPresenter_AllyTemplate(object instance)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            return that.AllyTemplate;
-        }
-        private void set_56_AreaContentPresenter_AllyTemplate(object instance, object Value)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            that.AllyTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_57_AreaContentPresenter_FreeTemplate(object instance)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            return that.FreeTemplate;
-        }
-        private void set_57_AreaContentPresenter_FreeTemplate(object instance, object Value)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            that.FreeTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_58_AreaContentPresenter_OtherTemplate(object instance)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            return that.OtherTemplate;
-        }
-        private void set_58_AreaContentPresenter_OtherTemplate(object instance, object Value)
-        {
-            var that = (global::NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter)instance;
-            that.OtherTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_59_RadMap_Layers(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.Layers;
-        }
-        private object get_60_MapLayer_Bounds(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapLayer)instance;
-            return that.Bounds;
-        }
-        private object get_61_RadControl_CurrentVisualState(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.RadControl)instance;
-            return that.CurrentVisualState;
-        }
-        private object get_62_RadMap_Behaviors(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.Behaviors;
-        }
-        private object get_63_MapBehavior_Map(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapBehavior)instance;
-            return that.Map;
-        }
-        private object get_64_RadMap_Center(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.Center;
-        }
-        private void set_64_RadMap_Center(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            that.Center = (global::Telerik.Geospatial.Location)Value;
-        }
-        private object get_65_RadMap_ZoomLevel(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.ZoomLevel;
-        }
-        private void set_65_RadMap_ZoomLevel(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            that.ZoomLevel = (global::System.Double)Value;
-        }
-        private object get_66_RadMap_MaxZoomLevel(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.MaxZoomLevel;
-        }
-        private void set_66_RadMap_MaxZoomLevel(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            that.MaxZoomLevel = (global::System.Double)Value;
-        }
-        private object get_67_RadMap_MinZoomLevel(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.MinZoomLevel;
-        }
-        private void set_67_RadMap_MinZoomLevel(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            that.MinZoomLevel = (global::System.Double)Value;
-        }
-        private object get_68_RadMap_SpatialReference(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.SpatialReference;
-        }
-        private object get_69_RadMap_Bounds(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.Bounds;
-        }
-        private object get_70_RadMap_CommandService(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.CommandService;
-        }
-        private object get_71_RadMap_Commands(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.RadMap)instance;
-            return that.Commands;
-        }
-        private object get_72_AttachableObject_Owner(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Map.RadMap>)instance;
-            return that.Owner;
-        }
-        private object get_73_MapShapeLayer_ShapeLabelAttributeName(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeLabelAttributeName;
-        }
-        private void set_73_MapShapeLayer_ShapeLabelAttributeName(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeLabelAttributeName = (global::System.String)Value;
-        }
-        private object get_74_MapShapeLayer_ShapeColorizer(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeColorizer;
-        }
-        private void set_74_MapShapeLayer_ShapeColorizer(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeColorizer = (global::Telerik.UI.Xaml.Controls.Map.MapShapeColorizer)Value;
-        }
-        private object get_75_MapShapeLayer_IsSelectionEnabled(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.IsSelectionEnabled;
-        }
-        private void set_75_MapShapeLayer_IsSelectionEnabled(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.IsSelectionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_76_MapShapeLayer_IsPointerOverEnabled(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.IsPointerOverEnabled;
-        }
-        private void set_76_MapShapeLayer_IsPointerOverEnabled(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.IsPointerOverEnabled = (global::System.Boolean)Value;
-        }
-        private object get_77_MapShapeLayer_IsToolTipEnabled(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.IsToolTipEnabled;
-        }
-        private void set_77_MapShapeLayer_IsToolTipEnabled(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.IsToolTipEnabled = (global::System.Boolean)Value;
-        }
-        private object get_78_MapShapeLayer_ShapeToolTipAttributeName(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeToolTipAttributeName;
-        }
-        private void set_78_MapShapeLayer_ShapeToolTipAttributeName(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeToolTipAttributeName = (global::System.String)Value;
-        }
-        private object get_79_MapShapeLayer_ShapeStyleSelector(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeStyleSelector;
-        }
-        private void set_79_MapShapeLayer_ShapeStyleSelector(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeStyleSelector = (global::Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector)Value;
-        }
-        private object get_80_MapShapeLayer_ShapeLabelLayoutStrategy(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeLabelLayoutStrategy;
-        }
-        private void set_80_MapShapeLayer_ShapeLabelLayoutStrategy(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeLabelLayoutStrategy = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy)Value;
-        }
-        private object get_81_MapShapeLayer_ShapeStyle(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeStyle;
-        }
-        private void set_81_MapShapeLayer_ShapeStyle(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeStyle = (global::Telerik.UI.Drawing.D2DShapeStyle)Value;
-        }
-        private object get_82_MapShapeLayer_ShapePointerOverStyle(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapePointerOverStyle;
-        }
-        private void set_82_MapShapeLayer_ShapePointerOverStyle(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapePointerOverStyle = (global::Telerik.UI.Drawing.D2DShapeStyle)Value;
-        }
-        private object get_83_MapShapeLayer_ShapeSelectedStyle(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeSelectedStyle;
-        }
-        private void set_83_MapShapeLayer_ShapeSelectedStyle(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeSelectedStyle = (global::Telerik.UI.Drawing.D2DShapeStyle)Value;
-        }
-        private object get_84_MapShapeLayer_ShapeLabelStyle(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.ShapeLabelStyle;
-        }
-        private void set_84_MapShapeLayer_ShapeLabelStyle(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.ShapeLabelStyle = (global::Telerik.UI.Drawing.D2DTextStyle)Value;
-        }
-        private object get_85_MapShapeLayer_Source(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            return that.Source;
-        }
-        private void set_85_MapShapeLayer_Source(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeLayer)instance;
-            that.Source = (global::Telerik.UI.Xaml.Controls.Map.IShapeDataSource)Value;
-        }
-        private object get_86_DesaturationColorizer_BaseColor(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            return that.BaseColor;
-        }
-        private void set_86_DesaturationColorizer_BaseColor(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            that.BaseColor = (global::Windows.UI.Color)Value;
-        }
-        private object get_87_ChoroplethColorizer_AttributeName(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            return that.AttributeName;
-        }
-        private void set_87_ChoroplethColorizer_AttributeName(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            that.AttributeName = (global::System.String)Value;
-        }
-        private object get_88_DesaturationColorizer_From(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            return that.From;
-        }
-        private void set_88_DesaturationColorizer_From(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            that.From = (global::System.Double)Value;
-        }
-        private object get_89_DesaturationColorizer_To(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            return that.To;
-        }
-        private void set_89_DesaturationColorizer_To(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            that.To = (global::System.Double)Value;
-        }
-        private object get_90_DesaturationColorizer_RangeCount(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            return that.RangeCount;
-        }
-        private void set_90_DesaturationColorizer_RangeCount(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.DesaturationColorizer)instance;
-            that.RangeCount = (global::System.Int32)Value;
-        }
-        private object get_91_ChoroplethColorizer_RangeDistribution(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            return that.RangeDistribution;
-        }
-        private void set_91_ChoroplethColorizer_RangeDistribution(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            that.RangeDistribution = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution)Value;
-        }
-        private object get_92_ChoroplethColorizer_ActualRange(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            return that.ActualRange;
-        }
-        private object get_93_ChoroplethColorizer_Ranges(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer)instance;
-            return that.Ranges;
-        }
-        private object get_94_MapShapeColorizer_IsProperlyInitialized(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapShapeColorizer)instance;
-            return that.IsProperlyInitialized;
-        }
-        private object get_95_LogarithmicRangeDistribution_LogarithmBase(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution)instance;
-            return that.LogarithmBase;
-        }
-        private void set_95_LogarithmicRangeDistribution_LogarithmBase(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution)instance;
-            that.LogarithmBase = (global::System.Double)Value;
-        }
-        private object get_96_MapPanAndZoomBehavior_IsPanEnabled(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            return that.IsPanEnabled;
-        }
-        private void set_96_MapPanAndZoomBehavior_IsPanEnabled(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            that.IsPanEnabled = (global::System.Boolean)Value;
-        }
-        private object get_97_MapPanAndZoomBehavior_ZoomMode(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            return that.ZoomMode;
-        }
-        private void set_97_MapPanAndZoomBehavior_ZoomMode(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            that.ZoomMode = (global::Telerik.UI.Xaml.Controls.Map.MapZoomMode)Value;
-        }
-        private object get_98_MapPanAndZoomBehavior_DoubleTapAction(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            return that.DoubleTapAction;
-        }
-        private void set_98_MapPanAndZoomBehavior_DoubleTapAction(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior)instance;
-            that.DoubleTapAction = (global::Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction)Value;
-        }
-        private object get_99_MonsterSoloView_MonsterName(object instance)
+        private object get_56_MonsterSoloView_MonsterName(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.MonsterName;
         }
-        private void set_99_MonsterSoloView_MonsterName(object instance, object Value)
+        private void set_56_MonsterSoloView_MonsterName(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.MonsterName = (global::System.String)Value;
         }
-        private object get_100_MonsterSoloView_Level(object instance)
+        private object get_57_MonsterSoloView_Level(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.Level;
         }
-        private void set_100_MonsterSoloView_Level(object instance, object Value)
+        private void set_57_MonsterSoloView_Level(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.Level = (global::System.String)Value;
         }
-        private object get_101_MonsterSoloView_MonsterImage(object instance)
+        private object get_58_MonsterSoloView_MonsterImage(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.MonsterImage;
         }
-        private void set_101_MonsterSoloView_MonsterImage(object instance, object Value)
+        private void set_58_MonsterSoloView_MonsterImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.MonsterImage = (global::System.String)Value;
         }
-        private object get_102_MonsterSoloView_Type(object instance)
+        private object get_59_MonsterSoloView_Type(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.Type;
         }
-        private void set_102_MonsterSoloView_Type(object instance, object Value)
+        private void set_59_MonsterSoloView_Type(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.Type = (global::NestedWorld.Classes.ElementsGame.TypeEnum)Value;
         }
-        private object get_103_MonsterSoloView_BackgroundColor(object instance)
+        private object get_60_MonsterSoloView_BackgroundColor(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.BackgroundColor;
         }
-        private void set_103_MonsterSoloView_BackgroundColor(object instance, object Value)
+        private void set_60_MonsterSoloView_BackgroundColor(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.BackgroundColor = (global::System.String)Value;
         }
-        private object get_104_MonsterSoloView_userMonster(object instance)
+        private object get_61_MonsterSoloView_userMonster(object instance)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             return that.userMonster;
         }
-        private void set_104_MonsterSoloView_userMonster(object instance, object Value)
+        private void set_61_MonsterSoloView_userMonster(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterSoloView)instance;
             that.userMonster = (global::NestedWorld.Classes.ElementsGame.Monsters.UserMonster)Value;
         }
-        private object get_105_MonsterAttacksView_monsterAttackList(object instance)
+        private object get_62_MonsterAttacksView_monsterAttackList(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterAttacksView)instance;
             return that.monsterAttackList;
         }
-        private void set_105_MonsterAttacksView_monsterAttackList(object instance, object Value)
+        private void set_62_MonsterAttacksView_monsterAttackList(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterAttacksView)instance;
             that.monsterAttackList = (global::NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList)Value;
         }
-        private object get_106_MonsterHeaderView_MonsterName(object instance)
+        private object get_63_MonsterHeaderView_MonsterName(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterName;
         }
-        private void set_106_MonsterHeaderView_MonsterName(object instance, object Value)
+        private void set_63_MonsterHeaderView_MonsterName(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterName = (global::System.String)Value;
         }
-        private object get_107_MonsterHeaderView_MonsterImage(object instance)
+        private object get_64_MonsterHeaderView_MonsterImage(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterImage;
         }
-        private void set_107_MonsterHeaderView_MonsterImage(object instance, object Value)
+        private void set_64_MonsterHeaderView_MonsterImage(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterImage = (global::System.String)Value;
         }
-        private object get_108_MonsterHeaderView_MonsterType(object instance)
+        private object get_65_MonsterHeaderView_MonsterType(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterType;
         }
-        private void set_108_MonsterHeaderView_MonsterType(object instance, object Value)
+        private void set_65_MonsterHeaderView_MonsterType(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterType = (global::NestedWorld.Classes.ElementsGame.TypeEnum)Value;
         }
-        private object get_109_MonsterHeaderView_MonsterCombat(object instance)
+        private object get_66_MonsterHeaderView_MonsterCombat(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterCombat;
         }
-        private void set_109_MonsterHeaderView_MonsterCombat(object instance, object Value)
+        private void set_66_MonsterHeaderView_MonsterCombat(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterCombat = (global::System.Int32)Value;
         }
-        private object get_110_MonsterHeaderView_MonsterLevel(object instance)
+        private object get_67_MonsterHeaderView_MonsterLevel(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterLevel;
         }
-        private void set_110_MonsterHeaderView_MonsterLevel(object instance, object Value)
+        private void set_67_MonsterHeaderView_MonsterLevel(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterLevel = (global::System.Int32)Value;
         }
-        private object get_111_MonsterHeaderView_MonsterVictory(object instance)
+        private object get_68_MonsterHeaderView_MonsterVictory(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             return that.MonsterVictory;
         }
-        private void set_111_MonsterHeaderView_MonsterVictory(object instance, object Value)
+        private void set_68_MonsterHeaderView_MonsterVictory(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterHeaderView)instance;
             that.MonsterVictory = (global::System.Int32)Value;
         }
-        private object get_112_MonsterStatsView_Life(object instance)
+        private object get_69_MonsterStatsView_Life(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             return that.Life;
         }
-        private void set_112_MonsterStatsView_Life(object instance, object Value)
+        private void set_69_MonsterStatsView_Life(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             that.Life = (global::System.Int32)Value;
         }
-        private object get_113_MonsterStatsView_Exp(object instance)
+        private object get_70_MonsterStatsView_Exp(object instance)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             return that.Exp;
         }
-        private void set_113_MonsterStatsView_Exp(object instance, object Value)
+        private void set_70_MonsterStatsView_Exp(object instance, object Value)
         {
             var that = (global::NestedWorld.View.MonsterViews.MonsterStatsView)instance;
             that.Exp = (global::System.Int32)Value;
         }
-        private object get_114_ChartPalette_FillEntries(object instance)
+        private object get_71_ChartPalette_FillEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.FillEntries;
         }
-        private void set_114_ChartPalette_FillEntries(object instance, object Value)
+        private void set_71_ChartPalette_FillEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.FillEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_115_PaletteEntryCollection_Brushes(object instance)
+        private object get_72_PaletteEntryCollection_Brushes(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)instance;
             return that.Brushes;
         }
-        private object get_116_ChartPalette_StrokeEntries(object instance)
+        private object get_73_ChartPalette_StrokeEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.StrokeEntries;
         }
-        private void set_116_ChartPalette_StrokeEntries(object instance, object Value)
+        private void set_73_ChartPalette_StrokeEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.StrokeEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_117_ChartPalette_Name(object instance)
+        private object get_74_ChartPalette_Name(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.Name;
         }
-        private void set_117_ChartPalette_Name(object instance, object Value)
+        private void set_74_ChartPalette_Name(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_118_ChartPalette_SpecialFillEntries(object instance)
+        private object get_75_ChartPalette_SpecialFillEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.SpecialFillEntries;
         }
-        private void set_118_ChartPalette_SpecialFillEntries(object instance, object Value)
+        private void set_75_ChartPalette_SpecialFillEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.SpecialFillEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_119_ChartPalette_SpecialStrokeEntries(object instance)
+        private object get_76_ChartPalette_SpecialStrokeEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.SpecialStrokeEntries;
         }
-        private void set_119_ChartPalette_SpecialStrokeEntries(object instance, object Value)
+        private void set_76_ChartPalette_SpecialStrokeEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.SpecialStrokeEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_120_PaletteEntryCollection_SeriesFamily(object instance)
+        private object get_77_PaletteEntryCollection_SeriesFamily(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)instance;
             return that.SeriesFamily;
         }
-        private void set_120_PaletteEntryCollection_SeriesFamily(object instance, object Value)
+        private void set_77_PaletteEntryCollection_SeriesFamily(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)instance;
             that.SeriesFamily = (global::System.String)Value;
         }
-        private object get_121_RadPieChart_Series(object instance)
+        private object get_78_RadPieChart_Series(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadPieChart)instance;
             return that.Series;
         }
-        private object get_122_PieSeries_DataPoints(object instance)
+        private object get_79_PieSeries_DataPoints(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.DataPoints;
         }
-        private object get_123_PieDataPoint_Percent(object instance)
+        private object get_80_PieDataPoint_Percent(object instance)
         {
             var that = (global::Telerik.Charting.PieDataPoint)instance;
             return that.Percent;
         }
-        private object get_124_PieDataPoint_OffsetFromCenter(object instance)
+        private object get_81_PieDataPoint_OffsetFromCenter(object instance)
         {
             var that = (global::Telerik.Charting.PieDataPoint)instance;
             return that.OffsetFromCenter;
         }
-        private void set_124_PieDataPoint_OffsetFromCenter(object instance, object Value)
+        private void set_81_PieDataPoint_OffsetFromCenter(object instance, object Value)
         {
             var that = (global::Telerik.Charting.PieDataPoint)instance;
             that.OffsetFromCenter = (global::System.Double)Value;
         }
-        private object get_125_PieDataPoint_StartAngle(object instance)
+        private object get_82_PieDataPoint_StartAngle(object instance)
         {
             var that = (global::Telerik.Charting.PieDataPoint)instance;
             return that.StartAngle;
         }
-        private object get_126_PieDataPoint_SweepAngle(object instance)
+        private object get_83_PieDataPoint_SweepAngle(object instance)
         {
             var that = (global::Telerik.Charting.PieDataPoint)instance;
             return that.SweepAngle;
         }
-        private object get_127_SingleValueDataPoint_Value(object instance)
+        private object get_84_SingleValueDataPoint_Value(object instance)
         {
             var that = (global::Telerik.Charting.SingleValueDataPoint)instance;
             return that.Value;
         }
-        private void set_127_SingleValueDataPoint_Value(object instance, object Value)
+        private void set_84_SingleValueDataPoint_Value(object instance, object Value)
         {
             var that = (global::Telerik.Charting.SingleValueDataPoint)instance;
             that.Value = (global::System.Double)Value;
         }
-        private object get_128_DataPoint_Label(object instance)
+        private object get_85_DataPoint_Label(object instance)
         {
             var that = (global::Telerik.Charting.DataPoint)instance;
             return that.Label;
         }
-        private void set_128_DataPoint_Label(object instance, object Value)
+        private void set_85_DataPoint_Label(object instance, object Value)
         {
             var that = (global::Telerik.Charting.DataPoint)instance;
             that.Label = (global::System.Object)Value;
         }
-        private object get_129_DataPoint_DataItem(object instance)
+        private object get_86_DataPoint_DataItem(object instance)
         {
             var that = (global::Telerik.Charting.DataPoint)instance;
             return that.DataItem;
         }
-        private object get_130_DataPoint_IsSelected(object instance)
+        private object get_87_DataPoint_IsSelected(object instance)
         {
             var that = (global::Telerik.Charting.DataPoint)instance;
             return that.IsSelected;
         }
-        private void set_130_DataPoint_IsSelected(object instance, object Value)
+        private void set_87_DataPoint_IsSelected(object instance, object Value)
         {
             var that = (global::Telerik.Charting.DataPoint)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_131_Node_Presenter(object instance)
+        private object get_88_Node_Presenter(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.Presenter;
         }
-        private object get_132_Node_IsArrangeValid(object instance)
+        private object get_89_Node_IsArrangeValid(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.IsArrangeValid;
         }
-        private object get_133_Node_NodeState(object instance)
+        private object get_90_Node_NodeState(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.NodeState;
         }
-        private object get_134_Node_Index(object instance)
+        private object get_91_Node_Index(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.Index;
         }
-        private object get_135_Node_CollectionIndex(object instance)
+        private object get_92_Node_CollectionIndex(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.CollectionIndex;
         }
-        private object get_136_Node_IsTreeLoaded(object instance)
+        private object get_93_Node_IsTreeLoaded(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.IsTreeLoaded;
         }
-        private object get_137_Node_LayoutSlot(object instance)
+        private object get_94_Node_LayoutSlot(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.LayoutSlot;
         }
-        private object get_138_Node_Parent(object instance)
+        private object get_95_Node_Parent(object instance)
         {
             var that = (global::Telerik.Core.Node)instance;
             return that.Parent;
         }
-        private object get_139_PieSeries_HighlightInnerRadiusFactor(object instance)
+        private object get_96_PieSeries_HighlightInnerRadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.HighlightInnerRadiusFactor;
         }
-        private void set_139_PieSeries_HighlightInnerRadiusFactor(object instance, object Value)
+        private void set_96_PieSeries_HighlightInnerRadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.HighlightInnerRadiusFactor = (global::System.Double)Value;
         }
-        private object get_140_PieSeries_HighlightBrush(object instance)
+        private object get_97_PieSeries_HighlightBrush(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.HighlightBrush;
         }
-        private void set_140_PieSeries_HighlightBrush(object instance, object Value)
+        private void set_97_PieSeries_HighlightBrush(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.HighlightBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_141_PieSeries_DefaultSegmentStyle(object instance)
+        private object get_98_PieSeries_DefaultSegmentStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.DefaultSegmentStyle;
         }
-        private void set_141_PieSeries_DefaultSegmentStyle(object instance, object Value)
+        private void set_98_PieSeries_DefaultSegmentStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.DefaultSegmentStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_142_PieSeries_SelectedPointOffset(object instance)
+        private object get_99_PieSeries_SelectedPointOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.SelectedPointOffset;
         }
-        private void set_142_PieSeries_SelectedPointOffset(object instance, object Value)
+        private void set_99_PieSeries_SelectedPointOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.SelectedPointOffset = (global::System.Double)Value;
         }
-        private object get_143_PieSeries_ValueBinding(object instance)
+        private object get_100_PieSeries_ValueBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.ValueBinding;
         }
-        private void set_143_PieSeries_ValueBinding(object instance, object Value)
+        private void set_100_PieSeries_ValueBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.ValueBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_144_PieSeries_LegendTitleBinding(object instance)
+        private object get_101_PieSeries_LegendTitleBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.LegendTitleBinding;
         }
-        private void set_144_PieSeries_LegendTitleBinding(object instance, object Value)
+        private void set_101_PieSeries_LegendTitleBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.LegendTitleBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_145_PieSeries_IsVisibleInLegendBinding(object instance)
+        private object get_102_PieSeries_IsVisibleInLegendBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.IsVisibleInLegendBinding;
         }
-        private void set_145_PieSeries_IsVisibleInLegendBinding(object instance, object Value)
+        private void set_102_PieSeries_IsVisibleInLegendBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.IsVisibleInLegendBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_146_PieSeries_SegmentStyleSelector(object instance)
+        private object get_103_PieSeries_SegmentStyleSelector(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.SegmentStyleSelector;
         }
-        private void set_146_PieSeries_SegmentStyleSelector(object instance, object Value)
+        private void set_103_PieSeries_SegmentStyleSelector(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.SegmentStyleSelector = (global::Windows.UI.Xaml.Controls.StyleSelector)Value;
         }
-        private object get_147_PieSeries_RadiusFactor(object instance)
+        private object get_104_PieSeries_RadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.RadiusFactor;
         }
-        private void set_147_PieSeries_RadiusFactor(object instance, object Value)
+        private void set_104_PieSeries_RadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.RadiusFactor = (global::System.Double)Value;
         }
-        private object get_148_PieSeries_SegmentStyles(object instance)
+        private object get_105_PieSeries_SegmentStyles(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.SegmentStyles;
         }
-        private object get_149_PieSeries_AngleRange(object instance)
+        private object get_106_PieSeries_AngleRange(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             return that.AngleRange;
         }
-        private void set_149_PieSeries_AngleRange(object instance, object Value)
+        private void set_106_PieSeries_AngleRange(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
             that.AngleRange = (global::Telerik.Charting.AngleRange)Value;
         }
-        private object get_150_ChartSeries_IsSelected(object instance)
+        private object get_107_ChartSeries_IsSelected(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.IsSelected;
         }
-        private void set_150_ChartSeries_IsSelected(object instance, object Value)
+        private void set_107_ChartSeries_IsSelected(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_151_ChartSeries_AllowSelect(object instance)
+        private object get_108_ChartSeries_AllowSelect(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.AllowSelect;
         }
-        private void set_151_ChartSeries_AllowSelect(object instance, object Value)
+        private void set_108_ChartSeries_AllowSelect(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.AllowSelect = (global::System.Boolean)Value;
         }
-        private object get_152_ChartSeries_PaletteIndex(object instance)
+        private object get_109_ChartSeries_PaletteIndex(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.PaletteIndex;
         }
-        private void set_152_ChartSeries_PaletteIndex(object instance, object Value)
+        private void set_109_ChartSeries_PaletteIndex(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.PaletteIndex = (global::System.Int32)Value;
         }
-        private object get_153_ChartSeries_LabelDefinitions(object instance)
+        private object get_110_ChartSeries_LabelDefinitions(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.LabelDefinitions;
         }
-        private object get_154_ChartSeriesLabelDefinition_HorizontalAlignment(object instance)
+        private object get_111_ChartSeriesLabelDefinition_HorizontalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.HorizontalAlignment;
         }
-        private void set_154_ChartSeriesLabelDefinition_HorizontalAlignment(object instance, object Value)
+        private void set_111_ChartSeriesLabelDefinition_HorizontalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.HorizontalAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
         }
-        private object get_155_ChartSeriesLabelDefinition_VerticalAlignment(object instance)
+        private object get_112_ChartSeriesLabelDefinition_VerticalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.VerticalAlignment;
         }
-        private void set_155_ChartSeriesLabelDefinition_VerticalAlignment(object instance, object Value)
+        private void set_112_ChartSeriesLabelDefinition_VerticalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.VerticalAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
         }
-        private object get_156_ChartSeriesLabelDefinition_Template(object instance)
+        private object get_113_ChartSeriesLabelDefinition_Template(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.Template;
         }
-        private void set_156_ChartSeriesLabelDefinition_Template(object instance, object Value)
+        private void set_113_ChartSeriesLabelDefinition_Template(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.Template = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_157_ChartSeriesLabelDefinition_Binding(object instance)
+        private object get_114_ChartSeriesLabelDefinition_Binding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.Binding;
         }
-        private void set_157_ChartSeriesLabelDefinition_Binding(object instance, object Value)
+        private void set_114_ChartSeriesLabelDefinition_Binding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.Binding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_158_ChartSeriesLabelDefinition_Format(object instance)
+        private object get_115_ChartSeriesLabelDefinition_Format(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.Format;
         }
-        private void set_158_ChartSeriesLabelDefinition_Format(object instance, object Value)
+        private void set_115_ChartSeriesLabelDefinition_Format(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.Format = (global::System.String)Value;
         }
-        private object get_159_ChartSeriesLabelDefinition_Margin(object instance)
+        private object get_116_ChartSeriesLabelDefinition_Margin(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.Margin;
         }
-        private void set_159_ChartSeriesLabelDefinition_Margin(object instance, object Value)
+        private void set_116_ChartSeriesLabelDefinition_Margin(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.Margin = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_160_ChartSeriesLabelDefinition_TemplateSelector(object instance)
+        private object get_117_ChartSeriesLabelDefinition_TemplateSelector(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.TemplateSelector;
         }
-        private void set_160_ChartSeriesLabelDefinition_TemplateSelector(object instance, object Value)
+        private void set_117_ChartSeriesLabelDefinition_TemplateSelector(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.TemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_161_ChartSeriesLabelDefinition_DefaultVisualStyle(object instance)
+        private object get_118_ChartSeriesLabelDefinition_DefaultVisualStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.DefaultVisualStyle;
         }
-        private void set_161_ChartSeriesLabelDefinition_DefaultVisualStyle(object instance, object Value)
+        private void set_118_ChartSeriesLabelDefinition_DefaultVisualStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.DefaultVisualStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_162_ChartSeriesLabelDefinition_Strategy(object instance)
+        private object get_119_ChartSeriesLabelDefinition_Strategy(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             return that.Strategy;
         }
-        private void set_162_ChartSeriesLabelDefinition_Strategy(object instance, object Value)
+        private void set_119_ChartSeriesLabelDefinition_Strategy(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)instance;
             that.Strategy = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy)Value;
         }
-        private object get_163_ChartSeries_IsSelectedBinding(object instance)
+        private object get_120_ChartSeries_IsSelectedBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.IsSelectedBinding;
         }
-        private void set_163_ChartSeries_IsSelectedBinding(object instance, object Value)
+        private void set_120_ChartSeries_IsSelectedBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.IsSelectedBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_164_ChartSeries_ShowLabels(object instance)
+        private object get_121_ChartSeries_ShowLabels(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.ShowLabels;
         }
-        private void set_164_ChartSeries_ShowLabels(object instance, object Value)
+        private void set_121_ChartSeries_ShowLabels(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.ShowLabels = (global::System.Boolean)Value;
         }
-        private object get_165_ChartSeries_DisplayName(object instance)
+        private object get_122_ChartSeries_DisplayName(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.DisplayName;
         }
-        private void set_165_ChartSeries_DisplayName(object instance, object Value)
+        private void set_122_ChartSeries_DisplayName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.DisplayName = (global::System.String)Value;
         }
-        private object get_166_ChartSeries_ClipToPlotArea(object instance)
+        private object get_123_ChartSeries_ClipToPlotArea(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.ClipToPlotArea;
         }
-        private void set_166_ChartSeries_ClipToPlotArea(object instance, object Value)
+        private void set_123_ChartSeries_ClipToPlotArea(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.ClipToPlotArea = (global::System.Boolean)Value;
         }
-        private object get_167_ChartSeries_ItemsSource(object instance)
+        private object get_124_ChartSeries_ItemsSource(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.ItemsSource;
         }
-        private void set_167_ChartSeries_ItemsSource(object instance, object Value)
+        private void set_124_ChartSeries_ItemsSource(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             that.ItemsSource = (global::System.Collections.IEnumerable)Value;
         }
-        private object get_168_ChartSeries_ActualPaletteIndex(object instance)
+        private object get_125_ChartSeries_ActualPaletteIndex(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeries)instance;
             return that.ActualPaletteIndex;
         }
-        private object get_169_ChartElementPresenter_ZIndex(object instance)
+        private object get_126_ChartElementPresenter_ZIndex(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter)instance;
             return that.ZIndex;
         }
-        private void set_169_ChartElementPresenter_ZIndex(object instance, object Value)
+        private void set_126_ChartElementPresenter_ZIndex(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter)instance;
             that.ZIndex = (global::System.Int32)Value;
         }
-        private object get_170_ChartElementPresenter_Chart(object instance)
+        private object get_127_ChartElementPresenter_Chart(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter)instance;
             return that.Chart;
         }
-        private object get_171_RadChartBase_ClipToBounds(object instance)
+        private object get_128_RadControl_CurrentVisualState(object instance)
+        {
+            var that = (global::Telerik.UI.Xaml.Controls.RadControl)instance;
+            return that.CurrentVisualState;
+        }
+        private object get_129_RadChartBase_ClipToBounds(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.ClipToBounds;
         }
-        private void set_171_RadChartBase_ClipToBounds(object instance, object Value)
+        private void set_129_RadChartBase_ClipToBounds(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.ClipToBounds = (global::System.Boolean)Value;
         }
-        private object get_172_RadChartBase_Palette(object instance)
+        private object get_130_RadChartBase_Palette(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.Palette;
         }
-        private void set_172_RadChartBase_Palette(object instance, object Value)
+        private void set_130_RadChartBase_Palette(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.Palette = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)Value;
         }
-        private object get_173_RadChartBase_SeriesProvider(object instance)
+        private object get_131_RadChartBase_SeriesProvider(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.SeriesProvider;
         }
-        private void set_173_RadChartBase_SeriesProvider(object instance, object Value)
+        private void set_131_RadChartBase_SeriesProvider(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.SeriesProvider = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider)Value;
         }
-        private object get_174_RadChartBase_EmptyContent(object instance)
+        private object get_132_RadChartBase_EmptyContent(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.EmptyContent;
         }
-        private void set_174_RadChartBase_EmptyContent(object instance, object Value)
+        private void set_132_RadChartBase_EmptyContent(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.EmptyContent = (global::System.Object)Value;
         }
-        private object get_175_RadChartBase_EmptyContentTemplate(object instance)
+        private object get_133_RadChartBase_EmptyContentTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.EmptyContentTemplate;
         }
-        private void set_175_RadChartBase_EmptyContentTemplate(object instance, object Value)
+        private void set_133_RadChartBase_EmptyContentTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.EmptyContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_176_RadChartBase_PlotAreaStyle(object instance)
+        private object get_134_RadChartBase_PlotAreaStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.PlotAreaStyle;
         }
-        private void set_176_RadChartBase_PlotAreaStyle(object instance, object Value)
+        private void set_134_RadChartBase_PlotAreaStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_177_RadChartBase_PaletteName(object instance)
+        private object get_135_RadChartBase_PaletteName(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.PaletteName;
         }
-        private void set_177_RadChartBase_PaletteName(object instance, object Value)
+        private void set_135_RadChartBase_PaletteName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.PaletteName = (global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName)Value;
         }
-        private object get_178_RadChartBase_SelectionPalette(object instance)
+        private object get_136_RadChartBase_SelectionPalette(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.SelectionPalette;
         }
-        private void set_178_RadChartBase_SelectionPalette(object instance, object Value)
+        private void set_136_RadChartBase_SelectionPalette(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.SelectionPalette = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)Value;
         }
-        private object get_179_RadChartBase_SelectionPaletteName(object instance)
+        private object get_137_RadChartBase_SelectionPaletteName(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.SelectionPaletteName;
         }
-        private void set_179_RadChartBase_SelectionPaletteName(object instance, object Value)
+        private void set_137_RadChartBase_SelectionPaletteName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.SelectionPaletteName = (global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName)Value;
         }
-        private object get_180_RadChartBase_Behaviors(object instance)
+        private object get_138_RadChartBase_Behaviors(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.Behaviors;
         }
-        private object get_181_ChartBehavior_Chart(object instance)
+        private object get_139_ChartBehavior_Chart(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)instance;
             return that.Chart;
         }
-        private object get_182_RadChartBase_Zoom(object instance)
+        private object get_140_RadChartBase_Zoom(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.Zoom;
         }
-        private void set_182_RadChartBase_Zoom(object instance, object Value)
+        private void set_140_RadChartBase_Zoom(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.Zoom = (global::Windows.Foundation.Size)Value;
         }
-        private object get_183_RadChartBase_MaxZoom(object instance)
+        private object get_141_RadChartBase_MaxZoom(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.MaxZoom;
         }
-        private void set_183_RadChartBase_MaxZoom(object instance, object Value)
+        private void set_141_RadChartBase_MaxZoom(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.MaxZoom = (global::Windows.Foundation.Size)Value;
         }
-        private object get_184_RadChartBase_MinZoom(object instance)
+        private object get_142_RadChartBase_MinZoom(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.MinZoom;
         }
-        private void set_184_RadChartBase_MinZoom(object instance, object Value)
+        private void set_142_RadChartBase_MinZoom(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.MinZoom = (global::Windows.Foundation.Size)Value;
         }
-        private object get_185_RadChartBase_PlotOrigin(object instance)
+        private object get_143_RadChartBase_PlotOrigin(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.PlotOrigin;
         }
-        private object get_186_RadChartBase_PlotAreaClip(object instance)
+        private object get_144_RadChartBase_PlotAreaClip(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.PlotAreaClip;
         }
-        private object get_187_RadChartBase_ScrollOffset(object instance)
+        private object get_145_RadChartBase_ScrollOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             return that.ScrollOffset;
         }
-        private void set_187_RadChartBase_ScrollOffset(object instance, object Value)
+        private void set_145_RadChartBase_ScrollOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.ScrollOffset = (global::Windows.Foundation.Point)Value;
         }
-        private object get_188_DoughnutSeries_InnerRadiusFactor(object instance)
+        private object get_146_DoughnutSeries_InnerRadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries)instance;
             return that.InnerRadiusFactor;
         }
-        private void set_188_DoughnutSeries_InnerRadiusFactor(object instance, object Value)
+        private void set_146_DoughnutSeries_InnerRadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.DoughnutSeries)instance;
             that.InnerRadiusFactor = (global::System.Double)Value;
         }
-        private object get_189_PropertyNameDataPointBinding_PropertyName(object instance)
+        private object get_147_PropertyNameDataPointBinding_PropertyName(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding)instance;
             return that.PropertyName;
         }
-        private void set_189_PropertyNameDataPointBinding_PropertyName(object instance, object Value)
+        private void set_147_PropertyNameDataPointBinding_PropertyName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding)instance;
             that.PropertyName = (global::System.String)Value;
         }
-        private object get_190_D2DTextStyle_Foreground(object instance)
+        private object get_148_D2DTextStyle_Foreground(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.Foreground;
         }
-        private void set_190_D2DTextStyle_Foreground(object instance, object Value)
+        private void set_148_D2DTextStyle_Foreground(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.Foreground = (global::Telerik.UI.Drawing.D2DBrush)Value;
         }
-        private object get_191_D2DTextStyle_FontWeight(object instance)
+        private object get_149_D2DTextStyle_FontWeight(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.FontWeight;
         }
-        private void set_191_D2DTextStyle_FontWeight(object instance, object Value)
+        private void set_149_D2DTextStyle_FontWeight(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.FontWeight = (global::Telerik.UI.Drawing.FontWeightName)Value;
         }
-        private object get_192_D2DTextStyle_FontSize(object instance)
+        private object get_150_D2DTextStyle_FontSize(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.FontSize;
         }
-        private void set_192_D2DTextStyle_FontSize(object instance, object Value)
+        private void set_150_D2DTextStyle_FontSize(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_193_D2DTextStyle_FontLocale(object instance)
+        private object get_151_D2DTextStyle_FontLocale(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.FontLocale;
         }
-        private void set_193_D2DTextStyle_FontLocale(object instance, object Value)
+        private void set_151_D2DTextStyle_FontLocale(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.FontLocale = (global::System.String)Value;
         }
-        private object get_194_D2DTextStyle_FontName(object instance)
+        private object get_152_D2DTextStyle_FontName(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.FontName;
         }
-        private void set_194_D2DTextStyle_FontName(object instance, object Value)
+        private void set_152_D2DTextStyle_FontName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.FontName = (global::System.String)Value;
         }
-        private object get_195_D2DTextStyle_TextAlignment(object instance)
+        private object get_153_D2DTextStyle_TextAlignment(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.TextAlignment;
         }
-        private void set_195_D2DTextStyle_TextAlignment(object instance, object Value)
+        private void set_153_D2DTextStyle_TextAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.TextAlignment = (global::Windows.UI.Xaml.TextAlignment)Value;
         }
-        private object get_196_D2DTextStyle_FontStyle(object instance)
+        private object get_154_D2DTextStyle_FontStyle(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             return that.FontStyle;
         }
-        private void set_196_D2DTextStyle_FontStyle(object instance, object Value)
+        private void set_154_D2DTextStyle_FontStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DTextStyle)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_197_D2DShapeStyle_StrokeThickness(object instance)
+        private object get_155_D2DShapeStyle_StrokeThickness(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             return that.StrokeThickness;
         }
-        private void set_197_D2DShapeStyle_StrokeThickness(object instance, object Value)
+        private void set_155_D2DShapeStyle_StrokeThickness(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             that.StrokeThickness = (global::System.Double)Value;
         }
-        private object get_198_D2DShapeStyle_Stroke(object instance)
+        private object get_156_D2DShapeStyle_Stroke(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             return that.Stroke;
         }
-        private void set_198_D2DShapeStyle_Stroke(object instance, object Value)
+        private void set_156_D2DShapeStyle_Stroke(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             that.Stroke = (global::Telerik.UI.Drawing.D2DBrush)Value;
         }
-        private object get_199_D2DShapeStyle_Foreground(object instance)
+        private object get_157_D2DShapeStyle_Foreground(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             return that.Foreground;
         }
-        private void set_199_D2DShapeStyle_Foreground(object instance, object Value)
+        private void set_157_D2DShapeStyle_Foreground(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             that.Foreground = (global::Telerik.UI.Drawing.D2DBrush)Value;
         }
-        private object get_200_D2DShapeStyle_Fill(object instance)
+        private object get_158_D2DShapeStyle_Fill(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             return that.Fill;
         }
-        private void set_200_D2DShapeStyle_Fill(object instance, object Value)
+        private void set_158_D2DShapeStyle_Fill(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DShapeStyle)instance;
             that.Fill = (global::Telerik.UI.Drawing.D2DBrush)Value;
         }
-        private object get_201_D2DSolidColorBrush_Color(object instance)
+        private object get_159_D2DSolidColorBrush_Color(object instance)
         {
             var that = (global::Telerik.UI.Drawing.D2DSolidColorBrush)instance;
             return that.Color;
         }
-        private void set_201_D2DSolidColorBrush_Color(object instance, object Value)
+        private void set_159_D2DSolidColorBrush_Color(object instance, object Value)
         {
             var that = (global::Telerik.UI.Drawing.D2DSolidColorBrush)instance;
             that.Color = (global::Windows.UI.Color)Value;
         }
-        private object get_202_ChartAnnotationLabelDefinition_Format(object instance)
+        private object get_160_ChartAnnotationLabelDefinition_Format(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Format;
         }
-        private void set_202_ChartAnnotationLabelDefinition_Format(object instance, object Value)
+        private void set_160_ChartAnnotationLabelDefinition_Format(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Format = (global::System.String)Value;
         }
-        private object get_203_ChartAnnotationLabelDefinition_Template(object instance)
+        private object get_161_ChartAnnotationLabelDefinition_Template(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Template;
         }
-        private void set_203_ChartAnnotationLabelDefinition_Template(object instance, object Value)
+        private void set_161_ChartAnnotationLabelDefinition_Template(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Template = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_204_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance)
+        private object get_162_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.DefaultVisualStyle;
         }
-        private void set_204_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance, object Value)
+        private void set_162_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.DefaultVisualStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_205_ChartAnnotationLabelDefinition_Location(object instance)
+        private object get_163_ChartAnnotationLabelDefinition_Location(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Location;
         }
-        private void set_205_ChartAnnotationLabelDefinition_Location(object instance, object Value)
+        private void set_163_ChartAnnotationLabelDefinition_Location(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Location = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation)Value;
         }
-        private object get_206_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance)
+        private object get_164_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.HorizontalAlignment;
         }
-        private void set_206_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance, object Value)
+        private void set_164_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.HorizontalAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
         }
-        private object get_207_ChartAnnotationLabelDefinition_VerticalAlignment(object instance)
+        private object get_165_ChartAnnotationLabelDefinition_VerticalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.VerticalAlignment;
         }
-        private void set_207_ChartAnnotationLabelDefinition_VerticalAlignment(object instance, object Value)
+        private void set_165_ChartAnnotationLabelDefinition_VerticalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.VerticalAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
         }
-        private object get_208_ChartAnnotationLabelDefinition_HorizontalOffset(object instance)
+        private object get_166_ChartAnnotationLabelDefinition_HorizontalOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.HorizontalOffset;
         }
-        private void set_208_ChartAnnotationLabelDefinition_HorizontalOffset(object instance, object Value)
+        private void set_166_ChartAnnotationLabelDefinition_HorizontalOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.HorizontalOffset = (global::System.Double)Value;
         }
-        private object get_209_ChartAnnotationLabelDefinition_VerticalOffset(object instance)
+        private object get_167_ChartAnnotationLabelDefinition_VerticalOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.VerticalOffset;
         }
-        private void set_209_ChartAnnotationLabelDefinition_VerticalOffset(object instance, object Value)
+        private void set_167_ChartAnnotationLabelDefinition_VerticalOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.VerticalOffset = (global::System.Double)Value;
         }
-        private object get_210_HexLayoutDefinitionBase_Orientation(object instance)
+        private object get_168_HexLayoutDefinitionBase_Orientation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.Orientation;
         }
-        private void set_210_HexLayoutDefinitionBase_Orientation(object instance, object Value)
+        private void set_168_HexLayoutDefinitionBase_Orientation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
         }
-        private object get_211_HexLayoutDefinitionBase_ItemLength(object instance)
+        private object get_169_HexLayoutDefinitionBase_ItemLength(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ItemLength;
         }
-        private void set_211_HexLayoutDefinitionBase_ItemLength(object instance, object Value)
+        private void set_169_HexLayoutDefinitionBase_ItemLength(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ItemLength = (global::System.Double)Value;
         }
-        private object get_212_HexLayoutDefinitionBase_ItemsSpacing(object instance)
+        private object get_170_HexLayoutDefinitionBase_ItemsSpacing(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ItemsSpacing;
         }
-        private void set_212_HexLayoutDefinitionBase_ItemsSpacing(object instance, object Value)
+        private void set_170_HexLayoutDefinitionBase_ItemsSpacing(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ItemsSpacing = (global::System.Double)Value;
         }
-        private object get_213_HexLayoutDefinitionBase_ViewPortExtension(object instance)
+        private object get_171_HexLayoutDefinitionBase_ViewPortExtension(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ViewPortExtension;
         }
-        private void set_213_HexLayoutDefinitionBase_ViewPortExtension(object instance, object Value)
+        private void set_171_HexLayoutDefinitionBase_ViewPortExtension(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ViewPortExtension = (global::System.Double)Value;
         }
-        private object get_214_HighlightStyle_FontFamily(object instance)
+        private object get_172_HighlightStyle_FontFamily(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontFamily;
         }
-        private void set_214_HighlightStyle_FontFamily(object instance, object Value)
+        private void set_172_HighlightStyle_FontFamily(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_215_HighlightStyle_FontWeight(object instance)
+        private object get_173_HighlightStyle_FontWeight(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontWeight;
         }
-        private void set_215_HighlightStyle_FontWeight(object instance, object Value)
+        private void set_173_HighlightStyle_FontWeight(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontWeight = (global::Telerik.UI.Xaml.Controls.Input.FontWeightName)Value;
         }
-        private object get_216_HighlightStyle_FontStyle(object instance)
+        private object get_174_HighlightStyle_FontStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontStyle;
         }
-        private void set_216_HighlightStyle_FontStyle(object instance, object Value)
+        private void set_174_HighlightStyle_FontStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_217_HighlightStyle_Foreground(object instance)
+        private object get_175_HighlightStyle_Foreground(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.Foreground;
         }
-        private void set_217_HighlightStyle_Foreground(object instance, object Value)
+        private void set_175_HighlightStyle_Foreground(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_218_HighlightStyle_FontSize(object instance)
+        private object get_176_HighlightStyle_FontSize(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontSize;
         }
-        private void set_218_HighlightStyle_FontSize(object instance, object Value)
+        private void set_176_HighlightStyle_FontSize(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_219_CalendarCellStyle_ContentStyle(object instance)
+        private object get_177_CalendarCellStyle_ContentStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             return that.ContentStyle;
         }
-        private void set_219_CalendarCellStyle_ContentStyle(object instance, object Value)
+        private void set_177_CalendarCellStyle_ContentStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             that.ContentStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_220_CalendarCellStyle_DecorationStyle(object instance)
+        private object get_178_CalendarCellStyle_DecorationStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             return that.DecorationStyle;
         }
-        private void set_220_CalendarCellStyle_DecorationStyle(object instance, object Value)
+        private void set_178_CalendarCellStyle_DecorationStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             that.DecorationStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_221_RadRadialMenu_Items(object instance)
+        private object get_179_RadRadialMenu_Items(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.Items;
         }
-        private object get_222_RadialMenuItem_ChildItems(object instance)
+        private object get_180_RadialMenuItem_ChildItems(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.ChildItems;
         }
-        private object get_223_RadialMenuItem_ToolTipContent(object instance)
+        private object get_181_RadialMenuItem_ToolTipContent(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.ToolTipContent;
         }
-        private void set_223_RadialMenuItem_ToolTipContent(object instance, object Value)
+        private void set_181_RadialMenuItem_ToolTipContent(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.ToolTipContent = (global::System.Object)Value;
         }
-        private object get_224_RadialMenuItem_CommandParameter(object instance)
+        private object get_182_RadialMenuItem_CommandParameter(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.CommandParameter;
         }
-        private void set_224_RadialMenuItem_CommandParameter(object instance, object Value)
+        private void set_182_RadialMenuItem_CommandParameter(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_225_RadialMenuItem_IsEnabled(object instance)
+        private object get_183_RadialMenuItem_IsEnabled(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.IsEnabled;
         }
-        private void set_225_RadialMenuItem_IsEnabled(object instance, object Value)
+        private void set_183_RadialMenuItem_IsEnabled(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.IsEnabled = (global::System.Boolean)Value;
         }
-        private object get_226_RadialMenuItem_Command(object instance)
+        private object get_184_RadialMenuItem_Command(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.Command;
         }
-        private void set_226_RadialMenuItem_Command(object instance, object Value)
+        private void set_184_RadialMenuItem_Command(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_227_RadialMenuItem_ParentItem(object instance)
+        private object get_185_RadialMenuItem_ParentItem(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.ParentItem;
         }
-        private object get_228_RadialMenuItem_IsSelected(object instance)
+        private object get_186_RadialMenuItem_IsSelected(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.IsSelected;
         }
-        private void set_228_RadialMenuItem_IsSelected(object instance, object Value)
+        private void set_186_RadialMenuItem_IsSelected(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_229_RadialMenuItem_GroupName(object instance)
+        private object get_187_RadialMenuItem_GroupName(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.GroupName;
         }
-        private void set_229_RadialMenuItem_GroupName(object instance, object Value)
+        private void set_187_RadialMenuItem_GroupName(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.GroupName = (global::System.String)Value;
         }
-        private object get_230_RadialMenuItem_Selectable(object instance)
+        private object get_188_RadialMenuItem_Selectable(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.Selectable;
         }
-        private void set_230_RadialMenuItem_Selectable(object instance, object Value)
+        private void set_188_RadialMenuItem_Selectable(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.Selectable = (global::System.Boolean)Value;
         }
-        private object get_231_RadialMenuItem_Deselectable(object instance)
+        private object get_189_RadialMenuItem_Deselectable(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.Deselectable;
         }
-        private void set_231_RadialMenuItem_Deselectable(object instance, object Value)
+        private void set_189_RadialMenuItem_Deselectable(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.Deselectable = (global::System.Boolean)Value;
         }
-        private object get_232_RadialMenuItem_Header(object instance)
+        private object get_190_RadialMenuItem_Header(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.Header;
         }
-        private void set_232_RadialMenuItem_Header(object instance, object Value)
+        private void set_190_RadialMenuItem_Header(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_233_RadialMenuItem_IconContent(object instance)
+        private object get_191_RadialMenuItem_IconContent(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.IconContent;
         }
-        private void set_233_RadialMenuItem_IconContent(object instance, object Value)
+        private void set_191_RadialMenuItem_IconContent(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.IconContent = (global::System.Object)Value;
         }
-        private object get_234_RadialMenuItem_ContentSectorBackground(object instance)
+        private object get_192_RadialMenuItem_ContentSectorBackground(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             return that.ContentSectorBackground;
         }
-        private void set_234_RadialMenuItem_ContentSectorBackground(object instance, object Value)
+        private void set_192_RadialMenuItem_ContentSectorBackground(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)instance;
             that.ContentSectorBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_235_RadRadialMenu_ShowToolTip(object instance)
+        private object get_193_RadRadialMenu_ShowToolTip(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.ShowToolTip;
         }
-        private void set_235_RadRadialMenu_ShowToolTip(object instance, object Value)
+        private void set_193_RadRadialMenu_ShowToolTip(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.ShowToolTip = (global::System.Boolean)Value;
         }
-        private object get_236_RadRadialMenu_IsOpen(object instance)
+        private object get_194_RadRadialMenu_IsOpen(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.IsOpen;
         }
-        private void set_236_RadRadialMenu_IsOpen(object instance, object Value)
+        private void set_194_RadRadialMenu_IsOpen(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.IsOpen = (global::System.Boolean)Value;
         }
-        private object get_237_RadRadialMenu_StartAngle(object instance)
+        private object get_195_RadRadialMenu_StartAngle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.StartAngle;
         }
-        private void set_237_RadRadialMenu_StartAngle(object instance, object Value)
+        private void set_195_RadRadialMenu_StartAngle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.StartAngle = (global::System.Double)Value;
         }
-        private object get_238_RadRadialMenu_InnerNavigationRadiusFactor(object instance)
+        private object get_196_RadRadialMenu_InnerNavigationRadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.InnerNavigationRadiusFactor;
         }
-        private void set_238_RadRadialMenu_InnerNavigationRadiusFactor(object instance, object Value)
+        private void set_196_RadRadialMenu_InnerNavigationRadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.InnerNavigationRadiusFactor = (global::System.Double)Value;
         }
-        private object get_239_RadRadialMenu_InnerRadiusFactor(object instance)
+        private object get_197_RadRadialMenu_InnerRadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.InnerRadiusFactor;
         }
-        private void set_239_RadRadialMenu_InnerRadiusFactor(object instance, object Value)
+        private void set_197_RadRadialMenu_InnerRadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.InnerRadiusFactor = (global::System.Double)Value;
         }
-        private object get_240_RadRadialMenu_OuterRadiusFactor(object instance)
+        private object get_198_RadRadialMenu_OuterRadiusFactor(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.OuterRadiusFactor;
         }
-        private void set_240_RadRadialMenu_OuterRadiusFactor(object instance, object Value)
+        private void set_198_RadRadialMenu_OuterRadiusFactor(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.OuterRadiusFactor = (global::System.Double)Value;
         }
-        private object get_241_RadRadialMenu_ContentMenuBackgroundStyle(object instance)
+        private object get_199_RadRadialMenu_ContentMenuBackgroundStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.ContentMenuBackgroundStyle;
         }
-        private void set_241_RadRadialMenu_ContentMenuBackgroundStyle(object instance, object Value)
+        private void set_199_RadRadialMenu_ContentMenuBackgroundStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.ContentMenuBackgroundStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_242_RadRadialMenu_NavigationMenuBackgroundStyle(object instance)
+        private object get_200_RadRadialMenu_NavigationMenuBackgroundStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.NavigationMenuBackgroundStyle;
         }
-        private void set_242_RadRadialMenu_NavigationMenuBackgroundStyle(object instance, object Value)
+        private void set_200_RadRadialMenu_NavigationMenuBackgroundStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             that.NavigationMenuBackgroundStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_243_RadRadialMenu_CommandService(object instance)
+        private object get_201_RadRadialMenu_CommandService(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.CommandService;
         }
-        private object get_244_RadRadialMenu_Commands(object instance)
+        private object get_202_RadRadialMenu_Commands(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.Commands;
         }
-        private object get_245_AttachableObject_Owner(object instance)
+        private object get_203_AttachableObject_Owner(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)instance;
             return that.Owner;
         }
-        private object get_246_RadRadialMenu_TargetElement(object instance)
+        private object get_204_RadRadialMenu_TargetElement(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu)instance;
             return that.TargetElement;
         }
-        private object get_247_RadialMenuTriggerBehavior_AttachTriggers(object instance)
+        private object get_205_RadialMenuTriggerBehavior_AttachTriggers(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior)instance;
             return that.AttachTriggers;
         }
-        private void set_247_RadialMenuTriggerBehavior_AttachTriggers(object instance, object Value)
+        private void set_205_RadialMenuTriggerBehavior_AttachTriggers(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior)instance;
             that.AttachTriggers = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers)Value;
         }
-        private object get_248_AttachableObject_Owner(object instance)
+        private object get_206_AttachableObject_Owner(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Windows.UI.Xaml.FrameworkElement>)instance;
             return that.Owner;
         }
-        private object get_249_BusyIndicatorAnimationAdapter_Animation(object instance)
+        private object get_207_BusyIndicatorAnimationAdapter_Animation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter)instance;
             return that.Animation;
         }
-        private void set_249_BusyIndicatorAnimationAdapter_Animation(object instance, object Value)
+        private void set_207_BusyIndicatorAnimationAdapter_Animation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter)instance;
             that.Animation = (global::Windows.UI.Xaml.Media.Animation.Storyboard)Value;
@@ -5206,1303 +4450,1024 @@ namespace NestedWorld.NestedWorld_XamlTypeInfo
                 xamlMember.Getter = get_52_NotificationView_Tap;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "NestedWorld.View.MapViews.MapView.reduce":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MapViews.MapView");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "reduce", "Double");
-                xamlMember.Getter = get_53_MapView_reduce;
-                xamlMember.Setter = set_53_MapView_reduce;
+            case "NestedWorld.View.MapViews.MapControlView.mapControl":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MapViews.MapControlView");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "mapControl", "Windows.UI.Xaml.Controls.Maps.MapControl");
+                xamlMember.Getter = get_53_MapControlView_mapControl;
+                xamlMember.Setter = set_53_MapControlView_mapControl;
                 break;
-            case "NestedWorld.View.MapViews.AreaListView.List":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MapViews.AreaListView");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "List", "Windows.UI.Xaml.Controls.GridView");
-                xamlMember.Getter = get_54_AreaListView_List;
-                xamlMember.Setter = set_54_AreaListView_List;
-                break;
-            case "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter.MeTemplate":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MeTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_55_AreaContentPresenter_MeTemplate;
-                xamlMember.Setter = set_55_AreaContentPresenter_MeTemplate;
-                break;
-            case "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter.AllyTemplate":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AllyTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_56_AreaContentPresenter_AllyTemplate;
-                xamlMember.Setter = set_56_AreaContentPresenter_AllyTemplate;
-                break;
-            case "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter.FreeTemplate":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FreeTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_57_AreaContentPresenter_FreeTemplate;
-                xamlMember.Setter = set_57_AreaContentPresenter_FreeTemplate;
-                break;
-            case "NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter.OtherTemplate":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "OtherTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_58_AreaContentPresenter_OtherTemplate;
-                xamlMember.Setter = set_58_AreaContentPresenter_OtherTemplate;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.Layers":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Layers", "Telerik.UI.Xaml.Controls.Map.MapLayerCollection");
-                xamlMember.Getter = get_59_RadMap_Layers;
+            case "NestedWorld.View.MapViews.MonsterMapList.root":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MapViews.MonsterMapList");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "root", "Windows.UI.Xaml.Controls.StackPanel");
+                xamlMember.Getter = get_54_MonsterMapList_root;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Telerik.UI.Xaml.Controls.Map.MapLayer.Bounds":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Bounds", "Telerik.Geospatial.LocationRect");
-                xamlMember.Getter = get_60_MapLayer_Bounds;
+            case "NestedWorld.View.MapViews.UserMapList.root":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MapViews.UserMapList");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "root", "Windows.UI.Xaml.Controls.StackPanel");
+                xamlMember.Getter = get_55_UserMapList_root;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.RadControl.CurrentVisualState":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CurrentVisualState", "String");
-                xamlMember.Getter = get_61_RadControl_CurrentVisualState;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.Behaviors":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Behaviors", "Telerik.UI.Xaml.Controls.Map.MapBehaviorCollection");
-                xamlMember.Getter = get_62_RadMap_Behaviors;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapBehavior.Map":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapBehavior");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Map", "Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember.Getter = get_63_MapBehavior_Map;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.Center":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Center", "Telerik.Geospatial.Location");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_RadMap_Center;
-                xamlMember.Setter = set_64_RadMap_Center;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.ZoomLevel":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_RadMap_ZoomLevel;
-                xamlMember.Setter = set_65_RadMap_ZoomLevel;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.MaxZoomLevel":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MaxZoomLevel", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_RadMap_MaxZoomLevel;
-                xamlMember.Setter = set_66_RadMap_MaxZoomLevel;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.MinZoomLevel":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MinZoomLevel", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_RadMap_MinZoomLevel;
-                xamlMember.Setter = set_67_RadMap_MinZoomLevel;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.SpatialReference":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SpatialReference", "Telerik.UI.Xaml.Controls.Map.ISpatialReference");
-                xamlMember.Getter = get_68_RadMap_SpatialReference;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.Bounds":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Bounds", "Telerik.Geospatial.LocationRect");
-                xamlMember.Getter = get_69_RadMap_Bounds;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.CommandService":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CommandService", "Telerik.UI.Xaml.Controls.Map.MapCommandService");
-                xamlMember.Getter = get_70_RadMap_CommandService;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.RadMap.Commands":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Commands", "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Map.RadMap>");
-                xamlMember.Getter = get_71_RadMap_Commands;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>.Owner":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Map.RadMap>");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Owner", "Telerik.UI.Xaml.Controls.Map.RadMap");
-                xamlMember.Getter = get_72_AttachableObject_Owner;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeLabelAttributeName":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeLabelAttributeName", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_MapShapeLayer_ShapeLabelAttributeName;
-                xamlMember.Setter = set_73_MapShapeLayer_ShapeLabelAttributeName;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeColorizer":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeColorizer", "Telerik.UI.Xaml.Controls.Map.MapShapeColorizer");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_MapShapeLayer_ShapeColorizer;
-                xamlMember.Setter = set_74_MapShapeLayer_ShapeColorizer;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.IsSelectionEnabled":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsSelectionEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_MapShapeLayer_IsSelectionEnabled;
-                xamlMember.Setter = set_75_MapShapeLayer_IsSelectionEnabled;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.IsPointerOverEnabled":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsPointerOverEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_MapShapeLayer_IsPointerOverEnabled;
-                xamlMember.Setter = set_76_MapShapeLayer_IsPointerOverEnabled;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.IsToolTipEnabled":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsToolTipEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_MapShapeLayer_IsToolTipEnabled;
-                xamlMember.Setter = set_77_MapShapeLayer_IsToolTipEnabled;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeToolTipAttributeName":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeToolTipAttributeName", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_MapShapeLayer_ShapeToolTipAttributeName;
-                xamlMember.Setter = set_78_MapShapeLayer_ShapeToolTipAttributeName;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeStyleSelector":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeStyleSelector", "Telerik.UI.Xaml.Controls.Map.MapShapeStyleSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_MapShapeLayer_ShapeStyleSelector;
-                xamlMember.Setter = set_79_MapShapeLayer_ShapeStyleSelector;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeLabelLayoutStrategy":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeLabelLayoutStrategy", "Telerik.UI.Xaml.Controls.Map.MapShapeLabelLayoutStrategy");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_MapShapeLayer_ShapeLabelLayoutStrategy;
-                xamlMember.Setter = set_80_MapShapeLayer_ShapeLabelLayoutStrategy;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeStyle":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeStyle", "Telerik.UI.Drawing.D2DShapeStyle");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_MapShapeLayer_ShapeStyle;
-                xamlMember.Setter = set_81_MapShapeLayer_ShapeStyle;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapePointerOverStyle":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapePointerOverStyle", "Telerik.UI.Drawing.D2DShapeStyle");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_MapShapeLayer_ShapePointerOverStyle;
-                xamlMember.Setter = set_82_MapShapeLayer_ShapePointerOverStyle;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeSelectedStyle":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeSelectedStyle", "Telerik.UI.Drawing.D2DShapeStyle");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_MapShapeLayer_ShapeSelectedStyle;
-                xamlMember.Setter = set_83_MapShapeLayer_ShapeSelectedStyle;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.ShapeLabelStyle":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShapeLabelStyle", "Telerik.UI.Drawing.D2DTextStyle");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_MapShapeLayer_ShapeLabelStyle;
-                xamlMember.Setter = set_84_MapShapeLayer_ShapeLabelStyle;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeLayer.Source":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeLayer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Source", "Telerik.UI.Xaml.Controls.Map.IShapeDataSource");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_MapShapeLayer_Source;
-                xamlMember.Setter = set_85_MapShapeLayer_Source;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.DesaturationColorizer.BaseColor":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.DesaturationColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "BaseColor", "Windows.UI.Color");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_DesaturationColorizer_BaseColor;
-                xamlMember.Setter = set_86_DesaturationColorizer_BaseColor;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer.AttributeName":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AttributeName", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_ChoroplethColorizer_AttributeName;
-                xamlMember.Setter = set_87_ChoroplethColorizer_AttributeName;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.DesaturationColorizer.From":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.DesaturationColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "From", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_DesaturationColorizer_From;
-                xamlMember.Setter = set_88_DesaturationColorizer_From;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.DesaturationColorizer.To":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.DesaturationColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "To", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_DesaturationColorizer_To;
-                xamlMember.Setter = set_89_DesaturationColorizer_To;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.DesaturationColorizer.RangeCount":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.DesaturationColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "RangeCount", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_DesaturationColorizer_RangeCount;
-                xamlMember.Setter = set_90_DesaturationColorizer_RangeCount;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer.RangeDistribution":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "RangeDistribution", "Telerik.UI.Xaml.Controls.Map.ChoroplethRangeDistribution");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_ChoroplethColorizer_RangeDistribution;
-                xamlMember.Setter = set_91_ChoroplethColorizer_RangeDistribution;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer.ActualRange":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ActualRange", "Telerik.Core.ValueRange`1<Double>");
-                xamlMember.Getter = get_92_ChoroplethColorizer_ActualRange;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer.Ranges":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.ChoroplethColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Ranges", "System.Collections.Generic.IEnumerable`1<Telerik.UI.Xaml.Controls.Map.ColorRange>");
-                xamlMember.Getter = get_93_ChoroplethColorizer_Ranges;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapShapeColorizer.IsProperlyInitialized":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapShapeColorizer");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsProperlyInitialized", "Boolean");
-                xamlMember.Getter = get_94_MapShapeColorizer_IsProperlyInitialized;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution.LogarithmBase":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.LogarithmicRangeDistribution");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "LogarithmBase", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_LogarithmicRangeDistribution_LogarithmBase;
-                xamlMember.Setter = set_95_LogarithmicRangeDistribution_LogarithmBase;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior.IsPanEnabled":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsPanEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_MapPanAndZoomBehavior_IsPanEnabled;
-                xamlMember.Setter = set_96_MapPanAndZoomBehavior_IsPanEnabled;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior.ZoomMode":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ZoomMode", "Telerik.UI.Xaml.Controls.Map.MapZoomMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_97_MapPanAndZoomBehavior_ZoomMode;
-                xamlMember.Setter = set_97_MapPanAndZoomBehavior_ZoomMode;
-                break;
-            case "Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior.DoubleTapAction":
-                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Map.MapPanAndZoomBehavior");
-                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DoubleTapAction", "Telerik.UI.Xaml.Controls.Map.MapDoubleTapAction");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_98_MapPanAndZoomBehavior_DoubleTapAction;
-                xamlMember.Setter = set_98_MapPanAndZoomBehavior_DoubleTapAction;
                 break;
             case "NestedWorld.View.MonsterSoloView.MonsterName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_99_MonsterSoloView_MonsterName;
-                xamlMember.Setter = set_99_MonsterSoloView_MonsterName;
+                xamlMember.Getter = get_56_MonsterSoloView_MonsterName;
+                xamlMember.Setter = set_56_MonsterSoloView_MonsterName;
                 break;
             case "NestedWorld.View.MonsterSoloView.Level":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Level", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_100_MonsterSoloView_Level;
-                xamlMember.Setter = set_100_MonsterSoloView_Level;
+                xamlMember.Getter = get_57_MonsterSoloView_Level;
+                xamlMember.Setter = set_57_MonsterSoloView_Level;
                 break;
             case "NestedWorld.View.MonsterSoloView.MonsterImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_MonsterSoloView_MonsterImage;
-                xamlMember.Setter = set_101_MonsterSoloView_MonsterImage;
+                xamlMember.Getter = get_58_MonsterSoloView_MonsterImage;
+                xamlMember.Setter = set_58_MonsterSoloView_MonsterImage;
                 break;
             case "NestedWorld.View.MonsterSoloView.Type":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Type", "NestedWorld.Classes.ElementsGame.TypeEnum");
-                xamlMember.Getter = get_102_MonsterSoloView_Type;
-                xamlMember.Setter = set_102_MonsterSoloView_Type;
+                xamlMember.Getter = get_59_MonsterSoloView_Type;
+                xamlMember.Setter = set_59_MonsterSoloView_Type;
                 break;
             case "NestedWorld.View.MonsterSoloView.BackgroundColor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "BackgroundColor", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_MonsterSoloView_BackgroundColor;
-                xamlMember.Setter = set_103_MonsterSoloView_BackgroundColor;
+                xamlMember.Getter = get_60_MonsterSoloView_BackgroundColor;
+                xamlMember.Setter = set_60_MonsterSoloView_BackgroundColor;
                 break;
             case "NestedWorld.View.MonsterSoloView.userMonster":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterSoloView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "userMonster", "NestedWorld.Classes.ElementsGame.Monsters.UserMonster");
-                xamlMember.Getter = get_104_MonsterSoloView_userMonster;
-                xamlMember.Setter = set_104_MonsterSoloView_userMonster;
+                xamlMember.Getter = get_61_MonsterSoloView_userMonster;
+                xamlMember.Setter = set_61_MonsterSoloView_userMonster;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterAttacksView.monsterAttackList":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterAttacksView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "monsterAttackList", "NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList");
-                xamlMember.Getter = get_105_MonsterAttacksView_monsterAttackList;
-                xamlMember.Setter = set_105_MonsterAttacksView_monsterAttackList;
+                xamlMember.Getter = get_62_MonsterAttacksView_monsterAttackList;
+                xamlMember.Setter = set_62_MonsterAttacksView_monsterAttackList;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_MonsterHeaderView_MonsterName;
-                xamlMember.Setter = set_106_MonsterHeaderView_MonsterName;
+                xamlMember.Getter = get_63_MonsterHeaderView_MonsterName;
+                xamlMember.Setter = set_63_MonsterHeaderView_MonsterName;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterImage":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterImage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_MonsterHeaderView_MonsterImage;
-                xamlMember.Setter = set_107_MonsterHeaderView_MonsterImage;
+                xamlMember.Getter = get_64_MonsterHeaderView_MonsterImage;
+                xamlMember.Setter = set_64_MonsterHeaderView_MonsterImage;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterType":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterType", "NestedWorld.Classes.ElementsGame.TypeEnum");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_MonsterHeaderView_MonsterType;
-                xamlMember.Setter = set_108_MonsterHeaderView_MonsterType;
+                xamlMember.Getter = get_65_MonsterHeaderView_MonsterType;
+                xamlMember.Setter = set_65_MonsterHeaderView_MonsterType;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterCombat":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterCombat", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_MonsterHeaderView_MonsterCombat;
-                xamlMember.Setter = set_109_MonsterHeaderView_MonsterCombat;
+                xamlMember.Getter = get_66_MonsterHeaderView_MonsterCombat;
+                xamlMember.Setter = set_66_MonsterHeaderView_MonsterCombat;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterLevel":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterLevel", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_MonsterHeaderView_MonsterLevel;
-                xamlMember.Setter = set_110_MonsterHeaderView_MonsterLevel;
+                xamlMember.Getter = get_67_MonsterHeaderView_MonsterLevel;
+                xamlMember.Setter = set_67_MonsterHeaderView_MonsterLevel;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterHeaderView.MonsterVictory":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterHeaderView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MonsterVictory", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_MonsterHeaderView_MonsterVictory;
-                xamlMember.Setter = set_111_MonsterHeaderView_MonsterVictory;
+                xamlMember.Getter = get_68_MonsterHeaderView_MonsterVictory;
+                xamlMember.Setter = set_68_MonsterHeaderView_MonsterVictory;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterStatsView.Life":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterStatsView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Life", "Int32");
-                xamlMember.Getter = get_112_MonsterStatsView_Life;
-                xamlMember.Setter = set_112_MonsterStatsView_Life;
+                xamlMember.Getter = get_69_MonsterStatsView_Life;
+                xamlMember.Setter = set_69_MonsterStatsView_Life;
                 break;
             case "NestedWorld.View.MonsterViews.MonsterStatsView.Exp":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NestedWorld.View.MonsterViews.MonsterStatsView");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Exp", "Int32");
-                xamlMember.Getter = get_113_MonsterStatsView_Exp;
-                xamlMember.Setter = set_113_MonsterStatsView_Exp;
+                xamlMember.Getter = get_70_MonsterStatsView_Exp;
+                xamlMember.Setter = set_70_MonsterStatsView_Exp;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.FillEntries":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FillEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_114_ChartPalette_FillEntries;
-                xamlMember.Setter = set_114_ChartPalette_FillEntries;
+                xamlMember.Getter = get_71_ChartPalette_FillEntries;
+                xamlMember.Setter = set_71_ChartPalette_FillEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.Brushes":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Brushes", "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>");
-                xamlMember.Getter = get_115_PaletteEntryCollection_Brushes;
+                xamlMember.Getter = get_72_PaletteEntryCollection_Brushes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.StrokeEntries":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "StrokeEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_116_ChartPalette_StrokeEntries;
-                xamlMember.Setter = set_116_ChartPalette_StrokeEntries;
+                xamlMember.Getter = get_73_ChartPalette_StrokeEntries;
+                xamlMember.Setter = set_73_ChartPalette_StrokeEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.Name":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_117_ChartPalette_Name;
-                xamlMember.Setter = set_117_ChartPalette_Name;
+                xamlMember.Getter = get_74_ChartPalette_Name;
+                xamlMember.Setter = set_74_ChartPalette_Name;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.SpecialFillEntries":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SpecialFillEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_118_ChartPalette_SpecialFillEntries;
-                xamlMember.Setter = set_118_ChartPalette_SpecialFillEntries;
+                xamlMember.Getter = get_75_ChartPalette_SpecialFillEntries;
+                xamlMember.Setter = set_75_ChartPalette_SpecialFillEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.SpecialStrokeEntries":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SpecialStrokeEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_119_ChartPalette_SpecialStrokeEntries;
-                xamlMember.Setter = set_119_ChartPalette_SpecialStrokeEntries;
+                xamlMember.Getter = get_76_ChartPalette_SpecialStrokeEntries;
+                xamlMember.Setter = set_76_ChartPalette_SpecialStrokeEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.SeriesFamily":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SeriesFamily", "String");
-                xamlMember.Getter = get_120_PaletteEntryCollection_SeriesFamily;
-                xamlMember.Setter = set_120_PaletteEntryCollection_SeriesFamily;
+                xamlMember.Getter = get_77_PaletteEntryCollection_SeriesFamily;
+                xamlMember.Setter = set_77_PaletteEntryCollection_SeriesFamily;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadPieChart.Series":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadPieChart");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Series", "Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection");
-                xamlMember.Getter = get_121_RadPieChart_Series;
+                xamlMember.Getter = get_78_RadPieChart_Series;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.DataPoints":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DataPoints", "Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>");
-                xamlMember.Getter = get_122_PieSeries_DataPoints;
+                xamlMember.Getter = get_79_PieSeries_DataPoints;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Charting.PieDataPoint.Percent":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Percent", "Double");
-                xamlMember.Getter = get_123_PieDataPoint_Percent;
+                xamlMember.Getter = get_80_PieDataPoint_Percent;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Charting.PieDataPoint.OffsetFromCenter":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "OffsetFromCenter", "Double");
-                xamlMember.Getter = get_124_PieDataPoint_OffsetFromCenter;
-                xamlMember.Setter = set_124_PieDataPoint_OffsetFromCenter;
+                xamlMember.Getter = get_81_PieDataPoint_OffsetFromCenter;
+                xamlMember.Setter = set_81_PieDataPoint_OffsetFromCenter;
                 break;
             case "Telerik.Charting.PieDataPoint.StartAngle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
-                xamlMember.Getter = get_125_PieDataPoint_StartAngle;
+                xamlMember.Getter = get_82_PieDataPoint_StartAngle;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Charting.PieDataPoint.SweepAngle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SweepAngle", "Double");
-                xamlMember.Getter = get_126_PieDataPoint_SweepAngle;
+                xamlMember.Getter = get_83_PieDataPoint_SweepAngle;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Charting.SingleValueDataPoint.Value":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.SingleValueDataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Value", "Double");
-                xamlMember.Getter = get_127_SingleValueDataPoint_Value;
-                xamlMember.Setter = set_127_SingleValueDataPoint_Value;
+                xamlMember.Getter = get_84_SingleValueDataPoint_Value;
+                xamlMember.Setter = set_84_SingleValueDataPoint_Value;
                 break;
             case "Telerik.Charting.DataPoint.Label":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.DataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Label", "Object");
-                xamlMember.Getter = get_128_DataPoint_Label;
-                xamlMember.Setter = set_128_DataPoint_Label;
+                xamlMember.Getter = get_85_DataPoint_Label;
+                xamlMember.Setter = set_85_DataPoint_Label;
                 break;
             case "Telerik.Charting.DataPoint.DataItem":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.DataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DataItem", "Object");
-                xamlMember.Getter = get_129_DataPoint_DataItem;
+                xamlMember.Getter = get_86_DataPoint_DataItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Charting.DataPoint.IsSelected":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.DataPoint");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.Getter = get_130_DataPoint_IsSelected;
-                xamlMember.Setter = set_130_DataPoint_IsSelected;
+                xamlMember.Getter = get_87_DataPoint_IsSelected;
+                xamlMember.Setter = set_87_DataPoint_IsSelected;
                 break;
             case "Telerik.Core.Node.Presenter":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Presenter", "Telerik.Core.IElementPresenter");
-                xamlMember.Getter = get_131_Node_Presenter;
+                xamlMember.Getter = get_88_Node_Presenter;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.IsArrangeValid":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsArrangeValid", "Boolean");
-                xamlMember.Getter = get_132_Node_IsArrangeValid;
+                xamlMember.Getter = get_89_Node_IsArrangeValid;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.NodeState":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "NodeState", "Telerik.Core.NodeState");
-                xamlMember.Getter = get_133_Node_NodeState;
+                xamlMember.Getter = get_90_Node_NodeState;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.Index":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Index", "Int32");
-                xamlMember.Getter = get_134_Node_Index;
+                xamlMember.Getter = get_91_Node_Index;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.CollectionIndex":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CollectionIndex", "Int32");
-                xamlMember.Getter = get_135_Node_CollectionIndex;
+                xamlMember.Getter = get_92_Node_CollectionIndex;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.IsTreeLoaded":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsTreeLoaded", "Boolean");
-                xamlMember.Getter = get_136_Node_IsTreeLoaded;
+                xamlMember.Getter = get_93_Node_IsTreeLoaded;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.LayoutSlot":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "LayoutSlot", "Telerik.Core.RadRect");
-                xamlMember.Getter = get_137_Node_LayoutSlot;
+                xamlMember.Getter = get_94_Node_LayoutSlot;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.Core.Node.Parent":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Core.Node");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Parent", "Telerik.Core.Element");
-                xamlMember.Getter = get_138_Node_Parent;
+                xamlMember.Getter = get_95_Node_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.HighlightInnerRadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "HighlightInnerRadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_139_PieSeries_HighlightInnerRadiusFactor;
-                xamlMember.Setter = set_139_PieSeries_HighlightInnerRadiusFactor;
+                xamlMember.Getter = get_96_PieSeries_HighlightInnerRadiusFactor;
+                xamlMember.Setter = set_96_PieSeries_HighlightInnerRadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.HighlightBrush":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "HighlightBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_140_PieSeries_HighlightBrush;
-                xamlMember.Setter = set_140_PieSeries_HighlightBrush;
+                xamlMember.Getter = get_97_PieSeries_HighlightBrush;
+                xamlMember.Setter = set_97_PieSeries_HighlightBrush;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.DefaultSegmentStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DefaultSegmentStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_141_PieSeries_DefaultSegmentStyle;
-                xamlMember.Setter = set_141_PieSeries_DefaultSegmentStyle;
+                xamlMember.Getter = get_98_PieSeries_DefaultSegmentStyle;
+                xamlMember.Setter = set_98_PieSeries_DefaultSegmentStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SelectedPointOffset":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SelectedPointOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_142_PieSeries_SelectedPointOffset;
-                xamlMember.Setter = set_142_PieSeries_SelectedPointOffset;
+                xamlMember.Getter = get_99_PieSeries_SelectedPointOffset;
+                xamlMember.Setter = set_99_PieSeries_SelectedPointOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.ValueBinding":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ValueBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_PieSeries_ValueBinding;
-                xamlMember.Setter = set_143_PieSeries_ValueBinding;
+                xamlMember.Getter = get_100_PieSeries_ValueBinding;
+                xamlMember.Setter = set_100_PieSeries_ValueBinding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.LegendTitleBinding":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "LegendTitleBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_144_PieSeries_LegendTitleBinding;
-                xamlMember.Setter = set_144_PieSeries_LegendTitleBinding;
+                xamlMember.Getter = get_101_PieSeries_LegendTitleBinding;
+                xamlMember.Setter = set_101_PieSeries_LegendTitleBinding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.IsVisibleInLegendBinding":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsVisibleInLegendBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_PieSeries_IsVisibleInLegendBinding;
-                xamlMember.Setter = set_145_PieSeries_IsVisibleInLegendBinding;
+                xamlMember.Getter = get_102_PieSeries_IsVisibleInLegendBinding;
+                xamlMember.Setter = set_102_PieSeries_IsVisibleInLegendBinding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SegmentStyleSelector":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SegmentStyleSelector", "Windows.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_146_PieSeries_SegmentStyleSelector;
-                xamlMember.Setter = set_146_PieSeries_SegmentStyleSelector;
+                xamlMember.Getter = get_103_PieSeries_SegmentStyleSelector;
+                xamlMember.Setter = set_103_PieSeries_SegmentStyleSelector;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.RadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "RadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_147_PieSeries_RadiusFactor;
-                xamlMember.Setter = set_147_PieSeries_RadiusFactor;
+                xamlMember.Getter = get_104_PieSeries_RadiusFactor;
+                xamlMember.Setter = set_104_PieSeries_RadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SegmentStyles":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SegmentStyles", "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>");
-                xamlMember.Getter = get_148_PieSeries_SegmentStyles;
+                xamlMember.Getter = get_105_PieSeries_SegmentStyles;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PieSeries.AngleRange":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AngleRange", "Telerik.Charting.AngleRange");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_149_PieSeries_AngleRange;
-                xamlMember.Setter = set_149_PieSeries_AngleRange;
+                xamlMember.Getter = get_106_PieSeries_AngleRange;
+                xamlMember.Setter = set_106_PieSeries_AngleRange;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.IsSelected":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_150_ChartSeries_IsSelected;
-                xamlMember.Setter = set_150_ChartSeries_IsSelected;
+                xamlMember.Getter = get_107_ChartSeries_IsSelected;
+                xamlMember.Setter = set_107_ChartSeries_IsSelected;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.AllowSelect":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AllowSelect", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_ChartSeries_AllowSelect;
-                xamlMember.Setter = set_151_ChartSeries_AllowSelect;
+                xamlMember.Getter = get_108_ChartSeries_AllowSelect;
+                xamlMember.Setter = set_108_ChartSeries_AllowSelect;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.PaletteIndex":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PaletteIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_ChartSeries_PaletteIndex;
-                xamlMember.Setter = set_152_ChartSeries_PaletteIndex;
+                xamlMember.Getter = get_109_ChartSeries_PaletteIndex;
+                xamlMember.Setter = set_109_ChartSeries_PaletteIndex;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.LabelDefinitions":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "LabelDefinitions", "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>");
-                xamlMember.Getter = get_153_ChartSeries_LabelDefinitions;
+                xamlMember.Getter = get_110_ChartSeries_LabelDefinitions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.HorizontalAlignment":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "HorizontalAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_ChartSeriesLabelDefinition_HorizontalAlignment;
-                xamlMember.Setter = set_154_ChartSeriesLabelDefinition_HorizontalAlignment;
+                xamlMember.Getter = get_111_ChartSeriesLabelDefinition_HorizontalAlignment;
+                xamlMember.Setter = set_111_ChartSeriesLabelDefinition_HorizontalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.VerticalAlignment":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "VerticalAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_155_ChartSeriesLabelDefinition_VerticalAlignment;
-                xamlMember.Setter = set_155_ChartSeriesLabelDefinition_VerticalAlignment;
+                xamlMember.Getter = get_112_ChartSeriesLabelDefinition_VerticalAlignment;
+                xamlMember.Setter = set_112_ChartSeriesLabelDefinition_VerticalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.Template":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Template", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_ChartSeriesLabelDefinition_Template;
-                xamlMember.Setter = set_156_ChartSeriesLabelDefinition_Template;
+                xamlMember.Getter = get_113_ChartSeriesLabelDefinition_Template;
+                xamlMember.Setter = set_113_ChartSeriesLabelDefinition_Template;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.Binding":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Binding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_ChartSeriesLabelDefinition_Binding;
-                xamlMember.Setter = set_157_ChartSeriesLabelDefinition_Binding;
+                xamlMember.Getter = get_114_ChartSeriesLabelDefinition_Binding;
+                xamlMember.Setter = set_114_ChartSeriesLabelDefinition_Binding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.Format":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Format", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_ChartSeriesLabelDefinition_Format;
-                xamlMember.Setter = set_158_ChartSeriesLabelDefinition_Format;
+                xamlMember.Getter = get_115_ChartSeriesLabelDefinition_Format;
+                xamlMember.Setter = set_115_ChartSeriesLabelDefinition_Format;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.Margin":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Margin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_ChartSeriesLabelDefinition_Margin;
-                xamlMember.Setter = set_159_ChartSeriesLabelDefinition_Margin;
+                xamlMember.Getter = get_116_ChartSeriesLabelDefinition_Margin;
+                xamlMember.Setter = set_116_ChartSeriesLabelDefinition_Margin;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.TemplateSelector":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "TemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_160_ChartSeriesLabelDefinition_TemplateSelector;
-                xamlMember.Setter = set_160_ChartSeriesLabelDefinition_TemplateSelector;
+                xamlMember.Getter = get_117_ChartSeriesLabelDefinition_TemplateSelector;
+                xamlMember.Setter = set_117_ChartSeriesLabelDefinition_TemplateSelector;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.DefaultVisualStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DefaultVisualStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_161_ChartSeriesLabelDefinition_DefaultVisualStyle;
-                xamlMember.Setter = set_161_ChartSeriesLabelDefinition_DefaultVisualStyle;
+                xamlMember.Getter = get_118_ChartSeriesLabelDefinition_DefaultVisualStyle;
+                xamlMember.Setter = set_118_ChartSeriesLabelDefinition_DefaultVisualStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition.Strategy":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Strategy", "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_162_ChartSeriesLabelDefinition_Strategy;
-                xamlMember.Setter = set_162_ChartSeriesLabelDefinition_Strategy;
+                xamlMember.Getter = get_119_ChartSeriesLabelDefinition_Strategy;
+                xamlMember.Setter = set_119_ChartSeriesLabelDefinition_Strategy;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.IsSelectedBinding":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsSelectedBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_163_ChartSeries_IsSelectedBinding;
-                xamlMember.Setter = set_163_ChartSeries_IsSelectedBinding;
+                xamlMember.Getter = get_120_ChartSeries_IsSelectedBinding;
+                xamlMember.Setter = set_120_ChartSeries_IsSelectedBinding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.ShowLabels":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShowLabels", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_164_ChartSeries_ShowLabels;
-                xamlMember.Setter = set_164_ChartSeries_ShowLabels;
+                xamlMember.Getter = get_121_ChartSeries_ShowLabels;
+                xamlMember.Setter = set_121_ChartSeries_ShowLabels;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.DisplayName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DisplayName", "String");
-                xamlMember.Getter = get_165_ChartSeries_DisplayName;
-                xamlMember.Setter = set_165_ChartSeries_DisplayName;
+                xamlMember.Getter = get_122_ChartSeries_DisplayName;
+                xamlMember.Setter = set_122_ChartSeries_DisplayName;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.ClipToPlotArea":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ClipToPlotArea", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_166_ChartSeries_ClipToPlotArea;
-                xamlMember.Setter = set_166_ChartSeries_ClipToPlotArea;
+                xamlMember.Getter = get_123_ChartSeries_ClipToPlotArea;
+                xamlMember.Setter = set_123_ChartSeries_ClipToPlotArea;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.ItemsSource":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ItemsSource", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_ChartSeries_ItemsSource;
-                xamlMember.Setter = set_167_ChartSeries_ItemsSource;
+                xamlMember.Getter = get_124_ChartSeries_ItemsSource;
+                xamlMember.Setter = set_124_ChartSeries_ItemsSource;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartSeries.ActualPaletteIndex":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ActualPaletteIndex", "Int32");
-                xamlMember.Getter = get_168_ChartSeries_ActualPaletteIndex;
+                xamlMember.Getter = get_125_ChartSeries_ActualPaletteIndex;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter.ZIndex":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ZIndex", "Int32");
-                xamlMember.Getter = get_169_ChartElementPresenter_ZIndex;
-                xamlMember.Setter = set_169_ChartElementPresenter_ZIndex;
+                xamlMember.Getter = get_126_ChartElementPresenter_ZIndex;
+                xamlMember.Setter = set_126_ChartElementPresenter_ZIndex;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter.Chart":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Chart", "Telerik.UI.Xaml.Controls.Chart.RadChartBase");
-                xamlMember.Getter = get_170_ChartElementPresenter_Chart;
+                xamlMember.Getter = get_127_ChartElementPresenter_Chart;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Telerik.UI.Xaml.Controls.RadControl.CurrentVisualState":
+                userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl");
+                xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CurrentVisualState", "String");
+                xamlMember.Getter = get_128_RadControl_CurrentVisualState;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.ClipToBounds":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ClipToBounds", "Boolean");
-                xamlMember.Getter = get_171_RadChartBase_ClipToBounds;
-                xamlMember.Setter = set_171_RadChartBase_ClipToBounds;
+                xamlMember.Getter = get_129_RadChartBase_ClipToBounds;
+                xamlMember.Setter = set_129_RadChartBase_ClipToBounds;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.Palette":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Palette", "Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_172_RadChartBase_Palette;
-                xamlMember.Setter = set_172_RadChartBase_Palette;
+                xamlMember.Getter = get_130_RadChartBase_Palette;
+                xamlMember.Setter = set_130_RadChartBase_Palette;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.SeriesProvider":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SeriesProvider", "Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_RadChartBase_SeriesProvider;
-                xamlMember.Setter = set_173_RadChartBase_SeriesProvider;
+                xamlMember.Getter = get_131_RadChartBase_SeriesProvider;
+                xamlMember.Setter = set_131_RadChartBase_SeriesProvider;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.EmptyContent":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "EmptyContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_RadChartBase_EmptyContent;
-                xamlMember.Setter = set_174_RadChartBase_EmptyContent;
+                xamlMember.Getter = get_132_RadChartBase_EmptyContent;
+                xamlMember.Setter = set_132_RadChartBase_EmptyContent;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.EmptyContentTemplate":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "EmptyContentTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_175_RadChartBase_EmptyContentTemplate;
-                xamlMember.Setter = set_175_RadChartBase_EmptyContentTemplate;
+                xamlMember.Getter = get_133_RadChartBase_EmptyContentTemplate;
+                xamlMember.Setter = set_133_RadChartBase_EmptyContentTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.PlotAreaStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PlotAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_176_RadChartBase_PlotAreaStyle;
-                xamlMember.Setter = set_176_RadChartBase_PlotAreaStyle;
+                xamlMember.Getter = get_134_RadChartBase_PlotAreaStyle;
+                xamlMember.Setter = set_134_RadChartBase_PlotAreaStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.PaletteName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PaletteName", "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_177_RadChartBase_PaletteName;
-                xamlMember.Setter = set_177_RadChartBase_PaletteName;
+                xamlMember.Getter = get_135_RadChartBase_PaletteName;
+                xamlMember.Setter = set_135_RadChartBase_PaletteName;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.SelectionPalette":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SelectionPalette", "Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_RadChartBase_SelectionPalette;
-                xamlMember.Setter = set_178_RadChartBase_SelectionPalette;
+                xamlMember.Getter = get_136_RadChartBase_SelectionPalette;
+                xamlMember.Setter = set_136_RadChartBase_SelectionPalette;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.SelectionPaletteName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "SelectionPaletteName", "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_179_RadChartBase_SelectionPaletteName;
-                xamlMember.Setter = set_179_RadChartBase_SelectionPaletteName;
+                xamlMember.Getter = get_137_RadChartBase_SelectionPaletteName;
+                xamlMember.Setter = set_137_RadChartBase_SelectionPaletteName;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.Behaviors":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Behaviors", "Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection");
-                xamlMember.Getter = get_180_RadChartBase_Behaviors;
+                xamlMember.Getter = get_138_RadChartBase_Behaviors;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartBehavior.Chart":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartBehavior");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Chart", "Telerik.UI.Xaml.Controls.Chart.RadChartBase");
-                xamlMember.Getter = get_181_ChartBehavior_Chart;
+                xamlMember.Getter = get_139_ChartBehavior_Chart;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.Zoom":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Zoom", "Windows.Foundation.Size");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_182_RadChartBase_Zoom;
-                xamlMember.Setter = set_182_RadChartBase_Zoom;
+                xamlMember.Getter = get_140_RadChartBase_Zoom;
+                xamlMember.Setter = set_140_RadChartBase_Zoom;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.MaxZoom":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MaxZoom", "Windows.Foundation.Size");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_RadChartBase_MaxZoom;
-                xamlMember.Setter = set_183_RadChartBase_MaxZoom;
+                xamlMember.Getter = get_141_RadChartBase_MaxZoom;
+                xamlMember.Setter = set_141_RadChartBase_MaxZoom;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.MinZoom":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "MinZoom", "Windows.Foundation.Size");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_RadChartBase_MinZoom;
-                xamlMember.Setter = set_184_RadChartBase_MinZoom;
+                xamlMember.Getter = get_142_RadChartBase_MinZoom;
+                xamlMember.Setter = set_142_RadChartBase_MinZoom;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.PlotOrigin":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PlotOrigin", "Windows.Foundation.Point");
-                xamlMember.Getter = get_185_RadChartBase_PlotOrigin;
+                xamlMember.Getter = get_143_RadChartBase_PlotOrigin;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.PlotAreaClip":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PlotAreaClip", "Telerik.Core.RadRect");
-                xamlMember.Getter = get_186_RadChartBase_PlotAreaClip;
+                xamlMember.Getter = get_144_RadChartBase_PlotAreaClip;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadChartBase.ScrollOffset":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ScrollOffset", "Windows.Foundation.Point");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_187_RadChartBase_ScrollOffset;
-                xamlMember.Setter = set_187_RadChartBase_ScrollOffset;
+                xamlMember.Getter = get_145_RadChartBase_ScrollOffset;
+                xamlMember.Setter = set_145_RadChartBase_ScrollOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.DoughnutSeries.InnerRadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.DoughnutSeries");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "InnerRadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_188_DoughnutSeries_InnerRadiusFactor;
-                xamlMember.Setter = set_188_DoughnutSeries_InnerRadiusFactor;
+                xamlMember.Getter = get_146_DoughnutSeries_InnerRadiusFactor;
+                xamlMember.Setter = set_146_DoughnutSeries_InnerRadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding.PropertyName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "PropertyName", "String");
-                xamlMember.Getter = get_189_PropertyNameDataPointBinding_PropertyName;
-                xamlMember.Setter = set_189_PropertyNameDataPointBinding_PropertyName;
+                xamlMember.Getter = get_147_PropertyNameDataPointBinding_PropertyName;
+                xamlMember.Setter = set_147_PropertyNameDataPointBinding_PropertyName;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.Foreground":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Foreground", "Telerik.UI.Drawing.D2DBrush");
-                xamlMember.Getter = get_190_D2DTextStyle_Foreground;
-                xamlMember.Setter = set_190_D2DTextStyle_Foreground;
+                xamlMember.Getter = get_148_D2DTextStyle_Foreground;
+                xamlMember.Setter = set_148_D2DTextStyle_Foreground;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.FontWeight":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontWeight", "Telerik.UI.Drawing.FontWeightName");
-                xamlMember.Getter = get_191_D2DTextStyle_FontWeight;
-                xamlMember.Setter = set_191_D2DTextStyle_FontWeight;
+                xamlMember.Getter = get_149_D2DTextStyle_FontWeight;
+                xamlMember.Setter = set_149_D2DTextStyle_FontWeight;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.FontSize":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_192_D2DTextStyle_FontSize;
-                xamlMember.Setter = set_192_D2DTextStyle_FontSize;
+                xamlMember.Getter = get_150_D2DTextStyle_FontSize;
+                xamlMember.Setter = set_150_D2DTextStyle_FontSize;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.FontLocale":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontLocale", "String");
-                xamlMember.Getter = get_193_D2DTextStyle_FontLocale;
-                xamlMember.Setter = set_193_D2DTextStyle_FontLocale;
+                xamlMember.Getter = get_151_D2DTextStyle_FontLocale;
+                xamlMember.Setter = set_151_D2DTextStyle_FontLocale;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.FontName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontName", "String");
-                xamlMember.Getter = get_194_D2DTextStyle_FontName;
-                xamlMember.Setter = set_194_D2DTextStyle_FontName;
+                xamlMember.Getter = get_152_D2DTextStyle_FontName;
+                xamlMember.Setter = set_152_D2DTextStyle_FontName;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.TextAlignment":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "TextAlignment", "Windows.UI.Xaml.TextAlignment");
-                xamlMember.Getter = get_195_D2DTextStyle_TextAlignment;
-                xamlMember.Setter = set_195_D2DTextStyle_TextAlignment;
+                xamlMember.Getter = get_153_D2DTextStyle_TextAlignment;
+                xamlMember.Setter = set_153_D2DTextStyle_TextAlignment;
                 break;
             case "Telerik.UI.Drawing.D2DTextStyle.FontStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DTextStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_196_D2DTextStyle_FontStyle;
-                xamlMember.Setter = set_196_D2DTextStyle_FontStyle;
+                xamlMember.Getter = get_154_D2DTextStyle_FontStyle;
+                xamlMember.Setter = set_154_D2DTextStyle_FontStyle;
                 break;
             case "Telerik.UI.Drawing.D2DShapeStyle.StrokeThickness":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DShapeStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
-                xamlMember.Getter = get_197_D2DShapeStyle_StrokeThickness;
-                xamlMember.Setter = set_197_D2DShapeStyle_StrokeThickness;
+                xamlMember.Getter = get_155_D2DShapeStyle_StrokeThickness;
+                xamlMember.Setter = set_155_D2DShapeStyle_StrokeThickness;
                 break;
             case "Telerik.UI.Drawing.D2DShapeStyle.Stroke":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DShapeStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Stroke", "Telerik.UI.Drawing.D2DBrush");
-                xamlMember.Getter = get_198_D2DShapeStyle_Stroke;
-                xamlMember.Setter = set_198_D2DShapeStyle_Stroke;
+                xamlMember.Getter = get_156_D2DShapeStyle_Stroke;
+                xamlMember.Setter = set_156_D2DShapeStyle_Stroke;
                 break;
             case "Telerik.UI.Drawing.D2DShapeStyle.Foreground":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DShapeStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Foreground", "Telerik.UI.Drawing.D2DBrush");
-                xamlMember.Getter = get_199_D2DShapeStyle_Foreground;
-                xamlMember.Setter = set_199_D2DShapeStyle_Foreground;
+                xamlMember.Getter = get_157_D2DShapeStyle_Foreground;
+                xamlMember.Setter = set_157_D2DShapeStyle_Foreground;
                 break;
             case "Telerik.UI.Drawing.D2DShapeStyle.Fill":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DShapeStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Fill", "Telerik.UI.Drawing.D2DBrush");
-                xamlMember.Getter = get_200_D2DShapeStyle_Fill;
-                xamlMember.Setter = set_200_D2DShapeStyle_Fill;
+                xamlMember.Getter = get_158_D2DShapeStyle_Fill;
+                xamlMember.Setter = set_158_D2DShapeStyle_Fill;
                 break;
             case "Telerik.UI.Drawing.D2DSolidColorBrush.Color":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Drawing.D2DSolidColorBrush");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Color", "Windows.UI.Color");
-                xamlMember.Getter = get_201_D2DSolidColorBrush_Color;
-                xamlMember.Setter = set_201_D2DSolidColorBrush_Color;
+                xamlMember.Getter = get_159_D2DSolidColorBrush_Color;
+                xamlMember.Setter = set_159_D2DSolidColorBrush_Color;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Format":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Format", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_202_ChartAnnotationLabelDefinition_Format;
-                xamlMember.Setter = set_202_ChartAnnotationLabelDefinition_Format;
+                xamlMember.Getter = get_160_ChartAnnotationLabelDefinition_Format;
+                xamlMember.Setter = set_160_ChartAnnotationLabelDefinition_Format;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Template":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Template", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_203_ChartAnnotationLabelDefinition_Template;
-                xamlMember.Setter = set_203_ChartAnnotationLabelDefinition_Template;
+                xamlMember.Getter = get_161_ChartAnnotationLabelDefinition_Template;
+                xamlMember.Setter = set_161_ChartAnnotationLabelDefinition_Template;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.DefaultVisualStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DefaultVisualStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_204_ChartAnnotationLabelDefinition_DefaultVisualStyle;
-                xamlMember.Setter = set_204_ChartAnnotationLabelDefinition_DefaultVisualStyle;
+                xamlMember.Getter = get_162_ChartAnnotationLabelDefinition_DefaultVisualStyle;
+                xamlMember.Setter = set_162_ChartAnnotationLabelDefinition_DefaultVisualStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Location":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Location", "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_205_ChartAnnotationLabelDefinition_Location;
-                xamlMember.Setter = set_205_ChartAnnotationLabelDefinition_Location;
+                xamlMember.Getter = get_163_ChartAnnotationLabelDefinition_Location;
+                xamlMember.Setter = set_163_ChartAnnotationLabelDefinition_Location;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.HorizontalAlignment":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "HorizontalAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_206_ChartAnnotationLabelDefinition_HorizontalAlignment;
-                xamlMember.Setter = set_206_ChartAnnotationLabelDefinition_HorizontalAlignment;
+                xamlMember.Getter = get_164_ChartAnnotationLabelDefinition_HorizontalAlignment;
+                xamlMember.Setter = set_164_ChartAnnotationLabelDefinition_HorizontalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.VerticalAlignment":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "VerticalAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_207_ChartAnnotationLabelDefinition_VerticalAlignment;
-                xamlMember.Setter = set_207_ChartAnnotationLabelDefinition_VerticalAlignment;
+                xamlMember.Getter = get_165_ChartAnnotationLabelDefinition_VerticalAlignment;
+                xamlMember.Setter = set_165_ChartAnnotationLabelDefinition_VerticalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.HorizontalOffset":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_208_ChartAnnotationLabelDefinition_HorizontalOffset;
-                xamlMember.Setter = set_208_ChartAnnotationLabelDefinition_HorizontalOffset;
+                xamlMember.Getter = get_166_ChartAnnotationLabelDefinition_HorizontalOffset;
+                xamlMember.Setter = set_166_ChartAnnotationLabelDefinition_HorizontalOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.VerticalOffset":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_209_ChartAnnotationLabelDefinition_VerticalOffset;
-                xamlMember.Setter = set_209_ChartAnnotationLabelDefinition_VerticalOffset;
+                xamlMember.Getter = get_167_ChartAnnotationLabelDefinition_VerticalOffset;
+                xamlMember.Setter = set_167_ChartAnnotationLabelDefinition_VerticalOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.Orientation":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_210_HexLayoutDefinitionBase_Orientation;
-                xamlMember.Setter = set_210_HexLayoutDefinitionBase_Orientation;
+                xamlMember.Getter = get_168_HexLayoutDefinitionBase_Orientation;
+                xamlMember.Setter = set_168_HexLayoutDefinitionBase_Orientation;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ItemLength":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ItemLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_211_HexLayoutDefinitionBase_ItemLength;
-                xamlMember.Setter = set_211_HexLayoutDefinitionBase_ItemLength;
+                xamlMember.Getter = get_169_HexLayoutDefinitionBase_ItemLength;
+                xamlMember.Setter = set_169_HexLayoutDefinitionBase_ItemLength;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ItemsSpacing":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ItemsSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_212_HexLayoutDefinitionBase_ItemsSpacing;
-                xamlMember.Setter = set_212_HexLayoutDefinitionBase_ItemsSpacing;
+                xamlMember.Getter = get_170_HexLayoutDefinitionBase_ItemsSpacing;
+                xamlMember.Setter = set_170_HexLayoutDefinitionBase_ItemsSpacing;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ViewPortExtension":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ViewPortExtension", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_213_HexLayoutDefinitionBase_ViewPortExtension;
-                xamlMember.Setter = set_213_HexLayoutDefinitionBase_ViewPortExtension;
+                xamlMember.Getter = get_171_HexLayoutDefinitionBase_ViewPortExtension;
+                xamlMember.Setter = set_171_HexLayoutDefinitionBase_ViewPortExtension;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontFamily":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_214_HighlightStyle_FontFamily;
-                xamlMember.Setter = set_214_HighlightStyle_FontFamily;
+                xamlMember.Getter = get_172_HighlightStyle_FontFamily;
+                xamlMember.Setter = set_172_HighlightStyle_FontFamily;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontWeight":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontWeight", "Telerik.UI.Xaml.Controls.Input.FontWeightName");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_215_HighlightStyle_FontWeight;
-                xamlMember.Setter = set_215_HighlightStyle_FontWeight;
+                xamlMember.Getter = get_173_HighlightStyle_FontWeight;
+                xamlMember.Setter = set_173_HighlightStyle_FontWeight;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_216_HighlightStyle_FontStyle;
-                xamlMember.Setter = set_216_HighlightStyle_FontStyle;
+                xamlMember.Getter = get_174_HighlightStyle_FontStyle;
+                xamlMember.Setter = set_174_HighlightStyle_FontStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.Foreground":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_217_HighlightStyle_Foreground;
-                xamlMember.Setter = set_217_HighlightStyle_Foreground;
+                xamlMember.Getter = get_175_HighlightStyle_Foreground;
+                xamlMember.Setter = set_175_HighlightStyle_Foreground;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontSize":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_218_HighlightStyle_FontSize;
-                xamlMember.Setter = set_218_HighlightStyle_FontSize;
+                xamlMember.Getter = get_176_HighlightStyle_FontSize;
+                xamlMember.Setter = set_176_HighlightStyle_FontSize;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle.ContentStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.CalendarCellStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ContentStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_219_CalendarCellStyle_ContentStyle;
-                xamlMember.Setter = set_219_CalendarCellStyle_ContentStyle;
+                xamlMember.Getter = get_177_CalendarCellStyle_ContentStyle;
+                xamlMember.Setter = set_177_CalendarCellStyle_ContentStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle.DecorationStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.CalendarCellStyle");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "DecorationStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_220_CalendarCellStyle_DecorationStyle;
-                xamlMember.Setter = set_220_CalendarCellStyle_DecorationStyle;
+                xamlMember.Getter = get_178_CalendarCellStyle_DecorationStyle;
+                xamlMember.Setter = set_178_CalendarCellStyle_DecorationStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.Items":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>");
-                xamlMember.Getter = get_221_RadRadialMenu_Items;
+                xamlMember.Getter = get_179_RadRadialMenu_Items;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ChildItems":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ChildItems", "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>");
-                xamlMember.Getter = get_222_RadialMenuItem_ChildItems;
+                xamlMember.Getter = get_180_RadialMenuItem_ChildItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ToolTipContent":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ToolTipContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_223_RadialMenuItem_ToolTipContent;
-                xamlMember.Setter = set_223_RadialMenuItem_ToolTipContent;
+                xamlMember.Getter = get_181_RadialMenuItem_ToolTipContent;
+                xamlMember.Setter = set_181_RadialMenuItem_ToolTipContent;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.CommandParameter":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_224_RadialMenuItem_CommandParameter;
-                xamlMember.Setter = set_224_RadialMenuItem_CommandParameter;
+                xamlMember.Getter = get_182_RadialMenuItem_CommandParameter;
+                xamlMember.Setter = set_182_RadialMenuItem_CommandParameter;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.IsEnabled":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_225_RadialMenuItem_IsEnabled;
-                xamlMember.Setter = set_225_RadialMenuItem_IsEnabled;
+                xamlMember.Getter = get_183_RadialMenuItem_IsEnabled;
+                xamlMember.Setter = set_183_RadialMenuItem_IsEnabled;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.Command":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_226_RadialMenuItem_Command;
-                xamlMember.Setter = set_226_RadialMenuItem_Command;
+                xamlMember.Getter = get_184_RadialMenuItem_Command;
+                xamlMember.Setter = set_184_RadialMenuItem_Command;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ParentItem":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ParentItem", "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
-                xamlMember.Getter = get_227_RadialMenuItem_ParentItem;
+                xamlMember.Getter = get_185_RadialMenuItem_ParentItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.IsSelected":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_228_RadialMenuItem_IsSelected;
-                xamlMember.Setter = set_228_RadialMenuItem_IsSelected;
+                xamlMember.Getter = get_186_RadialMenuItem_IsSelected;
+                xamlMember.Setter = set_186_RadialMenuItem_IsSelected;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.GroupName":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "GroupName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_229_RadialMenuItem_GroupName;
-                xamlMember.Setter = set_229_RadialMenuItem_GroupName;
+                xamlMember.Getter = get_187_RadialMenuItem_GroupName;
+                xamlMember.Setter = set_187_RadialMenuItem_GroupName;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.Selectable":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Selectable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_230_RadialMenuItem_Selectable;
-                xamlMember.Setter = set_230_RadialMenuItem_Selectable;
+                xamlMember.Getter = get_188_RadialMenuItem_Selectable;
+                xamlMember.Setter = set_188_RadialMenuItem_Selectable;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.Deselectable":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Deselectable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_231_RadialMenuItem_Deselectable;
-                xamlMember.Setter = set_231_RadialMenuItem_Deselectable;
+                xamlMember.Getter = get_189_RadialMenuItem_Deselectable;
+                xamlMember.Setter = set_189_RadialMenuItem_Deselectable;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.Header":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_232_RadialMenuItem_Header;
-                xamlMember.Setter = set_232_RadialMenuItem_Header;
+                xamlMember.Getter = get_190_RadialMenuItem_Header;
+                xamlMember.Setter = set_190_RadialMenuItem_Header;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.IconContent":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IconContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_233_RadialMenuItem_IconContent;
-                xamlMember.Setter = set_233_RadialMenuItem_IconContent;
+                xamlMember.Getter = get_191_RadialMenuItem_IconContent;
+                xamlMember.Setter = set_191_RadialMenuItem_IconContent;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ContentSectorBackground":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ContentSectorBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_234_RadialMenuItem_ContentSectorBackground;
-                xamlMember.Setter = set_234_RadialMenuItem_ContentSectorBackground;
+                xamlMember.Getter = get_192_RadialMenuItem_ContentSectorBackground;
+                xamlMember.Setter = set_192_RadialMenuItem_ContentSectorBackground;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.ShowToolTip":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ShowToolTip", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_235_RadRadialMenu_ShowToolTip;
-                xamlMember.Setter = set_235_RadRadialMenu_ShowToolTip;
+                xamlMember.Getter = get_193_RadRadialMenu_ShowToolTip;
+                xamlMember.Setter = set_193_RadRadialMenu_ShowToolTip;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.IsOpen":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_236_RadRadialMenu_IsOpen;
-                xamlMember.Setter = set_236_RadRadialMenu_IsOpen;
+                xamlMember.Getter = get_194_RadRadialMenu_IsOpen;
+                xamlMember.Setter = set_194_RadRadialMenu_IsOpen;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.StartAngle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_237_RadRadialMenu_StartAngle;
-                xamlMember.Setter = set_237_RadRadialMenu_StartAngle;
+                xamlMember.Getter = get_195_RadRadialMenu_StartAngle;
+                xamlMember.Setter = set_195_RadRadialMenu_StartAngle;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.InnerNavigationRadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "InnerNavigationRadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_238_RadRadialMenu_InnerNavigationRadiusFactor;
-                xamlMember.Setter = set_238_RadRadialMenu_InnerNavigationRadiusFactor;
+                xamlMember.Getter = get_196_RadRadialMenu_InnerNavigationRadiusFactor;
+                xamlMember.Setter = set_196_RadRadialMenu_InnerNavigationRadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.InnerRadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "InnerRadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_239_RadRadialMenu_InnerRadiusFactor;
-                xamlMember.Setter = set_239_RadRadialMenu_InnerRadiusFactor;
+                xamlMember.Getter = get_197_RadRadialMenu_InnerRadiusFactor;
+                xamlMember.Setter = set_197_RadRadialMenu_InnerRadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.OuterRadiusFactor":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "OuterRadiusFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_240_RadRadialMenu_OuterRadiusFactor;
-                xamlMember.Setter = set_240_RadRadialMenu_OuterRadiusFactor;
+                xamlMember.Getter = get_198_RadRadialMenu_OuterRadiusFactor;
+                xamlMember.Setter = set_198_RadRadialMenu_OuterRadiusFactor;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.ContentMenuBackgroundStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "ContentMenuBackgroundStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_241_RadRadialMenu_ContentMenuBackgroundStyle;
-                xamlMember.Setter = set_241_RadRadialMenu_ContentMenuBackgroundStyle;
+                xamlMember.Getter = get_199_RadRadialMenu_ContentMenuBackgroundStyle;
+                xamlMember.Setter = set_199_RadRadialMenu_ContentMenuBackgroundStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.NavigationMenuBackgroundStyle":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "NavigationMenuBackgroundStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_242_RadRadialMenu_NavigationMenuBackgroundStyle;
-                xamlMember.Setter = set_242_RadRadialMenu_NavigationMenuBackgroundStyle;
+                xamlMember.Getter = get_200_RadRadialMenu_NavigationMenuBackgroundStyle;
+                xamlMember.Setter = set_200_RadRadialMenu_NavigationMenuBackgroundStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.CommandService":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "CommandService", "Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService");
-                xamlMember.Getter = get_243_RadRadialMenu_CommandService;
+                xamlMember.Getter = get_201_RadRadialMenu_CommandService;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.Commands":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Commands", "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>");
-                xamlMember.Getter = get_244_RadRadialMenu_Commands;
+                xamlMember.Getter = get_202_RadRadialMenu_Commands;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>.Owner":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Owner", "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
-                xamlMember.Getter = get_245_AttachableObject_Owner;
+                xamlMember.Getter = get_203_AttachableObject_Owner;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.TargetElement":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "TargetElement", "Windows.UI.Xaml.FrameworkElement");
-                xamlMember.Getter = get_246_RadRadialMenu_TargetElement;
+                xamlMember.Getter = get_204_RadRadialMenu_TargetElement;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior.AttachTriggers":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "AttachTriggers", "Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_247_RadialMenuTriggerBehavior_AttachTriggers;
-                xamlMember.Setter = set_247_RadialMenuTriggerBehavior_AttachTriggers;
+                xamlMember.Getter = get_205_RadialMenuTriggerBehavior_AttachTriggers;
+                xamlMember.Setter = set_205_RadialMenuTriggerBehavior_AttachTriggers;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>.Owner":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Owner", "Windows.UI.Xaml.FrameworkElement");
-                xamlMember.Getter = get_248_AttachableObject_Owner;
+                xamlMember.Getter = get_206_AttachableObject_Owner;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter.Animation":
                 userType = (global::NestedWorld.NestedWorld_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter");
                 xamlMember = new global::NestedWorld.NestedWorld_XamlTypeInfo.XamlMember(this, "Animation", "Windows.UI.Xaml.Media.Animation.Storyboard");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_249_BusyIndicatorAnimationAdapter_Animation;
-                xamlMember.Setter = set_249_BusyIndicatorAnimationAdapter_Animation;
+                xamlMember.Getter = get_207_BusyIndicatorAnimationAdapter_Animation;
+                xamlMember.Setter = set_207_BusyIndicatorAnimationAdapter_Animation;
                 break;
             }
             return xamlMember;

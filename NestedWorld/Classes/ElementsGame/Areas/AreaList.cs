@@ -1,6 +1,5 @@
 ﻿using NestedWorld.Classes.ElementsGame.Users;
 using NestedWorld.Utils;
-using NestedWorld.View.MapViews;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,17 +16,7 @@ namespace NestedWorld.Classes.ElementsGame.Areas
     {
         public List<Area> areaList { get; set; }
 
-        private AreaListView _areaListView;
-        public AreaListView areaListView
-        {
-            get { return _areaListView; }
-            set
-            {
-                _areaListView = value;
-                _areaListView.List.DataContext = new ObservableCollection<Area>(areaList);
-            }
-        }
-        public MapControl map { get; set; }
+         public MapControl map { get; set; }
 
         Random r = new Random(DateTime.Now.Millisecond);
         public AreaList()
@@ -63,7 +52,6 @@ namespace NestedWorld.Classes.ElementsGame.Areas
                 Add(newArea);
             }
             areaList = areaList.OrderBy(x => x.areaType).ToList();
-            _areaListView.List.DataContext = new ObservableCollection<Area>(areaList);
             Debug.WriteLine("Generate");
         }
 

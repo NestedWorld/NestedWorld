@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 ApplicationInsights.config
+Assets\default_monster.png
 Assets\Effect\fire_effect.png
 Assets\Flower\Flower.png
 Assets\Flower\flowerDirt.png
@@ -24,5 +25,6 @@ Assets\Type\grass.png
 Assets\Type\water.png
 Assets\Wide310x150Logo.scale-200.png
 NestedWorld.xr.xml
+DataModel\ErrorNetworkSourceFile.xml
 DataModel\ShopData.json
 Properties\Default.rd.xml

@@ -16,12 +16,7 @@ namespace NestedWorld.Pages
         {
             this.InitializeComponent();
 
-            App.core.mfv = monsterFullView;
-            monsterView.monsterList = App.core.monsterList;
-            userView.userList = App.core.userList;
-            monsterListView.monsterList = App.core.monsterUserList;
-            homeView.DataContext = App.core.user;
-            //init();
+             init();
             
 
         }
@@ -37,6 +32,14 @@ namespace NestedWorld.Pages
                     a.Handled = true;
                 }
             };
+
+          //  App.core.Init();
+            App.core.mfv = monsterFullView;
+            monsterView.monsterList = App.core.monsterUserList;
+            userView.userList = App.core.userList;
+            monsterListView.monsterList = App.core.monsterList;
+            homeView.DataContext = App.core.user;
+
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
@@ -65,7 +68,8 @@ namespace NestedWorld.Pages
 
         private void AppBarButton_Click_2(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.SettingsPage));
+            init();
+            //Frame.Navigate(typeof(Pages.SettingsPage));
         }
 
         private void homeView_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)

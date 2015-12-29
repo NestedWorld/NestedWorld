@@ -93,6 +93,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\default_monster.png" />
+    <Content Include="DataModel\ErrorNetworkSourceFile.xml" />
     <Content Include="DataModel\ShopData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -104,6 +106,7 @@
     </Compile>
     <Compile Include="Classes\Chat\Channel.cs" />
     <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
+    <Compile Include="Classes\Core.cs" />
     <Compile Include="Classes\DesignUtilities\ThemeSelector.cs" />
     <Compile Include="Classes\ElementsGame\Areas\Area.cs" />
     <Compile Include="Classes\ElementsGame\Areas\AreaContentPresenter.cs" />
@@ -115,8 +118,8 @@
     <Compile Include="Classes\ElementsGame\Battle\Paterns\DefenceSpePatern.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Paterns\DefencePatern.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Paterns\UseToolsPatern.cs" />
-    <Compile Include="Classes\ElementsGame\GameCore\Core.cs" />
     <Compile Include="Classes\ElementsGame\GameCore\UserInfo.cs" />
+    <Compile Include="Classes\ElementsGame\Maps\MapCore.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\Monster.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttack.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttckList.cs" />
@@ -129,11 +132,14 @@
     <Compile Include="Classes\Garden\Garden.cs" />
     <Compile Include="Classes\Garden\GardenElement.cs" />
     <Compile Include="Classes\Garden\GardenElementList.cs" />
+    <Compile Include="Classes\Network\ImageDownload.cs" />
+    <Compile Include="Classes\Network\Network.cs" />
     <Compile Include="Classes\Request\Auth\Login.cs" />
     <Compile Include="Classes\Request\Auth\Logout.cs" />
     <Compile Include="Classes\Request\Auth\Register.cs" />
     <Compile Include="Classes\Request\Auth\ResetPassword.cs" />
     <Compile Include="Classes\Request\HttpRequest.cs" />
+    <Compile Include="Classes\Request\Monster\Monsters.cs" />
     <Compile Include="Classes\Stats\Stats.cs" />
     <Compile Include="Common\ObservableDicionary.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -245,32 +251,26 @@
     <Compile Include="View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MapPoint\MonsterMapPoint.xaml.cs">
+      <DependentUpon>MonsterMapPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapPoint\UserMapPoint.xaml.cs">
+      <DependentUpon>UserMapPoint.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MapViews\AreaAllyView.xaml.cs">
-      <DependentUpon>AreaAllyView.xaml</DependentUpon>
+    <Compile Include="View\MapViews\MapControlView.xaml.cs">
+      <DependentUpon>MapControlView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MapViews\AreaFreeView.xaml.cs">
-      <DependentUpon>AreaFreeView.xaml</DependentUpon>
+    <Compile Include="View\MapViews\MapListElement.xaml.cs">
+      <DependentUpon>MapListElement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MapViews\AreaListView.xaml.cs">
-      <DependentUpon>AreaListView.xaml</DependentUpon>
+    <Compile Include="View\MapViews\MonsterMapList.xaml.cs">
+      <DependentUpon>MonsterMapList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MapViews\AreaMeView.xaml.cs">
-      <DependentUpon>AreaMeView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MapViews\AreaOtherView.xaml.cs">
-      <DependentUpon>AreaOtherView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MapViews\MapPoint.xaml.cs">
-      <DependentUpon>MapPoint.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MapViews\MapTelerikTest.xaml.cs">
-      <DependentUpon>MapTelerikTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MapViews\MapView.xaml.cs">
-      <DependentUpon>MapView.xaml</DependentUpon>
+    <Compile Include="View\MapViews\UserMapList.xaml.cs">
+      <DependentUpon>UserMapList.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MonsterListView.xaml.cs">
       <DependentUpon>MonsterListView.xaml</DependentUpon>
@@ -515,39 +515,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\MapPoint\MonsterMapPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapPoint\UserMapPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MapViews\AreaAllyView.xaml">
+    <Page Include="View\MapViews\MapControlView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MapViews\AreaFreeView.xaml">
+    <Page Include="View\MapViews\MapListElement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MapViews\AreaListView.xaml">
+    <Page Include="View\MapViews\MonsterMapList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MapViews\AreaMeView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MapViews\AreaOtherView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MapViews\MapPoint.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MapViews\MapTelerikTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MapViews\MapView.xaml">
+    <Page Include="View\MapViews\UserMapList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -637,15 +629,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Network\" />
-    <Folder Include="Classes\Request\Monster\" />
     <Folder Include="Classes\Request\Users\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\thomas\Desktop\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj">
-      <Project>{973a943b-ff77-4267-8f30-f5fe2b7f5583}</Project>
-      <Name>Facebook</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, version=14.0">
@@ -657,6 +641,12 @@
     <SDKReference Include="Telerik UI For Universal Windows Platform, Version=2015.3.1117.45">
       <Name>Telerik UI For Universal Windows Platform</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj">
+      <Project>{973a943b-ff77-4267-8f30-f5fe2b7f5583}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

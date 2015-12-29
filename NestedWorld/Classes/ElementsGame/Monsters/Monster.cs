@@ -11,10 +11,12 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
 {
     public class Monster
     {
+        public string type = "monster";
         public MonsterAttckList monsterAttackList { get; set; }
         public string Name { get; private set; }
         public TypeEnum Type { get; private set; }
         public Color color { get { return (Utils.ColorUtils.GetColorFromHex(Utils.ColorUtils.GetTypeColor(Type))); } set { int i = 0; i++; } }
+        public SolidColorBrush Brush { get { return new SolidColorBrush(color); } set { int i = 0; i++; } }
         public string Image { get; private set; }
 
         public int ID { get; private set; }

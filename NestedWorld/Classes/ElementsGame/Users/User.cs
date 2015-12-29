@@ -10,6 +10,8 @@ namespace NestedWorld.Classes.ElementsGame.Users
 {
     public class User
     {
+        public string type = "user";
+
         public string Name { get; private set; }
         public string Image { get; private set; }
         public string Background { get; private set; }

@@ -38,7 +38,10 @@
             </StackPanel>
         </Grid>
         <Grid x:ConnectionId='2' x:Name="grid1" Grid.Row="2">
-            <Button x:ConnectionId='8'                      Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150">
+            <ProgressRing x:ConnectionId='7' x:Name="progressRing" Height="100" Width="100" Background="{x:Null}" Foreground="{StaticResource ForgroundBrush}"/>
+
+
+            <Button x:ConnectionId='8' x:Name="loginButton"                      Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150">
                 <TextBlock Text="Login"/>
             </Button>
         </Grid>
@@ -51,11 +54,8 @@
             <Button x:ConnectionId='5' x:Name="registerButton"                        Grid.Column="0" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Register"/>
             </Button>
-            <Button x:ConnectionId='6' Grid.Column="1"                       Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:ConnectionId='6' Grid.Column="2"                       Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Forgot your password"/>
-            </Button>
-            <Button x:ConnectionId='7' Grid.Column="2"                       Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Style="{StaticResource TextBlockUnderButtonS}" Text="Settings"/>
             </Button>
         </Grid>
         <Popup x:ConnectionId='4' Grid.Row="0" Grid.RowSpan="4" IsOpen="True" x:Name="popupView" IsLightDismissEnabled="True">

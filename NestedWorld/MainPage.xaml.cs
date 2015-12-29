@@ -6,7 +6,9 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Security.ExchangeActiveSyncProvisioning;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -28,19 +30,39 @@ namespace NestedWorld
         {
             this.InitializeComponent();
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-           // Init();
+            // Init();
         }
 
-       
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.HomePage));
+          /*  if (UserNameText.Text == string.Empty)
+                return;
+            if (PassWordText.Password == string.Empty)
+                return;*/
+            progressRing.IsActive = true;
+            loginButton.Visibility = Visibility.Collapsed;
+            //string ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
+            string ret = await App.network.Connect("thomas.caron@epitech.eu", "toto");
+            progressRing.IsActive = false;
+            loginButton.Visibility = Visibility.Visible;
+            if (ret == string.Empty)
+            {
+                Frame.Navigate(typeof(Pages.HomePage));
+            }
+            else
+                ShowError(ret);
+          
+        }
+
+        private async void ShowError(string ErrorMessage)
+        {
+            var messageDialog = new MessageDialog(ErrorMessage);
+            await messageDialog.ShowAsync();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void Regiter_Click(object sender, RoutedEventArgs e)
@@ -55,10 +77,22 @@ namespace NestedWorld
             popupView.IsOpen = true;
         }
 
+        public static bool DeviceIsPhone()
+        {
+            EasClientDeviceInformation info = new EasClientDeviceInformation();
+            string system = info.OperatingSystem;
+
+            Debug.WriteLine(system);
+
+            return true;
+        }
+
         private void Setting_Click(object sender, RoutedEventArgs e)
         {
-            popupView.Child = new PopUp.SettingsPopUp();
-            popupView.IsOpen = true;
+
+            Debug.WriteLine(DeviceIsPhone());
+            //popupView.Child = new PopUp.SettingsPopUp();
+            //popupView.IsOpen = true;
         }
     }
 }

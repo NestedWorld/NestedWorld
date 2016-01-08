@@ -1,5 +1,6 @@
 ﻿using NestedWorld.Classes.ElementsGame.Areas;
 using NestedWorld.Classes.ElementsGame.GameCore;
+using NestedWorld.Classes.ElementsGame.Maps;
 using NestedWorld.Classes.ElementsGame.Monsters;
 using NestedWorld.Classes.ElementsGame.Users;
 using NestedWorld.View.MonsterViews;
@@ -14,6 +15,7 @@ namespace NestedWorld.Classes
 {
     public class Core
     {
+        public MapCore mapCore { get; set; }
         public Garden.Garden garden { get; set; }
         public MonsterFullView mfv { get; set; }
         private UserMonster _monsterSelected;
@@ -38,15 +40,15 @@ namespace NestedWorld.Classes
         {
             Offline = true;
             user = UserInfo.GetYou();
+            userList = new UserList();
+
             monsterList = new MonsterList();
             monsterUserList = new MonsterList();
             userList = new UserList();
             areaList = new AreaList();
             garden = new Garden.Garden();
-            if (Offline)
-            {
-                Init();
-            }
+            mapCore = new MapCore(user);
+           
         }
 
         public async void ShowError(string ErrorMessage)
@@ -55,13 +57,15 @@ namespace NestedWorld.Classes
             await messageDialog.ShowAsync();
         }
 
-        public async void Init()
+        public async Task Init()
         {
 
+            userList.Init();
             if (Offline)
             {
                 monsterList.init();
                 monsterUserList.init();
+              
             }
             else
             {

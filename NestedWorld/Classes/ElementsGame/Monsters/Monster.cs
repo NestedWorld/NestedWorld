@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using NestedWorld.View.MapPoint;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
 {
     public class Monster
     {
+        public MonsterMapPoint mmp;
+
         public string type = "monster";
         public MonsterAttckList monsterAttackList { get; set; }
         public string Name { get; private set; }
@@ -37,6 +40,8 @@ namespace NestedWorld.Classes.ElementsGame.Monsters
             this.Image = image;
             this.ID = id;
             monsterAttackList = new MonsterAttckList();
+            mmp = new MonsterMapPoint();
+            mmp.DataContext = this;
         }
 
         public Monster(JObject obj)

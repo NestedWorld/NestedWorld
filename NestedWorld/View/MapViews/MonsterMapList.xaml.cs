@@ -23,6 +23,12 @@ namespace NestedWorld.View.MapViews
         {
             this.InitializeComponent();
             RemoveAnnimation.Completed += RemoveAnnimation_Completed;
+            this.DataContextChanged += MonsterMapList_DataContextChanged;
+        }
+
+        private void MonsterMapList_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
+        {
+            listView.DataContext = this.DataContext;
         }
 
         private void RemoveAnnimation_Completed(object sender, object e)

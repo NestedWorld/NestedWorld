@@ -94,10 +94,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\default_monster.png" />
+    <Content Include="Assets\Map\position.png" />
     <Content Include="DataModel\ErrorNetworkSourceFile.xml" />
     <Content Include="DataModel\ShopData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +255,9 @@
     </Compile>
     <Compile Include="View\MapPoint\MonsterMapPoint.xaml.cs">
       <DependentUpon>MonsterMapPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapPoint\PlayerMapPoint.xaml.cs">
+      <DependentUpon>PlayerMapPoint.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MapPoint\UserMapPoint.xaml.cs">
       <DependentUpon>UserMapPoint.xaml</DependentUpon>
@@ -516,6 +521,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MapPoint\MonsterMapPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapPoint\PlayerMapPoint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

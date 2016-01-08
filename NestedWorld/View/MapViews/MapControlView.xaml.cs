@@ -27,31 +27,18 @@ namespace NestedWorld.View.MapViews
         public MapControlView()
         {
             this.InitializeComponent();
+            App.core.mapCore.mapControl = mapControl;
         }
 
 
         private void Locate(object sender, RoutedEventArgs e)
         {
-
+            App.core.mapCore.ShowUserLocation(mapControl);
         }
 
         public void ShowUser()
         {
-            Random rand = new Random();
-            foreach (User user in App.core.userList.userList)
-            {
-                UserMapPoint tmp = new UserMapPoint();
-                tmp.DataContext = user;
-
-                MapControl.SetLocation(tmp,
-                    new Windows.Devices.Geolocation.Geopoint(
-                        new Windows.Devices.Geolocation.BasicGeoposition
-                        {
-                            Latitude = rand.Next(-89, 89),
-                            Longitude = rand.Next(-89, 89)
-                        }));
-                mapControl.Children.Add(tmp);
-            }
+            App.core.mapCore.ShowAllyLocation();
         }
     }
 }

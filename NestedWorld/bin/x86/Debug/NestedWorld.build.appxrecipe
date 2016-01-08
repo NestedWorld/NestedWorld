@@ -54,6 +54,9 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Map\position.png">
+      <PackagePath>Assets\Map\position.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\monsterTest\test.png">
       <PackagePath>Assets\monsterTest\test.png</PackagePath>
     </AppxPackagedFile>

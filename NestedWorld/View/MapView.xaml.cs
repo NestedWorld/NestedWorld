@@ -31,7 +31,7 @@ namespace NestedWorld.View
             userMapList = new UserMapList();
             monsterMapList = new MonsterMapList();
             monsterMapList.root = stackPanelRoot;
-
+            monsterMapList.DataContext = App.core.monsterList.monsterList;
             mapControlView = new MapControlView();
             stackPanelRoot.Children.Add(mapControlView);
             userMapList.root = stackPanelRoot;
@@ -56,10 +56,13 @@ namespace NestedWorld.View
             if (button.IsChecked == true)
             {
                 userMapList.Show();
-                mapControlView.ShowUser();
+                App.core.mapCore.ShowAllyLocation();
             }
             else
+            {
                 userMapList.Remove();
+                App.core.mapCore.ColapseAllyLocation();
+            }
             setSize(Window.Current.Bounds.Width);
 
         }

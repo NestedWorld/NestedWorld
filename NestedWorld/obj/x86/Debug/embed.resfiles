@@ -35,6 +35,7 @@ View\GardenViews\GardenElementView.xbf
 View\GardenViews\GardenItem.xbf
 View\HomeView.xbf
 View\MapPoint\MonsterMapPoint.xbf
+View\MapPoint\PlayerMapPoint.xbf
 View\MapPoint\UserMapPoint.xbf
 View\MapView.xbf
 View\MapViews\MapControlView.xbf

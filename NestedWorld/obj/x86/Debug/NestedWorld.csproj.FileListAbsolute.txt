@@ -1480,3 +1480,10 @@ E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\UserMapPoint.g.cs
 E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\UserMapPoint.xaml
 E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\UserMapPoint.xbf
 E:\Git\nestedworld\NestedWorld\bin\x86\Debug\View\MapPoint\UserMapPoint.xbf
+E:\Git\nestedworld\NestedWorld\bin\x86\Debug\View\MapPoint\PlayerMapPoint.xbf
+E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Map\position.png
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\PlayerMapPoint.g.i.cs
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\PlayerMapPoint.g.cs
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\PlayerMapPoint.xaml
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\View\MapPoint\PlayerMapPoint.xbf
+E:\Git\nestedworld\NestedWorld\obj\x86\Debug\Core\Assets\Map\position.png

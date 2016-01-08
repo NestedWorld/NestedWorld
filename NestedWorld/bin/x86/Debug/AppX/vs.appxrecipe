@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-29T20:35:33.336</Modified>
+      <Modified>2015-12-30T20:02:49.066</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +73,10 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-11-17T19:36:17.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\Map\position.png">
+      <PackagePath>Assets\Map\position.png</PackagePath>
+      <Modified>2015-12-30T17:17:19.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Assets\monsterTest\test.png">
       <PackagePath>Assets\monsterTest\test.png</PackagePath>
@@ -146,7 +150,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2015-12-29T20:35:24.236</Modified>
+      <Modified>2015-12-30T19:59:26.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
@@ -198,11 +202,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2015-12-29T20:35:33.327</Modified>
+      <Modified>2015-12-30T20:02:49.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2015-12-29T20:21:03.735</Modified>
+      <Modified>2015-12-30T18:47:08.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -214,7 +218,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-29T20:35:25.980</Modified>
+      <Modified>2015-12-30T20:02:42.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

@@ -1,4 +1,5 @@
 ﻿using NestedWorld.Classes.Chat;
+using NestedWorld.View.MapPoint;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace NestedWorld.Classes.ElementsGame.Users
         public int Level { get; private set; }
         public bool IsOnline { get; private set; }
         public Channel discution { get; set; }
+
+        public UserMapPoint ump { get; set; }
         public Color color
         {
             get
@@ -45,6 +48,8 @@ namespace NestedWorld.Classes.ElementsGame.Users
             this.IsOnline = isOnline;
             this.Level = level;
             discution = new Channel(name, false);
+            ump = new UserMapPoint();
+            ump.DataContext = this;
         }
 
         public User(string name, string image, string background, bool isOnline, int level) : this(name, image, isOnline, level)

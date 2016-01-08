@@ -7,6 +7,75 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="EnterAnnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="rectangle1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="0:0:0.8" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="image1" d:IsOptimized="True">
+                <DoubleAnimation.EasingFunction>
+                    <BackEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Duration="0:0:0.8" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="image1" d:IsOptimized="True">
+                <DoubleAnimation.EasingFunction>
+                    <BackEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.2">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
+                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource background}">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFD3DFE4">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource background}">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFD3DFE4">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
     <Page.Foreground>
         <SolidColorBrush Color="{StaticResource foreground}"/>
     </Page.Foreground>
@@ -28,20 +97,33 @@
             <RowDefinition Height="50*"/>
 
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <Image x:Name="image" Source="Assets/NestedWorldLogo.png" Height="200" Width="200"></Image>
-        </StackPanel>
+        <Image x:Name="image" Source="Assets/NestedWorldLogo.png" Height="200" Width="200" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
         <Grid x:Name="grid" Grid.Row="1">
             <StackPanel Orientation="Vertical" Margin="30">
-                <TextBox Margin="0, 10" Width="200" PlaceholderText="Login" x:Name="UserNameText" />
-                <PasswordBox Margin="0, 10" Width="200" PlaceholderText="Password" x:Name="PassWordText"/>
+                <TextBox Margin="0, 10" Width="200" PlaceholderText="Login" x:Name="UserNameText" RenderTransformOrigin="0.5,0.5" >
+                    <TextBox.RenderTransform>
+                        <CompositeTransform/>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <PasswordBox Margin="0, 10" Width="200" PlaceholderText="Password" x:Name="PassWordText" RenderTransformOrigin="0.5,0.5">
+                    <PasswordBox.RenderTransform>
+                        <CompositeTransform/>
+                    </PasswordBox.RenderTransform>
+                </PasswordBox>
             </StackPanel>
         </Grid>
         <Grid x:Name="grid1" Grid.Row="2">
             <ProgressRing x:Name="progressRing" Height="100" Width="100" Background="{x:Null}" Foreground="{StaticResource ForgroundBrush}"/>
 
 
-            <Button x:Name="loginButton" Click="Button_Click" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150">
+            <Button x:Name="loginButton" Click="Button_Click" Style="{StaticResource ButtonStyleOne}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <CompositeTransform/>
+                </Button.RenderTransform>
                 <TextBlock Text="Login"/>
             </Button>
         </Grid>
@@ -59,8 +141,33 @@
             </Button>
         </Grid>
         <Popup Grid.Row="0" Grid.RowSpan="4" IsOpen="True" x:Name="popupView" IsLightDismissEnabled="True">
-           
+
         </Popup>
+
+        <Grid x:Name="grid3" Grid.RowSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <Rectangle x:Name="rectangle" RenderTransformOrigin="0.5,1">
+                <Rectangle.RenderTransform>
+                    <CompositeTransform/>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFD3DFE4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="rectangle1" Grid.Row="1" RenderTransformOrigin="0.5,0" Fill="#FFD3DFE4">
+                <Rectangle.RenderTransform>
+                    <CompositeTransform/>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Image x:Name="image1" Source="Assets/NestedWorldLogo.png" Height="500" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <CompositeTransform/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
     </Grid>
 
 </Page>

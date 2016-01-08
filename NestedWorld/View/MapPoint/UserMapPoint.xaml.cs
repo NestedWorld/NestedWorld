@@ -22,6 +22,21 @@ namespace NestedWorld.View.MapPoint
         public UserMapPoint()
         {
             this.InitializeComponent();
+            isShow = false;
+        }
+
+        bool isShow;
+
+        private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (isShow)
+            {
+                ShowAnnimation.Begin();
+            }
+            else
+                ColapseAnnimation.Begin();
+            isShow = !isShow;
+
         }
     }
 }

@@ -1,0 +1,51 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.ShopViews.ShopElementInformation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View.ShopViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{StaticResource BackrgoundBrush}">
+
+    <Grid Background="{StaticResource BackrgoundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{StaticResource ForgroundBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse Height="100" Width="100" StrokeThickness="2" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource BackrgoundBrush}">
+                <Ellipse.Fill>
+                    <ImageBrush Stretch="Uniform" ImageSource="{Binding Path=Image}"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="{Binding Path=Name}" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="€ " FontSize="15" Margin="0, 5" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource BackrgoundBrush}" />
+                    <TextBlock Text="{Binding Path=Price}" FontSize="15" Margin="0, 5" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource BackrgoundBrush}" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBlock Text="{Binding Path=Description}" TextWrapping="Wrap" Margin="10"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <GridView HorizontalAlignment="Center">
+                <local:ItemEffectView NameEffect="Attack" LevelEffect="{Binding Path=AttackEffect}"/>
+                <local:ItemEffectView NameEffect="Deffence" LevelEffect="{Binding Path=DeffEffect}"/>
+                <local:ItemEffectView NameEffect="Live" LevelEffect="{Binding Path=LifeEffect}"/>
+                <local:ItemEffectView NameEffect="Experience" LevelEffect="{Binding Path=ExpEffect}"/>
+
+            </GridView>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -111,6 +111,9 @@
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ShopData.json">
       <PackagePath>DataModel\ShopData.json</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ShopData.xml">
+      <PackagePath>DataModel\ShopData.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
     </AppxPackagedFile>

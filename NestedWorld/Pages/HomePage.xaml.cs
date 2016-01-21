@@ -1,4 +1,5 @@
 ﻿using NestedWorld.Classes.ElementsGame.Monsters;
+using NestedWorld.Style;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -12,12 +13,15 @@ namespace NestedWorld.Pages
     /// </summary>
     public sealed partial class HomePage : Page
     {
+
+
+
         public HomePage()
         {
             this.InitializeComponent();
 
-             init();
-            
+            init();
+
 
         }
 
@@ -33,12 +37,8 @@ namespace NestedWorld.Pages
                 }
             };
 
-          //  App.core.Init();
-            App.core.mfv = monsterFullView;
-            monsterView.monsterList = App.core.monsterUserList;
-            userView.userList = App.core.userList;
-            monsterListView.monsterList = App.core.monsterList;
-            homeView.DataContext = App.core.user;
+
+            App.core.SetValue(this);
 
         }
 
@@ -75,6 +75,21 @@ namespace NestedWorld.Pages
         private void homeView_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(Pages.ProfilePage));
+        }
+
+        private void Pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Pivot pivot = sender as Pivot;
+
+            foreach (PivotItem th in pivot.Items)
+            {
+
+                (th.Header as NestedWorld.Style.TabHeader).isSelect = false;
+            }
+
+            PivotItem header = pivot.SelectedItem as PivotItem;
+
+            (header.Header as NestedWorld.Style.TabHeader).isSelect = true;
         }
     }
 }

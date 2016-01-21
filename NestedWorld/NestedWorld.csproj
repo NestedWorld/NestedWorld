@@ -127,6 +127,7 @@
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttckList.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterList.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterListPerType.cs" />
+    <Compile Include="Classes\ElementsGame\Shop\Shop.cs" />
     <Compile Include="Classes\ElementsGame\TypeEnum.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\UserMonster.cs" />
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
@@ -147,6 +148,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Item.cs" />
+    <Compile Include="Model\ItemGroup.cs" />
     <Compile Include="Model\Message.cs" />
     <Compile Include="Model\ShopElement.cs" />
     <Compile Include="Pages\BattlePage.xaml.cs">
@@ -197,7 +200,7 @@
       <DependentUpon>TabHeaderMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\ColorUtils.cs" />
-    <Compile Include="Utils\InkAnnalyse.cs" />
+    <Compile Include="Utils\IO.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
     <Compile Include="ViewModel\ChanelListViewModel.cs" />
@@ -331,8 +334,26 @@
     <Compile Include="View\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ShopViews\ShopElementView.xaml.cs">
-      <DependentUpon>ShopElementView.xaml</DependentUpon>
+    <Compile Include="View\ShopViews\ItemEffectView.xaml.cs">
+      <DependentUpon>ItemEffectView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopElementInformation.xaml.cs">
+      <DependentUpon>ShopElementInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopElementListView.xaml.cs">
+      <DependentUpon>ShopElementListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopGroupeListView.xaml.cs">
+      <DependentUpon>ShopGroupeListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopGroupeView.xaml.cs">
+      <DependentUpon>ShopGroupeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopItemView.xaml.cs">
+      <DependentUpon>ShopItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopViews\ShopMainView.xaml.cs">
+      <DependentUpon>ShopMainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
@@ -364,6 +385,7 @@
     <Content Include="Assets\Type\fire.png" />
     <Content Include="Assets\Type\grass.png" />
     <Content Include="Assets\Type\water.png" />
+    <Content Include="DataModel\ShopData.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -624,7 +646,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ShopViews\ShopElementView.xaml">
+    <Page Include="View\ShopViews\ItemEffectView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopElementInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopElementListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopGroupeListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopGroupeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ShopViews\ShopMainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

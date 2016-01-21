@@ -18,6 +18,7 @@
         <SolidColorBrush Color="{StaticResource BleuTwo}"/>
     </Page.Background>
     <Page.Resources>
+        
     </Page.Resources>
     <RelativePanel>
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
@@ -28,6 +29,7 @@
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
+            
             <Grid Grid.Row="0">
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource BleuTwo}"/>
@@ -58,32 +60,30 @@
                 </TextBlock>
 
             </Grid>
-            <Pivot Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
-
+            <Pivot SelectionChanged="Pivot_SelectionChanged" HorizontalAlignment="Center"  Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
                 <PivotItem   Margin="0" >
                     <PivotItem.Header>
-                        <Style:TabHeader Glyph="&#xE80F;" Label="Home"/>
+                        <Style:TabHeader Icon="M16.200012,6.9000092L27.899994,14.699997 27.899994,26.5 20.200012,26.5 20.200012,18.699997 11.700012,18.699997 11.700012,26.5 4.1000061,26.5 4.1000061,14.699997z M16.200012,0L32,10.800003 32,14.400009 16.200012,3.6000061 0,14.699997 0,11.100006z"/>
                     </PivotItem.Header>
                     <ScrollViewer>
                         <RelativePanel>
-                            <view:HomeView x:Name="homeView" Tapped="homeView_Tapped"/>
-                            <view:MonsterView x:Name="monsterView" />
-                            <view:UserView x:Name="userView" />
+                            <view:HomeView x:FieldModifier="public"  x:Name="homeView" Tapped="homeView_Tapped"/>
+                            <view:MonsterView x:FieldModifier="public"  x:Name="monsterView" />
+                            <view:UserView x:FieldModifier="public"  x:Name="userView" />
                         </RelativePanel>
                     </ScrollViewer>
-
                 </PivotItem>
                 <PivotItem Margin="0">
                     <PivotItem.Header>
-                        <Style:TabHeader Glyph="&#xE72D;" Label="Tools"/>
+                        <Style:TabHeader Icon="M4.0000045,16.5L15.399982,28 12.800003,30.599991 8.2000219,26 5.0000059,29 5.0000059,29.5C5.0000059,30.899994 3.8999678,32 2.5000028,32 1.0999767,32 -1.6659033E-07,30.899994 0,29.5 -1.6659033E-07,28.099991 1.0999767,27 2.5000028,27L2.7999911,27 2.8999666,27 6.2000195,24 1.3999649,19.099991z M31.900001,0L31.800025,5.6999969 12.800003,22.199997 10.000012,19.099991 26.399995,0.099990845z" />
                     </PivotItem.Header>
                     <RelativePanel>
-                        <view:GardenView Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                        <view:GardenView x:FieldModifier="public"  Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
                     </RelativePanel>
                 </PivotItem>
                 <PivotItem Margin="0">
                     <PivotItem.Header>
-                        <Style:TabHeader Label="Map"/>
+                        <Style:TabHeader Icon="M10.1,5C7.200008,5 4.8999911,7.1999969 4.8999911,10 4.8999911,12.800003 7.200008,15 10.1,15 12.999992,15 15.300009,12.800003 15.300009,10 15.300009,7.3000031 12.899986,5 10.1,5z M10.1,0C15.700003,0 20.2,4.3000031 20.2,9.6999969 20.2,11.600006 19.599994,13.300003 18.700002,14.800003L14.499991,23.300003 10.1,32 5.800015,23.300003 1.6000052,14.800003C0.60000567,13.300003 -4.7890353E-08,11.600006 0,9.6999969 -4.7890353E-08,4.3000031 4.4999972,0 10.1,0z" />
                     </PivotItem.Header>
                     <Grid>
                         <view:MapView />
@@ -91,18 +91,18 @@
                 </PivotItem>
                 <PivotItem  Margin="0">
                     <PivotItem.Header>
-                        <Style:TabHeader Glyph="&#xE76E;" Label="Monster"/>
+                        <Style:TabHeader Icon="M21.258008,5.6110229C21.573011,6.5339966 23.869001,13.660034 18.535001,15.122009 18.535001,15.122009 19.061002,17.800049 16.975003,22.061035L16.135005,23.734009C16.135005,23.734009 15.617001,24.049011 15.639996,23.329041 15.639996,23.329041 16.210002,19.045044 14.687007,16.735046 14.687007,16.735046 8.8960057,18.369995 10.547007,22.871033 10.547007,22.871033 13.232005,29.795044 21.167997,26.434021 25.001006,24.520996 27.657012,20.567993 27.657012,16 27.657012,11.468994 25.046004,7.5390015 21.258008,5.6110229z M15.999996,4.3430176C9.639002,4.3430176 4.4629985,9.4590454 4.350999,15.790039 4.8009959,14.717041 6.301004,11.657043 9.4739934,10.262024L21.122998,5.5510254C19.578,4.7860107,17.83801,4.3430176,15.999996,4.3430176z M15.999996,0C24.820996,0 31.999999,7.1780396 31.999999,16 31.999999,24.821045 24.820996,32 15.999996,32 7.1780029,32 -1.0455824E-07,24.821045 0,16 -1.0455824E-07,7.1780396 7.1780029,0 15.999996,0z" />
                     </PivotItem.Header>
                     <RelativePanel>
-                        <view:MonsterListView x:Name="monsterListView" />
-                        <monsterViews:MonsterFullView x:Name="monsterFullView" Margin="0, 0, 0, 0" />
+                        <view:MonsterListView x:FieldModifier="public"  x:Name="monsterListView" />
+                        <monsterViews:MonsterFullView x:FieldModifier="public"  x:Name="monsterFullView" Margin="0, 0, 0, 0" />
                     </RelativePanel>
                 </PivotItem>
                 <PivotItem  Margin="0">
                     <PivotItem.Header>
-                        <Style:TabHeader Glyph="&#xE719;" Label="Shop"/>
+                        <Style:TabHeader Icon="M0,7.9000244L4.6999975,7.9000244 4.6999975,9.3000488C4.3999945,9.7000122 4.1999975,10.200012 4.1999975,10.700012 4.1999975,11.800049 5.0999914,12.700012 6.1999975,12.700012 7.3000036,12.700012 8.199998,11.800049 8.199998,10.700012 8.199998,10.200012 8.0000011,9.7000122 7.6999975,9.3000488L7.6999975,7.9000244 15.500002,7.9000244 15.500002,9.3000488C15.199999,9.7000122 15.000002,10.200012 15.000002,10.700012 15.000002,11.800049 15.899996,12.700012 17.000001,12.700012 18.099994,12.700012 19.000003,11.800049 19.000003,10.700012 19.000003,10.200012 18.800006,9.7000122 18.500003,9.3000488L18.500003,7.9000244 23.2,7.9000244 22.000003,29.400024 23.2,32 0.19999695,32 1.300003,29.300049z M11.599992,0C14.800005,0,17.500001,2.6000366,17.500001,5.9000244L17.500001,9.8000488C17.800004,10 18.000003,10.300049 18.000003,10.700012 18.000003,11.300049 17.500001,11.700012 17.000001,11.700012 16.399995,11.700012 16.000002,11.200012 16.000002,10.700012 16.000002,10.300049 16.199998,10 16.500001,9.8000488L16.500001,5.9000244C16.500001,3.2000122 14.300005,1 11.599992,1 8.899995,1 6.6999975,3.2000122 6.6999975,5.9000244L6.6999975,9.8000488C7.0000006,10 7.1999975,10.300049 7.1999975,10.700012 7.1999975,11.300049 6.6999975,11.700012 6.1999975,11.700012 5.5999914,11.700012 5.1999975,11.200012 5.1999975,10.700012 5.1999975,10.300049 5.3999945,10 5.6999975,9.8000488L5.6999975,5.9000244C5.6999975,2.6000366,8.399995,0,11.599992,0z"/>
                     </PivotItem.Header>
-                    <view:ShopView></view:ShopView>
+                    <view:ShopView x:Name="ShopView" x:FieldModifier="public" />
                 </PivotItem>
             </Pivot>
             <Popup x:Name="popupView"></Popup>

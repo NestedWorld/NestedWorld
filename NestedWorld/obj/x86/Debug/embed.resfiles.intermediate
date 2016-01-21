@@ -60,6 +60,12 @@ View\ProfileViews\MonsterStat.xbf
 View\ProfileViews\StatiUserView.xbf
 View\SettingsViews\SettingsView.xbf
 View\ShopView.xbf
-View\ShopViews\ShopElementView.xbf
+View\ShopViews\ItemEffectView.xbf
+View\ShopViews\ShopElementInformation.xbf
+View\ShopViews\ShopElementListView.xbf
+View\ShopViews\ShopGroupeListView.xbf
+View\ShopViews\ShopGroupeView.xbf
+View\ShopViews\ShopItemView.xbf
+View\ShopViews\ShopMainView.xbf
 View\UserView.xbf
 View\UserViews\AllyView.xbf

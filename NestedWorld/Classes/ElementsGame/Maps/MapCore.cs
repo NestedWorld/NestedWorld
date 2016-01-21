@@ -14,6 +14,8 @@ using System.Diagnostics;
 using NestedWorld.Classes.ElementsGame.GameCore;
 using NestedWorld.Classes.ElementsGame.Users;
 
+#pragma warning disable CS0618
+
 namespace NestedWorld.Classes.ElementsGame.Maps
 {
     public class MapCore

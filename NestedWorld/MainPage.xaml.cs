@@ -40,14 +40,14 @@ namespace NestedWorld
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-           if (UserNameText.Text == string.Empty)
+         /*  if (UserNameText.Text == string.Empty)
                 return;
             if (PassWordText.Password == string.Empty)
-                return;
+                return;*/
             progressRing.IsActive = true;
             loginButton.Visibility = Visibility.Collapsed;
-            string ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
-            //string ret = await App.network.Connect("thomas.caron@epitech.eu", "toto");
+            //string ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
+            string ret = await App.network.Connect("thomas.caron@epitech.eu", "toto");
             progressRing.IsActive = false;
             if (ret == string.Empty)
             {

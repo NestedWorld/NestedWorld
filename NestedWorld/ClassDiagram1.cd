@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="NestedWorld.App">
-    <Position X="8.75" Y="6.5" Width="2.25" />
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NestedWorld.App" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAARAAAQAAIAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.MainPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="3.5" Width="1.5" />
+    <Position X="24" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAJAAAAgAQAAAUIAAAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>MainPage.xaml.cs</FileName>
@@ -16,273 +16,284 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Classes.Chat.Channel" Collapsed="true">
-    <Position X="19.25" Y="1.5" Width="1.5" />
+    <Position X="22.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAMAIAAAAAAAACAEAAAAAAAAQAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Classes\Chat\Channel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Chat.MessageContentPresenter" Collapsed="true">
-    <Position X="21" Y="4.5" Width="2" />
+    <Position X="24" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAACAAAIAAAA=</HashCode>
       <FileName>Classes\Chat\MessageContentPresenter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Core" Collapsed="true">
-    <Position X="30.25" Y="0.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.Core">
+    <Position X="34" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAgAAAAwAACAAIAEAAACAAAACAABBgQA=</HashCode>
       <FileName>Classes\Core.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.DesignUtilities.ThemeResourceDictionary" Collapsed="true">
-    <Position X="22.75" Y="8.5" Width="2" />
+    <Position X="25.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\DesignUtilities\ThemeSelector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.DesignUtilities.ThemeSelector" Collapsed="true">
-    <Position X="24.5" Y="8.5" Width="1.5" />
+    <Position X="27.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAA=</HashCode>
       <FileName>Classes\DesignUtilities\ThemeSelector.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Areas.Area">
-    <Position X="17.5" Y="0.5" Width="3.25" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Areas.Area" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAAAAAIAAAAAAAAAAAAAABIAgAAAAACAAAAQA=</HashCode>
       <FileName>Classes\ElementsGame\Areas\Area.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter">
-    <Position X="19.25" Y="0.5" Width="2.5" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAQAAAAAAACAAIAQAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Areas\AreaContentPresenter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Areas.AreaList">
-    <Position X="21" Y="0.5" Width="2.25" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Areas.AreaList" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAEAAAAAAAAAAAAAAAAAAAAAAEkACAAAABAAgAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Areas\AreaList.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.BattleCore">
-    <Position X="24.5" Y="0.5" Width="2.25" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.BattleCore" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAAGIwAAAAAAAAAQACAAAAAgAAAAAiAAAAAAQ=</HashCode>
       <FileName>Classes\ElementsGame\Battle\BattleCore.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Patern">
-    <Position X="5.25" Y="3.5" Width="1.75" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Patern" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACAAAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Patern.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.AttackPatern">
-    <Position X="0.75" Y="4.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.AttackPatern" Collapsed="true">
+    <Position X="3.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Paterns\AttackPatern.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.AttackSpePatern">
-    <Position X="3" Y="4.75" Width="1.75" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.AttackSpePatern" Collapsed="true">
+    <Position X="6" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Paterns\AttackSpePatern.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.DefencePatern">
-    <Position X="5.25" Y="4.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.DefencePatern" Collapsed="true">
+    <Position X="8.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Paterns\DefencePatern.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.DefenceSpePatern">
-    <Position X="7.5" Y="4.75" Width="1.75" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.DefenceSpePatern" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Paterns\DefenceSpePatern.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.UseToolsPatern">
-    <Position X="9.75" Y="4.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Battle.Paterns.UseToolsPatern" Collapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Battle\Paterns\UseToolsPatern.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.GameCore.UserInfo" Collapsed="true">
-    <Position X="12.25" Y="9.5" Width="1.5" />
+    <Position X="15.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAQAAAAAABABAAAgAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\GameCore\UserInfo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Maps.MapCore" Collapsed="true">
-    <Position X="26.25" Y="3.5" Width="1.5" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Maps.MapCore">
+    <Position X="11.25" Y="11.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAIAAAAAAAAAKAEABAAAAEAAKQAAAAAAKE=</HashCode>
       <FileName>Classes\ElementsGame\Maps\MapCore.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Monsters.Monster">
-    <Position X="0.5" Y="7.5" Width="2.75" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Monsters.Monster" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAMAAAAAAAQAAAAJABCAAQAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\Monster.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Monsters.MonsterAttack" Collapsed="true">
-    <Position X="22.75" Y="4.5" Width="1.5" />
+    <Position X="25.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAAAAAABAAAQAAAAgIAAE=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterAttack.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Monsters.MonsterAttckList" Collapsed="true">
-    <Position X="28" Y="4.5" Width="1.5" />
+    <Position X="31" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterAttckList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Monsters.Data" Collapsed="true">
-    <Position X="28" Y="1.5" Width="1.5" />
+    <Position X="31" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAgAAAACAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Monsters.MonsterList" Collapsed="true">
-    <Position X="15.75" Y="5.5" Width="1.5" />
+    <Position X="18.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAKAAQCAAAAAAAAAAAAAAAAAAAAAAAIAAACAAAABAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Monsters.MonsterListPerType" Collapsed="true">
-    <Position X="17.5" Y="5.5" Width="1.75" />
+    <Position X="20.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterListPerType.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.ElementsGame.Monsters.UserMonster">
-    <Position X="0.75" Y="11" Width="1.75" />
+  <Class Name="NestedWorld.Classes.ElementsGame.Monsters.UserMonster" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAIAAAAAAAAAAAAgIAAAAABAAAAAAgBAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\UserMonster.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Users.User" Collapsed="true">
-    <Position X="28" Y="8.5" Width="1.5" />
+    <Position X="31" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAACBABCBAAAgAAAAAAI=</HashCode>
       <FileName>Classes\ElementsGame\Users\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.ElementsGame.Users.UserList" Collapsed="true">
-    <Position X="14" Y="9.5" Width="1.5" />
+    <Position X="17" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAgAA=</HashCode>
       <FileName>Classes\ElementsGame\Users\UserList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Garden.Garden" Collapsed="true">
-    <Position X="15.75" Y="2.5" Width="1.5" />
+    <Position X="18.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIYAAAAAAAghAKRAAAAQAAACAAAAAAIAAAAAAQAAAAA=</HashCode>
       <FileName>Classes\Garden\Garden.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Garden.GardenElement" Collapsed="true">
-    <Position X="17.5" Y="2.5" Width="1.5" />
+    <Position X="20.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAQAAAAAAAAQAAAAAAACAAQAAAAAAAQA=</HashCode>
       <FileName>Classes\Garden\GardenElement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Garden.GardenElementList" Collapsed="true">
-    <Position X="19.25" Y="2.5" Width="1.75" />
+    <Position X="22.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAgAAAAAAAAAQAAAQAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Classes\Garden\GardenElementList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Network.ImageDownload" Collapsed="true">
-    <Position X="15.75" Y="3.5" Width="1.5" />
+    <Position X="18.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Network\ImageDownload.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Network.Network" Collapsed="true">
-    <Position X="21" Y="6.5" Width="1.5" />
+    <Position X="24" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Classes\Network\Network.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Request.Auth.Login">
-    <Position X="0.75" Y="1.75" Width="1.75" />
+  <Class Name="NestedWorld.Classes.Request.Auth.Login" Collapsed="true">
+    <Position X="0.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\Auth\Login.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Request.Auth.Logout">
-    <Position X="3" Y="1.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.Request.Auth.Logout" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\Auth\Logout.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Request.Auth.Register" Collapsed="true">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="5.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\Auth\Register.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Request.Auth.ResetPassword">
-    <Position X="7.5" Y="1.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.Request.Auth.ResetPassword" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\Auth\ResetPassword.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Request.HttpRequest">
-    <Position X="5.25" Y="0.5" Width="2.75" />
+  <Class Name="NestedWorld.Classes.Request.HttpRequest" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAABAAAAAAAEAAAACCAAAJAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Classes\Request\HttpRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Classes.Request.Monster.Monsters">
-    <Position X="9.75" Y="1.75" Width="1.5" />
+  <Class Name="NestedWorld.Classes.Request.Monster.Monsters" Collapsed="true">
+    <Position X="9.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\Monster\Monsters.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Classes.Stats.Stats" Collapsed="true">
-    <Position X="17.5" Y="8.5" Width="1.5" />
+    <Position X="20.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAkAAAAAECAIAQAAQAAQAAQAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Stats\Stats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Common.ObservableDictionary" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="6.5" Width="1.75" />
+    <Position X="29.25" Y="6.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="NestedWorld.Common.ObservableDictionary.ObservableDictionaryChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Common\ObservableDicionary.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>CCIAAABAAAAEABAQCAAABAQBAAAAAAAAAAAgAABQIAA=</HashCode>
       <FileName>Common\ObservableDicionary.cs</FileName>
@@ -290,35 +301,35 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Model.Message" Collapsed="true">
-    <Position X="19.25" Y="4.5" Width="1.5" />
+    <Position X="22.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAADAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Message.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Model.ShopElement" Collapsed="true">
-    <Position X="24.5" Y="7.5" Width="1.5" />
+    <Position X="27.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAEAAQAAAAAAAAAAAABAAAAAAAAAAQAA=</HashCode>
       <FileName>Model\ShopElement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Model.ShopGroup" Collapsed="true">
-    <Position X="28" Y="7.5" Width="1.5" />
+    <Position X="31" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgCAAEAAAAAAQAAAAAABAAAAAAAAAAQAA=</HashCode>
       <FileName>Model\ShopElement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Model.ShopDataSource" Collapsed="true">
-    <Position X="22.75" Y="7.5" Width="1.5" />
+    <Position X="25.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAEAAAAAAAAAAAAIAAoAAAABAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Model\ShopElement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Pages.BattlePage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="28" Y="0.5" Width="1.5" />
+    <Position X="31" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAABAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pages\BattlePage.xaml.cs</FileName>
@@ -326,7 +337,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.ChatPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="1.5" Width="1.5" />
+    <Position X="24" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAgAAAAAAAAAAAQAAAAAAAQAAAACAAAAAAA=</HashCode>
       <FileName>Pages\ChatPage.xaml.cs</FileName>
@@ -334,7 +345,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.HomePage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="3.5" Width="1.5" />
+    <Position X="15.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAEAAAAAAAQAEAAAAAEAIAAAAACAAAAAA=</HashCode>
       <FileName>Pages\HomePage.xaml.cs</FileName>
@@ -342,7 +353,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.MonsterPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="28" Y="5.5" Width="1.5" />
+    <Position X="31" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Pages\MonsterPage.xaml.cs</FileName>
@@ -350,7 +361,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.PrepareBattlePage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="7.5" Width="1.5" />
+    <Position X="15.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pages\PrepareBattlePage.xaml.cs</FileName>
@@ -358,7 +369,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.ProfilePage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="7.5" Width="1.5" />
+    <Position X="17" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pages\ProfilePage.xaml.cs</FileName>
@@ -366,7 +377,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Pages.SettingsPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="17.5" Y="7.5" Width="1.5" />
+    <Position X="20.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pages\SettingsPage.xaml.cs</FileName>
@@ -374,7 +385,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.CatchAreaProposition" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="1.5" Width="1.75" />
+    <Position X="15.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>PopUp\CatchAreaProposition.xaml.cs</FileName>
@@ -382,7 +393,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.ForgotPassPopUp" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="2.5" Width="1.5" />
+    <Position X="17" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAg=</HashCode>
       <FileName>PopUp\ForgotPassPopUp.xaml.cs</FileName>
@@ -390,7 +401,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.MonsterNearPopUp" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="5.5" Width="1.75" />
+    <Position X="29.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>PopUp\MonsterNearPopUp.xaml.cs</FileName>
@@ -398,7 +409,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.NewBattlePopUp" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="6.5" Width="1.5" />
+    <Position X="25.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>PopUp\NewBattlePopUp.xaml.cs</FileName>
@@ -406,7 +417,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.RegisterPopUp" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="7.5" Width="1.5" />
+    <Position X="18.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAABAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAAAg=</HashCode>
       <FileName>PopUp\RegisterPopUp.xaml.cs</FileName>
@@ -414,7 +425,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.PopUp.SettingsPopUp" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="19.25" Y="7.5" Width="1.5" />
+    <Position X="22.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAg=</HashCode>
       <FileName>PopUp\SettingsPopUp.xaml.cs</FileName>
@@ -422,14 +433,14 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Resource.TypeResource" Collapsed="true">
-    <Position X="26.25" Y="8.5" Width="1.5" />
+    <Position X="29.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Resource\TypeResource.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Style.TabHeader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="19.25" Y="8.5" Width="1.5" />
+    <Position X="22.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAEAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Style\TabHeader.xaml.cs</FileName>
@@ -437,58 +448,44 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.Style.TabHeaderMap" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="8.5" Width="1.5" />
+    <Position X="24" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAEAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Style\TabHeaderMap.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="NestedWorld.Utils.ColorUtils" Collapsed="true">
-    <Position X="24.5" Y="1.5" Width="1.5" />
+  <Class Name="NestedWorld.Utils.ColorUtils">
+    <Position X="33.75" Y="6.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Utils\ColorUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.Utils.Line" Collapsed="true">
-    <Position X="19.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Utils\InkAnnalyse.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="NestedWorld.Utils.InkAnnalyse" Collapsed="true">
-    <Position X="17.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Utils\InkAnnalyse.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="NestedWorld.Utils.MapElementData" Collapsed="true">
-    <Position X="28" Y="3.5" Width="1.5" />
+    <Position X="31" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIABAAAAAAAAAAAwAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utils\MapElementData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.Utils.MapExtensions" Collapsed="true">
-    <Position X="12.25" Y="4.5" Width="1.5" />
+    <Position X="15.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Utils\MapExtensions.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NestedWorld.View.BattleViews.AnnimationCanvas" BaseTypeListCollapsed="true">
-    <Position X="14" Y="0.5" Width="3" />
+  <Class Name="NestedWorld.View.BattleViews.AnnimationCanvas" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAE=</HashCode>
       <FileName>View\BattleViews\AnnimationCanvas.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="NestedWorld.View.BattleViews.BattleCanvas" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="0.5" Width="2.75" />
+  <Class Name="NestedWorld.View.BattleViews.BattleCanvas" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAQAAAAAAgAAAAAAAAAAAAIAAAAIAAAACAAAAAAAA=</HashCode>
       <FileName>View\BattleViews\BattleCanvas.xaml.cs</FileName>
@@ -496,7 +493,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.BattleViews.BattleIcon" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="0.5" Width="1.5" />
+    <Position X="29.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAgAAAAAAQAAAEIAAAAgAAAAIAAAAAAAAAAAAAAg=</HashCode>
       <FileName>View\BattleViews\BattleIcon.xaml.cs</FileName>
@@ -504,7 +501,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.BattleViews.EnemieMonster" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="2.5" Width="1.5" />
+    <Position X="15.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAQAAAAAAAAAABAAEAQQAAAAAAAIAAAA=</HashCode>
       <FileName>View\BattleViews\EnemieMonster.xaml.cs</FileName>
@@ -512,7 +509,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.BattleViews.UserMonster" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="19.25" Y="9.5" Width="1.5" />
+    <Position X="22.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAQAAAAAAAAAABAAEAQQAAAAAAAIAAAA=</HashCode>
       <FileName>View\BattleViews\UserMonster.xaml.cs</FileName>
@@ -520,7 +517,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.BattleViews.UserMonsterList" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="9.5" Width="1.5" />
+    <Position X="24" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\BattleViews\UserMonsterList.xaml.cs</FileName>
@@ -528,7 +525,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.ChanelListView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="1.5" Width="1.5" />
+    <Position X="17" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>View\ChatViews\ChanelListView.xaml.cs</FileName>
@@ -536,7 +533,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.ChanelView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="17.5" Y="1.5" Width="1.5" />
+    <Position X="20.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ChatViews\ChanelView.xaml.cs</FileName>
@@ -544,7 +541,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.ChatView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="1.5" Width="1.5" />
+    <Position X="25.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEEAAAAAAAAAJAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ChatViews\ChatView.xaml.cs</FileName>
@@ -552,7 +549,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.MeMessageTemplate" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="17.5" Y="4.5" Width="1.75" />
+    <Position X="20.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ChatViews\MeMessageTemplate.xaml.cs</FileName>
@@ -560,7 +557,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.StartNewChatView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="8.5" Width="1.75" />
+    <Position X="17" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ChatViews\StartNewChatView.xaml.cs</FileName>
@@ -568,7 +565,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ChatViews.YouMessageTemplate" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="28" Y="9.5" Width="1.75" />
+    <Position X="31" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ChatViews\YouMessageTemplate.xaml.cs</FileName>
@@ -576,7 +573,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.GardenView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="28" Y="2.5" Width="1.5" />
+    <Position X="31" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\GardenView.xaml.cs</FileName>
@@ -584,7 +581,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.HomeView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="3.5" Width="1.5" />
+    <Position X="17" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\HomeView.xaml.cs</FileName>
@@ -592,7 +589,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="4.5" Width="1.5" />
+    <Position X="18.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABIAgBAgAAAQBAAAAAAgAAAAAAAACAAAAAAA=</HashCode>
       <FileName>View\MapView.xaml.cs</FileName>
@@ -600,7 +597,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterListView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="19.25" Y="5.5" Width="1.5" />
+    <Position X="22.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAA=</HashCode>
       <FileName>View\MonsterListView.xaml.cs</FileName>
@@ -608,7 +605,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterSoloView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="6.5" Width="1.5" />
+    <Position X="15.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAQAAAAAAIAJADAAAAiABAQAAAAAAAAA=</HashCode>
       <FileName>View\MonsterSoloView.xaml.cs</FileName>
@@ -616,7 +613,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="19.25" Y="6.5" Width="1.5" />
+    <Position X="22.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>View\MonsterView.xaml.cs</FileName>
@@ -624,7 +621,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.NotificationView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="6.5" Width="1.5" />
+    <Position X="27.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAACAAAAAAAAAAABAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>View\NotificationView.xaml.cs</FileName>
@@ -632,7 +629,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ShopView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="8.5" Width="1.5" />
+    <Position X="15.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ShopView.xaml.cs</FileName>
@@ -640,7 +637,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.UserView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="9.5" Width="1.5" />
+    <Position X="29.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>View\UserView.xaml.cs</FileName>
@@ -648,7 +645,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.GardenViews.GardenElementListView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="2.5" Width="2" />
+    <Position X="24" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>View\GardenViews\GardenElementListView.xaml.cs</FileName>
@@ -656,7 +653,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.GardenViews.GardenElementView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="2.5" Width="1.75" />
+    <Position X="27.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\GardenViews\GardenElementView.xaml.cs</FileName>
@@ -664,7 +661,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.GardenViews.GardenItem" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="2.5" Width="1.5" />
+    <Position X="29.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAgAABAAAAAAAAAAAAAhIAAAIAAQEAAAAAEAAAAg=</HashCode>
       <FileName>View\GardenViews\GardenItem.xaml.cs</FileName>
@@ -672,7 +669,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapPoint.MonsterMapPoint" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="5.5" Width="1.5" />
+    <Position X="27.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MapPoint\MonsterMapPoint.xaml.cs</FileName>
@@ -680,7 +677,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapPoint.PlayerMapPoint" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="28" Y="6.5" Width="1.5" />
+    <Position X="31" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MapPoint\PlayerMapPoint.xaml.cs</FileName>
@@ -688,7 +685,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapPoint.UserMapPoint" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="17.5" Y="9.5" Width="1.5" />
+    <Position X="20.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MapPoint\UserMapPoint.xaml.cs</FileName>
@@ -696,7 +693,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapViews.MapControlView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="3.5" Width="1.5" />
+    <Position X="27.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAEAAAAAAAQAAAA=</HashCode>
       <FileName>View\MapViews\MapControlView.xaml.cs</FileName>
@@ -704,7 +701,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapViews.MapListElement" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="4.5" Width="1.5" />
+    <Position X="17" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MapViews\MapListElement.xaml.cs</FileName>
@@ -712,7 +709,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapViews.MonsterMapList" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="5.5" Width="1.5" />
+    <Position X="25.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAACgBAAAAAAEAAAAAAIAAAAAAAA=</HashCode>
       <FileName>View\MapViews\MonsterMapList.xaml.cs</FileName>
@@ -720,7 +717,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MapViews.UserMapList" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="9.5" Width="1.5" />
+    <Position X="18.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAACgBAAAAAAEAAAAAAQAAAAAAAA=</HashCode>
       <FileName>View\MapViews\UserMapList.xaml.cs</FileName>
@@ -728,7 +725,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterAttacksView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="4.5" Width="1.75" />
+    <Position X="27.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterAttacksView.xaml.cs</FileName>
@@ -736,7 +733,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterAttackView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="4.5" Width="1.75" />
+    <Position X="29.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterAttackView.xaml.cs</FileName>
@@ -744,7 +741,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterFullView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="5.5" Width="1.5" />
+    <Position X="15.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterFullView.xaml.cs</FileName>
@@ -752,7 +749,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterHeaderView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="5.5" Width="1.75" />
+    <Position X="17" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAADAAAAACQAAAAACEAAABAAQAQQAAAAAAAAAAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterHeaderView.xaml.cs</FileName>
@@ -760,7 +757,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterLocationView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="5.5" Width="1.75" />
+    <Position X="24" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterLocationView.xaml.cs</FileName>
@@ -768,7 +765,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterStatsView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="6.5" Width="1.5" />
+    <Position X="18.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>View\MonsterViews\MonsterStatsView.xaml.cs</FileName>
@@ -776,7 +773,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.MonsterViews.MonsterView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="17.5" Y="6.5" Width="1.5" />
+    <Position X="20.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>View\MonsterViews\MonsterView.xaml.cs</FileName>
@@ -784,7 +781,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.PrepareBattleView.UserMonsterListView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="9.5" Width="1.75" />
+    <Position X="25.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAEACAAAAAAAAAAAAAEAAAAAAABIAA=</HashCode>
       <FileName>View\PrepareBattleView\UserMonsterListView.xaml.cs</FileName>
@@ -792,7 +789,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.PrepareBattleView.UsersProfileEntrance" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="24.5" Y="9.5" Width="1.75" />
+    <Position X="27.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAIhAAABARAgoAgAAABAEgEAABAQAgCAAAACA=</HashCode>
       <FileName>View\PrepareBattleView\UsersProfileEntrance.xaml.cs</FileName>
@@ -800,7 +797,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ProfileViews.MainView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.75" Y="3.5" Width="1.5" />
+    <Position X="25.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ProfileViews\MainView.xaml.cs</FileName>
@@ -808,7 +805,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ProfileViews.MonsterStat" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="6.5" Width="1.5" />
+    <Position X="17" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ProfileViews\MonsterStat.xaml.cs</FileName>
@@ -816,7 +813,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ProfileViews.StatiUserView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="8.5" Width="1.5" />
+    <Position X="18.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAABAAACAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>View\ProfileViews\StatiUserView.xaml.cs</FileName>
@@ -824,7 +821,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.SettingsViews.SettingsView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="21" Y="7.5" Width="1.5" />
+    <Position X="24" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\SettingsViews\SettingsView.xaml.cs</FileName>
@@ -832,15 +829,15 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.View.ShopViews.ShopElementView" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="26.25" Y="7.5" Width="1.5" />
+    <Position X="29.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\ShopViews\ShopElementView.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="NestedWorld.View.UserViews.AllyView" BaseTypeListCollapsed="true">
-    <Position X="12.25" Y="0.5" Width="2.25" />
+  <Class Name="NestedWorld.View.UserViews.AllyView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>View\UserViews\AllyView.xaml.cs</FileName>
@@ -848,59 +845,52 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="NestedWorld.ViewModel.ChanelListViewModel" Collapsed="true">
-    <Position X="15.75" Y="1.5" Width="1.75" />
+    <Position X="18.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModel\ChanelListViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NestedWorld.ViewModel.GardenElementListViewModel" Collapsed="true">
-    <Position X="22.75" Y="2.5" Width="2.25" />
+    <Position X="25.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAACAAAAAAAAAAAIAAAAAAAAAAQBAAAEAEAAA=</HashCode>
       <FileName>ViewModel\GardenElementListViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="NestedWorld.Classes.ElementsGame.Areas.AreaType" Collapsed="true">
-    <Position X="12.25" Y="10.75" Width="1.5" />
+    <Position X="15.25" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAABAQAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Areas\Area.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="NestedWorld.Classes.ElementsGame.Monsters.AttackTypeEnum" Collapsed="true">
-    <Position X="14" Y="10.75" Width="1.5" />
+    <Position X="17" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>hAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\Monsters\MonsterAttack.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="NestedWorld.Classes.ElementsGame.TypeEnum" Collapsed="true">
-    <Position X="21" Y="10.75" Width="1.5" />
+    <Position X="24" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABCAKAAAAAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Classes\ElementsGame\TypeEnum.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="NestedWorld.Classes.Request.RequestType" Collapsed="true">
-    <Position X="17.5" Y="10.75" Width="1.5" />
+    <Position X="20.5" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Request\HttpRequest.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="NestedWorld.Model.eWho" Collapsed="true">
-    <Position X="15.75" Y="10.75" Width="1.5" />
+    <Position X="18.75" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Message.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="NestedWorld.Utils.ShapeType" Collapsed="true">
-    <Position X="19.25" Y="10.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAgAEAAAAAAABAAAAAAAAAAAgQAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Utils\InkAnnalyse.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

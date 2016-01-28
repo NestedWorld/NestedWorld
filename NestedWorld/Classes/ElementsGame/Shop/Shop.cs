@@ -41,9 +41,6 @@ namespace NestedWorld.Classes.ElementsGame.Shop
 
 
                 XDocument doc = XDocument.Load(data.AsStream());
-
-                Debug.WriteLine(doc);
-
                 Model.ItemGroup groupetmp;
                 foreach (XElement element in doc.Element("Root").Elements("Groupe"))
                 {
@@ -52,10 +49,6 @@ namespace NestedWorld.Classes.ElementsGame.Shop
                     list.Add(groupetmp);
                 }
 
-                foreach (var groupe in list)
-                {
-                    Debug.WriteLine(groupe.Name + " : " + groupe.Image);
-                }
 
             }
             catch (Exception ex)

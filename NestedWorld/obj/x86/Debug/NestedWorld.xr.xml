@@ -55,6 +55,7 @@
     <RootPropertyPathName Name="AttackEffect" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Price" />
+    <RootPropertyPathName Name="Credit" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -444,9 +445,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Resources" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
       <RootProperty Name="KeyFrames" />
@@ -571,7 +572,7 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NestedWorld.View.MapView" />
-    <RootType FullName="NestedWorld.View.GardenView">
+    <RootType FullName="NestedWorld.View.StuffView">
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NestedWorld.View.HomeView">
@@ -635,11 +636,20 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Stroke" />
     </RootType>
     <RootType FullName="NestedWorld.Style.TabHeaderMap" />
+    <RootType FullName="NestedWorld.View.MapViews.AreaInfoView" />
+    <RootType FullName="NestedWorld.View.BattleOverView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Visibility" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.InkCanvas" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.QuinticEase">
@@ -683,6 +693,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="NestedWorld.View.GardenView" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="CanDragItems" />
@@ -696,7 +707,6 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Background" />
       <RootProperty Name="CanReorderItems" />
-      <RootProperty Name="Items" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
       <RootEvent Name="DragItemsStarting" />
@@ -776,18 +786,31 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="NestedWorld.View.SettingsViews.SettingsView" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopUserInfo" />
     <RootType FullName="NestedWorld.View.ShopViews.ShopGroupeListView">
       <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
     </RootType>
-    <RootType FullName="NestedWorld.View.ShopViews.ShopElementInformation" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopElementListView">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.ShopViews.ShopElementInformation">
+      <RootProperty Name="Visibility" />
+    </RootType>
     <RootType FullName="NestedWorld.View.ShopViews.ItemEffectView">
       <RootProperty Name="NameEffect" />
       <RootProperty Name="LevelEffect" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
+    </RootType>
     <RootType FullName="NestedWorld.View.ShopViews.ShopItemView" />
-    <RootType FullName="NestedWorld.View.ShopViews.ShopElementListView" />
     <RootType FullName="NestedWorld.View.ShopViews.ShopGroupeView" />
-    <RootType FullName="NestedWorld.View.ShopViews.ShopMainView" />
     <RootType FullName="NestedWorld.View.UserViews.AllyView">
       <RootProperty Name="Margin" />
     </RootType>

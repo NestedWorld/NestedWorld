@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</PackageIdentityName>
     <IntermediateOutputPath>E:\Git\nestedworld\NestedWorld\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B71B0957714ACD719F7DADE782B725943A2A6B1F18E9AFDE68B7C93869FCC6BE</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>D9B6C89EA4A75C21DB4BE2F9D1A97C0C3BA1AECA1D1F24752E1801998553CA06</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_1.0.0.0_x86__vjvds0menc1ng</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc_vjvds0menc1ng!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-01-20T01:21:13.626</Modified>
+      <Modified>2016-01-28T18:30:27.342</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -150,11 +150,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\DataModel\ShopData.xml">
       <PackagePath>DataModel\ShopData.xml</PackagePath>
-      <Modified>2016-01-19T23:27:09.201</Modified>
+      <Modified>2016-01-24T19:29:31.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\entrypoint\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
-      <Modified>2016-01-20T01:21:10.209</Modified>
+      <Modified>2016-01-28T18:30:26.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
@@ -206,11 +206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
-      <Modified>2016-01-20T01:21:13.624</Modified>
+      <Modified>2016-01-28T18:30:27.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
-      <Modified>2016-01-20T01:19:45.004</Modified>
+      <Modified>2016-01-28T17:58:12.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -222,7 +222,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-01-20T01:21:12.660</Modified>
+      <Modified>2016-01-28T18:30:26.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Git\nestedworld\NestedWorld\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

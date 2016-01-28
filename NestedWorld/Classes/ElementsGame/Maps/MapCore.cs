@@ -125,6 +125,21 @@ namespace NestedWorld.Classes.ElementsGame.Maps
             return geoposition;
         }
 
+        public void MapControl_MapElementClick(Windows.UI.Xaml.Controls.Maps.MapControl sender, Windows.UI.Xaml.Controls.Maps.MapElementClickEventArgs args)
+        {
+            var tappedGeoPosition = args.Location.Position;
+            string status = "MapTapped at \nLatitude:" + tappedGeoPosition.Latitude + "\nLongitude: " + tappedGeoPosition.Longitude;
+            Debug.WriteLine(status);
+
+            var area = App.core.areaList.GetAreaTaped(tappedGeoPosition);
+
+            if (area != null)
+                Debug.WriteLine(area.Name);
+            else
+                Debug.WriteLine("NONE");
+
+        }
+
         public async void ShowUserLocation(MapControl mapControl)
         {
             UserPos = await GetUserPosition();

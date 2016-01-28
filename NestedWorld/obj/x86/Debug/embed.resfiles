@@ -17,6 +17,7 @@ Style\TabHeader.xbf
 Style\TabHeaderMap.xbf
 Theme\FireTheme.xbf
 Theme\WaterTheme.xbf
+View\BattleOverView.xbf
 View\BattleViews\AnnimationCanvas.xbf
 View\BattleViews\BattleCanvas.xbf
 View\BattleViews\BattleIcon.xbf
@@ -66,6 +67,7 @@ View\ShopViews\ShopElementListView.xbf
 View\ShopViews\ShopGroupeListView.xbf
 View\ShopViews\ShopGroupeView.xbf
 View\ShopViews\ShopItemView.xbf
-View\ShopViews\ShopMainView.xbf
+View\ShopViews\ShopUserInfo.xbf
+View\StuffView.xbf
 View\UserView.xbf
 View\UserViews\AllyView.xbf

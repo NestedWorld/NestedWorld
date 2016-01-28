@@ -22,6 +22,7 @@
         <SolidColorBrush x:Key="DirtBrush" Color="{StaticResource DirtColor}"/>
         <SolidColorBrush x:Key="ElectBrush" Color="{StaticResource ElecColor}"/>
 
+        <Color x:Key="backgroundPage">#FFFFFF</Color>
         <Color x:Key="background">#FFFFFF</Color>
         <Color x:Key="BleuTwo">#2196F3</Color>
         <Color x:Key="BleuOne">#0D47A1</Color>
@@ -37,7 +38,7 @@
         <SolidColorBrush x:Key="BleuOneBrush" Color="{StaticResource BleuOne}"/>
         <SolidColorBrush x:Key="ForgroundBrush" Color="{StaticResource foreground}"/>
         <SolidColorBrush x:Key="BleuThreeBrush" Color="{StaticResource BleuThree}"/>
-        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{StaticResource background}"/>
+        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{StaticResource backgroundPage}"/>
 
         <x:Double x:Key="PoliceSize">20</x:Double>
         <x:Double x:Key="TitleSize">40</x:Double>

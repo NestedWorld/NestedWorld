@@ -101,6 +101,8 @@
     </Content>
     <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
+    <PRIResource Include="Theme\WaterTheme.resw" />
+    <PRIResource Include="Theme\FireTheme.resw" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -110,9 +112,6 @@
     <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
     <Compile Include="Classes\Core.cs" />
     <Compile Include="Classes\DesignUtilities\ThemeSelector.cs" />
-    <Compile Include="Classes\ElementsGame\Areas\Area.cs" />
-    <Compile Include="Classes\ElementsGame\Areas\AreaContentPresenter.cs" />
-    <Compile Include="Classes\ElementsGame\Areas\AreaList.cs" />
     <Compile Include="Classes\ElementsGame\Battle\BattleCore.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Patern.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Paterns\AttackPatern.cs" />
@@ -121,6 +120,8 @@
     <Compile Include="Classes\ElementsGame\Battle\Paterns\DefencePatern.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Paterns\UseToolsPatern.cs" />
     <Compile Include="Classes\ElementsGame\GameCore\UserInfo.cs" />
+    <Compile Include="Classes\ElementsGame\Maps\Area.cs" />
+    <Compile Include="Classes\ElementsGame\Maps\AreaList.cs" />
     <Compile Include="Classes\ElementsGame\Maps\MapCore.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\Monster.cs" />
     <Compile Include="Classes\ElementsGame\Monsters\MonsterAttack.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Classes\ElementsGame\Monsters\UserMonster.cs" />
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
     <Compile Include="Classes\ElementsGame\Users\UserList.cs" />
+    <Compile Include="Classes\Enum\UserEnum.cs" />
     <Compile Include="Classes\Garden\Garden.cs" />
     <Compile Include="Classes\Garden\GardenElement.cs" />
     <Compile Include="Classes\Garden\GardenElementList.cs" />
@@ -203,8 +205,12 @@
     <Compile Include="Utils\IO.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
+    <Compile Include="Utils\ThemeSelector.cs" />
     <Compile Include="ViewModel\ChanelListViewModel.cs" />
     <Compile Include="ViewModel\GardenElementListViewModel.cs" />
+    <Compile Include="View\BattleOverView.xaml.cs">
+      <DependentUpon>BattleOverView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\BattleViews\AnnimationCanvas.xaml.cs">
       <DependentUpon>AnnimationCanvas.xaml</DependentUpon>
     </Compile>
@@ -267,6 +273,9 @@
     </Compile>
     <Compile Include="View\MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapViews\AreaInfoView.xaml.cs">
+      <DependentUpon>AreaInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MapViews\MapControlView.xaml.cs">
       <DependentUpon>MapControlView.xaml</DependentUpon>
@@ -352,8 +361,11 @@
     <Compile Include="View\ShopViews\ShopItemView.xaml.cs">
       <DependentUpon>ShopItemView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ShopViews\ShopMainView.xaml.cs">
-      <DependentUpon>ShopMainView.xaml</DependentUpon>
+    <Compile Include="View\ShopViews\ShopUserInfo.xaml.cs">
+      <DependentUpon>ShopUserInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StuffView.xaml.cs">
+      <DependentUpon>StuffView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
@@ -464,6 +476,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Theme\FireTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -473,6 +489,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="View\BattleOverView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\BattleViews\AnnimationCanvas.xaml">
       <SubType>Designer</SubType>
@@ -555,6 +575,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapViews\AreaInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -670,7 +694,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ShopViews\ShopMainView.xaml">
+    <Page Include="View\ShopViews\ShopUserInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StuffView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -685,6 +713,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Request\Users\" />
+    <Folder Include="View\BattleOverViews\" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, version=14.0">

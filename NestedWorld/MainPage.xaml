@@ -51,7 +51,7 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
-                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource background}">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFFFFF">
                     <EasingColorKeyFrame.EasingFunction>
                         <ExponentialEase EasingMode="EaseInOut"/>
                     </EasingColorKeyFrame.EasingFunction>
@@ -63,7 +63,7 @@
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
-                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource background}">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFFFFF">
                     <EasingColorKeyFrame.EasingFunction>
                         <ExponentialEase EasingMode="EaseInOut"/>
                     </EasingColorKeyFrame.EasingFunction>
@@ -76,6 +76,9 @@
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
+    <Page.Background>
+        <StaticResource ResourceKey="BackrgoundBrush"/>
+    </Page.Background>
     <Page.Foreground>
         <SolidColorBrush Color="{StaticResource foreground}"/>
     </Page.Foreground>
@@ -86,9 +89,7 @@
                 <PopupThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <Grid.Background>
-            <SolidColorBrush Color="{StaticResource background}"/>
-        </Grid.Background>
+       
         <Grid.RowDefinitions>
 
             <RowDefinition Height="150*"/>

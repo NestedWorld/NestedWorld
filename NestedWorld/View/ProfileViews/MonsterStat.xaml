@@ -28,7 +28,7 @@
             </telerik:ChartPalette.StrokeEntries>
         </telerik:ChartPalette>
     </UserControl.Resources>
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{StaticResource BackrgoundBrush}">
         <TextBlock Text="Monsters Type" Margin="10" FontSize="20"/>
         <telerik:RadPieChart x:Name="mychart" Width="200" Height="200" ClipToBounds="False" Palette="{StaticResource CustomPalette}">
             <telerik:DoughnutSeries ShowLabels="True">

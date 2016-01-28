@@ -19,9 +19,40 @@ namespace NestedWorld.View.ShopViews
 {
     public sealed partial class ShopElementInformation : UserControl
     {
+        public double Top
+        {
+            get { return Canvas.GetTop(this); }
+            set { Canvas.SetTop(this, value); }
+        }
+
+        public double Left
+        {
+            get { return Canvas.GetLeft(this); }
+            set { Canvas.SetLeft(this, value); }
+        }
+
+        public int Zindex
+        {
+            get { return Canvas.GetZIndex(this); }
+            set { Canvas.SetZIndex(this, value); }
+        }
+        public ShopView shopView { get; set; }
+
         public ShopElementInformation()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Model.Item item = this.DataContext as Model.Item;
+
+            item.Buy();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            shopView.columSelect = ColumSelect.ITEM;
         }
     }
 }

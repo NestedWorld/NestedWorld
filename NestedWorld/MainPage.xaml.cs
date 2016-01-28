@@ -36,6 +36,8 @@ namespace NestedWorld
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+           // Utils.ThemeSelector.SetTheme();
+
             EnterAnnimation.Begin();
         }
         private async void Button_Click(object sender, RoutedEventArgs e)

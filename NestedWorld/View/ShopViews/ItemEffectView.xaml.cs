@@ -38,12 +38,12 @@ namespace NestedWorld.View.ShopViews
                 if (value < 0)
                 {
                     rec.Fill = new SolidColorBrush(Utils.ColorUtils.GetColorFromHex(""));
-                    rec.Width = ((double)(value) / 3.5) * (-1);
+                    rec.Width = ((double)(value) / 2.5) * (-1);
                 }
                 else
                 {
                     rec.Fill = new SolidColorBrush(Utils.ColorUtils.GetColorFromHex(""));
-                    rec.Width = (double)(value) / 3.5;
+                    rec.Width = (double)(value) / 2.5;
                 }
             }
         }

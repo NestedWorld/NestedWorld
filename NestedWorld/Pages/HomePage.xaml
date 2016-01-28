@@ -9,27 +9,22 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:data="using:NestedWorld.Model"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Foreground>
         <SolidColorBrush Color="{StaticResource foreground}"/>
     </Page.Foreground>
-    <Page.Background>
-        <SolidColorBrush Color="{StaticResource BleuTwo}"/>
-    </Page.Background>
     <Page.Resources>
-        
+
     </Page.Resources>
     <RelativePanel>
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
-            <Grid.Background>
-                <SolidColorBrush Color="{StaticResource background}"/>
-            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
-            
+
             <Grid Grid.Row="0">
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource BleuTwo}"/>
@@ -78,7 +73,8 @@
                         <Style:TabHeader Icon="M4.0000045,16.5L15.399982,28 12.800003,30.599991 8.2000219,26 5.0000059,29 5.0000059,29.5C5.0000059,30.899994 3.8999678,32 2.5000028,32 1.0999767,32 -1.6659033E-07,30.899994 0,29.5 -1.6659033E-07,28.099991 1.0999767,27 2.5000028,27L2.7999911,27 2.8999666,27 6.2000195,24 1.3999649,19.099991z M31.900001,0L31.800025,5.6999969 12.800003,22.199997 10.000012,19.099991 26.399995,0.099990845z" />
                     </PivotItem.Header>
                     <RelativePanel>
-                        <view:GardenView x:FieldModifier="public"  Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                        <!--view:GardenView x:FieldModifier="public"  Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"-->
+                        <view:StuffView x:FieldModifier="public" Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
                     </RelativePanel>
                 </PivotItem>
                 <PivotItem Margin="0">

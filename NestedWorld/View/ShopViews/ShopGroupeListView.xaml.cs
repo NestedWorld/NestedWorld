@@ -21,6 +21,32 @@ namespace NestedWorld.View.ShopViews
 {
     public sealed partial class ShopGroupeListView : UserControl
     {
+        private ShopElementListView _shopElementListView;
+        public ShopView shopView { get; set; }
+
+        public double Top
+        {
+            get { return Canvas.GetTop(this);}
+            set { Canvas.SetTop(this, value);}
+        }
+
+        public double Left
+        {
+            get { return Canvas.GetLeft(this); }
+            set { Canvas.SetLeft(this, value); }
+        }
+
+        public int Zindex
+        {
+            get { return Canvas.GetZIndex(this); }
+            set { Canvas.SetZIndex(this, value); }
+        }
+
+        public ShopElementListView shopElementListView
+        {
+            get { return _shopElementListView; }
+            set { _shopElementListView = value; }
+        }
         public ShopGroupeListView()
         {
             this.InitializeComponent();
@@ -32,6 +58,8 @@ namespace NestedWorld.View.ShopViews
         {
             Model.ItemGroup gp = lv.SelectedItem as Model.ItemGroup;
 
+            _shopElementListView.itemGroup = gp;
+            shopView.columSelect = ColumSelect.ITEM;
             Debug.WriteLine(gp.Name);
 
             foreach (var i in gp.list)

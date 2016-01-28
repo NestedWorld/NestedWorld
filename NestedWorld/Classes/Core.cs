@@ -1,5 +1,4 @@
-﻿using NestedWorld.Classes.ElementsGame.Areas;
-using NestedWorld.Classes.ElementsGame.GameCore;
+﻿using NestedWorld.Classes.ElementsGame.GameCore;
 using NestedWorld.Classes.ElementsGame.Maps;
 using NestedWorld.Classes.ElementsGame.Monsters;
 using NestedWorld.Classes.ElementsGame.Shop;
@@ -55,7 +54,6 @@ namespace NestedWorld.Classes
             garden = new Garden.Garden();
             mapCore = new MapCore(user);
             Shop = new Shop();
-
         }
 
         public async void ShowError(string ErrorMessage)
@@ -72,6 +70,7 @@ namespace NestedWorld.Classes
             {
                 monsterList.init();
                 monsterUserList.init();
+                areaList.Init();
             }
             else
             {

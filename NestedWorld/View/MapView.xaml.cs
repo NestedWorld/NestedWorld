@@ -38,7 +38,10 @@ namespace NestedWorld.View
             userMapList.DataContext = App.core.userList.userList;
             setSize(Window.Current.Bounds.Width);
             Window.Current.SizeChanged += Current_SizeChanged;
+            mapControlView.mapControl.MapElementClick += App.core.mapCore.MapControl_MapElementClick;
         }
+
+     
 
         private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
@@ -78,7 +81,7 @@ namespace NestedWorld.View
         }
         private void ShowAreas(object sender, RoutedEventArgs e)
         {
-
+            App.core.areaList.Show(mapControlView.mapControl);
         }
 
         private void ShowUsers(object sender, RoutedEventArgs e)

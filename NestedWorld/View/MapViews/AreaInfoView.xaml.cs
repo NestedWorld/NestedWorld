@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NestedWorld.Classes.ElementsGame.Maps;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +20,17 @@ namespace NestedWorld.View.MapViews
 {
     public sealed partial class AreaInfoView : UserControl
     {
-        public AreaInfoView()
+        public AreaInfoView(Area area)
         {
             this.InitializeComponent();
+            this.DataContext = area;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Popup daddy = this.Parent as Popup;
+
+            daddy.IsOpen = false;
         }
     }
 }

@@ -22,8 +22,19 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <TextBlock Text="Binding Path=Name}" Foreground="{StaticResource BackrgoundBrush}" FontSize="20" Margin="10"/>
-
+        <TextBlock Text="{Binding Path=Name}" Foreground="{StaticResource BackrgoundBrush}" FontSize="20" Margin="10"/>
+        <Button Click="Button_Click" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Path Data="M1.442037,0L16.002031,14.585751 30.588022,0.025996563 32.001024,1.4409965 17.414783,16.001002 31.97503,30.587006 30.560022,32 15.999268,17.413969 1.4130009,31.973999 0,30.558998 14.586494,15.998742 0.027028472,1.4140019z" Stretch="Uniform" Fill="{StaticResource BackrgoundBrush}" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TransformGroup.Children>
+                            <RotateTransform Angle="0" />
+                            <ScaleTransform ScaleX="-1" ScaleY="1" />
+                        </TransformGroup.Children>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Button>
         <ScrollViewer Grid.Row="1">
             <StackPanel>
                 <GridView >

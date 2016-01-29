@@ -17,6 +17,7 @@ Style\TabHeader.xbf
 Style\TabHeaderMap.xbf
 Theme\FireTheme.xbf
 Theme\WaterTheme.xbf
+Themes\Generic.xbf
 View\BattleOverView.xbf
 View\BattleViews\AnnimationCanvas.xbf
 View\BattleViews\BattleCanvas.xbf
@@ -39,6 +40,7 @@ View\MapPoint\MonsterMapPoint.xbf
 View\MapPoint\PlayerMapPoint.xbf
 View\MapPoint\UserMapPoint.xbf
 View\MapView.xbf
+View\MapViews\AreaInfoView.xbf
 View\MapViews\MapControlView.xbf
 View\MapViews\MapListElement.xbf
 View\MapViews\MonsterMapList.xbf

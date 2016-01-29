@@ -38,6 +38,7 @@ namespace NestedWorld.View
             userMapList.DataContext = App.core.userList.userList;
             setSize(Window.Current.Bounds.Width);
             Window.Current.SizeChanged += Current_SizeChanged;
+            App.core.mapCore.mapView = this;
             mapControlView.mapControl.MapElementClick += App.core.mapCore.MapControl_MapElementClick;
         }
 

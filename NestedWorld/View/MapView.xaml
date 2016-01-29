@@ -26,5 +26,6 @@
                 </AppBarToggleButton.Icon>
             </AppBarToggleButton>
         </CommandBar>
+        <Popup x:Name="PopupMain" x:FieldModifier="public"></Popup>
     </Grid>
 </UserControl>

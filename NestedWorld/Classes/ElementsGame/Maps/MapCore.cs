@@ -34,6 +34,8 @@ namespace NestedWorld.Classes.ElementsGame.Maps
             }
         }
 
+        public MapView mapView;
+
         private Geoposition _userPos;
         public Geoposition UserPos
         {
@@ -134,10 +136,17 @@ namespace NestedWorld.Classes.ElementsGame.Maps
             var area = App.core.areaList.GetAreaTaped(tappedGeoPosition);
 
             if (area != null)
+            {
                 Debug.WriteLine(area.Name);
+                mapView.PopupMain.Child = new AreaInfoView(area);
+                mapView.PopupMain.Height = Window.Current.Bounds.Height * (2/3);
+                mapView.PopupMain.Width = Window.Current.Bounds.Width * 0.5;
+                mapView.PopupMain.IsOpen = true;
+            }
             else
                 Debug.WriteLine("NONE");
 
+        
         }
 
         public async void ShowUserLocation(MapControl mapControl)

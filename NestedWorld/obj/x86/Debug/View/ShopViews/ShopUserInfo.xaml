@@ -1,0 +1,29 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.ShopViews.ShopUserInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View.ShopViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="110"
+    >
+
+    <Grid Background="{StaticResource BackrgoundBrush}">
+        <StackPanel Orientation="Horizontal">
+            <Ellipse HorizontalAlignment="Left" Height="65" Width="65" StrokeThickness="2" Margin="20"  Stroke="{StaticResource ForgroundBrush}">
+                <Ellipse.Fill>
+                    <ImageBrush Stretch="Uniform" ImageSource="{Binding Path=Image}"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Margin="5" Text="{Binding Path=Name}" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+
+        </StackPanel>
+
+        <StackPanel Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Margin="10" Text="{Binding Path=Credit}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Path Data="M15.163991,9.1309958L16.893999,9.1309958 16.893999,10.519997C18.077005,10.566997,18.871008,10.786997,19.454012,11.038997L18.942009,12.821998C18.483007,12.648997 17.671003,12.285997 16.398996,12.285997 15.251991,12.285997 14.881989,12.727998 14.881989,13.169998 14.881989,13.689999 15.498993,14.021998 17,14.525999 19.10001,15.189999 19.948013,16.056999 19.948013,17.477001 19.948013,18.881001 18.836008,20.080002 16.804998,20.396002L16.804998,22.005003 15.075991,22.005003 15.075991,20.506002C13.891985,20.459002,12.744979,20.175001,12.073977,19.828001L12.603979,17.983C13.345983,18.345001 14.387987,18.676001 15.534993,18.676001 16.540997,18.676001 17.229,18.328001 17.229,17.697001 17.229,17.098 16.664999,16.719 15.357992,16.324999 13.468983,15.756999 12.179976,14.968999 12.179976,13.437998 12.179976,12.048997 13.274981,10.960997 15.163991,10.628997z M16.000999,5.3340011C10.119987,5.3340011 5.3349752,10.118999 5.3349752,15.999997 5.3349752,21.881996 10.119987,26.666994 16.000999,26.666994 21.883013,26.666994 26.668024,21.881996 26.668024,15.999997 26.668024,10.118999 21.883013,5.3340011 16.000999,5.3340011z M16.000999,4.3340011C22.435015,4.3340011 27.668026,9.5669994 27.668026,15.999997 27.668026,22.433994 22.435015,27.666994 16.000999,27.666994 9.5679846,27.666994 4.3349729,22.433994 4.3349729,15.999997 4.3349729,9.5669994 9.5679846,4.3340011 16.000999,4.3340011z M16,2C8.2800293,2 2,8.2799988 2,16 2,23.720001 8.2800293,30 16,30 23.720032,30 30,23.720001 30,16 30,8.2799988 23.720032,2 16,2z M16,0C24.822021,0 32,7.1779938 32,16 32,24.822006 24.822021,32 16,32 7.1780396,32 0,24.822006 0,16 0,7.1779938 7.1780396,0 16,0z" Stretch="Uniform" Width="30" Height="30" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" Stroke="{StaticResource ForgroundBrush}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+

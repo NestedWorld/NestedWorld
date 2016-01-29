@@ -27,6 +27,7 @@
     <RootPropertyPathName Name="size" />
     <RootPropertyPathName Name="Background" />
     <RootPropertyPathName Name="Brush" />
+    <RootPropertyPathName Name="ZoomLevel" />
     <RootPropertyPathName Name="FillColor" />
     <RootPropertyPathName Name="MonsterVictory" />
     <RootPropertyPathName Name="MonsterCombat" />
@@ -262,6 +263,8 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="RelativeSource" />
       <RootProperty Name="Path" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -640,7 +643,6 @@
       <RootProperty Name="Stroke" />
     </RootType>
     <RootType FullName="NestedWorld.Style.TabHeaderMap" />
-    <RootType FullName="NestedWorld.View.MapViews.AreaInfoView" />
     <RootType FullName="NestedWorld.View.BattleOverView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Visibility" />
@@ -724,8 +726,25 @@
     <RootType FullName="NestedWorld.View.MapPoint.MonsterMapPoint" />
     <RootType FullName="NestedWorld.View.MapPoint.PlayerMapPoint" />
     <RootType FullName="NestedWorld.View.MapPoint.UserMapPoint" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.MapViews.AreaInfoView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="MapServiceToken" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="NestedWorld.View.MapViews.MapControlView" />
     <RootType FullName="NestedWorld.View.MapViews.MapListElement">
@@ -801,13 +820,6 @@
     <RootType FullName="NestedWorld.View.ShopViews.ItemEffectView">
       <RootProperty Name="NameEffect" />
       <RootProperty Name="LevelEffect" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
-      <RootProperty Name="Angle" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
-      <RootProperty Name="ScaleX" />
-      <RootProperty Name="ScaleY" />
     </RootType>
     <RootType FullName="NestedWorld.View.ShopViews.ShopItemView" />
     <RootType FullName="NestedWorld.View.ShopViews.ShopGroupeView" />

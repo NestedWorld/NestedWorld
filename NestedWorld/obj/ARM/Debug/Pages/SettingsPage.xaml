@@ -8,7 +8,36 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <ToggleSwitch Header="sound" IsOn="True" Style="{StaticResource ToggleSwitchStyle}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{StaticResource BleuTwoBrush}">
+            <TextBlock Text="Settings" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Foreground="{StaticResource BackrgoundBrush}">
+
+
+            </TextBlock>
+        </Grid>
+        <Pivot Grid.Row="1">
+            <PivotItem x:ConnectionId='1' x:Name="pivotItem" Header="General">
+                <Grid>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <Button x:ConnectionId='2'                     >change theme</Button>
+                            <ToggleSwitch Header="sound" IsOn="True" Style="{StaticResource ToggleSwitchStyle}"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Contact">
+
+            </PivotItem>
+            <PivotItem Header="About Us">
+
+            </PivotItem>
+        </Pivot>
+
+
     </Grid>
 </Page>
 

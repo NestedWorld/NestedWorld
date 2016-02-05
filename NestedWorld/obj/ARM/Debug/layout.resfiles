@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 ApplicationInsights.config
+Assets\default_monster.png
 Assets\Effect\fire_effect.png
 Assets\Flower\Flower.png
 Assets\Flower\flowerDirt.png
@@ -10,6 +11,7 @@ Assets\Flower\flowerWater.png
 Assets\iconTest.png
 Assets\iconTest2.jpg
 Assets\LockScreenLogo.scale-200.png
+Assets\Map\position.png
 Assets\monsterTest\test.png
 Assets\NestedWorldLogo.png
 Assets\SplashScreen.scale-200.png
@@ -24,5 +26,7 @@ Assets\Type\grass.png
 Assets\Type\water.png
 Assets\Wide310x150Logo.scale-200.png
 NestedWorld.xr.xml
+DataModel\ErrorNetworkSourceFile.xml
 DataModel\ShopData.json
+DataModel\ShopData.xml
 Properties\Default.rd.xml

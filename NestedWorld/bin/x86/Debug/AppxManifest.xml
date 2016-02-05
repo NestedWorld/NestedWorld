@@ -16,7 +16,7 @@
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
-    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.23019.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
@@ -39,52 +39,33 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Facebook.dll</Path>
-        <ActivatableClass ActivatableClassId="Facebook.FBClient" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBAccessTokenData" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBError" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.FBMediaStream" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FacebookDialog" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBPermissions" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.FBLoginButton" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBProfilePicture" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.ProfilePictureControl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.ColorLuminosityConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBMediaObject" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FacebookDialog" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBAppRequest" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBUser" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBSingleValue" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.Graph.FBGroup" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.Graph.FBPage" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.Graph.FBPaging" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBPermission" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBProfilePictureData" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBUser" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBAppRequest" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.Graph.FBCursors" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.Graph.FBSingleValue" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBPermission" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBProfilePicture" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.Graph.FBPaginatedArray" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBAppRequest" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBMediaObject" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.ColorLuminosityConverter" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBError" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.ProfilePictureControl" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBFeedRequest" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBSession" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.ScaleConverter" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Facebook.FBResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.Graph.FBProfilePictureData" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBClient" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Facebook.FBSDK_UWP_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
-      </InProcessServer>
-    </Extension>
-    <Extension Category="windows.activatableClass.inProcessServer">
-      <InProcessServer>
-        <Path>Telerik.UI.Drawing.dll</Path>
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DTextStyle" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DMultiPolygon" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DCanvas" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DTextBlock" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DSolidColorBrush" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DResource" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DGeometryShape" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DShape" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DShapeStyle" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DPolyline" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DLine" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DShapeContainer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DBrush" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Telerik.UI.Drawing.D2DRectangle" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.ScaleConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBAppRequest" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBFeedRequest" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBPermissions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBAccessTokenData" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Facebook.FBSession" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -92,14 +73,12 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015" />
-    <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23311.4" />
+    <build:Item Name="OperatingSystem" Version="10.0.10586.0 (th2_release.151029-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.24720.0" />
     <build:Item Name="ProjectGUID" Value="{DC76C179-A704-44FC-BCCB-763D162CC901}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.23309.0" />
-    <build:Item Name="Telerik Map for Universal Windows Platform" Version="2015.3.1117.45" />
-    <build:Item Name="Telerik UI For Universal Windows Platform" Version="2015.3.1117.45" />
-    <build:Item Name="MakePri.exe" Version="10.0.10240.16384 (th1.150709-1700)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.24720.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.10586.15 (th2_release.151119-1817)" />
   </build:Metadata>
 </Package>

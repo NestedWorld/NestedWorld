@@ -42,8 +42,6 @@
     <RootPropertyPathName Name="UserLevel" />
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="UserBackgroundImageSource" />
-    <RootPropertyPathName Name="DataItem" />
-    <RootPropertyPathName Name="LabelProperty" />
     <RootPropertyPathName Name="LooseSize" />
     <RootPropertyPathName Name="Loose" />
     <RootPropertyPathName Name="WinSize" />
@@ -768,33 +766,6 @@
     </RootType>
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterLocationView">
       <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ChartPalette">
-      <RootProperty Name="FillEntries" />
-      <RootProperty Name="StrokeEntries" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection">
-      <RootProperty Name="Brushes" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.RadPieChart">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="ClipToBounds" />
-      <RootProperty Name="Palette" />
-      <RootProperty Name="Series" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.DoughnutSeries">
-      <RootProperty Name="ShowLabels" />
-      <RootProperty Name="ValueBinding" />
-      <RootProperty Name="LabelDefinitions" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding">
-      <RootProperty Name="PropertyName" />
-    </RootType>
-    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames">
       <RootProperty Name="EnableDependentAnimation" />

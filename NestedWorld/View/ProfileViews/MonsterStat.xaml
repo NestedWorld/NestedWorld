@@ -5,13 +5,11 @@
     xmlns:local="using:NestedWorld.View.ProfileViews"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:telerik="using:Telerik.UI.Xaml.Controls.Chart"
-    xmlns:telerikCharting="using:Telerik.Charting"
     mc:Ignorable="d"
     Height="400"
     Width="400">
     <UserControl.Resources>
-        <telerik:ChartPalette x:Key="CustomPalette">
+        <!--telerik:ChartPalette x:Key="CustomPalette">
             <telerik:ChartPalette.FillEntries>
                 <telerik:PaletteEntryCollection>
                     <SolidColorBrush Color="{StaticResource FireColor}"/>
@@ -26,11 +24,11 @@
                     <SolidColorBrush Color="{StaticResource background}"/>
                 </telerik:PaletteEntryCollection>
             </telerik:ChartPalette.StrokeEntries>
-        </telerik:ChartPalette>
+        </-->
     </UserControl.Resources>
     <Grid Background="{StaticResource BackrgoundBrush}">
         <TextBlock Text="Monsters Type" Margin="10" FontSize="20"/>
-        <telerik:RadPieChart x:Name="mychart" Width="200" Height="200" ClipToBounds="False" Palette="{StaticResource CustomPalette}">
+        <!--telerik:RadPieChart x:Name="mychart" Width="200" Height="200" ClipToBounds="False" Palette="{StaticResource CustomPalette}">
             <telerik:DoughnutSeries ShowLabels="True">
                 <telerik:DoughnutSeries.ValueBinding>
                     <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
@@ -45,7 +43,7 @@
                     </telerik:ChartSeriesLabelDefinition>
                 </telerik:DoughnutSeries.LabelDefinitions>
             </telerik:DoughnutSeries>
-        </telerik:RadPieChart>
+        </-->
 
     </Grid>
 </UserControl>

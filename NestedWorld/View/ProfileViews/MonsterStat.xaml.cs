@@ -22,7 +22,7 @@ namespace NestedWorld.View.ProfileViews
         public MonsterStat()
         {
             this.InitializeComponent();
-            this.mychart.Series[0].ItemsSource = App.core.monsterUserList.GetStats();
+         //   this.mychart.Series[0].ItemsSource = App.core.monsterUserList.GetStats();
         }
     }
 }

@@ -9,8 +9,8 @@
     <RootPropertyPathName Name="Level" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Image" />
-    <RootPropertyPathName Name="Label" />
-    <RootPropertyPathName Name="Glyph" />
+    <RootPropertyPathName Name="background" />
+    <RootPropertyPathName Name="dataIcon" />
     <RootPropertyPathName Name="ImageItem" />
     <RootPropertyPathName Name="MonsterImage" />
     <RootPropertyPathName Name="MonsterLevel" />
@@ -25,11 +25,9 @@
     <RootPropertyPathName Name="Effect" />
     <RootPropertyPathName Name="imageSource" />
     <RootPropertyPathName Name="size" />
-    <RootPropertyPathName Name="UserLevel" />
-    <RootPropertyPathName Name="UserName" />
-    <RootPropertyPathName Name="UserImage" />
-    <RootPropertyPathName Name="BackgroundImage" />
-    <RootPropertyPathName Name="user" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="Brush" />
+    <RootPropertyPathName Name="ZoomLevel" />
     <RootPropertyPathName Name="FillColor" />
     <RootPropertyPathName Name="MonsterVictory" />
     <RootPropertyPathName Name="MonsterCombat" />
@@ -41,11 +39,22 @@
     <RootPropertyPathName Name="EnemieLevel" />
     <RootPropertyPathName Name="EnemieName" />
     <RootPropertyPathName Name="EnemieBackgroundImageSource" />
+    <RootPropertyPathName Name="UserLevel" />
+    <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="UserBackgroundImageSource" />
-    <RootPropertyPathName Name="Items" />
-    <RootPropertyPathName Name="Groups" />
-    <RootPropertyPathName Name="Subtitle" />
-    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="LooseSize" />
+    <RootPropertyPathName Name="Loose" />
+    <RootPropertyPathName Name="WinSize" />
+    <RootPropertyPathName Name="Win" />
+    <RootPropertyPathName Name="LevelEffect" />
+    <RootPropertyPathName Name="NameEffect" />
+    <RootPropertyPathName Name="ExpEffect" />
+    <RootPropertyPathName Name="LifeEffect" />
+    <RootPropertyPathName Name="DeffEffect" />
+    <RootPropertyPathName Name="AttackEffect" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Price" />
+    <RootPropertyPathName Name="Credit" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -54,30 +63,30 @@
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Color" />
-    <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
+    <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Media.FontFamily" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Background" />
-      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="IsTabStop" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Template" />
       <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Style" />
       <RootProperty Name="Content" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="BorderBrush" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -91,6 +100,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="UseSystemFocusVisuals" />
       <RootProperty Name="Template" />
+      <RootProperty Name="IsTabStop" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootMethod Name="GetIsTemplateFocusTarget" />
       <RootMethod Name="SetIsTemplateFocusTarget" />
@@ -112,15 +122,12 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="TextTrimming" />
       <RootProperty Name="Style" />
-      <RootProperty Name="LineStackingStrategy" />
-      <RootProperty Name="LineHeight" />
-      <RootProperty Name="MaxLines" />
-      <RootProperty Name="IsTextScaleFactorEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
@@ -133,26 +140,29 @@
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Padding" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarToggleButton">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Label" />
       <RootProperty Name="Icon" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton" />
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
@@ -189,9 +199,8 @@
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="ChildrenTransitions" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="AllowDrop" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="AllowDrop" />
       <RootEvent Name="Tapped" />
       <RootEvent Name="Holding" />
       <RootEvent Name="RightTapped" />
@@ -252,7 +261,8 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="RelativeSource" />
       <RootProperty Name="Path" />
-      <RootProperty Name="Source" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -285,8 +295,6 @@
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetAccessibilityView" />
       <RootMethod Name="SetAccessibilityView" />
-      <RootMethod Name="GetName" />
-      <RootMethod Name="SetName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Height" />
@@ -301,6 +309,8 @@
       <RootProperty Name="StrokeDashOffset" />
       <RootProperty Name="StrokeEndLineCap" />
       <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -334,48 +344,54 @@
       <RootProperty Name="ResourceKey" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
       <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
       <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="UseSystemFocusVisuals" />
       <RootProperty Name="Clip" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem" />
-    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
-      <RootProperty Name="ThemeDictionaries" />
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
-      <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Child" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="PointerEntered" />
+      <RootEvent Name="PointerExited" />
+      <RootEvent Name="PointerCanceled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="Glyph" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="MirroredWhenRightToLeft" />
       <RootProperty Name="UseLayoutRounding" />
-      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="BringIntoViewOnFocusChange" />
-      <RootProperty Name="HorizontalScrollBarVisibility" />
       <RootProperty Name="HorizontalSnapPointsAlignment" />
       <RootProperty Name="HorizontalSnapPointsType" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Template" />
+      <RootProperty Name="VerticalSnapPointsType" />
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollMode" />
-      <RootProperty Name="VerticalSnapPointsType" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="ZoomMode" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -389,6 +405,8 @@
       <RootProperty Name="CenterX" />
       <RootProperty Name="ScaleX" />
       <RootProperty Name="ScaleY" />
+      <RootProperty Name="TranslateY" />
+      <RootProperty Name="TranslateX" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter">
       <RootProperty Name="RenderTransform" />
@@ -403,6 +421,13 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="RenderTransform" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
@@ -414,25 +439,72 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Padding" />
       <RootEvent Name="Tapped" />
-      <RootEvent Name="Holding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+      <RootProperty Name="EnableDependentAnimation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="EasingFunction" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
+      <RootProperty Name="EasingMode" />
+      <RootProperty Name="Exponent" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.BackEase">
+      <RootProperty Name="EasingMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="EasingFunction" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PopupThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Stretch" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
       <RootProperty Name="IsOpen" />
       <RootProperty Name="IsLightDismissEnabled" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="InputScope" />
       <RootProperty Name="TextWrapping" />
       <RootEvent Name="KeyDown" />
@@ -441,15 +513,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Stretch" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="NestedWorld.MainPage" />
     <RootType FullName="NestedWorld.View.BattleViews.BattleCanvas" />
@@ -487,6 +552,12 @@
       <RootMethod Name="SetAlignTopWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
       <RootMethod Name="SetAlignRightWithPanel" />
+      <RootMethod Name="GetAlignLeftWith" />
+      <RootMethod Name="SetAlignLeftWith" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Margin" />
@@ -494,8 +565,7 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="NestedWorld.Style.TabHeader">
-      <RootProperty Name="Glyph" />
-      <RootProperty Name="Label" />
+      <RootProperty Name="Icon" />
     </RootType>
     <RootType FullName="NestedWorld.View.ShopView" />
     <RootType FullName="NestedWorld.View.MonsterListView" />
@@ -503,26 +573,33 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NestedWorld.View.MapView" />
-    <RootType FullName="NestedWorld.View.GardenView">
+    <RootType FullName="NestedWorld.View.StuffView">
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="NestedWorld.View.HomeView" />
+    <RootType FullName="NestedWorld.View.HomeView">
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="NestedWorld.View.MonsterView" />
     <RootType FullName="NestedWorld.View.UserView" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="PrimaryCommands" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
-      <RootProperty Name="MinWindowWidth" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="NestedWorld.Pages.HomePage" />
     <RootType FullName="NestedWorld.Pages.MonsterPage" />
-    <RootType FullName="Windows.UI.Xaml.Visibility" />
     <RootType FullName="NestedWorld.View.PrepareBattleView.UsersProfileEntrance" />
     <RootType FullName="NestedWorld.View.PrepareBattleView.UserMonsterListView" />
     <RootType FullName="NestedWorld.Pages.PrepareBattlePage" />
+    <RootType FullName="NestedWorld.View.ProfileViews.MainView" />
+    <RootType FullName="NestedWorld.View.ProfileViews.MonsterStat">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.ProfileViews.StatiUserView">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.Pages.ProfilePage" />
     <RootType FullName="NestedWorld.Pages.SettingsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Height" />
@@ -533,19 +610,8 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
-      <RootProperty Name="EasingMode" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
-      <RootProperty Name="KeyFrames" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
-      <RootProperty Name="KeyTime" />
-      <RootProperty Name="Value" />
-      <RootProperty Name="EasingFunction" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="Stretch" />
       <RootProperty Name="ImageSource" />
@@ -563,18 +629,27 @@
     <RootType FullName="NestedWorld.PopUp.NewBattlePopUp" />
     <RootType FullName="NestedWorld.PopUp.RegisterPopUp" />
     <RootType FullName="NestedWorld.PopUp.SettingsPopUp" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Stroke" />
+    </RootType>
     <RootType FullName="NestedWorld.Style.TabHeaderMap" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames">
-      <RootProperty Name="KeyFrames" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame">
-      <RootProperty Name="KeyTime" />
-      <RootProperty Name="Value" />
-      <RootProperty Name="EasingFunction" />
-    </RootType>
+    <RootType FullName="NestedWorld.View.BattleOverView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Visibility" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.InkCanvas" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.QuinticEase">
@@ -588,18 +663,13 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="SelectionMode" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="NestedWorld.View.ChatViews.ChanelView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
     <RootType FullName="NestedWorld.Classes.Chat.MessageContentPresenter">
       <RootProperty Name="Content" />
       <RootProperty Name="RightTemplate" />
@@ -623,6 +693,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="NestedWorld.View.GardenView" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="CanDragItems" />
@@ -630,20 +701,15 @@
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="SelectionMode" />
-      <RootProperty Name="IsSwipeEnabled" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Background" />
       <RootProperty Name="CanReorderItems" />
-      <RootProperty Name="GroupStyle" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
       <RootEvent Name="DragItemsStarting" />
-      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="NestedWorld.View.GardenViews.GardenElementView">
       <RootProperty Name="Margin" />
@@ -655,46 +721,35 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="NotificationNumber" />
     </RootType>
-    <RootType FullName="NestedWorld.View.MapViews.MapView" />
-    <RootType FullName="NestedWorld.View.MapViews.AreaListView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
-      <RootMethod Name="GetAttachedFlyout" />
-      <RootMethod Name="SetAttachedFlyout" />
+    <RootType FullName="NestedWorld.View.MapPoint.MonsterMapPoint" />
+    <RootType FullName="NestedWorld.View.MapPoint.PlayerMapPoint" />
+    <RootType FullName="NestedWorld.View.MapPoint.UserMapPoint" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
-      <RootProperty Name="Items" />
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutItem">
-      <RootProperty Name="Text" />
-      <RootEvent Name="Click" />
-    </RootType>
+    <RootType FullName="NestedWorld.View.MapViews.AreaInfoView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
-      <RootProperty Name="Visibility" />
       <RootProperty Name="MapServiceToken" />
-      <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="NestedWorld.View.MapViews.AreaAllyView" />
-    <RootType FullName="NestedWorld.View.MapViews.AreaFreeView" />
-    <RootType FullName="NestedWorld.Classes.ElementsGame.Areas.AreaContentPresenter">
-      <RootProperty Name="Content" />
-      <RootProperty Name="MeTemplate" />
-      <RootProperty Name="AllyTemplate" />
-      <RootProperty Name="FreeTemplate" />
-      <RootProperty Name="OtherTemplate" />
-    </RootType>
-    <RootType FullName="NestedWorld.View.MapViews.AreaMeView" />
-    <RootType FullName="NestedWorld.View.MapViews.AreaOtherView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.WrapGrid">
-      <RootProperty Name="MaximumRowsOrColumns" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="HorizontalChildrenAlignment" />
-      <RootProperty Name="VerticalChildrenAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="NestedWorld.View.MapViews.MapPoint" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="NestedWorld.View.MapViews.MapControlView" />
+    <RootType FullName="NestedWorld.View.MapViews.MapListElement">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.MapViews.MonsterMapList" />
+    <RootType FullName="NestedWorld.View.MapViews.UserMapList" />
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterView">
       <RootProperty Name="Margin" />
     </RootType>
@@ -712,18 +767,33 @@
     <RootType FullName="NestedWorld.View.MonsterViews.MonsterLocationView">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
-      <RootProperty Name="Source" />
-      <RootProperty Name="IsSourceGrouped" />
-      <RootProperty Name="ItemsPath" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames">
+      <RootProperty Name="EnableDependentAnimation" />
+      <RootProperty Name="KeyFrames" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsWrapGrid">
-      <RootProperty Name="GroupPadding" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.GroupStyle">
-      <RootProperty Name="HeaderTemplate" />
+    <RootType FullName="NestedWorld.View.SettingsViews.SettingsView" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopUserInfo" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopGroupeListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
     </RootType>
-    <RootType FullName="NestedWorld.View.ShopViews.ShopElementView" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopElementListView">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.ShopViews.ShopElementInformation">
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.ShopViews.ItemEffectView">
+      <RootProperty Name="NameEffect" />
+      <RootProperty Name="LevelEffect" />
+    </RootType>
+    <RootType FullName="NestedWorld.View.ShopViews.ShopItemView" />
+    <RootType FullName="NestedWorld.View.ShopViews.ShopGroupeView" />
     <RootType FullName="NestedWorld.View.UserViews.AllyView">
       <RootProperty Name="Margin" />
     </RootType>

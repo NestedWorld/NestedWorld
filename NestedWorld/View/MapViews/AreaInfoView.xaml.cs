@@ -1,4 +1,6 @@
-﻿using NestedWorld.Classes.ElementsGame.Maps;
+﻿using NestedWorld.Classes.DesignUtilities;
+using NestedWorld.Classes.ElementsGame.Maps;
+using NestedWorld.Classes.Garden;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,10 +22,16 @@ namespace NestedWorld.View.MapViews
 {
     public sealed partial class AreaInfoView : UserControl
     {
+
+        private CircularPresentorItem presentorItem;
         public AreaInfoView(Area area)
         {
             this.InitializeComponent();
             this.DataContext = area;
+            this.presentorItem = new CircularPresentorItem(area.Name, area.Image, area.ItemList, 400,
+                100, 5);
+            this.presentorItem.contenor = contenorGarden;
+            this.presentorItem.Init();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

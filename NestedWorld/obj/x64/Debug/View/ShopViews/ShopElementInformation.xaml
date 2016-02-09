@@ -1,0 +1,80 @@
+﻿<UserControl
+    x:Class="NestedWorld.View.ShopViews.ShopElementInformation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NestedWorld.View.ShopViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{StaticResource BackrgoundBrush}">
+
+    <RelativePanel>
+        <ScrollViewer RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+
+            <Grid Background="{StaticResource BackrgoundBrush}" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100*"/>
+                    <RowDefinition Height="100*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Background="{StaticResource ForgroundBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45*"/>
+                        <ColumnDefinition Width="80*"/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse Height="90" Width="90" StrokeThickness="2" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource BackrgoundBrush}" Fill="{StaticResource BackrgoundBrush}"/>
+                    <Ellipse Height="90" Width="90" StrokeThickness="2" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource BackrgoundBrush}">
+                        <Ellipse.Fill>
+                            <ImageBrush Stretch="Uniform" ImageSource="{Binding Path=Image}"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Path=Name}" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="€ " FontSize="15" Margin="0, 5" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource BackrgoundBrush}" />
+                            <TextBlock Text="{Binding Path=Price}" FontSize="15" Margin="0, 5" Style="{StaticResource TextBlockStyleOne}" Foreground="{StaticResource BackrgoundBrush}" />
+                        </StackPanel>
+
+                        <Button x:ConnectionId='6'                      Height="30" Foreground="{x:Null}" Background="{StaticResource BackrgoundBrush}">
+
+                            <TextBlock Text="Buy"/>
+                        </Button>
+                    </StackPanel>
+
+                    <Button x:ConnectionId='5' Grid.Column="1"                         VerticalAlignment="Top" HorizontalAlignment="Right"  Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+
+                        <Path Data="M1.442037,0L16.002031,14.585751 30.588022,0.025996563 32.001024,1.4409965 17.414783,16.001002 31.97503,30.587006 30.560022,32 15.999268,17.413969 1.4130009,31.973999 0,30.558998 14.586494,15.998742 0.027028472,1.4140019z" Stretch="Uniform" Fill="{StaticResource BackrgoundBrush}" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="-1" ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <TextBlock Text="{Binding Path=Description}" TextWrapping="Wrap" Margin="10"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <ScrollViewer HorizontalAlignment="Center">
+
+                        <RelativePanel>
+                            <local:ItemEffectView x:ConnectionId='1' x:Name="itemEffectAtt" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" NameEffect="Attack" LevelEffect="{Binding Path=AttackEffect}"/>
+                            <local:ItemEffectView x:ConnectionId='2' x:Name="itemEffectDeff" RelativePanel.Below="itemEffectAtt" NameEffect="Deffence" LevelEffect="{Binding Path=DeffEffect}"/>
+                            <local:ItemEffectView x:ConnectionId='3' x:Name="itemEffectLive" RelativePanel.Below="itemEffectDeff" NameEffect="Live" LevelEffect="{Binding Path=LifeEffect}"/>
+                            <local:ItemEffectView x:ConnectionId='4' x:Name="itemEffectExp" RelativePanel.Below="itemEffectLive" NameEffect="Experience" LevelEffect="{Binding Path=ExpEffect}"/>
+                        </RelativePanel>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </RelativePanel>
+
+</UserControl>
+

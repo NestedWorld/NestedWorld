@@ -19,52 +19,28 @@ namespace NestedWorld.Classes.Garden
         private Canvas _canvas;
         public Canvas canvas { get { return _canvas; } set { _canvas = value; initCanvas(); } }
 
-        public GardenElementList elementList { get; set; }
-
-        public GardenElementListViewModel viewModel { get; set; }
-
+        public List<Model.Item> itemList { get; set; }
         private DispatcherTimer timer = new DispatcherTimer();
 
-        public Garden()
+        public Garden(List<Model.Item> itemList)
         {
-            elementList = new GardenElementList(); //list of all element avalable
             listItem = new List<GardenItem>(); // list of element display
+            this.itemList = itemList;
         }
 
         private void initCanvas()
         {
-            Window.Current.SizeChanged += Current_SizeChanged;
-            //InitItem(5);
-            _canvas.AllowDrop = true;
-            _canvas.CanDrag = false;
-            _canvas.Drop += _canvas_Drop;
             SetPos(Window.Current.Bounds.Height, Window.Current.Bounds.Width);
             timer.Tick += Timer_Tick;
             timer.Interval = TimeSpan.FromSeconds(1);
             //timer.Start();
         }
 
-
-        private void _canvas_Drop(object sender, DragEventArgs e)
-        {
-            Debug.WriteLine("_canvas_Drop");
-
-            object sourceItem;
-            e.Data.Properties.TryGetValue("item", out sourceItem);
-            if (sourceItem == null)
-                return;
-          
-            GardenElement element = sourceItem as GardenElement;
-            GardenItem item = new GardenItem();
-            item.element = element;
-            Add(item);
-        }
-
         private void Timer_Tick(object sender, object e)
         {
             foreach (GardenItem item in listItem)
             {
-                item.time++;
+               // item.time++;
             }
         }
 
@@ -77,7 +53,7 @@ namespace NestedWorld.Classes.Garden
 
         public void init()
         {
-            elementList.Add(new GardenElement("Fire Flower", "", "ms-appx:///Assets/Flower/flowerFire.png", ElementsGame.TypeEnum.FIRE));
+         /*   elementList.Add(new GardenElement("Fire Flower", "", "ms-appx:///Assets/Flower/flowerFire.png", ElementsGame.TypeEnum.FIRE));
             elementList.Add(new GardenElement("Water Flower", "", "ms-appx:///Assets/Flower/flowerWater.png", ElementsGame.TypeEnum.WATHER));
             elementList.Add(new GardenElement("Grass Flower", "", "ms-appx:///Assets/Flower/flowerGrass.png", ElementsGame.TypeEnum.GRASS));
             elementList.Add(new GardenElement("Stone Flower", "", "ms-appx:///Assets/Flower/flowerDirt.png", ElementsGame.TypeEnum.DIRT));
@@ -87,21 +63,8 @@ namespace NestedWorld.Classes.Garden
                 GardenItem tmp = new GardenItem();
                 tmp.element = element;
                 Add(tmp);
-            }
+            }*/
         }
-
-        private void InitItem(int numberOfItem)
-        {
-            for (int i = 0; i < numberOfItem; i++)
-            {
-                GardenItem item = new GardenItem();
-
-                item.ImageItem = "ms-appx:///Assets/NestedWorldLogo.png";
-                listItem.Add(item);
-                canvas.Children.Add(item);
-            }
-        }
-
         private void SetPos(double height, double width)
         {
             if (listItem == null)
@@ -122,9 +85,5 @@ namespace NestedWorld.Classes.Garden
             }
         }
 
-        private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
-        {
-            SetPos(e.Size.Height, e.Size.Width);
-        }
     }
 }

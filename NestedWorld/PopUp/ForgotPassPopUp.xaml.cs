@@ -23,13 +23,20 @@ namespace NestedWorld.PopUp
         public ForgotPassPopUp()
         {
             this.InitializeComponent();
+            this.Loaded += ForgotPassPopUp_Loaded;
+        }
+
+        private void ForgotPassPopUp_Loaded(object sender, RoutedEventArgs e)
+        {
+            ShowAnnim.Begin();
+            SetSize(Window.Current.Bounds.Height, Window.Current.Bounds.Width);
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
 
             Popup p = this.Parent as Popup;
-
+            HideAnnim.Begin();
             p.IsOpen = false;
         }
 
@@ -48,6 +55,8 @@ namespace NestedWorld.PopUp
             {
                 var result = await resetPassword.GetJsonAsync();
                 Popup p = this.Parent as Popup;
+                HideAnnim.Begin();
+
                 p.IsOpen = false;
             }
             catch (System.Net.Http.HttpRequestException ex)
@@ -62,7 +71,7 @@ namespace NestedWorld.PopUp
                 Debug.WriteLine(jEx);
             }
 
-           
+
         }
 
         private void setError(string errorMessage)
@@ -70,5 +79,22 @@ namespace NestedWorld.PopUp
             ErrorTextBlock.Text = errorMessage;
             ErrorAnnimation.Begin();
         }
+
+        private void SetSize(double height, double width)
+        {
+            this.Height = height - 20;
+            this.Width = width - 20;
+            try
+            {
+                Popup p = this.Parent as Popup;
+                p.HorizontalOffset = (width / 2) - (this.Width / 2);
+                p.VerticalOffset = (height / 2) - (this.Height / 2);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+        }
+
     }
 }

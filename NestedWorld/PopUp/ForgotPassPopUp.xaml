@@ -1,4 +1,5 @@
 ﻿<UserControl
+    x:Name="userControl"
     x:Class="NestedWorld.PopUp.ForgotPassPopUp"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,23 +7,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Height="300"
-    Width="400">
+   RenderTransformOrigin="0.5,1">
     <UserControl.Resources>
-        <Storyboard x:Name="ShowAnnimation">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="userControl">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CubicEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CubicEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
+    
         <Storyboard x:Name="ErrorAnnimation">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ErrorTextBlock">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0">
@@ -37,31 +24,41 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Name="RemoveAnnimation">
-            <DoubleAnimation Duration="0:0:0.3" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="userControl" d:IsOptimized="True">
+        <Storyboard x:Name="ShowAnnim">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="userControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="HideAnnim">
+            <DoubleAnimation Duration="0:0:0.5" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="userControl" d:IsOptimized="True">
                 <DoubleAnimation.EasingFunction>
-                    <CubicEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
     </UserControl.Resources>
-
-    <Grid>
-         <Grid.Background>
-            <SolidColorBrush Color="#FFEAEAEA"/>
-        </Grid.Background>
+    <UserControl.RenderTransform>
+        <CompositeTransform/>
+    </UserControl.RenderTransform>
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="15*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="15*"/>
-
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="75"/>
         </Grid.RowDefinitions>
-        <TextBlock Margin="20" Text="Forgot your password" FontSize="20"/>
 
-        <StackPanel Grid.Row="1">
-            <TextBlock Text="E-Mail" Margin="20, 5"></TextBlock>
-            <TextBox x:Name="mailEntry" Margin="20, 5"></TextBox>
-        </StackPanel>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Forgot your password" FontSize="20"/>
+
+        <TextBox x:Name="mailEntry" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  PlaceholderText="Mail" Style="{StaticResource TextBoxStyleLogin}" FontSize="15" Margin="20, 5"/>
 
         <Grid Grid.Row="3">
 

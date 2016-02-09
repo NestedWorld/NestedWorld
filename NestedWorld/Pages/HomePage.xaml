@@ -21,7 +21,7 @@
     <RelativePanel>
         <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
             <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
 

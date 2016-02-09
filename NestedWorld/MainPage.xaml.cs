@@ -36,21 +36,46 @@ namespace NestedWorld
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-           // Utils.ThemeSelector.SetTheme();
+            // Utils.ThemeSelector.SetTheme();
 
-            EnterAnnimation.Begin();
+            EntranceAnnimation.Begin();
+            popupView.Closed += PopupView_Closed;
         }
+
+        private void PopupView_Closed(object sender, object e)
+        {
+            Debug.WriteLine("close");
+            progressGrid.Visibility = Visibility.Collapsed;
+
+        }
+
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-          if (UserNameText.Text == string.Empty)
+            ErrorTextBlock.Opacity = 0;
+            if (UserNameText.Text == string.Empty)
+            {
+                ShowError("Please enter a Login");
                 return;
+            }
             if (PassWordText.Password == string.Empty)
+            {
+                ShowError("Please enter a PassWord");
                 return;
+            }
+
+            UserNameText.IsTabStop = false;
+            PassWordText.IsTabStop = false;
+            progressGrid.Visibility = Visibility.Visible;
             progressRing.IsActive = true;
             loginButton.Visibility = Visibility.Collapsed;
             string ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
             //string ret = await App.network.Connect("thomas.caron@epitech.eu", "toto");
+            //string ret = string.Empty;
             progressRing.IsActive = false;
+            progressGrid.Visibility = Visibility.Collapsed;
+            UserNameText.IsTabStop = true;
+            PassWordText.IsTabStop = true;
+
             if (ret == string.Empty)
             {
                 await App.core.Init();
@@ -60,13 +85,15 @@ namespace NestedWorld
             else
                 ShowError(ret);
             loginButton.Visibility = Visibility.Visible;
-          
+
         }
 
-        private async void ShowError(string ErrorMessage)
+        private void ShowError(string ErrorMessage)
         {
-            var messageDialog = new MessageDialog(ErrorMessage);
-            await messageDialog.ShowAsync();
+
+            ErrorTextBlock.Text = ErrorMessage;
+            ErrorAnnimation.Begin();
+           
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -76,30 +103,26 @@ namespace NestedWorld
 
         private void Regiter_Click(object sender, RoutedEventArgs e)
         {
+            progressGrid.Visibility = Visibility.Visible;
+
             popupView.Child = new PopUp.RegisterPopUp();
             popupView.IsOpen = true;
         }
 
         private void Forgot_Click(object sender, RoutedEventArgs e)
         {
+
+            progressGrid.Visibility = Visibility.Visible;
+
             popupView.Child = new PopUp.ForgotPassPopUp();
             popupView.IsOpen = true;
         }
 
-        public static bool DeviceIsPhone()
-        {
-            EasClientDeviceInformation info = new EasClientDeviceInformation();
-            string system = info.OperatingSystem;
 
-            Debug.WriteLine(system);
-
-            return true;
-        }
 
         private void Setting_Click(object sender, RoutedEventArgs e)
         {
 
-            Debug.WriteLine(DeviceIsPhone());
             //popupView.Child = new PopUp.SettingsPopUp();
             //popupView.IsOpen = true;
         }

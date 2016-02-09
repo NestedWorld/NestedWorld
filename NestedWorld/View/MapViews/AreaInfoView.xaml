@@ -5,11 +5,12 @@
     xmlns:local="using:NestedWorld.View.MapViews"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:NestedWorld.UI"
     mc:Ignorable="d"
-    d:DesignHeight="600"
-    d:DesignWidth="400">
+    Height="400"
+    Width="400">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <!--Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
             <RowDefinition Height="*"/>
@@ -35,13 +36,19 @@
                 </Path.RenderTransform>
             </Path>
         </Button>
-        <ScrollViewer Grid.Row="1">
-            <StackPanel>
-                <GridView >
-                    
-                </GridView>
-            </StackPanel>
-        </ScrollViewer>        
-        
-    </Grid>
+        <Pivot Grid.Row="1" Margin="0">
+            <PivotItem Header="Garden" Margin="0">
+                <Grid>
+                    <ui:CircularContenor x:Name="contenorGarden"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Monsters" Margin="0">
+                <Grid>
+                    <ui:CircularContenor x:Name="contenorMonster"/>
+                </Grid>
+            </PivotItem>
+        </Pivot>
+    </Grid-->
+    <ui:CircularContenor x:Name="contenorGarden"/>
+
 </UserControl>

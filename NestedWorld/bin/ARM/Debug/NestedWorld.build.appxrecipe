@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>fe724577-c7a2-4fb8-9bd8-a66c97686cfc</PackageIdentityName>
-    <IntermediateOutputPath>E:\Project\GitHub\Windows10\NestedWorld\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\obj\ARM\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Project\GitHub\Windows10\NestedWorld\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\bin\ARM\Debug\NestedWorld.exe">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\ARM\Debug\NestedWorld.exe">
       <PackagePath>entrypoint\NestedWorld.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lepet\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -342,130 +342,130 @@
     <AppxPackagedFile Include="C:\Users\lepet\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\ARM\Debug\FBSDK-UWP\Facebook.dll">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\ARM\Debug\FBSDK-UWP\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\ARM\Debug\FBSDK-UWP\Facebook.winmd">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\ARM\Debug\FBSDK-UWP\Facebook.winmd">
       <PackagePath>Facebook.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\ApplicationInsights.config">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\default_monster.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\default_monster.png">
       <PackagePath>Assets\default_monster.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Map\position.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Map\position.png">
       <PackagePath>Assets\Map\position.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Effect\fire_effect.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Effect\fire_effect.png">
       <PackagePath>Assets\Effect\fire_effect.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\Flower.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\Flower.png">
       <PackagePath>Assets\Flower\Flower.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\flowerDirt.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\flowerDirt.png">
       <PackagePath>Assets\Flower\flowerDirt.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\flowerElec.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\flowerElec.png">
       <PackagePath>Assets\Flower\flowerElec.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\flowerFire.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\flowerFire.png">
       <PackagePath>Assets\Flower\flowerFire.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\flowerGrass.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\flowerGrass.png">
       <PackagePath>Assets\Flower\flowerGrass.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Flower\flowerWater.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Flower\flowerWater.png">
       <PackagePath>Assets\Flower\flowerWater.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\iconTest.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\iconTest.png">
       <PackagePath>Assets\iconTest.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\monsterTest\test.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\monsterTest\test.png">
       <PackagePath>Assets\monsterTest\test.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\NestedWorldLogo.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\NestedWorldLogo.png">
       <PackagePath>Assets\NestedWorldLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Type\dirt.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Type\dirt.png">
       <PackagePath>Assets\Type\dirt.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Type\elec.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Type\elec.png">
       <PackagePath>Assets\Type\elec.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Type\fire.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Type\fire.png">
       <PackagePath>Assets\Type\fire.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Type\grass.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Type\grass.png">
       <PackagePath>Assets\Type\grass.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Type\water.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Type\water.png">
       <PackagePath>Assets\Type\water.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\Images\fb_blank_profile_portrait.png">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\Images\fb_blank_profile_portrait.png">
       <PackagePath>Facebook\Images\fb_blank_profile_portrait.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\DataModel\ErrorNetworkSourceFile.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\DataModel\ErrorNetworkSourceFile.xml">
       <PackagePath>DataModel\ErrorNetworkSourceFile.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\DataModel\ShopData.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\DataModel\ShopData.xml">
       <PackagePath>DataModel\ShopData.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBAppRequest.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBAppRequest.xml">
       <PackagePath>Facebook\FBAppRequest.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBProfilePicture.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBProfilePicture.xml">
       <PackagePath>Facebook\FBProfilePicture.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBProfilePictureData.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\winsdkfb-master\FBWinSDK\FBWinSDK\FBWinSDK.Shared\FBProfilePictureData.xml">
       <PackagePath>Facebook\FBProfilePictureData.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\DataModel\ShopData.json">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\DataModel\ShopData.json">
       <PackagePath>DataModel\ShopData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\Assets\iconTest2.jpg">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\Assets\iconTest2.jpg">
       <PackagePath>Assets\iconTest2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\bin\ARM\Debug\NestedWorld.xr.xml">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\ARM\Debug\NestedWorld.xr.xml">
       <PackagePath>NestedWorld.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Project\GitHub\Windows10\NestedWorld\bin\ARM\Debug\Core\NestedWorld.exe">
+    <AppxPackagedFile Include="E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\ARM\Debug\Core\NestedWorld.exe">
       <PackagePath>NestedWorld.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -29,8 +29,8 @@ namespace NestedWorld.View
             mainCanvas.AllowDrop = true;
             mainCanvas.Drop += Grid_Drop;
             App.core.garden.init();
-            App.core.garden.viewModel = new ViewModel.GardenElementListViewModel(gardenElementListView);
-            App.core.garden.elementList.viewModel = App.core.garden.viewModel;
+            //App.core.garden.viewModel = new ViewModel.GardenElementListViewModel(gardenElementListView);
+            //App.core.garden.elementList.viewModel = App.core.garden.viewModel;
         }
 
         private void Grid_Drop(object sender, DragEventArgs e)
@@ -41,10 +41,10 @@ namespace NestedWorld.View
                 return;
             Debug.WriteLine("_canvas_Drop");
 
-            GardenElement element = sourceItem as GardenElement;
+           /* GardenElement element = sourceItem as GardenElement;
             GardenItem item = new GardenItem();
             item.element = element;
-            App.core.garden.Add(item);
+            App.core.garden.Add(item);*/
         }
     }
 }

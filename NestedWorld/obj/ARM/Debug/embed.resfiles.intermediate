@@ -18,6 +18,10 @@ Style\TabHeaderMap.xbf
 Theme\FireTheme.xbf
 Theme\WaterTheme.xbf
 Themes\Generic.xbf
+UI\CircularContenor.xbf
+UI\CircularItem.xbf
+UI\CircularItemAdd.xbf
+UI\CircularItemInformation.xbf
 View\BattleOverView.xbf
 View\BattleViews\AnnimationCanvas.xbf
 View\BattleViews\BattleCanvas.xbf

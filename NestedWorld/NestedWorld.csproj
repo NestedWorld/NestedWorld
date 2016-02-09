@@ -99,7 +99,6 @@
     <Content Include="DataModel\ShopData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
     <PRIResource Include="Theme\WaterTheme.resw" />
     <PRIResource Include="Theme\FireTheme.resw" />
@@ -111,6 +110,8 @@
     <Compile Include="Classes\Chat\Channel.cs" />
     <Compile Include="Classes\Chat\MessageContentPresenter.cs" />
     <Compile Include="Classes\Core.cs" />
+    <Compile Include="Classes\DesignUtilities\CircularPresentorItem.cs" />
+    <Compile Include="Classes\DesignUtilities\CirularPresentor.cs" />
     <Compile Include="Classes\DesignUtilities\ThemeSelector.cs" />
     <Compile Include="Classes\ElementsGame\Battle\BattleCore.cs" />
     <Compile Include="Classes\ElementsGame\Battle\Patern.cs" />
@@ -135,8 +136,6 @@
     <Compile Include="Classes\ElementsGame\Users\UserList.cs" />
     <Compile Include="Classes\Enum\UserEnum.cs" />
     <Compile Include="Classes\Garden\Garden.cs" />
-    <Compile Include="Classes\Garden\GardenElement.cs" />
-    <Compile Include="Classes\Garden\GardenElementList.cs" />
     <Compile Include="Classes\Network\ImageDownload.cs" />
     <Compile Include="Classes\Network\Network.cs" />
     <Compile Include="Classes\Request\Auth\Login.cs" />
@@ -201,13 +200,25 @@
     <Compile Include="Style\TabHeaderMap.xaml.cs">
       <DependentUpon>TabHeaderMap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\CircularContenor.xaml.cs">
+      <DependentUpon>CircularContenor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CircularItem.xaml.cs">
+      <DependentUpon>CircularItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CircularItemAdd.xaml.cs">
+      <DependentUpon>CircularItemAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CircularItemInformation.xaml.cs">
+      <DependentUpon>CircularItemInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\ColorUtils.cs" />
+    <Compile Include="Utils\ImageUtils.cs" />
     <Compile Include="Utils\IO.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
     <Compile Include="Utils\ThemeSelector.cs" />
     <Compile Include="ViewModel\ChanelListViewModel.cs" />
-    <Compile Include="ViewModel\GardenElementListViewModel.cs" />
     <Compile Include="View\BattleOverView.xaml.cs">
       <DependentUpon>BattleOverView.xaml</DependentUpon>
     </Compile>
@@ -489,6 +500,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="UI\CircularContenor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CircularItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CircularItemAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CircularItemInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\BattleOverView.xaml">
       <SubType>Designer</SubType>

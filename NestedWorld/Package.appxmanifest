@@ -25,6 +25,9 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="internetClientServer" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap:Capability Name="musicLibrary" />
+    <uap:Capability Name="videosLibrary" />
     <DeviceCapability Name="location" />
     <DeviceCapability Name="webcam" />
   </Capabilities>

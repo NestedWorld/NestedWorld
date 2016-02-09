@@ -1,2 +1,2 @@
-E:\Project\GitHub\Windows10\NestedWorld\NestedWorld.csproj;arm
-E:\Project\GitHub\Windows10\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj;arm
+E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\NestedWorld.csproj;arm
+E:\Project\GitHub\NestedWorld\Windows10\winsdkfb-master\FBWinSDK\FBSDK-UWP\FBSDK-UWP\FBSDK-UWP.vcxproj;arm

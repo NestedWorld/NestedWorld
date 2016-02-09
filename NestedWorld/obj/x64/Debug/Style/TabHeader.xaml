@@ -6,26 +6,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Width="75" Height="50" IsTabStop="False">
+    Width="75"
+    Height="50"
+    IsTabStop="False"
+    >
 
-    <StackPanel>
 
-        <FontIcon
-                            HorizontalAlignment="Center"
-                            Margin="0,12,0,0"
-                            Glyph="{Binding Glyph}"
-                            FontSize="17" />
-        <TextBlock
-                            FontFamily="Segoe UI"
-                            Text="{Binding Label}"
-                            Style="{StaticResource CaptionTextBlockStyle}"
-                            LineStackingStrategy="BlockLineHeight"
-                            LineHeight="14"
-                            MaxLines="2"
-                            IsTextScaleFactorEnabled="False"
-                            TextAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Margin="2,5,2,7" />
-    </StackPanel>
+    <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+        <Path Fill="{Binding background}" Data="{Binding dataIcon}" Stretch="Uniform" Width="30" Height="30" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" >
+        </Path>
+       
+    </Grid>
 </UserControl>
 

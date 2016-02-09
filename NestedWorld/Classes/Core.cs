@@ -51,7 +51,7 @@ namespace NestedWorld.Classes
             monsterUserList = new MonsterList();
             userList = new UserList();
             areaList = new AreaList();
-            garden = new Garden.Garden();
+            //garden = new Garden.Garden();
             mapCore = new MapCore(user);
             Shop = new Shop();
         }

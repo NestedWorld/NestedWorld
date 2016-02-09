@@ -41,8 +41,8 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="40*"/>
                 <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
 
             </Grid.ColumnDefinitions>
             <Ellipse Height="75" Width="75" Stroke="{StaticResource BackrgoundBrush}" StrokeThickness="2">
@@ -58,6 +58,7 @@
                     <TextBlock Text="{Binding Path=Level}" FontSize="10" Grid.Column="1" VerticalAlignment="Bottom" Foreground="{StaticResource BackrgoundBrush}"/>
                     <TextBlock Text="lvl" FontSize="10" Grid.Column="1" VerticalAlignment="Bottom" Foreground="{StaticResource BackrgoundBrush}" Margin="3,0,0,0"/>
                 </StackPanel>
+                <TextBlock FontSize="12" Text="Want fight with you" Foreground="{StaticResource BackrgoundBrush}"/>
             </StackPanel>
             <AppBarButton x:ConnectionId='4' Grid.Column="2"  HorizontalAlignment="Right"                             Background="{x:Null}" Width="50" Height="51">
                 <AppBarButton.Foreground>

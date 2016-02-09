@@ -21,26 +21,7 @@ namespace NestedWorld.View.GardenViews
 {
     public sealed partial class GardenItem : UserControl
     {
-        public static readonly DependencyProperty UserImageProperty = DependencyProperty.Register("ImageItem", typeof(string), typeof(GardenItem), null);
-
-        public string ImageItem
-        {
-            get { return GetValue(UserImageProperty) as string; }
-            set { SetValue(UserImageProperty, value); }
-        }
-
-        public static readonly DependencyProperty sizeProperty = DependencyProperty.Register("size", typeof(double), typeof(GardenItem), null);
-        private Classes.Garden.GardenElement _element;
-
-        public double time
-        {
-            get { return Convert.ToDouble(GetValue(sizeProperty)); }
-            set
-            {
-                if (value <= 100 && value >= 0)
-                    SetValue(sizeProperty, value);
-            }
-        }
+      
 
         public double left { get { return 0; } set { Canvas.SetLeft(this, value); } }
         public double top { get { return 0; } set { Canvas.SetTop(this, value); } }
@@ -50,18 +31,10 @@ namespace NestedWorld.View.GardenViews
             this.InitializeComponent();
             this.DataContext = this;
             this.CanDrag = true;
-            time = 0;
+           // time = 0;
         }
 
-        public Classes.Garden.GardenElement element
-        {
-            get { return _element; }
-            set
-            {
-                _element = value;
-                ImageItem = element.imageSource;
-            }
-        }
+      
 
         private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
         {

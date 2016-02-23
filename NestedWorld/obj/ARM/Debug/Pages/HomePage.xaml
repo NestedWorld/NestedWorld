@@ -18,189 +18,80 @@
     <Page.Resources>
 
     </Page.Resources>
-    <RelativePanel>
-        <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100*"/>
-            </Grid.RowDefinitions>
+    <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0">
-                <Grid.Background>
-                    <SolidColorBrush Color="{StaticResource BleuTwo}"/>
-                </Grid.Background>
-                <CommandBar Background="{StaticResource BleuTwoBrush}" Foreground="{StaticResource BleuThreeBrush}">
-                    <AppBarButton x:ConnectionId='9' Foreground="{StaticResource BackrgoundBrush}" Label="Battle"                             >
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BleuTwo}"/>
+            </Grid.Background>
+            <CommandBar Background="{StaticResource BleuTwoBrush}" Foreground="{StaticResource BleuThreeBrush}">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton x:ConnectionId='8' Foreground="{StaticResource BackrgoundBrush}" Label="Battle"                             >
                         <AppBarButton.Icon>
                             <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M2.50000262260437,10.3125L9.6249885559082,17.5 8.00000190734863,19.1249942779541 5.12501335144043,16.25 3.12500357627869,18.125 3.12500357627869,18.4375 2.67186951637268,19.5468730926514 1.56250178813934,20 0.453119695186615,19.5468730926514 0,18.4375 0.453119695186615,17.3281230926514 1.56250178813934,16.875 1.74999451637268,16.875 1.81247925758362,16.875 3.87501215934753,15 0.874978065490723,11.9374942779541 2.50000262260437,10.3125z M19.9375,0L19.8750152587891,3.56249809265137 8.00000190734863,13.8749980926514 6.25000762939453,11.9374942779541 16.4999980926514,0.0624942779541016 19.9375,0z" />
                         </AppBarButton.Icon>
                     </AppBarButton>
-
-
-                    <AppBarButton x:ConnectionId='10'                            Label="Chat" Foreground="{StaticResource BleuThreeBrush}" >
+                    <AppBarButton x:ConnectionId='9'                            Label="Chat" Foreground="{StaticResource BleuThreeBrush}" >
                         <AppBarButton.Icon>
                             <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M14.3125152587891,7.12500047683716L13.2890844345093,7.53906297683716 12.8750228881836,8.56250190734863 13.2890844345093,9.5859317779541 14.3125152587891,9.99999237060547 15.3359460830688,9.5859317779541 15.7500076293945,8.56250190734863 15.2890825271606,7.56249856948853 14.3125152587891,7.12500047683716z M10,7.12500047683716L8.97656917572021,7.53906297683716 8.56250762939453,8.56250190734863 8.97656917572021,9.5859317779541 10,9.99999237060547 11.0234308242798,9.5859317779541 11.4374923706055,8.56250190734863 11.0234308242798,7.56249856948853 10,7.12500047683716z M5.68752288818359,7.12500047683716L4.66405868530273,7.53906297683716 4.24999237060547,8.56250190734863 4.66405868530273,9.5859317779541 5.68752288818359,9.99999237060547 6.71095371246338,9.5859317779541 7.12501525878906,8.56250190734863 6.71095371246338,7.56249856948853 5.68752288818359,7.12500047683716z M10,0L13.8828096389771,0.615234613418579 17.0624961853027,2.29687547683716 19.2109355926514,4.798828125 19.7958984375,6.28051662445068 20,7.87499809265137 19.7958984375,9.45153427124023 19.2109355926514,10.9247999191284 17.0624961853027,13.4296836853027 13.8828096389771,15.1259737014771 10,15.7499980926514 6.31252288818359,15.1875009536743 4.0703296661377,16.609375 2.71779417991638,17.15625 1.31252288818359,17.375 2.35157012939453,15.4765577316284 2.68749237060547,13.2499990463257 0.710945129394531,10.7968692779541 0.182620286941528,9.38280963897705 0,7.87499809265137 0.204101875424385,6.28051662445068 0.789063572883606,4.798828125 2.93750286102295,2.29687547683716 6.11719083786011,0.615234613418579 10,0z" />
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <AppBarButton x:ConnectionId='11'                               Label="Settings" Foreground="{StaticResource BleuThreeBrush}">
+                </CommandBar.PrimaryCommands>
+                <CommandBar.SecondaryCommands>
+                    <AppBarButton x:ConnectionId='10'                               Label="Settings" Foreground="{StaticResource ForgroundBrush}">
                         <AppBarButton.Icon>
                             <PathIcon HorizontalAlignment="Center" VerticalAlignment="Center" Data="M10,5.3125L8.18652153015137,5.68456983566284 6.69531106948853,6.69531106948853 5.68456983566284,8.18652153015137 5.3125,10 5.68456983566284,11.8134784698486 6.69531106948853,13.3046894073486 8.18652153015137,14.3154306411743 10,14.6875 11.8134698867798,14.3154306411743 13.3046817779541,13.3046894073486 14.3154277801514,11.8134784698486 14.6875,10 14.3154277801514,8.18652153015137 13.3046817779541,6.69531106948853 11.8134698867798,5.68456983566284 10,5.3125z M8.81248474121094,0L11.1874961853027,0 11.1874961853027,3.06249618530273 12.7187395095825,3.51561784744263 14.0625,4.24999237060547 16.25,2.06249237060547 17.9374885559082,3.75 15.7499885559082,5.9375 16.9374847412109,8.81250381469727 20,8.81250381469727 20,11.1874961853027 16.9374847412109,11.1874961853027 16.4843635559082,12.7187461853027 15.7499885559082,14.0625 17.9374885559082,16.25 16.25,17.9374885559082 14.0625,15.7499885559082 11.1874961853027,16.9375038146973 11.1874961853027,20 8.81248474121094,20 8.81248474121094,16.9375038146973 5.9375,15.7499885559082 3.75,17.9374885559082 2.06249237060547,16.25 4.24999237060547,14.0625 3.06249618530273,11.1874961853027 0,11.1874961853027 0,8.81250381469727 3.06249618530273,8.81250381469727 3.51561784744263,7.28124618530273 4.24999237060547,5.9375 2.06249237060547,3.75 3.75,2.06249237060547 5.9375,4.24999237060547 8.81248474121094,3.06249618530273 8.81248474121094,0z" />
                         </AppBarButton.Icon>
                     </AppBarButton>
-                </CommandBar>
-                <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{StaticResource background}"/>
-                    </TextBlock.Foreground>
-                </TextBlock>
+                </CommandBar.SecondaryCommands>
+            </CommandBar>
+            <TextBlock Text="Nested World"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource background}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
 
-            </Grid>
-            <Pivot x:ConnectionId='1'                                           HorizontalAlignment="Center"  Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
-                <PivotItem   Margin="0" >
-                    <PivotItem.Header>
-                        <Style:TabHeader Icon="M16.200012,6.9000092L27.899994,14.699997 27.899994,26.5 20.200012,26.5 20.200012,18.699997 11.700012,18.699997 11.700012,26.5 4.1000061,26.5 4.1000061,14.699997z M16.200012,0L32,10.800003 32,14.400009 16.200012,3.6000061 0,14.699997 0,11.100006z"/>
-                    </PivotItem.Header>
-                    <ScrollViewer>
-                        <RelativePanel>
-                            <view:HomeView x:ConnectionId='6' x:FieldModifier="public"  x:Name="homeView"                         />
-                            <view:MonsterView x:ConnectionId='7' x:FieldModifier="public"  x:Name="monsterView" />
-                            <view:UserView x:ConnectionId='8' x:FieldModifier="public"  x:Name="userView" />
-                        </RelativePanel>
-                    </ScrollViewer>
-                </PivotItem>
-                <PivotItem Margin="0">
-                    <PivotItem.Header>
-                        <Style:TabHeader Icon="M4.0000045,16.5L15.399982,28 12.800003,30.599991 8.2000219,26 5.0000059,29 5.0000059,29.5C5.0000059,30.899994 3.8999678,32 2.5000028,32 1.0999767,32 -1.6659033E-07,30.899994 0,29.5 -1.6659033E-07,28.099991 1.0999767,27 2.5000028,27L2.7999911,27 2.8999666,27 6.2000195,24 1.3999649,19.099991z M31.900001,0L31.800025,5.6999969 12.800003,22.199997 10.000012,19.099991 26.399995,0.099990845z" />
-                    </PivotItem.Header>
-                    <RelativePanel>
-                        <!--view:GardenView x:FieldModifier="public"  Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"-->
-                        <view:StuffView x:FieldModifier="public" Margin="0" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
-                    </RelativePanel>
-                </PivotItem>
-                <PivotItem Margin="0">
-                    <PivotItem.Header>
-                        <Style:TabHeader Icon="M10.1,5C7.200008,5 4.8999911,7.1999969 4.8999911,10 4.8999911,12.800003 7.200008,15 10.1,15 12.999992,15 15.300009,12.800003 15.300009,10 15.300009,7.3000031 12.899986,5 10.1,5z M10.1,0C15.700003,0 20.2,4.3000031 20.2,9.6999969 20.2,11.600006 19.599994,13.300003 18.700002,14.800003L14.499991,23.300003 10.1,32 5.800015,23.300003 1.6000052,14.800003C0.60000567,13.300003 -4.7890353E-08,11.600006 0,9.6999969 -4.7890353E-08,4.3000031 4.4999972,0 10.1,0z" />
-                    </PivotItem.Header>
-                    <Grid>
-                        <view:MapView />
-                    </Grid>
-                </PivotItem>
-                <PivotItem  Margin="0">
-                    <PivotItem.Header>
-                        <Style:TabHeader Icon="M21.258008,5.6110229C21.573011,6.5339966 23.869001,13.660034 18.535001,15.122009 18.535001,15.122009 19.061002,17.800049 16.975003,22.061035L16.135005,23.734009C16.135005,23.734009 15.617001,24.049011 15.639996,23.329041 15.639996,23.329041 16.210002,19.045044 14.687007,16.735046 14.687007,16.735046 8.8960057,18.369995 10.547007,22.871033 10.547007,22.871033 13.232005,29.795044 21.167997,26.434021 25.001006,24.520996 27.657012,20.567993 27.657012,16 27.657012,11.468994 25.046004,7.5390015 21.258008,5.6110229z M15.999996,4.3430176C9.639002,4.3430176 4.4629985,9.4590454 4.350999,15.790039 4.8009959,14.717041 6.301004,11.657043 9.4739934,10.262024L21.122998,5.5510254C19.578,4.7860107,17.83801,4.3430176,15.999996,4.3430176z M15.999996,0C24.820996,0 31.999999,7.1780396 31.999999,16 31.999999,24.821045 24.820996,32 15.999996,32 7.1780029,32 -1.0455824E-07,24.821045 0,16 -1.0455824E-07,7.1780396 7.1780029,0 15.999996,0z" />
-                    </PivotItem.Header>
-                    <RelativePanel>
-                        <view:MonsterListView x:ConnectionId='4' x:FieldModifier="public"  x:Name="monsterListView" />
-                        <monsterViews:MonsterFullView x:ConnectionId='5' x:FieldModifier="public"  x:Name="monsterFullView" Margin="0, 0, 0, 0" />
-                    </RelativePanel>
-                </PivotItem>
-                <PivotItem  Margin="0">
-                    <PivotItem.Header>
-                        <Style:TabHeader Icon="M0,7.9000244L4.6999975,7.9000244 4.6999975,9.3000488C4.3999945,9.7000122 4.1999975,10.200012 4.1999975,10.700012 4.1999975,11.800049 5.0999914,12.700012 6.1999975,12.700012 7.3000036,12.700012 8.199998,11.800049 8.199998,10.700012 8.199998,10.200012 8.0000011,9.7000122 7.6999975,9.3000488L7.6999975,7.9000244 15.500002,7.9000244 15.500002,9.3000488C15.199999,9.7000122 15.000002,10.200012 15.000002,10.700012 15.000002,11.800049 15.899996,12.700012 17.000001,12.700012 18.099994,12.700012 19.000003,11.800049 19.000003,10.700012 19.000003,10.200012 18.800006,9.7000122 18.500003,9.3000488L18.500003,7.9000244 23.2,7.9000244 22.000003,29.400024 23.2,32 0.19999695,32 1.300003,29.300049z M11.599992,0C14.800005,0,17.500001,2.6000366,17.500001,5.9000244L17.500001,9.8000488C17.800004,10 18.000003,10.300049 18.000003,10.700012 18.000003,11.300049 17.500001,11.700012 17.000001,11.700012 16.399995,11.700012 16.000002,11.200012 16.000002,10.700012 16.000002,10.300049 16.199998,10 16.500001,9.8000488L16.500001,5.9000244C16.500001,3.2000122 14.300005,1 11.599992,1 8.899995,1 6.6999975,3.2000122 6.6999975,5.9000244L6.6999975,9.8000488C7.0000006,10 7.1999975,10.300049 7.1999975,10.700012 7.1999975,11.300049 6.6999975,11.700012 6.1999975,11.700012 5.5999914,11.700012 5.1999975,11.200012 5.1999975,10.700012 5.1999975,10.300049 5.3999945,10 5.6999975,9.8000488L5.6999975,5.9000244C5.6999975,2.6000366,8.399995,0,11.599992,0z"/>
-                    </PivotItem.Header>
-                    <view:ShopView x:ConnectionId='3' x:Name="ShopView" x:FieldModifier="public" />
-                </PivotItem>
-            </Pivot>
-            <Popup x:ConnectionId='2' x:Name="popupView"></Popup>
         </Grid>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1080" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="homeView.Height" Value="250"/>
-                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
-                        <Setter Target="monsterView.Width" Value="720"/>
-                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
-                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
-                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
-                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
+        <Pivot x:ConnectionId='1' x:Name="RootPivot" x:FieldModifier="public" HorizontalAlignment="Center"  Grid.Row="1" Margin="0,0,0,0" Style="{StaticResource TabsStylePivotStyle}">
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <Style:TabHeader Icon="M16.200012,6.9000092L27.899994,14.699997 27.899994,26.5 20.200012,26.5 20.200012,18.699997 11.700012,18.699997 11.700012,26.5 4.1000061,26.5 4.1000061,14.699997z M16.200012,0L32,10.800003 32,14.400009 16.200012,3.6000061 0,14.699997 0,11.100006z"/>
+                </PivotItem.Header>
+                <view:MainView x:ConnectionId='7' x:Name="mainView" x:FieldModifier="public"/>
+            </PivotItem>
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <Style:TabHeader Icon="M12,2A9,9 0 0,0 3,11V22L6,19L9,22L12,19L15,22L18,19L21,22V11A9,9 0 0,0 12,2M9,8A2,2 0 0,1 11,10A2,2 0 0,1 9,12A2,2 0 0,1 7,10A2,2 0 0,1 9,8M15,8A2,2 0 0,1 17,10A2,2 0 0,1 15,12A2,2 0 0,1 13,10A2,2 0 0,1 15,8Z" />
+                </PivotItem.Header>
+                <RelativePanel>
+                    <view:MonsterTapItem x:ConnectionId='6' x:Name="MonsterView" x:FieldModifier="public"/>
+                </RelativePanel>
+            </PivotItem>
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <Style:TabHeader Icon="M10.1,5C7.200008,5 4.8999911,7.1999969 4.8999911,10 4.8999911,12.800003 7.200008,15 10.1,15 12.999992,15 15.300009,12.800003 15.300009,10 15.300009,7.3000031 12.899986,5 10.1,5z M10.1,0C15.700003,0 20.2,4.3000031 20.2,9.6999969 20.2,11.600006 19.599994,13.300003 18.700002,14.800003L14.499991,23.300003 10.1,32 5.800015,23.300003 1.6000052,14.800003C0.60000567,13.300003 -4.7890353E-08,11.600006 0,9.6999969 -4.7890353E-08,4.3000031 4.4999972,0 10.1,0z" />
+                </PivotItem.Header>
+                    <view:MapView x:ConnectionId='5' x:Name="MapView" x:FieldModifier="public"/>
+            </PivotItem>
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <Style:TabHeader Icon="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"/>
+                </PivotItem.Header>
+                <view:EventView x:ConnectionId='4' x:Name="EventView" x:FieldModifier="public"/>
+            </PivotItem>
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <Style:TabHeader Icon="M0,7.9000244L4.6999975,7.9000244 4.6999975,9.3000488C4.3999945,9.7000122 4.1999975,10.200012 4.1999975,10.700012 4.1999975,11.800049 5.0999914,12.700012 6.1999975,12.700012 7.3000036,12.700012 8.199998,11.800049 8.199998,10.700012 8.199998,10.200012 8.0000011,9.7000122 7.6999975,9.3000488L7.6999975,7.9000244 15.500002,7.9000244 15.500002,9.3000488C15.199999,9.7000122 15.000002,10.200012 15.000002,10.700012 15.000002,11.800049 15.899996,12.700012 17.000001,12.700012 18.099994,12.700012 19.000003,11.800049 19.000003,10.700012 19.000003,10.200012 18.800006,9.7000122 18.500003,9.3000488L18.500003,7.9000244 23.2,7.9000244 22.000003,29.400024 23.2,32 0.19999695,32 1.300003,29.300049z M11.599992,0C14.800005,0,17.500001,2.6000366,17.500001,5.9000244L17.500001,9.8000488C17.800004,10 18.000003,10.300049 18.000003,10.700012 18.000003,11.300049 17.500001,11.700012 17.000001,11.700012 16.399995,11.700012 16.000002,11.200012 16.000002,10.700012 16.000002,10.300049 16.199998,10 16.500001,9.8000488L16.500001,5.9000244C16.500001,3.2000122 14.300005,1 11.599992,1 8.899995,1 6.6999975,3.2000122 6.6999975,5.9000244L6.6999975,9.8000488C7.0000006,10 7.1999975,10.300049 7.1999975,10.700012 7.1999975,11.300049 6.6999975,11.700012 6.1999975,11.700012 5.5999914,11.700012 5.1999975,11.200012 5.1999975,10.700012 5.1999975,10.300049 5.3999945,10 5.6999975,9.8000488L5.6999975,5.9000244C5.6999975,2.6000366,8.399995,0,11.599992,0z"/>
+                </PivotItem.Header>
+                <view:ShopView x:ConnectionId='3' x:Name="ShopView" x:FieldModifier="public" />
+            </PivotItem>
+        </Pivot>
+        <Popup x:ConnectionId='2' x:Name="popupView"/>
+    </Grid>
 
-                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
-
-                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="720" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="homeView.Height" Value="200"/>
-                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
-                        <Setter Target="monsterView.Width" Value="360"/>
-                        <Setter Target="userView.(RelativePanel.RightOf)" Value="monsterView"/>
-                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="False"/>
-                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.AlignTopWith)" Value="monsterView"/>
-
-                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="False"/>
-
-                        <Setter Target="monsterFullView.Visibility" Value="Visible"/>
-
-                        <Setter Target="monsterFullView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="monsterFullView.(RelativePanel.RightOf)" Value="monsterListView"/>
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="548" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="homeView.Height" Value="200"/>
-                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
-                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-
-                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-
-                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
-
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="homeView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="homeView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="homeView.Height" Value="200"/>
-                        <Setter Target="monsterView.(RelativePanel.Below)" Value="homeView"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.Below)" Value="monsterView"/>
-                        <Setter Target="userView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="userView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-
-                        <Setter Target="monsterListView.(RelativePanel.AlignLeftWithPanel)" Value="True"/>
-                        <Setter Target="monsterListView.(RelativePanel.AlignRightWithPanel)" Value="True"/>
-
-                        <Setter Target="monsterFullView.Visibility" Value="Collapsed"/>
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-    </RelativePanel>
 </Page>
 

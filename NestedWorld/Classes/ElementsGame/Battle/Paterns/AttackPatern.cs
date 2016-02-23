@@ -15,8 +15,8 @@ namespace NestedWorld.Classes.ElementsGame.Battle.Paterns
 
         public override void Execute()
         {
-            Core.UserMonster.selectedMonster.Attack(Core.EnemieMonster.selectedMonster);
-            Core.Page.Annimation.Attack();
+         //   Core.UserMonster.selectedMonster.Attack(Core.EnemieMonster.selectedMonster);
+           // Core.Page.Annimation.Attack();
         }
     }
 }

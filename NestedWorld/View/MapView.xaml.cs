@@ -28,6 +28,11 @@ namespace NestedWorld.View
         public MapView()
         {
             this.InitializeComponent();
+
+        }
+
+        public void Init()
+        {
             userMapList = new UserMapList();
             monsterMapList = new MonsterMapList();
             monsterMapList.root = stackPanelRoot;
@@ -42,8 +47,6 @@ namespace NestedWorld.View
             mapControlView.mapControl.MapElementClick += App.core.mapCore.MapControl_MapElementClick;
         }
 
-     
-
         private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
             setSize(e.Size.Width);
@@ -51,7 +54,14 @@ namespace NestedWorld.View
 
         private void setSize(double Width)
         {
-            mapControlView.Width = Width - ((stackPanelRoot.Children.Count - 1) * 300);
+            try
+            {
+                mapControlView.Width = Width - ((stackPanelRoot.Children.Count - 1) * 300);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
 
         private void ShowAlly(object sender, RoutedEventArgs e)

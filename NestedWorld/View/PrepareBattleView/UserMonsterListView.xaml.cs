@@ -32,7 +32,7 @@ namespace NestedWorld.View.PrepareBattleView
             set
             {
                 _monsterList = value;
-                userMonsterGridView.DataContext = new ObservableCollection<UserMonster>(value.monsterList);
+                userMonsterGridView.DataContext = new ObservableCollection<Monster>(value.monsterList);
             }
         }
 
@@ -79,7 +79,7 @@ namespace NestedWorld.View.PrepareBattleView
                 foreach (var element in grid.Children)
                 {
                     View.MonsterSoloView msvelement = element as View.MonsterSoloView;
-                    SelectedMonsterList.monsterList.Remove(msvelement.DataContext as UserMonster);
+                    SelectedMonsterList.monsterList.Remove(msvelement.DataContext as Monster);
                     grid.Children.Remove(element);
                     
                 }
@@ -88,7 +88,7 @@ namespace NestedWorld.View.PrepareBattleView
            
                 e.AcceptedOperation = DataPackageOperation.Copy;
                 def.Complete();
-                selectedMonsterGridView.DataContext = new ObservableCollection<UserMonster>(SelectedMonsterList.monsterList);
+                selectedMonsterGridView.DataContext = new ObservableCollection<Monster>(SelectedMonsterList.monsterList);
             }
         }
     }

@@ -60,6 +60,10 @@ namespace NestedWorld.View
         public ShopView()
         {
             InitializeComponent();
+        }
+
+        public void Init()
+        {
             GroupeListView.shopElementListView = ElementListView;
             GroupeListView.shopView = this;
             ElementListView.shopElementInformation = ElementInformation;
@@ -70,7 +74,6 @@ namespace NestedWorld.View
             Window.Current.SizeChanged += Current_SizeChanged;
             SetSize(Window.Current.Bounds.Width);
         }
-
 
         private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {

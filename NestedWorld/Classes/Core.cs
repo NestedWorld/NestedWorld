@@ -18,17 +18,7 @@ namespace NestedWorld.Classes
     {
         public MapCore mapCore { get; set; }
         public Garden.Garden garden { get; set; }
-        public MonsterFullView mfv { get; set; }
-        private UserMonster _monsterSelected;
-        public UserMonster monsterSelected
-        {
-            get { return _monsterSelected; }
-            set
-            {
-                _monsterSelected = value;
-                mfv.monsterToDisplay = value;
-            }
-        }
+
         public MonsterList monsterList { get; set; }
         public MonsterList monsterUserList { get; set; }
 
@@ -58,6 +48,8 @@ namespace NestedWorld.Classes
 
         public async void ShowError(string ErrorMessage)
         {
+            if (ErrorMessage == string.Empty)
+                return;
             var messageDialog = new MessageDialog(ErrorMessage);
             await messageDialog.ShowAsync();
         }
@@ -66,26 +58,17 @@ namespace NestedWorld.Classes
         {
 
             userList.Init();
-            if (Offline)
-            {
-                monsterList.init();
-                monsterUserList.init();
-                areaList.Init();
-            }
-            else
-            {
-                string ret = await App.network.GetMonter(monsterList);
-                ShowError(ret);
-            }
+
+            var ret = await App.network.GetMonster();
+            monsterList = ret.Content as MonsterList;
+            ret.ShowError();
+            ret = await App.network.GetUserMonster();
+            monsterUserList = ret.Content as MonsterList;
+            ret.ShowError();
         }
 
         public void SetValue(HomePage homePage)
         {
-            mfv = homePage.monsterFullView;
-            homePage.monsterView.monsterList = monsterUserList;
-            homePage.userView.userList = userList;
-            homePage.monsterListView.monsterList = monsterList;
-            homePage.homeView.DataContext = user;
             homePage.ShopView.shop = Shop;
         }
 

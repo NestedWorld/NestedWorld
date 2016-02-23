@@ -20,7 +20,7 @@ namespace NestedWorld.Classes.ElementsGame.Maps
 
 
         public List<Model.Item> ItemList { get; set; }
-        public List<Monsters.UserMonster> MonsterList { get; set; }
+        public Monsters.MonsterList MonsterList { get; set; }
 
         public UserEnum UserEnum { get; set; }
 
@@ -43,10 +43,10 @@ namespace NestedWorld.Classes.ElementsGame.Maps
             ItemList = new List<Model.Item>(itemList);
         }
 
-        public Area(string name, string image, List<BasicGeoposition> positionList, List<Model.Item> itemList, List<Monsters.UserMonster> monsterList)
+        public Area(string name, string image, List<BasicGeoposition> positionList, List<Model.Item> itemList, Monsters.MonsterList monsterList)
             : this(name, image, positionList, itemList)
         {
-            MonsterList = new List<Monsters.UserMonster>(monsterList);
+            MonsterList = monsterList;
         }
 
         public MapPolygon getPolygon()

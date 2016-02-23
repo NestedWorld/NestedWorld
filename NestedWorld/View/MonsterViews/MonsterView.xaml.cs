@@ -22,6 +22,7 @@ namespace NestedWorld.View.MonsterViews
         public MonsterView()
         {
             this.InitializeComponent();
+            
         }
 
         private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
@@ -29,5 +30,7 @@ namespace NestedWorld.View.MonsterViews
             //show Information;
             //infoBorder.Visibility = Visibility.Visible;
         }
+
+      
     }
 }

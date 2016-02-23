@@ -21,12 +21,12 @@ namespace NestedWorld.Classes.Request
     }
     public class HttpRequest
     {
-        private string BaseAddress = "http://eip-api.kokakiwi.net/v1";
+        private string BaseAddress = "http://eip-api-dev.kokakiwi.net/v1";
         protected Uri uri;
         protected string url;
         protected HttpWebRequest request;
         protected HttpStringContent content;
-
+        private JObject obj;
         protected Dictionary<string, string> collection;
         private RequestType type;
 
@@ -50,8 +50,9 @@ namespace NestedWorld.Classes.Request
                 }
                 else if (type == RequestType.POST)
                 {
-                    var content = new FormUrlEncodedContent(collection);
-                    System.Net.Http.HttpResponseMessage response = await client.PostAsync(uri, content);
+                    CreateJsonContent();
+                    System.Net.Http.HttpResponseMessage response =
+                        await client.PostAsync(uri, new StringContent(obj.ToString(), Encoding.UTF8, "application/json"));
                     Debug.WriteLine("response : " + response.ToString());
                     jsonString = await response.Content.ReadAsStringAsync();
                     Debug.WriteLine(jsonString);
@@ -67,6 +68,16 @@ namespace NestedWorld.Classes.Request
             }
         }
 
+        protected void CreateJsonContent()
+        {
+            obj = new JObject();
+            foreach (KeyValuePair<string, string> param in collection)
+            {
+                obj.Add(param.Key, param.Value);
+            }
+            Debug.WriteLine(obj);
+        }
+
         internal static string GetURLParam(Dictionary<string, string> Params)
         {
             string ret = "?";
@@ -76,6 +87,6 @@ namespace NestedWorld.Classes.Request
             }
             ret.Remove(ret.Length - 1);
             return ret;
-        }     
+        }
     }
 }

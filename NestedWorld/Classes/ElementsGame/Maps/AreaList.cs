@@ -68,9 +68,7 @@ namespace NestedWorld.Classes.ElementsGame.Maps
                       }
                     ),
                 GenerateItemList(new Model.Item("flower", 0, "desc", "ms-appx:///Assets/Flower/flowerFire.png", 0, 0, 0, 0), new Model.Item("flower", 0, "desc", "ms-appx:///Assets/Flower/flowerFire.png", 0, 0, 0, 0), new Model.Item("flower", 0, "desc", "ms-appx:///Assets/Flower/flowerFire.png", 0, 0, 0, 0)),
-                GenerateMonsterList(new UserMonster(new Monster("monsterOne", TypeEnum.DIRT, "ms-appx:///Assets/iconTest.png", 1), 5),
-            new UserMonster(new Monster("Shark Sword", TypeEnum.WATHER, "ms-appx:///Assets/monsterTest/test.png", 2), 5),
-            new UserMonster(new Monster("monsterOne", TypeEnum.FIRE, "ms-appx:///Assets/iconTest.png", 3), 10))));
+               MonsterList.GetMonsterListFromJson(null)));
         }
 
 
@@ -101,15 +99,7 @@ namespace NestedWorld.Classes.ElementsGame.Maps
             return ret;
         }
 
-        internal static List<Monsters.UserMonster> GenerateMonsterList(Monsters.UserMonster monster1, Monsters.UserMonster monster2, Monsters.UserMonster monster3)
-        {
-            List<Monsters.UserMonster> ret = new List<Monsters.UserMonster>();
-            ret.Add(monster1);
-            ret.Add(monster2);
-            ret.Add(monster3);
-
-            return ret;
-        }
+      
 
         internal static List<Model.Item> GenerateItemList(Model.Item item1, Model.Item item2, Model.Item item3)
         {

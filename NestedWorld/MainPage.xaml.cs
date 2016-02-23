@@ -1,20 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Security.ExchangeActiveSyncProvisioning;
 using Windows.UI.Core;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -29,16 +17,17 @@ namespace NestedWorld
         public MainPage()
         {
             this.InitializeComponent();
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-            // Init();
+           
         }
+
 
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Utils.ThemeSelector.SetTheme();
 
-            EntranceAnnimation.Begin();
+            //  EntranceAnnimation.Begin();
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
             popupView.Closed += PopupView_Closed;
         }
 
@@ -68,32 +57,29 @@ namespace NestedWorld
             progressGrid.Visibility = Visibility.Visible;
             progressRing.IsActive = true;
             loginButton.Visibility = Visibility.Collapsed;
-            string ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
-            //string ret = await App.network.Connect("thomas.caron@epitech.eu", "toto");
-            //string ret = string.Empty;
+            var ret = await App.network.Connect(UserNameText.Text, PassWordText.Password);
+
             progressRing.IsActive = false;
             progressGrid.Visibility = Visibility.Collapsed;
             UserNameText.IsTabStop = true;
             PassWordText.IsTabStop = true;
 
-            if (ret == string.Empty)
+            if (ret.IsError)
+                ShowError(ret.ToString());
+            else
             {
                 await App.core.Init();
                 loginButton.Visibility = Visibility.Visible;
                 Frame.Navigate(typeof(Pages.HomePage));
             }
-            else
-                ShowError(ret);
             loginButton.Visibility = Visibility.Visible;
 
         }
 
         private void ShowError(string ErrorMessage)
         {
-
             ErrorTextBlock.Text = ErrorMessage;
             ErrorAnnimation.Begin();
-           
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

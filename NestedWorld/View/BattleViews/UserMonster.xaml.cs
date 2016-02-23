@@ -52,7 +52,7 @@ namespace NestedWorld.View.BattleViews
             }
         }
 
-        public Classes.ElementsGame.Monsters.UserMonster monster
+        public Classes.ElementsGame.Monsters.Monster monster
         {
             get { return null; }
             set

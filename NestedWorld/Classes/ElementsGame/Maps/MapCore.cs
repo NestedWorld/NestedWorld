@@ -108,7 +108,8 @@ namespace NestedWorld.Classes.ElementsGame.Maps
         {
             try
             {
-
+                if (dispatcher == null)
+                    return;
                 await dispatcher.RunAsync(CoreDispatcherPriority.Low, new DispatchedHandler(
                    () =>
                    {

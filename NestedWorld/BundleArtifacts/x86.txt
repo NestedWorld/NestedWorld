@@ -1,0 +1,2 @@
+MainPackage=E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\bin\x86\Release\NestedWorld_1.0.0.0_x86.appx
+SymbolPackage=E:\Project\GitHub\NestedWorld\Windows10\NestedWorld\AppPackages\NestedWorld_1.0.0.0_Test\NestedWorld_1.0.0.0_x86.appxsym

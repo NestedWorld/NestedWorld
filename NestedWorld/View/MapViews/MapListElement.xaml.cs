@@ -30,15 +30,8 @@ namespace NestedWorld.View.MapViews
         {
             try
             {
-                UserMonster monster = DataContext as UserMonster;
-                if (monster.type == "monster")
-                {
-
-                }
-                else
-                {
-
-                }
+                Monster monster = DataContext as Monster;
+              
             }
             catch (Exception ex)
             {

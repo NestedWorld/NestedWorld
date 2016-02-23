@@ -18,6 +18,9 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>NestedWorld_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -100,8 +103,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="project.json" />
-    <PRIResource Include="Theme\WaterTheme.resw" />
-    <PRIResource Include="Theme\FireTheme.resw" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -131,19 +132,20 @@
     <Compile Include="Classes\ElementsGame\Monsters\MonsterListPerType.cs" />
     <Compile Include="Classes\ElementsGame\Shop\Shop.cs" />
     <Compile Include="Classes\ElementsGame\TypeEnum.cs" />
-    <Compile Include="Classes\ElementsGame\Monsters\UserMonster.cs" />
     <Compile Include="Classes\ElementsGame\Users\User.cs" />
     <Compile Include="Classes\ElementsGame\Users\UserList.cs" />
     <Compile Include="Classes\Enum\UserEnum.cs" />
     <Compile Include="Classes\Garden\Garden.cs" />
     <Compile Include="Classes\Network\ImageDownload.cs" />
     <Compile Include="Classes\Network\Network.cs" />
+    <Compile Include="Classes\Network\ReturnObject.cs" />
     <Compile Include="Classes\Request\Auth\Login.cs" />
     <Compile Include="Classes\Request\Auth\Logout.cs" />
     <Compile Include="Classes\Request\Auth\Register.cs" />
     <Compile Include="Classes\Request\Auth\ResetPassword.cs" />
     <Compile Include="Classes\Request\HttpRequest.cs" />
     <Compile Include="Classes\Request\Monster\Monsters.cs" />
+    <Compile Include="Classes\Request\Monster\UsersMonster.cs" />
     <Compile Include="Classes\Stats\Stats.cs" />
     <Compile Include="Common\ObservableDicionary.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -212,16 +214,18 @@
     <Compile Include="UI\CircularItemInformation.xaml.cs">
       <DependentUpon>CircularItemInformation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\MapInformationVIew.xaml.cs">
+      <DependentUpon>MapInformationVIew.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\ColorUtils.cs" />
     <Compile Include="Utils\ImageUtils.cs" />
     <Compile Include="Utils\IO.cs" />
     <Compile Include="Utils\MapElementData.cs" />
     <Compile Include="Utils\MapExtensions.cs" />
+    <Compile Include="Utils\RandomValue.cs" />
     <Compile Include="Utils\ThemeSelector.cs" />
     <Compile Include="ViewModel\ChanelListViewModel.cs" />
-    <Compile Include="View\BattleOverView.xaml.cs">
-      <DependentUpon>BattleOverView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\HomePageController.cs" />
     <Compile Include="View\BattleViews\AnnimationCanvas.xaml.cs">
       <DependentUpon>AnnimationCanvas.xaml</DependentUpon>
     </Compile>
@@ -258,8 +262,14 @@
     <Compile Include="View\ChatViews\YouMessageTemplate.xaml.cs">
       <DependentUpon>YouMessageTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\GardenView.xaml.cs">
-      <DependentUpon>GardenView.xaml</DependentUpon>
+    <Compile Include="View\EventView.xaml.cs">
+      <DependentUpon>EventView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventViews\EventMainView.xaml.cs">
+      <DependentUpon>EventMainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventViews\UserEventView.xaml.cs">
+      <DependentUpon>UserEventView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GardenViews\GardenElementListView.xaml.cs">
       <DependentUpon>GardenElementListView.xaml</DependentUpon>
@@ -270,8 +280,14 @@
     <Compile Include="View\GardenViews\GardenItem.xaml.cs">
       <DependentUpon>GardenItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\HomeView.xaml.cs">
+    <Compile Include="View\HomeView\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapPoint\MapInformationPoint.xaml.cs">
+      <DependentUpon>MapInformationPoint.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MapPoint\MonsterMapPoint.xaml.cs">
       <DependentUpon>MonsterMapPoint.xaml</DependentUpon>
@@ -300,38 +316,29 @@
     <Compile Include="View\MapViews\UserMapList.xaml.cs">
       <DependentUpon>UserMapList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MonsterListView.xaml.cs">
+    <Compile Include="View\MonsterTapItem.xaml.cs">
+      <DependentUpon>MonsterTapItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonsterViews\MonsterInformationView.xaml.cs">
+      <DependentUpon>MonsterInformationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonsterViews\MonsterListView.xaml.cs">
       <DependentUpon>MonsterListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MonsterSoloView.xaml.cs">
+    <Compile Include="View\MonsterViews\MonsterSoloView.xaml.cs">
       <DependentUpon>MonsterSoloView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MonsterView.xaml.cs">
+    <Compile Include="View\HomeView\MonsterView.xaml.cs">
       <DependentUpon>MonsterView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MonsterViews\MonsterAttacksView.xaml.cs">
-      <DependentUpon>MonsterAttacksView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MonsterViews\MonsterAttackView.xaml.cs">
-      <DependentUpon>MonsterAttackView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MonsterViews\MonsterFullView.xaml.cs">
-      <DependentUpon>MonsterFullView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MonsterViews\MonsterHeaderView.xaml.cs">
       <DependentUpon>MonsterHeaderView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MonsterViews\MonsterLocationView.xaml.cs">
-      <DependentUpon>MonsterLocationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MonsterViews\MonsterStatsView.xaml.cs">
       <DependentUpon>MonsterStatsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MonsterViews\MonsterView.xaml.cs">
       <DependentUpon>MonsterView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\NotificationView.xaml.cs">
-      <DependentUpon>NotificationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\PrepareBattleView\UserMonsterListView.xaml.cs">
       <DependentUpon>UserMonsterListView.xaml</DependentUpon>
@@ -375,10 +382,7 @@
     <Compile Include="View\ShopViews\ShopUserInfo.xaml.cs">
       <DependentUpon>ShopUserInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\StuffView.xaml.cs">
-      <DependentUpon>StuffView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserView.xaml.cs">
+    <Compile Include="View\HomeView\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserViews\AllyView.xaml.cs">
@@ -487,20 +491,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Theme\FireTheme.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Theme\WaterTheme.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Page>
     <Page Include="UI\CircularContenor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -517,7 +507,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\BattleOverView.xaml">
+    <Page Include="UI\MapInformationVIew.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -569,7 +559,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\GardenView.xaml">
+    <Page Include="View\EventView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventViews\EventMainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventViews\UserEventView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -585,7 +583,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\HomeView.xaml">
+    <Page Include="View\HomeView\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapPoint\MapInformationPoint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -625,35 +631,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MonsterListView.xaml">
+    <Page Include="View\MonsterTapItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MonsterSoloView.xaml">
+    <Page Include="View\MonsterViews\MonsterInformationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MonsterView.xaml">
+    <Page Include="View\MonsterViews\MonsterListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MonsterViews\MonsterAttacksView.xaml">
+    <Page Include="View\MonsterViews\MonsterSoloView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MonsterViews\MonsterAttackView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MonsterViews\MonsterFullView.xaml">
+    <Page Include="View\HomeView\MonsterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MonsterViews\MonsterHeaderView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MonsterViews\MonsterLocationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -662,10 +660,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MonsterViews\MonsterView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\NotificationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -725,11 +719,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\StuffView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\UserView.xaml">
+    <Page Include="View\HomeView\UserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -739,8 +729,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Request\Places\" />
     <Folder Include="Classes\Request\Users\" />
-    <Folder Include="View\BattleOverViews\" />
+    <Folder Include="View\EventViews\Cards\" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, version=14.0">

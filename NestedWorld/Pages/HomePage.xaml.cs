@@ -1,5 +1,6 @@
 ﻿using NestedWorld.Classes.ElementsGame.Monsters;
 using NestedWorld.Style;
+using NestedWorld.ViewModel;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -14,7 +15,7 @@ namespace NestedWorld.Pages
     public sealed partial class HomePage : Page
     {
 
-
+        private HomePageController controller;
 
         public HomePage()
         {
@@ -27,18 +28,10 @@ namespace NestedWorld.Pages
 
         public void init()
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += (s, a) =>
-            {
-                if (Frame.CanGoBack)
-                {
-                    Frame.GoBack();
-                    a.Handled = true;
-                }
-            };
-
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
 
             App.core.SetValue(this);
+            controller = new HomePageController(this);
 
         }
 
@@ -77,19 +70,13 @@ namespace NestedWorld.Pages
             Frame.Navigate(typeof(Pages.ProfilePage));
         }
 
-        private void Pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void AppBarButton_Click_3(object sender, RoutedEventArgs e)
         {
-            Pivot pivot = sender as Pivot;
-
-            foreach (PivotItem th in pivot.Items)
+            var ret = await App.network.Logout();
+            if (ret.IsError)
             {
-
-                (th.Header as NestedWorld.Style.TabHeader).isSelect = false;
+                ret.ShowError();
             }
-
-            PivotItem header = pivot.SelectedItem as PivotItem;
-
-            (header.Header as NestedWorld.Style.TabHeader).isSelect = true;
         }
     }
 }

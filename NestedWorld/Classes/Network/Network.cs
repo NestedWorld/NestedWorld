@@ -14,79 +14,168 @@ namespace NestedWorld.Classes.Network
     {
         public string Token { get; set; }
 
-        public async Task<string> Connect(string mail, string pass)
+        public async Task<ReturnObject> Connect(string mail, string pass)
         {
-            string returnString = string.Empty;
+            ReturnObject ReturnObject;
+
             Request.Auth.Login login = new Request.Auth.Login();
             login.SetParam(pass, mail);
+            if (App.core.Offline)
+                return new ReturnObject()
+                {
+                    Content = null,
+                    ErrorCode = 0,
+                    Message = string.Empty
 
+                };
             try
             {
                 JObject obj = await login.GetJsonAsync();
                 Token = obj["token"].ToObject<string>();
                 Debug.WriteLine("Token = " + Token);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = 0, Message = string.Empty };
             }
             catch (HttpRequestException HRException)
             {
                 Debug.WriteLine(HRException);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = HRException.HResult, Message = "HttpRequestException : " + HRException.Message };
             }
             catch (Newtonsoft.Json.JsonException jEx)
             {
                 Debug.WriteLine(jEx);
-                returnString = "Json";
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = jEx.HResult, Message = "JsonException : " + jEx.Message };
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-                returnString = "UnknowError";
-            }
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = ex.HResult, Message = "Exception : " + ex.Message };
 
-            return returnString;
+            }
+            return ReturnObject;
         }
 
-        public async Task<string> GetMonter(MonsterList ml)
+        public async Task<ReturnObject> Logout()
         {
-            string ReturnString = string.Empty;
+            ReturnObject ReturnObject;
+            Request.Auth.Logout logout = new Request.Auth.Logout();
+            logout.SetParam();
+            if (App.core.Offline)
+                return new ReturnObject()
+                {
+                    Content = null,
+                    ErrorCode = 0,
+                    Message = string.Empty
+
+                };
+            try
+            {
+                JObject obj = await logout.GetJsonAsync();
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = 0, Message = string.Empty };
+            }
+            catch (HttpRequestException HRException)
+            {
+                Debug.WriteLine(HRException);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = HRException.HResult, Message = "HttpRequestException : " + HRException.Message };
+            }
+            catch (Newtonsoft.Json.JsonException jEx)
+            {
+                Debug.WriteLine(jEx);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = jEx.HResult, Message = "JsonException : " + jEx.Message };
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = ex.HResult, Message = "Exception : " + ex.Message };
+
+            }
+            return ReturnObject;
+        }
+
+
+
+        #region Monster
+        public async Task<ReturnObject> GetMonster(int number = -1)
+        {
+            ReturnObject ReturnObject;
+
+            MonsterList ml;
 
             Request.Monster.Monsters monsters = new Request.Monster.Monsters();
             monsters.SetParam();
+            if (App.core.Offline)
+                return new ReturnObject()
+                {
+                    Content = MonsterList.GetMonsterListFromJson(null, 30),
+                    ErrorCode = 0,
+                    Message = string.Empty
 
+                };
             try
             {
-                JObject obj = await monsters.GetJsonAsync();
-                JArray Array = obj["monsters"].ToObject<JArray>();
-
-                int i = 1;
-                foreach (JObject monster in Array)
-                {
-                    ml.Add(new UserMonster(new Monster(monster["name"].ToObject<string>(), ElementsGame.TypeEnum.DIRT, "ms-appx:///Assets/default_monster.png", i), 3));
-                    i++;
-                }
-
-                Debug.WriteLine(obj);
+                ml = MonsterList.GetMonsterListFromJson(await monsters.GetJsonAsync());
+                ReturnObject = new ReturnObject() { Content = ml, ErrorCode = 0, Message = string.Empty };
             }
             catch (HttpRequestException HRException)
             {
                 Debug.WriteLine(HRException);
-                ReturnString = HRException.Message;
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = HRException.HResult, Message = "HttpRequestException : " + HRException.Message };
             }
             catch (Newtonsoft.Json.JsonException jEx)
             {
                 Debug.WriteLine(jEx);
-                ReturnString = jEx.Message;
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = jEx.HResult, Message = "JsonException : " + jEx.Message };
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-                ReturnString = "UnknowError";
-            }
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = ex.HResult, Message = "Exception : " + ex.Message };
 
-            return ReturnString;
+            }
+            return ReturnObject;
         }
 
-        /* public async Task<ErrorNetworkCode> GetMonster()
-         {
+        public async Task<ReturnObject> GetUserMonster()
+        {
+            ReturnObject ReturnObject;
 
-         }*/
+            MonsterList ml;
+
+            Request.Monster.UsersMonster monsters = new Request.Monster.UsersMonster();
+            monsters.SetParam(Token);
+
+            if (App.core.Offline)
+                return new ReturnObject()
+                {
+                    Content = MonsterList.GetUserMonsterListFromJson(null, 12),
+                    ErrorCode = 0,
+                    Message = string.Empty
+
+                };
+
+            try
+            {
+                ml = MonsterList.GetUserMonsterListFromJson(await monsters.GetJsonAsync());
+                ReturnObject = new ReturnObject() { Content = ml, ErrorCode = 0, Message = string.Empty };
+            }
+            catch (HttpRequestException HRException)
+            {
+                Debug.WriteLine(HRException);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = HRException.HResult, Message = "HttpRequestException : " + HRException.Message };
+            }
+            catch (Newtonsoft.Json.JsonException jEx)
+            {
+                Debug.WriteLine(jEx);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = jEx.HResult, Message = "JsonException : " + jEx.Message };
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                ReturnObject = new ReturnObject() { Content = null, ErrorCode = ex.HResult, Message = "Exception : " + ex.Message };
+
+            }
+            return ReturnObject;
+        }
+
+        #endregion
     }
 }

@@ -20,6 +20,7 @@ namespace NestedWorld.Classes.Request.Auth
             collection.Add("email", mail);
             collection.Add("app_token", App_token);
             uri = new Uri(url);
+            
         }
     }
 }
